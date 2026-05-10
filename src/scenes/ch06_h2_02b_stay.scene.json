@@ -1,0 +1,67 @@
+{
+  "id": "ch06_h2_02b_stay",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h2_dongseong",
+      "value": "stay"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "윤하정 한 잔 더 받는 거, 같이 받아주자."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "어, 알겠어."
+    },
+    {
+      "type": "NARRATION",
+      "text": "두 사람이 단체 자리에 한 시간 더 머무른다. 윤하정이 잔을 한 잔 더 받지만 풀어진 모습이 살짝 더 깊어지진 않는다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "30분 후. 단체 자리가 조금 더 가벼워진 분위기로 풀린다. 윤하정이 잠깐 자리에서 일어선다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "윤모, 이제 진짜 갈래?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 가자."
+    },
+    {
+      "type": "NARRATION",
+      "text": "자리에서 일어나 거리로 나선다. 술집 안에서 김규민의 큰 웃음이 한 번 더 들리고 멀어진다."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤모",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤하정",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h2_03_walk"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-01 evening",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

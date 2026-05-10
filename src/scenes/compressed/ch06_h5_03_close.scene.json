@@ -1,0 +1,39 @@
+{
+  "id": "ch06_h5_03_close",
+  "commands": [
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "장윤영",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "도서관 앞 9시 5분 응원. 한 살 어린 후배와의 거리가 조금씩 풀어져 가는 중이고."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤모",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "BG",
+      "image": "black"
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h5_04_late_kakao"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-05 morning",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

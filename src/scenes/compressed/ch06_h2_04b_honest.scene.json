@@ -1,0 +1,83 @@
+{
+  "id": "ch06_h2_04b_honest",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h2_rooftop",
+      "value": "honest"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "윤하정."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "어."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "너랑 있으면... 머리가 멍해져."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤하정",
+      "sprite": "blush",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...야. (시선 비스듬) 그게 무슨 답이야."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "진심의 답이지."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "너 도서관 새벽에 옆자리 있는 거 보면서 책장 한 페이지씩 더 넘기던 게, 머리가 살짝 멍해지는 거였고. 5조 같이 배정 받았다는 거 OT 때 들었을 때부터 그랬어."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "직설이 맞을 때도 있고, 이런 식이 맞을 때도 있고. 너한테는 후자가 맞을 거 같았어."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...윤모. (시선 야경) ...너 그렇게 말하는 거 진짜 너 답지 않다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "너 답지 않은 모습도 한 번씩 보여야지."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...뭐, 그 말. 진짜로. (시선 한 번 더 옆으로) ...나도 그래."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "\"나도 그래.\" 한 학기 통틀어 가장 풀린 모습."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h2_04_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-01 night, 11pm",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

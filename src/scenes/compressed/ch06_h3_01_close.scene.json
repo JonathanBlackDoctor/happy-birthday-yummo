@@ -1,0 +1,70 @@
+{
+  "id": "ch06_h3_01_close",
+  "commands": [
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "학생, 그럼 부스 잘 봐주고요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 선생님도 들어가시는 길 무리 마세요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...그런데. 학생, 오늘 6시 끝나면 어디로 가요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "자취방 잠깐 갔다가 도서관 들를까 싶었어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...그러면 가는 길에 본관 옆 산책로 잠깐 같이 걸어도 돼요? 부스에서 십 분 머무르고 들어간 거 나은영 교수님께 보고하기 전에, 머리 식히는 시간 있어도 좋을 것 같아서요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "...어, 네. 같이 가요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "그럼 6시에 본관 1층 로비에서 봬요."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "한설",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한설 선생님이 산책 권하셨다. 평소 본인 쪽에서 시간 권하신 적 없으셨는데. 의외다."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤모",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h3_02_walk"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-02 afternoon",
+    "activeHeroines": [
+      "H3"
+    ]
+  }
+}

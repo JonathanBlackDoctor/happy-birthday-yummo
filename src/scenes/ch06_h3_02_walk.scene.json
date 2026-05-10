@@ -1,0 +1,243 @@
+{
+  "id": "ch06_h3_02_walk",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_campus_night_blossom",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_romantic",
+      "volume": 0.4,
+      "fade": 3
+    },
+    {
+      "type": "NARRATION",
+      "text": "같은 날 오후 6시 10분. 의대 본관 1층 로비에서 두 사람이 만나 본관 옆 산책로로 걸음을 옮긴다. 6월 초 봄볕이 살짝 옅어지는 시간. 벚꽃잎은 이미 떨어졌고, 잎이 푸르러진 가지가 산책로 양쪽으로 길게 깔려 있다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "한설",
+      "sprite": "default",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "NARRATION",
+      "text": "한설이 카디건 안 블라우스 위에 가벼운 가방을 어깨에 멘 채. 안경은 여전히 그대로."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "학생, 부스 잘 끝났어요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 본과 1학년 후배들도 잘 정리하고 갔고요. 손님도 어제보다 한가했어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "둘째 날은 보통 그렇다고 들었어요. 첫째 날 풀로 가고 둘째 날부터 한가해지는 흐름."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "5조가 어제 풀로 굴렸으니까요. 윤하정이 부스 디테일 챙긴 게 컸고요."
+    },
+    {
+      "type": "NARRATION",
+      "text": "산책로 한 블록을 걷는 동안 짧은 침묵. 한설이 시선을 산책로 끝에 두다가 다시 옮긴다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "학생."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "나은영 교수님께 보고 메일 작성하다가 잠깐 멈췄어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...그러니까... 음... 보고할 게 십 분 머무름이라는 거 한 줄로 정리되니까, 무슨 보고인가 싶어서요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "십 분이 짧긴 했어도 본과 1학년 부스에 들러주셨다는 것 자체에 무게가 있는 거니까요. 그것만으로도 보고할 만한 일이고요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...그렇게 풀어 들어주니까 마음이 좀 가볍긴 하네요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "나은영 교수님은 그러니까... 음... 한 줄 보고도 한 시간 분량으로 정리해주시면 좋아하시는 분이라."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "십 분이 십 분으로 보고되면 표정이 살짝 굳어지실 수도 있고요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나은영 교수",
+      "text": "\"한설 선생님, 본과 1학년 부스 인사는 어떤 식으로 정리하셨나요? 정확히는요.\""
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "잠깐 그 톤이 머릿속에 들렸네요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...이런 얘기까지 학생한테 풀어놓는 거 처음이고요."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "나은영 교수님 회상 한 줄."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한설 선생님 지도교수가 워커홀릭에 표정 변화 거의 없으시단 건 본과 1학년 사이에서도 들었다. 그 옆에서 박사 5년차 견디는 게 어떤 무게인지 짐작 간다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "선생님, 정말 무리하지 마세요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "나은영 교수님 톤 챙기시는 게 박사 5년차 본업이긴 하지만, 그걸 견디시는 것 자체에도 무게가 있는 거니까요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "그 무게 풀어내는 시간이 산책 한 번이 될 수도 있고요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...학생, 그렇게 챙겨주는 거 정말 의외예요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "본과 1학년이 박사 5년차 무게를 그렇게 풀어 보내는 거 처음 받아봐요."
+    },
+    {
+      "type": "FLAG_INC",
+      "key": "H3",
+      "delta": 5
+    },
+    {
+      "type": "NARRATION",
+      "text": "두 사람이 산책로 끝까지 한 발씩 걷는다. 6월 초 봄바람이 잎사귀를 흔든다. 한설이 잠시 멈춘다. 가방을 옆으로 옮기고, 안경을 한 손으로 잡는다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "학생, 잠깐 한 가지만요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...안경 잠깐 벗어도 돼요? 산책 중에 좀 흐려서요."
+    },
+    {
+      "type": "NARRATION",
+      "text": "한설이 안경을 벗어 한 손에 들고, 다른 손으로 머리를 정리한다. 사이드 가르마는 그대로지만 머리 한 가닥이 옆으로 흘러내려 카디건 자락에 닿았다 다시 정리된다. 가운에 안경이던 모습에서 카디건에 안경 없는 모습으로, 평소와 한 발 더 멀어진 차림."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "한설",
+      "sprite": "no_glasses",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "CG",
+      "image": "cg_seol_festival",
+      "cgId": "cg_seol_festival"
+    },
+    {
+      "type": "NARRATION",
+      "text": "의대 본관 옆 산책로. 6월 초 저녁 햇살이 잎사귀 사이로 길게 깔린다. 한설이 베이지 카디건 안에 연한 블라우스 차림으로 서서 한 손에 안경을 들고 있다. 다른 손은 머리 한 가닥을 살짝 정리한 채. 평소 가운에 안경 차림에서 보이던 어른스러움은 그대로지만, 사복에 안경까지 빠지니 분위기가 한층 부드럽게 풀려 있다."
+    },
+    {
+      "type": "CG_HIDE"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "(잠깐 멈춤)"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "...어. 평소 보던 사람이 잠깐 풀려 있는 그 순간."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "Ch.4 늦은 밤 실험실에서 봤던 모습이 다시. 그때보다 사복까지 합쳐져서 한층 더 풀린 모습이고."
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "와... 진짜 다른 사람 같으세요",
+          "next": "ch06_h3_02b_admire",
+          "tone": "warm_supportive",
+          "isKey": true,
+          "descriptor": "ch6_h3_no_glasses_admire"
+        },
+        {
+          "text": "선생님은 늘 멋지세요",
+          "next": "ch06_h3_02b_polite",
+          "tone": "warm_supportive"
+        },
+        {
+          "text": "(말없이 옅게 미소)",
+          "next": "ch06_h3_02b_silent",
+          "tone": "mature_serious"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-02 evening",
+    "activeHeroines": [
+      "H3"
+    ]
+  }
+}

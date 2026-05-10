@@ -1,0 +1,151 @@
+{
+  "id": "ch06_h5_04b_sleep",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h5_late_kakao",
+      "value": "sleep"
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "구윤모",
+          "text": "윤영아"
+        },
+        {
+          "sender": "구윤모",
+          "text": "마음 잘 받을게"
+        },
+        {
+          "sender": "구윤모",
+          "text": "학기 마무리 직전에 한 마디 짚어준 거 의외고 잘 받았어"
+        },
+        {
+          "sender": "구윤모",
+          "text": "그리고 지금 12시 30분이야"
+        },
+        {
+          "sender": "구윤모",
+          "text": "사흘 동안 부스 메인이었는데 피로 꽤 깊을 시간이고"
+        },
+        {
+          "sender": "구윤모",
+          "text": "이제 자야 돼"
+        },
+        {
+          "sender": "구윤모",
+          "text": "너도 자"
+        },
+        {
+          "sender": "장윤영",
+          "text": "..."
+        },
+        {
+          "sender": "장윤영",
+          "text": "헉 선배"
+        },
+        {
+          "sender": "장윤영",
+          "text": "두 번째예요"
+        },
+        {
+          "sender": "장윤영",
+          "text": "지난번 새벽에도 자야 돼 너도 자 보내주셨잖아요"
+        },
+        {
+          "sender": "장윤영",
+          "text": "같은 말 두 번째로 받는 게 학기 마무리 직전이라 더 무거워요"
+        },
+        {
+          "sender": "장윤영",
+          "text": "🥹"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "지난번 새벽 술자리 카톡에서 보냈던 말을, 학기 마무리 직전에 한 번 더."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "같은 말이지만 시간이 다르네. 그땐 술 한 잔 더 한 새벽이었고, 오늘은 부스 메인 끝낸 피로가 깔린 밤이고."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "\"자야 돼 너도 자\"라는 같은 한 마디인데, 두 번째 닿는 무게는 다르다."
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "장윤영",
+          "text": "알겠어요 선배"
+        },
+        {
+          "sender": "장윤영",
+          "text": "자야 돼 너도 자"
+        },
+        {
+          "sender": "장윤영",
+          "text": "두 번 받았으니까 두 번 잘게요"
+        },
+        {
+          "sender": "장윤영",
+          "text": "🥹🥹"
+        },
+        {
+          "sender": "구윤모",
+          "text": "ㅇㅋ"
+        },
+        {
+          "sender": "구윤모",
+          "text": "잘 자"
+        },
+        {
+          "sender": "장윤영",
+          "text": "네!! 선배도 잘 주무세요!! ✨🥹"
+        }
+      ]
+    },
+    {
+      "type": "FLAG_INC",
+      "key": "H5",
+      "delta": 5
+    },
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h5_late_breath",
+      "value": "on"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "🥹 두 개."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "평소 🥹 한 개에서 두 개로. 마음의 무게가 한 톤 다른 밤이고."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "야간 카톡 호흡을 한 번 더 받아준 거, 이번 학기 어딘가에 또 한 줄로 새겨졌다."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h5_04_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-06 late night",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

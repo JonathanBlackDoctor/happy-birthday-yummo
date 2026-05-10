@@ -1,0 +1,116 @@
+{
+  "id": "ch06_h5_03_morning_library",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_kmu_main",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.5,
+      "fade": 2
+    },
+    {
+      "type": "NARRATION",
+      "text": "6월 5일 금요일 오전 9시. 의대 도서관 앞 광장."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "도서관 앞 9시. 의예과 9시 강의 시간이라 도서관 앞에서 매일 마주치는 사람."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "장윤영",
+      "sprite": "smile_big",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "선배~~!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 또 만났네. 9시 5분 응원."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "의예과 9시 강의 가는 길이거든요! 도서관 앞은 한 학기 동안 변함없이 이 시간이에요!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "그럴 거 같다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "선배. (살짝 차분히) 한 가지 짧게 말씀드릴 게 있어서요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 들을게."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "어제 의예과 단톡에 사진 올렸는데, 1학년 후배들이 \"본과 선배 진짜 멋있다\"는 댓글을 한 줄씩 남겼거든요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "그래서 잠깐 자랑할까 했는데, 그러면 또 부담될까 싶어서 짧게만요. (옅은 미소) 사진 같이 찍어주신 거 진짜 감사했어요. 그게 끝."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "응. 잘 받을게."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "부담될 걸 미리 짚고 짧게 끝낸 거 의외다. 직진하면서도 거리감 챙길 줄 아는구나."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "헉 선배 그것까지 봐주시는 거 또 멈췄어요!"
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "거리감 챙겨주는 마음 잘 받을게, 의외고",
+          "next": "ch06_h5_03b_distance",
+          "tone": "bright_forward"
+        },
+        {
+          "text": "사진 같이 찍은 건 같이 가는 거야, 부담 없어",
+          "next": "ch06_h5_03b_quick",
+          "tone": "direct_friendly"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-05 morning",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

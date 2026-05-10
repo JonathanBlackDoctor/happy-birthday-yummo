@@ -1,0 +1,50 @@
+{
+  "id": "ch06_h5_02b_partial",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h5_event",
+      "value": "partial"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "5조 부스도 챙겨야 해서 잠깐만 봐주는 식으로."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "어... 네!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "그럼 풍선 한 묶음만 같이 정리해요! 짧게요!"
+    },
+    {
+      "type": "NARRATION",
+      "text": "장윤영이 평소 활기에서 한 단계 가라앉은 모습으로 풍선 정리를 시작한다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "후배한테 거리 둔 거."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "5조 부스 챙긴다는 말이, 진짜 이유보다 빠지려는 핑계로 들렸을지도 모르겠다."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h5_02_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-03 afternoon",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

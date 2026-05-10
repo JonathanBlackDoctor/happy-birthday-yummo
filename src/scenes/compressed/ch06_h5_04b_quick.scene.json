@@ -1,0 +1,51 @@
+{
+  "id": "ch06_h5_04b_quick",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h5_late_kakao",
+      "value": "quick"
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "구윤모",
+          "text": "어 의대 축제 마무리 잘 됐다는 거 받을게"
+        },
+        {
+          "sender": "구윤모",
+          "text": "너도 잘 자"
+        },
+        {
+          "sender": "장윤영",
+          "text": "헉 네..."
+        },
+        {
+          "sender": "장윤영",
+          "text": "알겠어요 선배도 잘 자세요"
+        },
+        {
+          "sender": "장윤영",
+          "text": "✨"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "짧게 받았다."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h5_04_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-06 late night",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#FFE4EC" />
+    <title>구연시: 본과 1학년의 봄</title>
+
+    <!-- M-001 처방 (PM 2026-05-10): Pretendard CDN dynamic-subset (~130KB, font-display: swap 내장).
+         tokens.css `--font-main: 'Pretendard', ...` 정합. 외부 의존이지만 jsdelivr 안정성 + dynamic-subset로 첫 부팅 비용 최소. -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css"
+    />
+
+    <!-- M-007 처방 (PM 2026-05-10): Open Graph + Twitter Card 미리보기.
+         og:url은 GitHub Pages 배포 URL이 정해진 후 PM이 상대 → 절대 URL로 교체 권장. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="구연시: 본과 1학년의 봄" />
+    <meta property="og:description" content="분당에서 대구로. 본과 1학년의 봄, 캠퍼스에서 만나는 다섯 사람의 이야기. (한국어 비주얼 노벨 / 12세)" />
+    <meta property="og:image" content="./img/title.webp" />
+    <meta property="og:image:alt" content="구연시: 본과 1학년의 봄 — 게임 타이틀" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="구연시: 본과 1학년의 봄" />
+    <meta name="twitter:description" content="분당에서 대구로. 본과 1학년의 봄, 캠퍼스에서 만나는 다섯 사람의 이야기. (한국어 비주얼 노벨 / 12세)" />
+    <meta name="twitter:image" content="./img/title.webp" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

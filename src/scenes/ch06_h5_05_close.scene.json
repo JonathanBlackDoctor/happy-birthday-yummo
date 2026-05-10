@@ -1,0 +1,57 @@
+{
+  "id": "ch06_h5_05_close",
+  "commands": [
+    {
+      "type": "NARRATION",
+      "text": "두 사람이 벚꽃길 끝까지 걷는다. 6월 저녁 가로등이 한 톤 더 밝아진다. 늦은 벚꽃잎이 한 장 더 흩날리며 잎이 푸르러져 가는 변환의 순간."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "오... 아니, 선배."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "헉 호칭 풀어주신 거 자연스러워지려면 시간 좀 더 필요할 거 같아요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어. 천천히."
+    },
+    {
+      "type": "NARRATION",
+      "text": "장윤영이 가방을 한 번 매고 의예과 기숙사 쪽으로 시선을 잠깐 돌린다. 윤모도 자취방 쪽으로 한 발 가까워진다."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "장윤영",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤모",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "BG",
+      "image": "black"
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h5_06_evaluate"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-07 evening",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "id": "ch06_h2_04_rooftop",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_library_night",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_romantic",
+      "volume": 0.5,
+      "fade": 3
+    },
+    {
+      "type": "NARRATION",
+      "text": "같은 날 밤 11시. 본관 4층 도서관 옥상. 옥상 난간 너머로 캠퍼스 야경 + 멀리 동성로 빛."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤하정",
+      "sprite": "default",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...야경이 이런 거구나."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "첫 야경?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "어. 도서관 안에만 있었으니까. 본관 4층인데 한 단계 더 넓게 보이네."
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_romantic",
+      "volume": 0.5,
+      "fade": 2
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "야경 분위기부터 같이 받아주는 게 먼저다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "야."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "한 가지 할 말 있는데, 해도 돼?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "해."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...OT 때 너 처음 봤을 때부터, 신경 쓰였거든?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "5조 같이 배정 받은 거 듣고 잠깐 멈췄던 게, 그게 신경 쓰여서였고. ...뭐, 그게 한 학기의 시작이었어."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "OT 때부터. 한 학기 동안 한 번도 꺼내지 않았던 진심을, 옥상 야경 앞에서 처음 흘렸다."
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "너랑 있으면 머리가 멍해져",
+          "next": "ch06_h2_04b_honest",
+          "tone": "direct_friendly",
+          "isKey": true,
+          "descriptor": "ch6_h2_rooftop_honest"
+        },
+        {
+          "text": "나도 너 좋아해",
+          "next": "ch06_h2_04b_direct",
+          "tone": "direct_friendly"
+        },
+        {
+          "text": "친구로 좋은데?",
+          "next": "ch06_h2_04b_friend",
+          "tone": "warm_supportive"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-01 night, 11pm",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "id": "ch04_03b_meal",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h3_meal",
+      "value": "yes"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "선생님, 식사 어떻게 하셨어요? (책상 위 컵라면 보며) 그거 좀 식어 있는 것 같은데요."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "한설",
+      "sprite": "smile_small",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "끓이고 한 시간 됐네요. 실험 데이터 정리하다가 깜빡했어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "새로 사 드시는 게 나을 것 같은데요. 자료 받았으니까, 가는 길에 본관 1층 편의점 들렀다가 다시 올라올까요? 어차피 도서관 가는 길이라 멀리 가는 것도 아니에요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "아니에요, 학생이 시험 직전인데 그런 데까지 시간 쓰면."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "시험 직전이라 그런 게 아니라, 자료 받아 가는 사람이 잠깐 들리는 거니까 어려운 일은 아니에요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...그럼 김밥 한 줄만 부탁할게요. 정말 그것만요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 알겠습니다. 금방 올게요."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 잠깐 나갔다가 비닐봉지 들고 돌아온다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "김밥 두 줄, 따뜻한 캔커피 하나, 그리고 컵라면 한 개도 같이 가져왔어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "김밥 한 줄이라 했는데요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "한 줄이 부족해 보였어요. 컵라면은 식은 거 옆에 따로 놓고, 드시고 싶을 때 새로 끓이시면 되니까요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...정말 고마워요. 학생. 시험 잘 보고요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 감사합니다. 선생님도 식사 천천히 하시고 무리 마세요."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "어른인데도 챙김 받으면 잠깐 어색해하시는구나. 차 선생님이 새벽 카페에서 했던 말이랑 어딘가 비슷하게 들렸다."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch04_03_close"
+    }
+  ],
+  "meta": {
+    "chapter": 4,
+    "time": "2026-04-28 night",
+    "activeHeroines": [
+      "H3"
+    ]
+  }
+}

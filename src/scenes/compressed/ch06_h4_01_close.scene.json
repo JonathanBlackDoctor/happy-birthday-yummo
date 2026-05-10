@@ -1,0 +1,29 @@
+{
+  "id": "ch06_h4_01_close",
+  "commands": [
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "시험 끝나는 게 6월 12일 금요일. 그럼 그다음 토요일쯤이 자연스럽겠다."
+    },
+    {
+      "type": "BG",
+      "image": "black"
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h4_02_campus_lunch"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-01 evening",
+    "activeHeroines": [
+      "H4"
+    ]
+  }
+}

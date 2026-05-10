@@ -1,0 +1,146 @@
+{
+  "id": "ch06_h5_05b_call",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h5_call",
+      "value": "full"
+    },
+    {
+      "type": "NARRATION",
+      "text": "장윤영이 잠깐 멈춘다. 한 학기 동안 \"선배\"였던 호칭을 학기 마지막 산책에서 한 번 풀어 가는 시점."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "장윤영",
+      "sprite": "blush",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "...오빠."
+    },
+    {
+      "type": "NARRATION",
+      "text": "장윤영의 시선이 잠깐 윤모 쪽으로 닿는다. 평소 활기 그대로의 표정에 한 단계 더 따뜻한 빛이 어린다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "한 학기 동안 선배 호칭으로 자연스럽게 갔지만, 마무리 시점엔 한 번 풀어 갈 수 있는 거고."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "본인 쪽에서 먼저 꺼낸 마음에 똑같이 답해주는 게 맞지."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "의예과 후배라는 거리감은 그대로 두고, 호칭만 한 줄 풀어 가는 거."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "오빠."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "헉 두 번 부른 거 진짜 어색해요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "그런데 진짜 좋아요. ✨"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어색한 게 자연스럽지."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "부르다 보면 익숙해질 거고."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "오빠."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "학기 마무리 직전이라 한 가지 더 짚을 게 있는데요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "인천 본가, 6월 마지막 주에 갔다 와서요. 의예과 2학기 시작 전에 한 번 더 봬도 돼요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어. 한 번 더 보자."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "인천 본가 잘 챙기고 와. 2학기는 또 그때 가서 풀어 가면 되고."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "헉 오빠 그렇게 풀어주시면 진짜 잠깐 멈춰요!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "알겠어요! 인천 본가 갔다 와서 한 번 더 봐요!"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "호칭 한 줄."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "처음 \"선배~!\"였던 게, 학기 끝에 와서 \"오빠\"가 됐다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "본인이 먼저 꺼낸 마음에 똑같이 답한 시간 — 이번 학기 가장 깊은 순간이고."
+    },
+    {
+      "type": "FLAG_INC",
+      "key": "H5",
+      "delta": 5
+    },
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h5_relationship",
+      "value": "deep"
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h5_05_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-07 evening",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

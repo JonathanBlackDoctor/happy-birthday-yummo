@@ -1,0 +1,77 @@
+{
+  "id": "ch06_h2_04b_direct",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h2_rooftop",
+      "value": "direct"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "윤하정."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "나도 너 좋아해."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤하정이 잠깐 멈춘다. 표정이 살짝 풀리지만 직설로는 살짝 부담스러운 분위기."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤하정",
+      "sprite": "blush",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...야."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "직설은 직설이네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "직설로 가는 게 맞다고 봤어."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...뭐, 알겠어."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "직설은 직설로 받을게."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "직설로 받았다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "윤하정 같은 사람한테는 직설보다 좀 풀어서 가는 게 더 깊을 수도 있었는데. 너무 빨리 닫아버렸나."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h2_04_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-01 night, 11pm",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

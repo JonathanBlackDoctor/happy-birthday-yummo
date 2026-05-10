@@ -1,0 +1,70 @@
+{
+  "id": "prologue_02_train",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_ktx_window",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.4,
+      "fade": 3
+    },
+    {
+      "type": "SFX",
+      "sound": "sfx_ktx_run",
+      "volume": 0.6,
+      "loop": true
+    },
+    {
+      "type": "NARRATION",
+      "text": "2월 28일 낮. 동대구행 KTX 창가 좌석."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "분당에서 동대구. 두 시간이면 끝난다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "휴학 1년. 그때 쉰 거, 잘한 건가. ...모르겠다."
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "본과는 빡세겠지만 재밌을 거다",
+          "next": "prologue_02b_positive",
+          "tone": "bright_forward"
+        },
+        {
+          "text": "솔직히 좀 두렵다",
+          "next": "prologue_02b_serious",
+          "tone": "warm_supportive"
+        },
+        {
+          "text": "어떻게든 되겠지 ㅋ",
+          "next": "prologue_02b_chill",
+          "tone": "playful_casual"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 0,
+    "time": "2026-02-28 day",
+    "activeHeroines": [
+      "mom"
+    ]
+  }
+}

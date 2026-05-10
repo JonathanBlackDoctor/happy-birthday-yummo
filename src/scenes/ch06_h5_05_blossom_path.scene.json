@@ -1,0 +1,198 @@
+{
+  "id": "ch06_h5_05_blossom_path",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_campus_night_blossom",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_romantic",
+      "volume": 0.5,
+      "fade": 3
+    },
+    {
+      "type": "NARRATION",
+      "text": "6월 7일 일요일 저녁 6시. 캠퍼스 벚꽃길. 의대 축제 주간 끝난 다음 날. 봄볕이 6월 저녁의 빛깔로 옅어지는 시간. 늦은 벚꽃잎 두세 장이 길 한쪽에 가끔 흩날린다. 길 한쪽 가로등이 천천히 빛을 내기 시작한다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "캠퍼스 벚꽃길, 6월 저녁."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "윤영이가 어제 카톡으로 잠깐 보자고 했지. 학기 마무리 직전에 짧은 산책."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "의예과 부스 마무리, 의대 축제 끝, 인천 본가 가기 직전 — 시간이 한군데로 모이는 시점이고."
+    },
+    {
+      "type": "NARRATION",
+      "text": "길 한쪽에서 빠른 걸음으로 다가오는 사람. 의예과 캐주얼 차림(흰 셔츠 원피스 + 카디건), 한 손엔 가벼운 가방. 평소 활기에서 한 톤 가라앉은 자세."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "장윤영",
+      "sprite": "warm_smile",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "선배."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 윤영아."
+    },
+    {
+      "type": "NARRATION",
+      "text": "어제 야간 카톡의 호흡이 그대로 이어지는 분위기. 장윤영의 활기가 학기 끝자락에서 한층 차분해진 모습."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "선배... 어제 자야 돼 너도 자, 두 번째 받았던 거 진짜 잘 잤어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "지난번 새벽에도 그 한 마디 받고 잘 잤었거든요. 두 번째도 진짜 잘 잤고."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어. 두 번 다 잘 잤다는 거, 잘 받을게."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "헉 두 번 다 라는 그 한 마디에서 또 잠깐 멈췄어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "선배."
+    },
+    {
+      "type": "NARRATION",
+      "text": "두 사람이 벚꽃길을 한 발씩 걷는다. 6월 저녁 햇살이 가끔 어깨에 닿았다 흘러간다. 가로등이 한 톤 더 밝아지는 시간."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "선배. 한 가지 짚을 게 있는데, 짚어도 돼요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 들을게."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "한 학기 동안 선배 호칭 말이에요. 저는 처음부터 \"선배~!\"였잖아요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "의예과 1·2학년 입장에선 본과 선배 만나는 일이 드물어서. 그 호칭이 자연스러웠고."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "그런데 한 학기 지나서 자취방 카톡으로 진심 한 줄씩 풀어 가는 사이가 됐는데, 호칭은 그대로네요."
+    },
+    {
+      "type": "NARRATION",
+      "text": "장윤영이 시선을 잠깐 가로등 너머로 옮긴다. 평소의 직진이 아닌, 한 톤 차분한 결로 마음을 꺼내는 시간."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "선배 호칭, 한 번 풀어볼까 싶어서요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "직진하는 거 부담된다는 거 알지만, 호칭 한 줄은 같이 풀어 가야 할 것 같아서."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "선배."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "..."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "선배가 한 마디 더 거들어 주실 수 있어요?"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "평소 활기에서 한 톤 가라앉은 모습으로 호칭 얘기를 꺼낸 윤영이."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "처음 부스에서 들었던 \"선배~!\"가, 한 학기 지나서 풀어지려는 시점이고."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "학기 마무리 직전 산책에서 호칭이 풀려 간다 — 윤영이가 보여주는 가장 깊은 진심이지."
+    },
+    {
+      "type": "NARRATION",
+      "text": "잠깐 침묵. 6월 저녁 봄바람이 한 번 벚꽃길을 가로지른다. 늦은 벚꽃잎 한 장이 두 사람 사이로 한 번 더 흩날린다."
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "선배 말고 그냥 '오빠'라고 불러도 돼\" (호칭 변화, 선배",
+          "next": "ch06_h5_05b_call",
+          "tone": "bright_forward",
+          "isKey": true,
+          "descriptor": "ch6_h5_call_yunyoung"
+        },
+        {
+          "text": "호칭은 너 편한 대로",
+          "next": "ch06_h5_05b_call_partial",
+          "tone": "warm_supportive"
+        },
+        {
+          "text": "선배 호칭 한 학기 더 가도 자연스러운데",
+          "next": "ch06_h5_05b_keep",
+          "tone": "mature_serious"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-07 evening",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

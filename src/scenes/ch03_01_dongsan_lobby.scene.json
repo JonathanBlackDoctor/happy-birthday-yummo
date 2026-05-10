@@ -1,0 +1,290 @@
+{
+  "id": "ch03_01_dongsan_lobby",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_kmu_main",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.5,
+      "fade": 2
+    },
+    {
+      "type": "NARRATION",
+      "text": "2026년 4월 6일 월요일 아침. 본과 1학년 단체 동산병원 견학이 있는 날이다. 의대 본관 앞 광장으로 학생들이 하나둘 모여든다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "카데바 실습 끝난 지 두 주."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "어느새 4월이네. 봄 진짜 빠르다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "오늘은 동산병원 견학 날."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "그동안 강의실에 실험실만 들락거렸지. 진짜 병원 안쪽 공기는 오늘 처음 마셔본다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "김규민",
+      "sprite": "default",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "야 윤모, 가운 안 입고 왔어?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "견학은 사복 가능이라 했잖아."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "와, 그랬구나."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "너 의외로 좀 차려입고 왔네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "무슨 차려입어. 단정하게만 입은 거지."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "단정한 거랑 차려입은 거랑 종이 한 장 차이야."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "표경민",
+      "sprite": "default",
+      "position": "left_back",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "표경민",
+      "text": "김규민 또 시작이네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "표경민",
+      "text": "가자, 시간 됐다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "본관 쪽에서 누군가 부랴부랴 뛰어오는 발소리."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "조나단",
+      "sprite": "default",
+      "position": "center_back",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "조나단",
+      "text": "헉, 늦었다 ㅋ"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "조나단",
+      "text": "다 모였네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네가 마지막."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "조나단",
+      "text": "알지 알지."
+    },
+    {
+      "type": "NARRATION",
+      "text": "본과 1학년 50명이 셔틀버스 두 대에 나눠 타고 동산병원으로 향한다."
+    },
+    {
+      "type": "BG",
+      "image": "bg_dongsan_lobby",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "김규민",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "표경민",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "조나단",
+      "transition": "fade"
+    },
+    {
+      "type": "NARRATION",
+      "text": "동산병원 로비. 학생들이 줄을 맞춰 가이드를 기다린다. 천장이 높고 채광이 환하다. 평일 오전이라 외래 환자들이 곳곳 의자에 앉아 있다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "의대 다닌다고 병원이 익숙해지진 않지."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "환자분들이 다 진짜 사람이라는 게 새삼스럽네."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "아직 적응 안 된다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "흰 가운 안으로 청록 스크럽이 살짝 비치는 30대 후반의 남자가 다가온다. 명찰: 남희석 / 내과 펠로우."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "남희석",
+      "text": "본과 1학년 견학생들이죠? 안녕하세요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "남희석",
+      "text": "오늘 가이드 맡은 내과 남희석 펠로우입니다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "남희석",
+      "text": "한 시간 정도 외래·병동 코스 같이 돌고, 의국 잠깐 보고 끝낼 거예요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "남희석",
+      "text": "가운 안 입은 만큼 환자 동선은 절대 침범하지 말고요. 같이 다닙시다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "남희석",
+      "text": "너무 긴장 마요. 견학이지 시험 아니니까."
+    },
+    {
+      "type": "NARRATION",
+      "text": "남희석이 앞장서서 외래 쪽 복도로 들어선다. 학생들이 그 뒤를 따른다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "펠로우라."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "전문의 따고 세부전공 들어가시는 자리지."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "30대 후반에 그게 끝이 아니고, 그 위로 아직 한참 남았고."
+    },
+    {
+      "type": "NARRATION",
+      "text": "외래 진료실 앞. 남희석이 학생들에게 멈추라는 손짓을 한다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "남희석",
+      "text": "여기서부턴 조용히. 외래 진료 중인 방들이에요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "남희석",
+      "text": "외래 동선은 환자→대기→진료실. 학생들은 동선 밖에서만 봐요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "남희석",
+      "text": "저쪽이 내과 외래. 진료 한 건당 평균 5분 안 됩니다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "조나단",
+      "text": "ㅋ 5분이라고요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "남희석",
+      "text": "한국 외래 현실이에요. 길게 보고 싶어도 다음 환자 대기열이 30명."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "표경민",
+      "text": "..."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "와... 5분이요."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "5분 안에 진단 + 처방 + 설명 + 다음 약속까지."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "본과 1학년 머리로는 가늠도 안 된다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "남희석",
+      "text": "자, 다음은 병동 쪽으로."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch03_02_serin_meet"
+    }
+  ],
+  "meta": {
+    "chapter": 3,
+    "time": "2026-04-06 morning"
+  }
+}

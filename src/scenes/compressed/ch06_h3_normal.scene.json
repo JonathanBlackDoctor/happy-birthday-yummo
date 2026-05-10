@@ -1,0 +1,137 @@
+{
+  "id": "ch06_h3_normal",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_anatomy_lab"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_sad",
+      "volume": 0.4,
+      "fade": 4
+    },
+    {
+      "type": "NARRATION",
+      "text": "2026년 6월 8일 월요일 오후 3시. 본과 1학년 생화학실험실 정기 점검 시간."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "한설",
+      "sprite": "default",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "의대 축제 주간 끝나고 한 주 시작. 6월 2일 산책로에 새벽 1시 실험실 분위기에서 한 발 거리 두고 정리된 모습이고."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "학생."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 선생님."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "6월 2일 산책로에 새벽 1시 실험실. (시선 잠깐 멈춤) 본인 모습 정리하는 시간 가졌고요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...학생, 저는 학생이랑은 좀 안 맞아요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 선생님. 그렇게 풀어주시는 한마디, 잘 받았습니다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "학생-조교 사이는 학생-조교 사이 그대로 가요. (시선 잠깐 멈춤) 본과 1학년 생화학실험실 조교에 본과 1학년 학생. 그 거리는 그 거리대로 자연스러워요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "박사 5년차 본업이 무게가 있고, 학생도 본과 1학년 본업이 있고요. 사람-사람으로 가는 건 그러니까... 음... 잠깐 빼두고요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 알겠습니다. (살짝 부드럽게) 학생-조교 사이로 다음 학기에도 잘 부탁드릴게요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "네, 학생도 다음 학기 본과 1학년 마무리 잘 하고요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "학생. 6월 2일 야식 정말 고마웠어요. 그 일은 그 일대로 마음에 두고 갈게요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 감사합니다. 선생님도 박사 5년차 마무리 무리 마세요."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "한설",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤모",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "\"그 일은 그 일대로.\" 사람-사람으로 가는 건 잠깐 빼두고 학생-조교 사이만 그대로 가는 결정."
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.4,
+      "fade": 2
+    },
+    {
+      "type": "BG",
+      "image": "black"
+    },
+    {
+      "type": "NARRATION",
+      "text": "— 끝."
+    },
+    {
+      "type": "NARRATION",
+      "text": "**한설 노멀 엔딩 — 조교와 학생**"
+    },
+    {
+      "type": "ENDING",
+      "endingId": "END_H3_NORMAL"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-08 afternoon",
+    "activeHeroines": [
+      "H3"
+    ]
+  }
+}

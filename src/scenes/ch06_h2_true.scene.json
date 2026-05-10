@@ -1,0 +1,254 @@
+{
+  "id": "ch06_h2_true",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_dongdaegu_station"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_climax",
+      "volume": 0.6,
+      "fade": 4
+    },
+    {
+      "type": "NARRATION",
+      "text": "2026년 6월 27일 토요일 오전 11시. 동대구역 KTX 플랫폼. 6월 말 햇살이 조금 더 짙다. 부산행 KTX가 12시 정각 출발 예정. 윤하정이 부산 본가로 한 학기 만에 가는 날."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "smile",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "6월 말, 토요일 오전."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "윤하정이 부산 본가로 가는 날이다. KTX 12시 출발이라 11시까지 동대구역에서 만나기로 했고."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한 학기 끝나고 본가 처음 가는 거. 본인이 일정 늦게 알려준 게 좀 신경 쓰이긴 했지만."
+    },
+    {
+      "type": "NARRATION",
+      "text": "플랫폼 한쪽. 캐리어 한 개 옆에 윤하정이 서 있다. 평소 캐주얼인 니트 + 청바지에서 조금 가벼운 봄/여름용 셔츠 + 청바지로. 머리는 한쪽으로 단정히 묶어 둔 채."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤하정",
+      "sprite": "warm_smile",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "VIDEO",
+      "src": "video_true_hajeong"
+    },
+    {
+      "type": "CG",
+      "image": "cg_hajeong_true",
+      "cgId": "cg_hajeong_true"
+    },
+    {
+      "type": "NARRATION",
+      "text": "동대구역 KTX 플랫폼. 윤하정이 캐리어 옆에 서서 한 손을 잠깐 들고 있다. 햇살에 머리가 한 번 흩날리고, 평소 무표정에서 본 적 없는 따뜻한 미소가 입가에 닿아 있다. 캐리어 손잡이에 부산행 KTX 티켓이 한 장 끼워져 있다."
+    },
+    {
+      "type": "CG_HIDE"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "야."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "도착했어. 11시 정각."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "5분 늦게 와도 됐는데."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "정시 도착이 맞지. 누가 나한테 정시 가르쳐 줬더라."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...뭐, 잘 챙겼네."
+    },
+    {
+      "type": "NARRATION",
+      "text": "두 사람이 플랫폼 한쪽 벤치에 잠깐 앉는다. 플랫폼 지붕 끝에서 6월 햇살이 비스듬히 떨어진다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "부산 본가 한 학기 만이지."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "어. 작년 12월 이후 처음."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "본가 가면 엄마 첫 마디가 뭐였더라. \"딸 살이 좀 빠졌네\" 그게 첫 마디일 거야."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "시험기간 도서관 5일에 좀 빠졌으니까."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "좀이 아니라 좀 많이 빠졌지. 정확히는."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "정확히는 또 나왔다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...그건 평생 안 빠질 거 같아."
+    },
+    {
+      "type": "NARRATION",
+      "text": "잠깐 침묵. 플랫폼 끝에서 KTX 진입 알림 방송이 한 번 들린다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "야."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...여름방학 끝나고 보자."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "본과 2학년 시작하면 한 학기 더 빡세다고 하더라. 같이 견디는 식으로 가자."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어. 같이 가자."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...그리고."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "부산 한 번 와줘. 본가 아니라 그냥 부산. 여름방학 중간 즈음이면 좋겠고."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "그래. 갈게."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "부산 한 번 와줘."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한 학기 동안 한 번도 꺼내지 않던 진심을 옥상에서 처음 흘렸고, KTX 플랫폼에서 한 마디 더 보탰다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한 학기를 같이 보낸 사람. 그리고 다음 학기도."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "카데바 앞에서 손 떨리던 거, 그때 옆에 있어 줬던 게 시작이었다. 그 무게를 같이 견딘 사이니까."
+    },
+    {
+      "type": "NARRATION",
+      "text": "KTX가 플랫폼에 진입한다. 윤하정이 캐리어를 한 손으로 잡고 잠깐 자세를 잡는다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "갈게. 윤모."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어. 잘 다녀와."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤하정이 KTX 안으로 잠깐 들어간다. 캐리어를 끌고 가는 뒷모습이 한 번 더 잠깐 멈췄다 다시 움직인다. 차창 너머로 한 손을 한 번 흔들어 준다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤하정",
+      "sprite": "warm_smile",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_climax",
+      "volume": 0.7,
+      "fade": 2
+    },
+    {
+      "type": "NARRATION",
+      "text": "화면이 천천히 살짝 따뜻한 분위기로 페이드 아웃한다. 플랫폼 끝까지 햇살이 길게 늘어진다."
+    },
+    {
+      "type": "BG",
+      "image": "black"
+    },
+    {
+      "type": "NARRATION",
+      "text": "— 끝."
+    },
+    {
+      "type": "NARRATION",
+      "text": "**윤하정 트루 엔딩 — 동기의 봄**"
+    },
+    {
+      "type": "ENDING",
+      "endingId": "END_H2_TRUE"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-27 morning",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

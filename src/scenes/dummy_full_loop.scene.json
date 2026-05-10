@@ -1,0 +1,46 @@
+{
+  "id": "dummy_full_loop",
+  "meta": {
+    "chapter": "test",
+    "time": "W4 skeleton verification"
+  },
+  "commands": [
+    { "type": "BG", "image": "bg_yunmo_room", "transition": "fade" },
+    { "type": "BGM", "track": "bgm_daily", "fade": 2, "volume": 0.5 },
+    {
+      "type": "CHARACTER",
+      "id": "yunmo",
+      "sprite": "yunmo_default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "speakerId": "yunmo",
+      "text": "더미 씬. 텍스트 → 선택지 → 분기 → 카톡 → 엔딩 placeholder 풀 루프 검증."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "엔진 스켈레톤 잘 도는지 본다."
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "카톡 분기로 진행",
+          "effects": [
+            { "type": "FLAG_INC", "key": "H4", "delta": 5 },
+            { "type": "KEY_CHOICE", "heroine": "H4", "choiceId": "dummy_pick_kakao" }
+          ],
+          "next": "dummy_full_loop_kakao"
+        },
+        {
+          "text": "단독 엔딩으로 점프",
+          "next": "dummy_full_loop_ending"
+        }
+      ]
+    }
+  ]
+}

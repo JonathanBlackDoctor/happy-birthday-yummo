@@ -1,0 +1,26 @@
+{
+  "id": "prologue_02b_positive",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_prologue_tone",
+      "value": "positive"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "본과는 빡세겠지만 재밌을 거다. 어차피 시작했고, 어차피 가야 할 길이고."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "prologue_02_after_choice"
+    }
+  ],
+  "meta": {
+    "chapter": 0,
+    "time": "2026-02-28 day",
+    "activeHeroines": [
+      "mom"
+    ]
+  }
+}

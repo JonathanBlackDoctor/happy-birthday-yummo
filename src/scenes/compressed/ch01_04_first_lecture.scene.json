@@ -1,0 +1,226 @@
+{
+  "id": "ch01_04_first_lecture",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_lecture_day",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.5,
+      "fade": 2
+    },
+    {
+      "type": "NARRATION",
+      "text": "다음 날 오전. 본과 1학년 첫 정식 강의."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤하정",
+      "sprite": "default",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "어, 옆자리."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 5조라고 했잖아."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...그러네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "교수",
+      "text": "자, 본과 1학년 시작 안내합니다. 핵심부터 갑시다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "교수",
+      "text": "해부학 실습은 3월 중순. 정확히 3월 16일부터, 첫날엔 묵념하고 시작합니다. 흰 가운, 마스크 필수."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "카데바 실습. 듣기만 해도 공기가 무거워진다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "교수",
+      "text": "오늘은 안내까지. 다음 시간부터 본격 강의. 질문 있으면 끝나고."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤하정이 노트북을 닫으려는 순간 살짝 고개를 숙이며 앞머리가 흘러내린다."
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_comic",
+      "volume": 0.4,
+      "fade": 1
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "perv",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "...어. 앞머리.",
+      "subtype": "perv_start"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "만약에 저 머리가 더 길어서 노트북 위로 흘러내리고, 윤하정이 무심코 손으로 쓸어 올리는 그 순간에, 마침 옆자리에 있는 게 나라서 시선이 자연스럽게 마주친다면...",
+      "subtype": "perv_start"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "평소 무뚝뚝하던 표정이 살짝 풀어지면서, 입꼬리 끝이 슬며시 올라가는 모습이 보일지도 모르고...",
+      "subtype": "perv_start"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "recover",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "아 진짜. 본과 1학년 둘째 날부터 뭐 하냐 너.",
+      "subtype": "self_aware"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "옆자리 사람한테 무슨 짓이야.",
+      "subtype": "self_aware"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "정신 차려라 구윤모.",
+      "subtype": "self_aware"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.5,
+      "fade": 1
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "노트북. 노트북만 보자.",
+      "subtype": "recover"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "카데바 안내 머릿속에 다시 정리.",
+      "subtype": "recover"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤하정",
+      "sprite": "smile_small",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "야."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "...어?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "너 표정 좀 굳었던데. 카데바 들어서 그래?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어 뭐... 좀."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "다들 그래. 첫날엔."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "너도 표정 굳었던데."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "그건 정확히는 집중한 거였거든?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "응, 알겠어."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤하정",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "살았다. 윤하정한텐 이렇게 받아쳐 주면 되네."
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch01_05_cafe"
+    }
+  ],
+  "meta": {
+    "chapter": 1,
+    "time": "2026-03-03 morning",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

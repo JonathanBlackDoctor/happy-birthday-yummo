@@ -1,0 +1,12 @@
+{
+  "id": "dummy_full_loop_ending",
+  "meta": { "chapter": "test", "time": "W4 ending verification" },
+  "commands": [
+    { "type": "BGM", "track": "bgm_main_theme", "fade": 4, "volume": 0.6 },
+    {
+      "type": "NARRATION",
+      "text": "여름방학이 시작되었다."
+    },
+    { "type": "ENDING", "endingId": "END_SOLO_SUMMER" }
+  ]
+}

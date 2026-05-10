@@ -1,0 +1,45 @@
+{
+  "id": "ch06_h5_02b_help_quick",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h5_event",
+      "value": "help_quick"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 30분만이지. 도와줄게."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "헉 감사해요! 그럼 풍선 정리 같이 시작해요!"
+    },
+    {
+      "type": "NARRATION",
+      "text": "두 사람이 풍선 정리를 시작한다. 분위기는 자연스러운데, 한 단계 더 풀린 무게는 아니다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "무난하게 받았다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "의예과 회원들이 본과 한 명 와줘서 신난다는 그 무게를, 한 번 더 풀어 받았어도 좋았을 텐데."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h5_02_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-03 afternoon",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

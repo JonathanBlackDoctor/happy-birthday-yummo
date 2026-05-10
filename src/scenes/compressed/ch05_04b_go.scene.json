@@ -1,0 +1,63 @@
+{
+  "id": "ch05_04b_go",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_mt",
+      "value": "go"
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "구윤모",
+          "text": "ㄱ"
+        },
+        {
+          "sender": "김규민",
+          "text": "ㅇㅋ"
+        },
+        {
+          "sender": "조나단",
+          "text": "ㄱㄱ"
+        },
+        {
+          "sender": "김규민",
+          "text": "승보 형 + 서윤 누나도 합류"
+        },
+        {
+          "sender": "김규민",
+          "text": "윤영도 의예과 라인 ㄱ"
+        },
+        {
+          "sender": "김규민",
+          "text": "한설 선생님 잠깐 들리신다 함"
+        },
+        {
+          "sender": "김규민",
+          "text": "차세린 선생님은 미정"
+        },
+        {
+          "sender": "조나단",
+          "text": "풍년이네 진짜"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "다섯 명 중 네 명은 확정. 차세린 선생님이 미정이라는 건, 동산병원 일정에 달렸다는 뜻이고."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch05_05_mt_pension"
+    }
+  ],
+  "meta": {
+    "chapter": 5,
+    "time": "2026-05-13 evening",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

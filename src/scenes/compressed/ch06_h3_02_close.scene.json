@@ -1,0 +1,80 @@
+{
+  "id": "ch06_h3_02_close",
+  "commands": [
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "학생."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "오늘 저녁 실험실 들어가야 하는데, 늦게까지 데이터 정리할 예정이에요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "그러시구나. 오늘 박사 5년차 챕터가 또 길어지시네요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...그러니까... 음... 길어지긴 할 건데. 새벽까진 가지 않을 것 같아요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "학생. (시선 잠깐 멈춤) ...오늘 도서관에서 늦게까지 있을 거예요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 11시 정도까지요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "그러면 도서관 가는 길에 생화학실험실 한 번 들러도 돼요. 학생이 늦게까지 본업 챙기는 길에 머리 식히는 시간 있어도 좋을 것 같아서요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 그럼 11시쯤 들를게요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...네. 그래요."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "한설",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤모",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h3_03_late_night_lab"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-02 evening",
+    "activeHeroines": [
+      "H3"
+    ]
+  }
+}

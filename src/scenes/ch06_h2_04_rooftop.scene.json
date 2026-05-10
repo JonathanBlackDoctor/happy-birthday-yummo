@@ -1,0 +1,169 @@
+{
+  "id": "ch06_h2_04_rooftop",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_library_night",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_romantic",
+      "volume": 0.5,
+      "fade": 3
+    },
+    {
+      "type": "NARRATION",
+      "text": "같은 날 밤 11시. 본관 4층 도서관 옥상. 시험 끝난 다음 주라 옥상이 비어 있다. 옥상 난간 너머로 캠퍼스 야경 + 멀리 동성로 빛이 조금씩 깔린다. 6월 밤공기가 살짝 차다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤하정",
+      "sprite": "default",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "NARRATION",
+      "text": "두 사람이 옥상 난간 앞에 잠시 선다. 윤하정이 머리를 한 손으로 한 번 정리한다. 6월 밤바람이 머리카락을 잠깐 흩뿌린다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...야경이 이런 거구나."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "첫 야경?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "어. 도서관 안에만 있었으니까."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "본관 4층인데 한 단계 더 넓게 보이네."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤하정이 옅은 미소를 잠깐 보인다. 평소 무표정에서 본 적 없는 모습. 머리카락이 다시 흩날린다."
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_romantic",
+      "volume": 0.5,
+      "fade": 2
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "야경 분위기부터 같이 받아주는 게 먼저다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "옥상에서 꺼낼 말은 조금 더 무거우니까."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤하정이 시선을 야경에서 윤모 쪽으로 한 번 돌린다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "야."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "한 가지 할 말 있는데, 해도 돼?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "해."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...OT 때 너 처음 봤을 때부터, 신경 쓰였거든?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "5조 같이 배정 받은 거 듣고 잠깐 멈췄던 게, 그게 신경 쓰여서였고."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...뭐, 그게 한 학기의 시작이었어."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤하정이 시선을 야경 끝으로 다시 돌린다. 평소 안 하는 진심 한 마디를 꺼낸 직후의 모습."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "OT 때부터."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한 학기 동안 한 번도 꺼내지 않았던 진심을, 옥상 야경 앞에서 처음 흘렸다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "무뚝뚝하던 윤하정이 이렇게 풀어지는 모습 처음 본다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "잠깐 침묵. 6월 밤바람이 한 번 더 옥상 난간을 가로지른다."
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "너랑 있으면 머리가 멍해져",
+          "next": "ch06_h2_04b_honest",
+          "tone": "direct_friendly",
+          "isKey": true,
+          "descriptor": "ch6_h2_rooftop_honest"
+        },
+        {
+          "text": "나도 너 좋아해",
+          "next": "ch06_h2_04b_direct",
+          "tone": "direct_friendly"
+        },
+        {
+          "text": "친구로 좋은데?",
+          "next": "ch06_h2_04b_friend",
+          "tone": "warm_supportive"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-01 night, 11pm",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

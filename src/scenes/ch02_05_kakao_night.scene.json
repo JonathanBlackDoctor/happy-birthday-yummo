@@ -1,0 +1,264 @@
+{
+  "id": "ch02_05_kakao_night",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_studio_room",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_katalk",
+      "volume": 0.4,
+      "fade": 3
+    },
+    {
+      "type": "NARRATION",
+      "text": "같은 날 늦은 밤. 자취방. 윤모가 책상 등을 켜둔 채 침대에 누워 폰을 본다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "어제 카데바, 오늘 시약. 이제 본과 진짜 시작이다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "머리는 피곤한데 잠은 안 오네."
+    },
+    {
+      "type": "SFX",
+      "sound": "sfx_katalk_notify"
+    },
+    {
+      "type": "NARRATION",
+      "text": "5조 단톡방. \"본과 1학년 해부 5조\"."
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "오준혁",
+          "text": "윤모 살아 있냐"
+        },
+        {
+          "sender": "구윤모",
+          "text": "ㅇㅇ"
+        },
+        {
+          "sender": "구윤모",
+          "text": "살아는 있음"
+        },
+        {
+          "sender": "오준혁",
+          "text": "시약 좀 잘 잡고 다녀라 ㅋㅋ"
+        },
+        {
+          "sender": "이문규",
+          "text": "윤모 깬 거 옆 조도 봤던데"
+        },
+        {
+          "sender": "구윤모",
+          "text": "ㄷㄷ"
+        },
+        {
+          "sender": "구윤모",
+          "text": "소문 빠름"
+        },
+        {
+          "sender": "정욱",
+          "text": "다음 실험 누구랑 자리 바꿔야 할 듯"
+        },
+        {
+          "sender": "오준혁",
+          "text": "ㅋㅋㅋㅋ 정욱이 옆 가서 잡아주면 됨"
+        },
+        {
+          "sender": "정욱",
+          "text": "ㄴㄴㄴ"
+        },
+        {
+          "sender": "윤하정",
+          "text": "ㅋㅋ 됐고"
+        },
+        {
+          "sender": "윤하정",
+          "text": "조교님이 다 정리해주셨잖아"
+        },
+        {
+          "sender": "오준혁",
+          "text": "한설 조교님 진짜 침착하셨음"
+        },
+        {
+          "sender": "이문규",
+          "text": "ㅇㅇ"
+        },
+        {
+          "sender": "구윤모",
+          "text": "다음엔 안 깸"
+        },
+        {
+          "sender": "구윤모",
+          "text": "약속함"
+        },
+        {
+          "sender": "정욱",
+          "text": "약속을 깨면 안 되지"
+        },
+        {
+          "sender": "오준혁",
+          "text": "ㅋㅋㅋㅋㅋㅋㅋ 펀치"
+        },
+        {
+          "sender": "윤하정",
+          "text": "자라들 다"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "5조 분위기 좋다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "어제 같은 무게 함께 견딘 사이라 그런가."
+    },
+    {
+      "type": "SFX",
+      "sound": "sfx_katalk_notify"
+    },
+    {
+      "type": "NARRATION",
+      "text": "1:1 카톡방. \"윤하정\"에게서."
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "윤하정",
+          "text": "자?"
+        },
+        {
+          "sender": "구윤모",
+          "text": "깨어 있어"
+        },
+        {
+          "sender": "구윤모",
+          "text": "너도?"
+        },
+        {
+          "sender": "윤하정",
+          "text": "어"
+        },
+        {
+          "sender": "윤하정",
+          "text": "오늘 진짜 힘들었지"
+        },
+        {
+          "sender": "구윤모",
+          "text": "그러게"
+        },
+        {
+          "sender": "구윤모",
+          "text": "어제 + 오늘 두 콤보"
+        },
+        {
+          "sender": "윤하정",
+          "text": "어제 무거웠고 오늘 깨먹고"
+        },
+        {
+          "sender": "구윤모",
+          "text": "그건 좀 묻어줘라"
+        },
+        {
+          "sender": "윤하정",
+          "text": "못 묻어줌"
+        },
+        {
+          "sender": "윤하정",
+          "text": "근데 어제는 진짜"
+        },
+        {
+          "sender": "윤하정",
+          "text": "...너 옆에 있어줘서 덜 무서웠음"
+        },
+        {
+          "sender": "구윤모",
+          "text": "어"
+        },
+        {
+          "sender": "구윤모",
+          "text": "같이 가면 되는 거지"
+        },
+        {
+          "sender": "윤하정",
+          "text": "알겠어"
+        },
+        {
+          "sender": "윤하정",
+          "text": "자라"
+        },
+        {
+          "sender": "구윤모",
+          "text": "그래"
+        },
+        {
+          "sender": "구윤모",
+          "text": "너도"
+        }
+      ]
+    },
+    {
+      "type": "NARRATION",
+      "text": "카톡방을 닫는다. 한참 천장을 본다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "윤하정이 저 정도 말하기까지 쉽지 않았을 거다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "본인 입으로 \"덜 무서웠음\"이라고 했다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "...됐다.",
+      "subtype": "normal"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "smile",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch02_06_close"
+    }
+  ],
+  "meta": {
+    "chapter": 2,
+    "time": "2026-03-17 night",
+    "activeHeroines": [
+      "H2",
+      "H3"
+    ]
+  }
+}

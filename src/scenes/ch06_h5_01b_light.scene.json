@@ -1,0 +1,72 @@
+{
+  "id": "ch06_h5_01b_light",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h5_open",
+      "value": "light"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "너 너무 직진하잖아. 한 시간 쉬는 거면 너희 부스부터 챙겨야지."
+    },
+    {
+      "type": "NARRATION",
+      "text": "장윤영이 잠깐 멈춘다. 응원 막대를 든 손이 약간 내려간다. 평소의 활기에서 살짝 가라앉은 표정."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "장윤영",
+      "sprite": "pout",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "어... 동아리 쉬는 시간 맞는데요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "그래도 선배 응원하러 온 거니까 잠깐만요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 미안. 분위기 못 맞췄네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "괜찮아요!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "응원 짧게만 하고 의예과 부스로 돌아갈게요."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "분위기 못 맞춘 거."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "직진을 직진으로 받아주는 게 우선이었는데, 후배라는 거리감을 잔소리로 흔들어 버렸다."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h5_01_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-01 afternoon",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

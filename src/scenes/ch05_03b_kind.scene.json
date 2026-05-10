@@ -1,0 +1,72 @@
+{
+  "id": "ch05_03b_kind",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h5_late_kakao",
+      "value": "kind"
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "구윤모",
+          "text": "윤영아"
+        },
+        {
+          "sender": "구윤모",
+          "text": "지금 자야 돼"
+        },
+        {
+          "sender": "구윤모",
+          "text": "너도 자"
+        },
+        {
+          "sender": "구윤모",
+          "text": "술 한 잔 더 한 거 내일 후회한다"
+        },
+        {
+          "sender": "장윤영",
+          "text": "헉"
+        },
+        {
+          "sender": "장윤영",
+          "text": "선배 진짜 챙기시네요 🥹"
+        },
+        {
+          "sender": "장윤영",
+          "text": "알겠어요 잘게요"
+        },
+        {
+          "sender": "장윤영",
+          "text": "선배도 잘 자요!"
+        },
+        {
+          "sender": "장윤영",
+          "text": "답장 받은 거 진짜 감사해요"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "다정하게 단호한 게 맞긴 했지."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "술 카톡 길어지면 본인이 다음 날 더 부담스러우니까."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch05_03_close"
+    }
+  ],
+  "meta": {
+    "chapter": 5,
+    "time": "2026-05-12 dawn",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

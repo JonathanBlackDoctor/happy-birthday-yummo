@@ -1,0 +1,219 @@
+{
+  "id": "ch06_h4_04_date",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_dongseong_street",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_romantic",
+      "volume": 0.5,
+      "fade": 3
+    },
+    {
+      "type": "NARRATION",
+      "text": "6월 13일 토요일 오후 3시. 동성로. 약대 시험 마지막 주가 끝나고 다음 날."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "약속 시간 5분 전. 시크한 분이니까 정시에 정확히 오시겠지."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "나서윤",
+      "sprite": "outfit_date",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "CG",
+      "image": "cg_seoyoon_date",
+      "cgId": "cg_seoyoon_date"
+    },
+    {
+      "type": "NARRATION",
+      "text": "동성로 카페 앞. 나서윤이 베이지 코트에 미니 원피스 차림으로 한 손엔 미니 가방. 햇살이 옆모습에 닿아 어른스러운 분위기와 미세한 따뜻함이 같이 얹혀 있다."
+    },
+    {
+      "type": "CG_HIDE"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나서윤",
+      "text": "윤모씨, 안녕하세요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "안녕하세요. 시험 마지막 주 잘 끝내셨어요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나서윤",
+      "text": "네, 어제 마지막 과목 끝났어요. 답장 빠르게 받아주셨던 거 한 번 더 고마웠어요. 시험기간에 카톡 답장 빠른 사람이 진짜 드물거든요."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "\"답장 빠르게 받아주셨던 거.\" 카톡 답장이 그쪽한테도 무겁게 보였구나."
+    },
+    {
+      "type": "FLAG_INC",
+      "key": "H4",
+      "delta": 5
+    },
+    {
+      "type": "BG",
+      "image": "bg_campus_cafe",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_romantic"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "나서윤",
+      "sprite": "outfit_date",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "left",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나서윤",
+      "text": "카페 고르신 거 무난하네요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "무난한 게 안전하니까요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나서윤",
+      "text": "안전한 거 좋아하는 분이세요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "첫 데이트 자리에선 안전한 게 맞다고 들었어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나서윤",
+      "text": "누구한테요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "김규민이라는 동기인데, 본인은 안전한 것만 골라서 항상 비통한 솔로라고 자칭하는 친구예요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나서윤",
+      "text": "비통한 솔로. 표현 신선하네요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나서윤",
+      "text": "시험 끝나고 한 학기 마무리하는 자리가 처음이에요. 약대는 학년별 분위기가 단단해서 본격 만남 잘 안 가요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "그러시구나. 그럼 오늘은."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나서윤",
+      "text": "오늘은 한 학기 끝낸 인사 자리."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한 학기 끝낸 인사 자리. 정식 연인 직전 단계 같은 자리."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나서윤",
+      "text": "윤모씨, 한 가지 묻고 싶은 게 있는데요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 말씀하세요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나서윤",
+      "text": "본과 1학년 한 학기 끝낸 입장으로, 6년 의대 본격 들어간 게 어떠세요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나서윤",
+      "text": "약대 4학년이 다 끝나가는 시점이라, 6년 끝낸 입장에서 본과 1학년 마음 한 번 들어보고 싶어서요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "저는... 한 학기 동안 한 사람씩 만나면서 그 한 학기가 한 학기 같지 않게 길게 느껴졌어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "6년이라는 게 길긴 긴데, 학기 단위로 나눠 보면 견딜 만한 흐름이지 싶고요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나서윤",
+      "text": "그 마음 잘 받아요. 저도 4년 끝나가니까 학기 단위로 나눈 게 맞았다고 한 번씩 새기는 중이에요."
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "시간 내주셔서 감사해요, 무리 안 할 자리로 잡았어요",
+          "next": "ch06_h4_04b_distance",
+          "tone": "warm_supportive",
+          "isKey": true,
+          "descriptor": "ch6_h4_distance",
+          "mechanism": "h4_facing_key"
+        },
+        {
+          "text": "한 번 더 봬도 될까요",
+          "next": "ch06_h4_04b_direct",
+          "tone": "direct_friendly"
+        },
+        {
+          "text": "한 잔 더 하고 저녁까지 같이 가요",
+          "next": "ch06_h4_04b_push",
+          "tone": "bright_forward"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-13 saturday afternoon",
+    "activeHeroines": [
+      "H4"
+    ]
+  }
+}

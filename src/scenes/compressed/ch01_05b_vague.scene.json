@@ -1,0 +1,54 @@
+{
+  "id": "ch01_05b_vague",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_friend_joke",
+      "value": "vague"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "...글쎄."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "와."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "글쎄 뭐 글쎄."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "조나단",
+      "text": "또 글쎄."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "조나단",
+      "text": "윤모 답변 항상 짧음."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "표경민",
+      "text": "글쎄가 답이면 글쎄지."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch01_05_close"
+    }
+  ],
+  "meta": {
+    "chapter": 1,
+    "time": "2026-03-03 afternoon",
+    "activeHeroines": [
+      "gyumin",
+      "gyeongmin",
+      "nathan",
+      "junhyuk"
+    ]
+  }
+}

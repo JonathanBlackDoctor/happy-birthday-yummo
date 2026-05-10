@@ -1,0 +1,62 @@
+{
+  "id": "ch06_h3_03_close",
+  "commands": [
+    {
+      "type": "NARRATION",
+      "text": "한설이 안경을 한 손에 잡는다. 책상 위 데이터 노트를 정리하는 손."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "학생, 오늘 야식 정말 고마워요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 선생님도 마무리 천천히 하시고 무리 마세요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...자취방 잘 가요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 들어가세요."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "한설",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤모",
+      "transition": "fade"
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 실험실 문을 닫고 복도로 나선다. 형광등 불빛이 깜빡거리는 빈 복도. 새벽 1시 30분."
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "BG",
+      "image": "black"
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h3_04_evaluate"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-03 dawn 1am",
+    "activeHeroines": [
+      "H3"
+    ]
+  }
+}

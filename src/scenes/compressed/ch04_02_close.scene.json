@@ -1,0 +1,52 @@
+{
+  "id": "ch04_02_close",
+  "commands": [
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "저는 의국 들어갈게요. 학생도 도서관 가서 잘 마무리해요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 살펴 가세요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "그럴게요. 학생도 화이팅."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "차세린",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "차 선생님 저렇게 풀어져 있는 모습 처음 본다. 30분 머그잔 한 잔이 저분한텐 진짜 쉬는 시간이구나."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch04_03_lab_late"
+    }
+  ],
+  "meta": {
+    "chapter": 4,
+    "time": "2026-04-28 dawn",
+    "activeHeroines": [
+      "H1"
+    ]
+  }
+}

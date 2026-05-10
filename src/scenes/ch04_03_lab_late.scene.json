@@ -1,0 +1,184 @@
+{
+  "id": "ch04_03_lab_late",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_biochem_lab_night",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.4,
+      "fade": 2
+    },
+    {
+      "type": "NARRATION",
+      "text": "4월 28일 화요일 밤 11시. 본관 4층 생화학 실험실. 평일 야간이라 대부분 비어 있고, 시약장 너머 한쪽 책상에만 약한 책상 빛이 새어 나온다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "생화학 시험 공부에 그 실습 자료 한 부가 필요한데."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "도서관 자료실에서는 안 빌려준다고 해서 직접 실험실로 올라왔다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한설 선생님 방. 실험실 옆이지."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "새벽 11시에 박사과정 선생님 방 노크하는 게 좀 죄송하긴 한데, 시험 직전이라 어쩔 수 없고."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 실험실 문을 살짝 열고 안을 살핀다. 시약 진열대 너머, 한쪽 책상에 한설이 앉아 있다. 안경을 책상 위에 벗어두고 두 손으로 관자놀이를 누른 채 잠깐 눈을 감고 있다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "한설",
+      "sprite": "outfit_lab_late",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "CG",
+      "image": "cg_seol_late_night",
+      "cgId": "cg_seol_late_night"
+    },
+    {
+      "type": "NARRATION",
+      "text": "빈 실험실. 한설이 책상 앞에서 안경을 벗고 잠깐 눈을 감고 있다. 가운 단추 하나가 풀려 있고, 평소 단정한 어른 분위기와 미세하게 다른 무방비 표정. 책상 한쪽에 식어버린 컵라면 한 개."
+    },
+    {
+      "type": "CG_HIDE"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "...",
+      "subtype": "normal"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "어. 한설 선생님 저렇게 쉬고 계시는 모습 처음 본다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "평소엔 안경 항상 끼고 가운 단정하게 입고 계시는데. 풀어져 계신 모습 보니까 묘하네."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "노크 두 번. 너무 갑자기 들어가지 말고."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 노크 두 번. 한설이 잠깐 자세를 잡으며 안경을 다시 끼고 가운 단추를 정리한다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "한설",
+      "sprite": "outfit_lab_late",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "들어와요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "선생님, 늦은 시간에 죄송합니다. 실험실 불 켜져 있길래 혹시나 해서 노크했어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "괜찮아요. 윤모 학생이지요. 시험 자료 빌리러 온 거예요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 생화학 실습 자료 한 부 부탁드리려고요. 도서관 자료실에선 안 빌려준다고 해서요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "오후에 단톡에 올렸는데 다들 못 받았다 하는 사람이 두엇 있었어요. 윤모 학생도 그 두엇 중 하나였나 보네요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "아, 죄송해요. 도서관에서 폰 보고 있던 게 다른 단톡이라서요. 한 시간에 한 번 정도 새로고침 하는 식이라 놓쳤습니다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "그럴 수 있어요. 시험기간엔 모두가 자기 단톡만 보고 있으니까요."
+    },
+    {
+      "type": "NARRATION",
+      "text": "한설이 자료 한 부를 꺼내 윤모에게 건넨다. 책상 위에 정리해 둔 자료가 다섯 부 정도 더 있는 게 보인다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "자, 한 부예요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...실은 여러 부 복사해놨어요. 시험 직전이니까 한두 명은 더 올 거라고 예상은 했고요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "정말 감사합니다. 선생님 손길 닿은 자료라 마음이 좀 든든하네요."
+    },
+    {
+      "type": "NARRATION",
+      "text": "한설이 다시 자세를 잡고 책상 앞에 앉는다. 책상 위 식어버린 컵라면이 시야에 들어온다."
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "선생님, 식사하셨어요?",
+          "next": "ch04_03b_meal",
+          "tone": "warm_supportive",
+          "isKey": true,
+          "descriptor": "ch4_meal"
+        },
+        {
+          "text": "조용히 자료만 챙기고 갈게요",
+          "next": "ch04_03b_quiet",
+          "tone": "direct_friendly"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 4,
+    "time": "2026-04-28 night",
+    "activeHeroines": [
+      "H3"
+    ]
+  }
+}

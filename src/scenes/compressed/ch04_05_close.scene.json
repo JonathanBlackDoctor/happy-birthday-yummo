@@ -1,0 +1,30 @@
+{
+  "id": "ch04_05_close",
+  "commands": [
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "첫 카톡 시작. 답장 좀 늦으면 어색해하시는 분인 듯하다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "친구 단톡 쓰던 식이랑 분리해서 가는 것도 더 신경 쓰자."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch04_06_yuna_morning"
+    }
+  ],
+  "meta": {
+    "chapter": 4,
+    "time": "2026-04-29 night",
+    "activeHeroines": [
+      "H4"
+    ]
+  }
+}

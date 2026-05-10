@@ -1,0 +1,207 @@
+{
+  "id": "ch06_h2_01_festival_booth",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_kmu_main",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.5,
+      "fade": 2
+    },
+    {
+      "type": "NARRATION",
+      "text": "2026년 6월 1일 월요일 오후 3시. 의대 본관 앞 광장. 축제 주간 첫날. 5조가 부스 운영 메인."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "의대 축제 주간 첫날. 본과 1학년이 부스 메인을 맡는다고 했을 때 좀 의외였는데, 결국 우리 5조가 운영을 맡게 됐다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤하정",
+      "sprite": "default",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "야, 윤모. 늦었네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "5분 전인데?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "5분 전 = 늦은 거. 부스 시작 시간이 3시야."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "알겠어. 다음부턴 10분 전."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "그래 그게 맞지."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "오준혁",
+      "sprite": "default",
+      "position": "right_back",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "오준혁",
+      "text": "윤모 형, 안녕하세요!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "이문규",
+      "text": "윤하정 또 시작ㅋㅋ"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "시작이 아니라 정시야 정시."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "오준혁",
+      "text": "5조 부스 운영 빡세겠다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "빡세긴 한데 재밌네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "정욱",
+      "text": "풍선 받아왔어."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 정욱 수고했어. 둘이 같이 다는 게 빠르지. 같이 하자."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...풍선 다는 건 구도가 중요해. 부스 들어오는 사람 시선이 위로 가는 각도. 너무 위에 있으면 안 보이고, 너무 아래면 시야 가린다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "정욱",
+      "text": "와 윤하정 정확하네ㅋㅋ"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "그건 정확히는 정확한 게 아니라 부스 운영 기본이지. 학생회 부스 운영 매뉴얼 봤거든?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "알겠어. 시야 안 가리는 높이로."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "윤하정 그대로네. \"그건 정확히는\"도 그대로고."
+    },
+    {
+      "type": "FLAG_INC",
+      "key": "H2",
+      "delta": 5
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤하정",
+      "sprite": "serious",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "윤모. 부스 운영 첫날인데 5조 다섯 명 다 시간 내준 거, 잘 챙겨야 해."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "정욱 풍선 가져오느라 어제 1시간 늦게 잤다고 단톡에 흘렸더라."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 그래?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...뭐, 너 과대니까 그 정도는 알아두라고."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "정작 본인은 챙기는 모습을 단답으로만 흘리시고."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...뭐, 알면 됐어."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "알겠어. 5조 다섯 명 챙겨가면서 부스 굴려볼게."
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "5조 든든해, 디테일 챙겨줘서 고마워",
+          "next": "ch06_h2_01b_thanks",
+          "tone": "direct_friendly",
+          "isKey": true,
+          "descriptor": "ch6_h2_booth_team"
+        },
+        {
+          "text": "어, 부스 잘 굴리자",
+          "next": "ch06_h2_01b_quick",
+          "tone": "direct_friendly"
+        },
+        {
+          "text": "윤하정 너 너무 빡세게 안 가도 돼ㅋㅋ",
+          "next": "ch06_h2_01b_light",
+          "tone": "playful_casual"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-01 afternoon",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

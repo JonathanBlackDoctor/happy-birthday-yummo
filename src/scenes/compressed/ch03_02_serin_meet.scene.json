@@ -1,0 +1,230 @@
+{
+  "id": "ch03_02_serin_meet",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_dongsan_lobby"
+    },
+    {
+      "type": "NARRATION",
+      "text": "외래 한 바퀴 후, 단체가 병동 쪽으로 옮겨가는 길. 윤모는 화장실 표지를 보고 잠깐 빠져나간다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "잠시만요, 화장실 좀."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "남희석",
+      "text": "네, 갔다 와요. 이쪽이에요."
+    },
+    {
+      "type": "NARRATION",
+      "text": "볼 일을 마치고 돌아가려는데, 복도가 두 갈래로 나뉘는 지점에서 헷갈린다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "어. 이쪽이었나 저쪽이었나. ...일단 가보자."
+    },
+    {
+      "type": "BG",
+      "image": "bg_dongsan_hallway",
+      "transition": "fade"
+    },
+    {
+      "type": "NARRATION",
+      "text": "의국 복도. 흰 가운이 분주히 오가는 공간."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "여기 학생이 들어와도 되는 데가 맞나.",
+      "subtype": "normal"
+    },
+    {
+      "type": "NARRATION",
+      "text": "그 순간, 옆 사무실 문이 열리며 흰 가운을 입은 여자가 차트를 든 채 빠른 걸음으로 걸어 나온다. 두 사람이 코앞에서 부딪힐 뻔하다 가까스로 멈춘다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "차세린",
+      "sprite": "default",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "VIDEO",
+      "src": "video_meet_serin"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "...아."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "죄송합니다, 길을 잃어서요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "학생, 견학생이죠?"
+    },
+    {
+      "type": "CG",
+      "image": "cg_serin_first_meet",
+      "cgId": "cg_serin_first_meet"
+    },
+    {
+      "type": "NARRATION",
+      "text": "의국 복도. 차세린이 부드럽게 미소 짓는다. 흰 가운 안으로 비치는 청록 스크럽, 단정한 미디엄 헤어. 표정 한구석에 옅은 피로가 깔려 있다."
+    },
+    {
+      "type": "CG_HIDE"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "진짜... 어른이시다."
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_comic",
+      "volume": 0.4,
+      "fade": 1
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "perv",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "...어. 가운 안에 청록 스크럽.",
+      "subtype": "perv_start"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "만약에 누나가 야간 당직 끝나고 의국 소파에서 잠깐 잠들어 계시는데, 식어버린 머그잔이 옆에 놓인 채 평온하게 쉬고 계신 모습을 마침 옆에서 보게 된다면...",
+      "subtype": "perv_start"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "그 어른스러운 표정이 풀어진 모습을 처음 보게 될 수도 있고.",
+      "subtype": "perv_start"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "recover",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "아 진짜. 처음 본 사람 앞에서 뭐 하냐 너.",
+      "subtype": "self_aware"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "누나는 차트 들고 일하러 가시는 분이고, 너는 길 잃은 견학생이고.",
+      "subtype": "self_aware"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "정신 차려라 구윤모.",
+      "subtype": "self_aware"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.5,
+      "fade": 1
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "길 묻기. 길만 묻기. 정중하게.",
+      "subtype": "recover"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "학생? 괜찮아요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "아, 죄송합니다. 잠깐 멍했습니다. 견학 중에 길을 잘못 들었습니다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "의국 복도까지 들어왔으면 잘못 든 게 맞네요. 본과 1학년이죠? 표정에 써 있어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 본과 1학년입니다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "단체는 지금 병동 쪽이에요. 이 복도 끝에서 오른쪽이고요. ...같이 가요. 저도 그쪽으로 가는 길이라."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "아, 감사합니다."
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "공부 열심히 할게요",
+          "next": "ch03_02b_serious",
+          "tone": "mature_serious",
+          "isKey": true,
+          "descriptor": "ch3_first_intro"
+        },
+        {
+          "text": "오늘 견학 잘 부탁드립니다",
+          "next": "ch03_02b_casual",
+          "tone": "warm_supportive"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 3,
+    "time": "2026-04-06 morning, dongsan hospital",
+    "activeHeroines": [
+      "H1"
+    ]
+  }
+}

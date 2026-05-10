@@ -1,0 +1,51 @@
+{
+  "id": "ch03_06_close",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_studio_room"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_main_theme",
+      "volume": 0.5,
+      "fade": 4
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 책상 등을 끄고 침대로 향한다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "본과 1학년 5주 차. 카데바, 시약, 그리고 오늘은 동산병원까지."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "7살 위 어른의 미소, 2살 어린 후배의 환한 인사. 이걸 같은 날에 다 봤네."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "다음 주는 시험이라 했지. 일단 자자."
+    },
+    {
+      "type": "NARRATION",
+      "text": "— 끝 → Ch.4 \"도서관\""
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch04_01_library_late"
+    }
+  ],
+  "meta": {
+    "chapter": 3,
+    "time": "2026-04-06 night",
+    "activeHeroines": [
+      "H1",
+      "H2",
+      "H5"
+    ]
+  }
+}

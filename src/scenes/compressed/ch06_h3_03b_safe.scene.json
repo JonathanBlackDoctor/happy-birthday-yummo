@@ -1,0 +1,36 @@
+{
+  "id": "ch06_h3_03b_safe",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h3_late_night",
+      "value": "safe"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "선생님 풀어진 모습 의외로 자연스러우세요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...어, 네. (잠시) 그러니까... 음... 새벽 1시 실험실 분위기가 자연스럽다는 거 처음 들어보고요. ...그렇게 받아주니까 마음이 가벼워지긴 하네요."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "정중하게 받아드린 셈."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h3_03_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-03 dawn 1am",
+    "activeHeroines": [
+      "H3"
+    ]
+  }
+}

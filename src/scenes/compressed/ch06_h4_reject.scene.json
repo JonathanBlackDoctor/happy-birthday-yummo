@@ -1,0 +1,63 @@
+{
+  "id": "ch06_h4_reject",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "black"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_sad",
+      "volume": 0.6,
+      "fade": 4
+    },
+    {
+      "type": "SFX",
+      "sound": "sfx_katalk_notify"
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "나서윤",
+          "text": "답장이 너무 늦어서 미안해ㅠㅠ",
+          "preTyping1": 1000,
+          "prePause": 600,
+          "preTyping2": 800
+        },
+        {
+          "sender": "나서윤",
+          "text": "그날 만나서 얘기하고 시간 잘 보냈는데",
+          "preTyping1": 600
+        },
+        {
+          "sender": "나서윤",
+          "text": "더 진행하기엔 무리가 있을거 같아..",
+          "prePause": 600,
+          "preTyping2": 500
+        },
+        {
+          "sender": "나서윤",
+          "text": "좋은 인연 만나길 바랄게 🥺🥺",
+          "preTyping1": 800,
+          "prePause": 1000,
+          "preTyping2": 3000
+        }
+      ],
+      "mode": "dm",
+      "heroine": "H4",
+      "unreadFadeMs": 400
+    },
+    {
+      "type": "ENDING",
+      "endingId": "END_H4_REJECT"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-14 morning",
+    "activeHeroines": [
+      "H4"
+    ]
+  }
+}

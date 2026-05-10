@@ -1,0 +1,255 @@
+{
+  "id": "ch01_03_kakao_evening",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_studio_room",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_katalk",
+      "volume": 0.4,
+      "fade": 3
+    },
+    {
+      "type": "NARRATION",
+      "text": "같은 날 저녁. 자취방."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "OT 끝나고 누우니까 진짜 피곤하네."
+    },
+    {
+      "type": "SFX",
+      "sound": "sfx_katalk_notify"
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "김규민",
+          "text": "윤모 OT 인사 ㄷㄷ"
+        },
+        {
+          "sender": "김규민",
+          "text": "\"길게 안 끌고요\" ㅋㅋㅋㅋㅋㅋ"
+        },
+        {
+          "sender": "조나단",
+          "text": "ㄹㅇㅋㅋ 너답더라"
+        },
+        {
+          "sender": "구윤모",
+          "text": "ㅇㅇ"
+        },
+        {
+          "sender": "구윤모",
+          "text": "즉흥이라 했잖아"
+        },
+        {
+          "sender": "김규민",
+          "text": "학생회 누나 표정이 \"이게 뭐야\" 였음"
+        },
+        {
+          "sender": "조나단",
+          "text": "ㅋㅋㅋㅋㅋ 진짜?"
+        },
+        {
+          "sender": "구윤모",
+          "text": "ㄷㄷ"
+        },
+        {
+          "sender": "구윤모",
+          "text": "몰랐네"
+        },
+        {
+          "sender": "표경민",
+          "text": "짧은 게 나아"
+        },
+        {
+          "sender": "표경민",
+          "text": "길어지면 사고남"
+        },
+        {
+          "sender": "김규민",
+          "text": "표경민 또 옳은 말"
+        },
+        {
+          "sender": "조나단",
+          "text": "ㅋㅋㅋㅋ"
+        },
+        {
+          "sender": "김규민",
+          "text": "윤모 5조 누구누구임?"
+        },
+        {
+          "sender": "구윤모",
+          "text": "윤하정 오준혁 이문규 정욱"
+        },
+        {
+          "sender": "김규민",
+          "text": "오준혁?"
+        },
+        {
+          "sender": "김규민",
+          "text": "그 이름 남자 같은데"
+        },
+        {
+          "sender": "구윤모",
+          "text": "여자임"
+        },
+        {
+          "sender": "김규민",
+          "text": "ㄷㄷㄷ"
+        },
+        {
+          "sender": "조나단",
+          "text": "와ㅋㅋㅋㅋ 다들 헷갈리는듯"
+        },
+        {
+          "sender": "표경민",
+          "text": "너네 진짜 실례임"
+        },
+        {
+          "sender": "김규민",
+          "text": "미안ㅋㅋ"
+        },
+        {
+          "sender": "김규민",
+          "text": "윤하정은?"
+        },
+        {
+          "sender": "김규민",
+          "text": "들어본 적 없는데"
+        },
+        {
+          "sender": "구윤모",
+          "text": "부산이라던데"
+        },
+        {
+          "sender": "구윤모",
+          "text": "얌전함"
+        },
+        {
+          "sender": "조나단",
+          "text": "윤모 벌써 파악"
+        },
+        {
+          "sender": "김규민",
+          "text": "과대모드 ㅋㅋㅋㅋ"
+        },
+        {
+          "sender": "구윤모",
+          "text": "ㄴㄴ"
+        },
+        {
+          "sender": "구윤모",
+          "text": "그냥 첫인사"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "다들 너무 일찍 들이댄다. 본과 시작 첫날인데."
+    },
+    {
+      "type": "SFX",
+      "sound": "sfx_katalk_notify"
+    },
+    {
+      "type": "NARRATION",
+      "text": "1:1 카톡방. \"윤하정\"에게서."
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "윤하정",
+          "text": "야 내일 강의 자료 받았어?"
+        },
+        {
+          "sender": "구윤모",
+          "text": "어 받았어"
+        },
+        {
+          "sender": "구윤모",
+          "text": "학교 메일로 옴"
+        },
+        {
+          "sender": "윤하정",
+          "text": "나는 안 옴"
+        },
+        {
+          "sender": "윤하정",
+          "text": "다시 보내달라 해야 하나"
+        },
+        {
+          "sender": "구윤모",
+          "text": "내가 포워딩 할까?"
+        },
+        {
+          "sender": "윤하정",
+          "text": "어, 부탁"
+        },
+        {
+          "sender": "구윤모",
+          "text": "보냈어"
+        },
+        {
+          "sender": "윤하정",
+          "text": "고마워"
+        },
+        {
+          "sender": "윤하정",
+          "text": "내일 봐"
+        },
+        {
+          "sender": "구윤모",
+          "text": "어 잘 자"
+        }
+      ]
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "smile",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "윤하정. 카톡도 길게 안 끄네. 단톡에선 좀 풀어졌고, 1:1은 더 짧아졌고. 뭐, 그게 또 좋다."
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch01_04_first_lecture"
+    }
+  ],
+  "meta": {
+    "chapter": 1,
+    "time": "2026-03-02 evening",
+    "activeHeroines": [
+      "H2",
+      "gyumin",
+      "gyeongmin",
+      "nathan",
+      "wook",
+      "junhyuk"
+    ]
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "id": "prologue_02_after_choice",
+  "commands": [
+    {
+      "type": "SFX",
+      "sound": "sfx_katalk_notify"
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "표경민",
+          "text": "윤모 KTX임?"
+        },
+        {
+          "sender": "구윤모",
+          "text": "ㅇㅇ"
+        },
+        {
+          "sender": "구윤모",
+          "text": "동대구 한 시간 남음"
+        },
+        {
+          "sender": "표경민",
+          "text": "도착하면 알려줘"
+        },
+        {
+          "sender": "표경민",
+          "text": "자취방 정리 도와줄까"
+        },
+        {
+          "sender": "구윤모",
+          "text": "ㅇㅋ"
+        },
+        {
+          "sender": "구윤모",
+          "text": "짐 그렇게 많진 않은데"
+        },
+        {
+          "sender": "표경민",
+          "text": "그래도"
+        },
+        {
+          "sender": "김규민",
+          "text": "야 윤모 도착 전에 한잔 ㄱ?"
+        },
+        {
+          "sender": "구윤모",
+          "text": "오늘?"
+        },
+        {
+          "sender": "김규민",
+          "text": "ㅇㅇ ㄱㄱ"
+        },
+        {
+          "sender": "김규민",
+          "text": "환영회 ㅋㅋㅋ"
+        },
+        {
+          "sender": "구윤모",
+          "text": "짐 정리 좀"
+        },
+        {
+          "sender": "구윤모",
+          "text": "내일 ㄱ"
+        },
+        {
+          "sender": "김규민",
+          "text": "에이~"
+        },
+        {
+          "sender": "조나단",
+          "text": "김규민 좀 봐줘 ㅋㅋㅋㅋ"
+        },
+        {
+          "sender": "조나단",
+          "text": "윤모 짐 풀고 OT 준비해야지"
+        },
+        {
+          "sender": "김규민",
+          "text": "알겠다고~"
+        },
+        {
+          "sender": "김규민",
+          "text": "근데 진짜 OT 신난다"
+        },
+        {
+          "sender": "조나단",
+          "text": "ㄹㅇㅋㅋ"
+        },
+        {
+          "sender": "구윤모",
+          "text": "ㄷㄷ"
+        },
+        {
+          "sender": "구윤모",
+          "text": "본과 1학년 OT"
+        },
+        {
+          "sender": "구윤모",
+          "text": "실감 안 남"
+        },
+        {
+          "sender": "표경민",
+          "text": "내일이면 실감 날걸"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "표경민은 한결같다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "챙길 건 다 챙기면서 티는 안 내려고 한다, 늘."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "들판이 도시로 바뀐다. 다 왔나 보네.",
+      "subtype": "normal"
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "prologue_03_studio"
+    }
+  ],
+  "meta": {
+    "chapter": 0,
+    "time": "2026-02-28 day",
+    "activeHeroines": [
+      "mom"
+    ]
+  }
+}

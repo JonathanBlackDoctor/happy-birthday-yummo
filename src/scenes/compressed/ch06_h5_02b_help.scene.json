@@ -1,0 +1,78 @@
+{
+  "id": "ch06_h5_02b_help",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h5_event",
+      "value": "help"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "30분 같이 갈게."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "의예과 회원들이 본과 한 명 와줘서 신난다는데, 한 번 더 채우는 게 맞고."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "응원 막대 두 개 받은 거 한 번 더 답하는 셈 치면 가벼워지고."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "장윤영",
+      "sprite": "warm_smile",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "선배... 그렇게까지 풀어주시는 거 의외예요. 의예과 회원들이 본과 선배 한 분 와주신 게 정말 신나거든요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "그러게. 의예과 1·2학년 입장에선 본과 보기 힘드니까."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "헉! 선배 그런 데까지 봐주시는 거 잠깐 멈췄어요!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "그럼 풍선 정리 + 부스 청소 + 사진까지 같이 해요!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "사진까지면 35분 아니야?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "헉! 들켰다! 그럼 35분이요! ✨"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "응원 막대 두 개 받은 거, 한 번 더 답하는 셈."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h5_02_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-03 afternoon",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

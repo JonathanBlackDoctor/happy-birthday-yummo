@@ -1,0 +1,205 @@
+{
+  "id": "prologue_03_studio",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_studio_room",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.5,
+      "fade": 3
+    },
+    {
+      "type": "NARRATION",
+      "text": "같은 날 저녁. 대구 성서 자취방. 윤모가 캐리어를 끌고 들어와 형광등을 켠다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한 달 비웠더니 먼지 좀 쌓였네."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 책상 위에 의대 교과서를 한 권씩 올려놓는다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "해부학... 생화학... 생리학... 표지만 봐도 무게가 다르다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "smile",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "뭐 어때. 다들 하잖아."
+    },
+    {
+      "type": "SFX",
+      "sound": "sfx_katalk_notify"
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "김규민",
+          "text": "윤모 도착?"
+        },
+        {
+          "sender": "구윤모",
+          "text": "ㅇㅇ"
+        },
+        {
+          "sender": "구윤모",
+          "text": "짐 풀고 있음"
+        },
+        {
+          "sender": "김규민",
+          "text": "자취방 컨디션 ㅇㄸ"
+        },
+        {
+          "sender": "구윤모",
+          "text": "먼지 쌓임"
+        },
+        {
+          "sender": "김규민",
+          "text": "ㅋㅋㅋㅋㅋ"
+        },
+        {
+          "sender": "김규민",
+          "text": "청소 ㄱㄱ"
+        },
+        {
+          "sender": "조나단",
+          "text": "윤모 OT 자료 봤냐"
+        },
+        {
+          "sender": "구윤모",
+          "text": "어 봤음"
+        },
+        {
+          "sender": "구윤모",
+          "text": "내일 9시 본관"
+        },
+        {
+          "sender": "표경민",
+          "text": "9시 정각이야"
+        },
+        {
+          "sender": "표경민",
+          "text": "8시 50분엔 가 있어야 함"
+        },
+        {
+          "sender": "김규민",
+          "text": "ㅇㅇ 표경민 PM"
+        },
+        {
+          "sender": "조나단",
+          "text": "ㅋㅋㅋㅋㅋ"
+        },
+        {
+          "sender": "김규민",
+          "text": "야 윤모 과대 인사말 준비됐냐"
+        },
+        {
+          "sender": "구윤모",
+          "text": "ㄴㄴ"
+        },
+        {
+          "sender": "구윤모",
+          "text": "즉흥"
+        },
+        {
+          "sender": "김규민",
+          "text": "ㄷㄷㄷ"
+        },
+        {
+          "sender": "조나단",
+          "text": "그게 멋이지 ㅋㅋㅋ"
+        },
+        {
+          "sender": "표경민",
+          "text": "너무 즉흥은 곤란"
+        },
+        {
+          "sender": "구윤모",
+          "text": "알아서 함"
+        },
+        {
+          "sender": "김규민",
+          "text": "아 ㅋㅋㅋ 윤모 답변 짧음"
+        },
+        {
+          "sender": "구윤모",
+          "text": "ㅇㅇ"
+        },
+        {
+          "sender": "조나단",
+          "text": "ㅋㅋㅋㅋ 자기다움"
+        },
+        {
+          "sender": "김규민",
+          "text": "내일 보자"
+        },
+        {
+          "sender": "구윤모",
+          "text": "ㅇㅋ"
+        },
+        {
+          "sender": "표경민",
+          "text": "내일 봐"
+        },
+        {
+          "sender": "조나단",
+          "text": "ㄱㄱ"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "다들 내일 본다. 익숙한 애들인데, 새 학기는 또 새 학기지."
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "내일 잘 해보자",
+          "next": "prologue_03b_steady",
+          "tone": "direct_friendly"
+        },
+        {
+          "text": "일찍 자야겠다",
+          "next": "prologue_03b_practical",
+          "tone": "mature_serious"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 0,
+    "time": "2026-02-28 evening",
+    "activeHeroines": [
+      "gyumin",
+      "gyeongmin",
+      "nathan",
+      "wook",
+      "junhyuk"
+    ]
+  }
+}

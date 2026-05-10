@@ -1,0 +1,53 @@
+{
+  "id": "ch06_h2_03b_extend_warm",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h2_walk",
+      "value": "extend"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "잠깐 더 걸을까. 도서관 옥상 같이 가자. 본관 4층, 5분이면 도착이고. 첫 야경 옆에 누구 있는 게 의미 있지."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤하정",
+      "sprite": "blush",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...야. (시선 거리) 그렇게 챙겨주는 거 너 답지 않다고 했잖아."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "그러게. 오늘 한 번 더 너 답지 않은 모습으로 가는 셈."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...뭐, 알겠어. 같이 가자. ...어차피 부산 본가 가기 전에 야경 한 번은 봐야 하니까."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "부산 본가 가기 전에 야경 한 번. 가볍게 한 말 같지만 그게 아니다."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h2_03_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-01 night",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

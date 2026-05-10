@@ -1,0 +1,270 @@
+{
+  "id": "ch04_04_seoyoon_meet",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_kmu_main",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.5,
+      "fade": 2
+    },
+    {
+      "type": "NARRATION",
+      "text": "4월 29일 수요일 12시 30분. 의대 본관 앞 광장. 점심 시간."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "시험 5일 전 점심. 김규민이 본관 앞에서 보자고 했고, 표경민은 먼저 갔다고."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "김규민",
+      "sprite": "default",
+      "position": "right_back",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "어, 윤모. 표경민은 먼저 학식 갔어."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 들었어. 어제 도서관에서 새벽까지 같이 있었어. 표경민이 더 멀쩡하더라."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "야, 너네 도서관 근황 단톡에 좀 풀어줘."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "별거 없어. 책 한 챕터, 카페인 한 잔, 또 한 챕터. 그게 다야."
+    },
+    {
+      "type": "NARRATION",
+      "text": "그때 캠퍼스 반대편 약대 건물 쪽에서 두 사람이 본관 앞 화단을 가로질러 온다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "나서윤",
+      "sprite": "default",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "VIDEO",
+      "src": "video_meet_seoyoon"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "약대 동기",
+      "text": "어, 김규민. 우연이네. 점심 가?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "어, 승보 형. 우리도 학식 가는 길."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "약대 동기",
+      "text": "아, 이쪽이 본과 1학년 구윤모지. 김규민이 단톡에서 자주 얘기하는."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 안녕하세요. 구윤모입니다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "약대 동기",
+      "text": "좋게만 얘기해요. 과대 챙김 잘한다고."
+    },
+    {
+      "type": "CG",
+      "image": "cg_seoyoon_first_meet",
+      "cgId": "cg_seoyoon_first_meet"
+    },
+    {
+      "type": "NARRATION",
+      "text": "본관 앞 광장. 봄볕 속에서 나서윤이 살짝 시선을 비스듬히 든 옆모습. 긴 갈색 웨이브 머리, 옅은 피로와 어른스러운 도도함이 표정에 같이 얹혀 있다."
+    },
+    {
+      "type": "CG_HIDE"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "어. 처음 보는 사람이고. 분위기가 또 조금 다르네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "약대 동기",
+      "text": "아 이쪽은 약대 4학년 나서윤. 같은 23학번이긴 한데 약대는 6년제라 학년이 다르지."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "약대 동기",
+      "text": "그래서 쟤도 23학번. 같은 학번이긴 한 거지."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나서윤",
+      "text": "23학번이세요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 휴학 1년 했어요. 그래서 본과 1학년입니다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나서윤",
+      "text": "그럼 학번 동기네요. 저는 03년생이라 한 살 위긴 한데."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "아, 그러시구나."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "같은 23학번인데 한 살 위. 누나라고 부르기엔 학번이 같고, 동갑은 또 아니고. 씨 호칭이 맞겠다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "야, 분위기가 좀 다르시네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "시험 직전이라 더 그러는 것 같고."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "약대 동기",
+      "text": "너네 학식 가지? 우리도 같은 방향이긴 한데 같이 갈래?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "어 어. 같이 ㄱ."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나서윤",
+      "text": "죄송해요. 저는 오후에 약대 시험 한 과목 더 있어서요. 빨리 먹고 도서관 들어가야 할 것 같아서, 오늘은 따로 가는 게 나을 것 같아요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나서윤",
+      "text": "다음에 시험기간 끝나고 나면 정식으로 인사할 시간 있겠죠."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "약대 동기",
+      "text": "그럼 너 빨리 가. 시험 잘 보고."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나서윤",
+      "text": "응. (윤모 보며) 만나서 반가웠어요. 구윤모씨."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 저도 만나서 반가웠습니다. 시험 잘 보세요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나서윤",
+      "text": "네, 그래요."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "나서윤",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "시크하시네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "시험 직전이니까. 누구나 시험 5일 전엔 표정 안 풀려 있잖아."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "약대 동기",
+      "text": "시험기간엔 평소보다 더 그래요. 평소엔 인사는 잘 하는 분이고요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "야, 좀 새로운 조합이네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "약대 동기",
+      "text": "윤모, 카톡 친추 하나 하자. 서윤이한테 따로 인사할 일 생기면 내가 다리 놔줄게."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 감사합니다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "카톡 친추 메시지가 오간다. \"나서윤\" 친구 추가됨."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "승보 형이 다리 놔줬네. 시험 끝나고 인사 카톡 한 번이 자연스러울 것 같다."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "약대",
+      "transition": "동기"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "김규민",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch04_05_seoyoon_kakao"
+    }
+  ],
+  "meta": {
+    "chapter": 4,
+    "time": "2026-04-29 lunch",
+    "activeHeroines": [
+      "H4"
+    ]
+  }
+}

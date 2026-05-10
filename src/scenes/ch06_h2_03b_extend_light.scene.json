@@ -1,0 +1,71 @@
+{
+  "id": "ch06_h2_03b_extend_light",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h2_walk",
+      "value": "light"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "야 너 술 한 잔 더 한 거 같은데 옥상은 좀 그렇지 않냐."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤하정이 잠깐 멈춘다. 표정이 옅게 굳는다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤하정",
+      "sprite": "pout",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...뭐 그래."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "한 잔 더 한 게 그렇게 보였어?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "아니, 그게 아니라."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...됐어. 자취방 방향이라 같이 걸어는 갈게."
+    },
+    {
+      "type": "NARRATION",
+      "text": "두 사람이 거리에서 한 번 더 걷지만 분위기가 살짝 굳어 있다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "분위기 못 맞춘 거 두 번째."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "윤하정이 옥상 가자고 한 건데 가볍게 받아쳐버렸다. 분위기가 더 굳어졌네."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h2_03_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-01 night",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

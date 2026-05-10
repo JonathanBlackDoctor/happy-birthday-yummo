@@ -1,0 +1,39 @@
+{
+  "id": "ch05_03b_cold",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h5_late_kakao",
+      "value": "cold"
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "구윤모",
+          "text": "윤영아"
+        },
+        {
+          "sender": "구윤모",
+          "text": "내일 답장할게"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "짧게 잘랐다."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch05_03_close"
+    }
+  ],
+  "meta": {
+    "chapter": 5,
+    "time": "2026-05-12 dawn",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

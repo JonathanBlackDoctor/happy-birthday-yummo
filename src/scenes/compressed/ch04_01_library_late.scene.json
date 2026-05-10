@@ -1,0 +1,152 @@
+{
+  "id": "ch04_01_library_late",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_library_night",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.4,
+      "fade": 2
+    },
+    {
+      "type": "NARRATION",
+      "text": "2026년 4월 27일 월요일 밤 11시. 의대 도서관 자습실. 본과 1학년 첫 시험이 다음 주로 잡혀 있어 자리가 거의 다 차 있다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "시험 일주일 전. 도서관 자리 잡은 게 9시였는데 벌써 두 시간이 지나갔다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "해부학, 생화학, 생리학. 머릿속에 정리되는 양은 절반 정도밖에 안 된다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "표경민",
+      "sprite": "default",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "표경민",
+      "text": "윤모."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 표경민. 잠깐 쉬는 거야?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "표경민",
+      "text": "한 챕터 끊고 환기 좀. 너 해부학은 어디까지 왔어?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "근육계 끝났고, 신경 들어갈 차례야. (책 한 번 들썩) 신경 들어가면 또 다른 산이지."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "표경민",
+      "text": "나는 신경 절반 정도. 같이 가자."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "그래. 같이 가면 속도가 맞춰지지."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤하정",
+      "sprite": "sleeping",
+      "position": "left",
+      "transition": "fade"
+    },
+    {
+      "type": "CG",
+      "image": "cg_hajeong_library",
+      "cgId": "cg_hajeong_library"
+    },
+    {
+      "type": "NARRATION",
+      "text": "도서관 자습실. 윤하정이 두꺼운 해부학 교과서 위에 팔을 베고 잠들어 있다. 책상 끝에 빈 커피 컵 두 개."
+    },
+    {
+      "type": "CG_HIDE"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "윤하정 잠들었네. 어제 5조 단톡에서 새벽 3시까지 답장했던 친구가. 진짜 안 잤구나."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "표경민",
+      "text": "윤모. 부탁이라기보다 의견 좀 묻고 싶은데."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 말해."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "표경민",
+      "text": "너 22학번 선배한테 받은 해부 족보, 신경계 정리한 거 따로 있지?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "응, 신경계는 형광펜으로 따로 표시까지 해놨어."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "표경민",
+      "text": "윤하정이 어제 단톡에서 그 족보 못 받았다고 슬쩍 흘렸거든. 부산 출신이라 본과 선배 라인이 좀 약하다고 했어. 너 과대니까 챙기는 게 자연스럽지 않냐."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "...흠. 그러게."
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "지금 5조 단톡에 올린다",
+          "next": "ch04_01b_share",
+          "tone": "direct_friendly",
+          "isKey": true,
+          "descriptor": "ch4_share"
+        },
+        {
+          "text": "내일 깨면 직접 준다",
+          "next": "ch04_01b_later",
+          "tone": "mature_serious"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 4,
+    "time": "2026-04-27 night",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

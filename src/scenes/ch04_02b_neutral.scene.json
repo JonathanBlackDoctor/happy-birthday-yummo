@@ -1,0 +1,45 @@
+{
+  "id": "ch04_02b_neutral",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h1_care",
+      "value": "neutral"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "오늘도 수고 많으셨네요. 한국 외래·당직 일정 빡빡한 거 견학 때 펠로우 선생님께 들었습니다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "네, 학생도 공부 잘하고요. 본과 1학년 시험 잘 보세요."
+    },
+    {
+      "type": "NARRATION",
+      "text": "짧고 정중한 응대. 윤모 쪽에서 더 묻기는 어려운 거리감."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "무난하게 끝났는데... 좀 더 따뜻하게 응대했으면 좋았을지도."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "어른한테 안부 묻는 거랑 어른 피곤한 거 챙기는 건 또 다르구나."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch04_02_close"
+    }
+  ],
+  "meta": {
+    "chapter": 4,
+    "time": "2026-04-28 dawn",
+    "activeHeroines": [
+      "H1"
+    ]
+  }
+}

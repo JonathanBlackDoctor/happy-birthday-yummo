@@ -1,0 +1,101 @@
+{
+  "id": "ch06_h2_03_walk",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_dongseong_street",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_romantic",
+      "volume": 0.4,
+      "fade": 3
+    },
+    {
+      "type": "NARRATION",
+      "text": "같은 날 밤 10시. 동성로 거리 한쪽. 6월 밤공기가 조금 시원하다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤하정",
+      "sprite": "default",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "야."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "본과 1학년 한 학기 끝났네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "그러게. 학기가 평소보다 두 배는 길었던 것 같다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "도서관 밤샘 5일이 한 학기에 다 들어갔으니까."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "도서관 밤샘 5일. 윤하정이 그 얘기로 먼저 꺼내는 거 의외다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...너 도서관에서 새벽 4시까지 옆자리 있어 준 거. (시선 비스듬) 그거 두 번 고맙다고 했는데, 두 번째는 아직 답 못 받았어."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "답이 뭐였더라."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...뭐, 됐어. 그냥 잊어."
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "잊을 수 없지, 네 옆에서 한 페이지씩 넘긴 시간",
+          "next": "ch06_h2_03b_recall",
+          "tone": "direct_friendly"
+        },
+        {
+          "text": "그런 답 한 줄로 정리할 게 아니지",
+          "next": "ch06_h2_03b_neutral",
+          "tone": "warm_supportive"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-01 night",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "id": "ch05_02_pub_first",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_dongseong_street",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.6,
+      "fade": 2
+    },
+    {
+      "type": "SFX",
+      "sound": "sfx_bar_ambient",
+      "volume": 0.4
+    },
+    {
+      "type": "NARRATION",
+      "text": "같은 날 저녁 7시 30분. 동성로 술집. 길게 이어진 테이블 위로 본과 1학년 동기들이 빼곡하게 앉아 있다. 약대 쪽엔 승보와 나서윤. 의예과 후배 장윤영. 박사과정 조교 한설이 격려차 잠깐 합석. 동산병원 회식이 끝나고 들른 차세린은 끝쪽 자리에서 한설과 인사를 나누는 중이다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "진짜 다 모였네."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "학교 안에서 따로따로 마주쳤던 다섯 명이 한 자리에 다 있다는 게 좀 신기하다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "빈자리는 다섯 군데. 어디 앉느냐부터 정해야 한다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 술집 한쪽에서 잠깐 멈춘다. 다섯 명이 각각 다른 자리에 앉아 있다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "{메시지 형식 — 화면 하단에 5명의 이름이 한 줄씩 표시. 선택 시 해당 자리로 이동.}"
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "차세린 선생님 쪽으로",
+          "next": "ch05_02b_h1",
+          "effects": [
+            {
+              "type": "FLAG_INC",
+              "key": "H1",
+              "delta": 25
+            },
+            {
+              "type": "KEY_CHOICE",
+              "heroine": "H1",
+              "choiceId": "ch5_join"
+            }
+          ]
+        },
+        {
+          "text": "윤하정 옆으로",
+          "next": "ch05_02b_h2",
+          "effects": [
+            {
+              "type": "FLAG_INC",
+              "key": "H2",
+              "delta": 25
+            },
+            {
+              "type": "KEY_CHOICE",
+              "heroine": "H2",
+              "choiceId": "ch5_join"
+            }
+          ]
+        },
+        {
+          "text": "한설 선생님 쪽으로",
+          "next": "ch05_02b_h3",
+          "effects": [
+            {
+              "type": "FLAG_INC",
+              "key": "H3",
+              "delta": 25
+            },
+            {
+              "type": "KEY_CHOICE",
+              "heroine": "H3",
+              "choiceId": "ch5_join"
+            }
+          ]
+        },
+        {
+          "text": "나서윤씨 옆으로",
+          "next": "ch05_02b_h4",
+          "effects": [
+            {
+              "type": "FLAG_INC",
+              "key": "H4",
+              "delta": 25
+            },
+            {
+              "type": "KEY_CHOICE",
+              "heroine": "H4",
+              "choiceId": "ch5_join"
+            }
+          ]
+        },
+        {
+          "text": "장윤영 옆으로",
+          "next": "ch05_02b_h5",
+          "effects": [
+            {
+              "type": "FLAG_INC",
+              "key": "H5",
+              "delta": 25
+            },
+            {
+              "type": "KEY_CHOICE",
+              "heroine": "H5",
+              "choiceId": "ch5_join"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 5,
+    "time": "2026-05-11 evening"
+  }
+}

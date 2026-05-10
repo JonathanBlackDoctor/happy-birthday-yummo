@@ -1,0 +1,77 @@
+{
+  "id": "ch01_02_meet_hajeong",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_lecture_day"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily"
+    },
+    {
+      "type": "NARRATION",
+      "text": "발표 직후. 윤모가 5조 자리로 이동하니, 옆에 긴 생머리의 여학생이 노트북을 정리하고 있다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤하정",
+      "sprite": "default",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "VIDEO",
+      "src": "video_meet_hajeong"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 5조? 나도 5조야."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...어. 너 과대지?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "응, 맞아. 구윤모."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "윤하정."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "무뚝뚝하네 첫인상. 근데 차가운 건 또 아니다."
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "어. 앞으로 잘 부탁할게",
+          "next": "ch01_02b_serious",
+          "tone": "direct_friendly",
+          "isKey": true,
+          "descriptor": "ch1_first_intro"
+        },
+        {
+          "text": "어, 조 잘 부탁~",
+          "next": "ch01_02b_casual",
+          "tone": "playful_casual"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 1,
+    "time": "2026-03-02 morning, after 조 배정",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "id": "ch05_07_close",
+  "commands": [
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 폰을 책상에 내려놓는다. 펜션 창밖으로 새벽 하늘이 조금씩 푸르러져 간다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_main_theme",
+      "volume": 0.5,
+      "fade": 4
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "본과 첫 시험. 끝났다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "그리고 다섯 명. 한 학기 동안 진짜 많이도 만났네."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한 명씩 떠올려 보면, 장면 하나하나가 다 다르다.",
+      "subtype": "normal"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "차세린 선생님, 새벽 카페에서 머그잔 들고 계셨던 모습."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "윤하정, 도서관 책상에 엎드려 잠들었던 옆모습."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한설 선생님, 안경 벗으셨던 그 짧은 순간."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "나서윤씨, 본관 앞 봄볕 아래 옆모습."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "장윤영, 9시 5분에 보내준 응원."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "smile",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "마음이 향하는 곳이 있는 것 같다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "누군지는... 내 마음이 안다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "화면이 천천히 어두워진다. 새벽 빛이 창에 한 번 더 닿았다 흩어진다."
+    },
+    {
+      "type": "BG",
+      "image": "black"
+    },
+    {
+      "type": "NARRATION",
+      "text": "— 본과 1학년 봄. 다섯 명과 한 학기. 결정의 시간."
+    },
+    {
+      "type": "EVALUATE_BRANCH"
+    }
+  ],
+  "meta": {
+    "chapter": 5,
+    "time": "2026-05-17 dawn",
+    "activeHeroines": [
+      "H4"
+    ]
+  }
+}

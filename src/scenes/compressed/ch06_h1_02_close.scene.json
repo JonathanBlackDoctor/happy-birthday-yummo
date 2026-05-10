@@ -1,0 +1,59 @@
+{
+  "id": "ch06_h1_02_close",
+  "commands": [
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "학생. 토요일, 6일은 외래 없는 날이에요. 8일에 동산병원 회식 있으니까, 사이에 캠퍼스 야경이나 한 번 보고 들어갈까 싶어서요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "시간 되면 6시쯤 본관 옆 산책로에서 봬요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 6시 본관 옆 산책로요. 잘 챙기겠습니다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "그럼 그때 봐요. 자취방 잘 가요."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "차세린",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤모",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "토요일 6시. 본관 옆 산책로. 누나 쪽에서 따로 보자고 잡아주셨다."
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "BG",
+      "image": "black"
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h1_03_walk"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-02 dawn 1am",
+    "activeHeroines": [
+      "H1"
+    ]
+  }
+}

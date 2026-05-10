@@ -1,0 +1,45 @@
+{
+  "id": "ch06_h1_02b_neutral",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h1_late_cafe",
+      "value": "neutral"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "선생님 오늘도 수고 많으셨네요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "네, 학생도 도서관 잘 마무리해요."
+    },
+    {
+      "type": "NARRATION",
+      "text": "짧고 정중한 응대. 새벽 카페에 잠깐의 정적."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "안전하게 갔다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "좀 더 풀어서 챙겨드릴 수 있었을 텐데. 안부 인사 정도로 끝낸 게 아쉽다."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h1_02_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-02 dawn 1am",
+    "activeHeroines": [
+      "H1"
+    ]
+  }
+}

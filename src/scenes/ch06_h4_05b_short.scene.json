@@ -1,0 +1,52 @@
+{
+  "id": "ch06_h4_05b_short",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h4_dawn",
+      "value": "short"
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "구윤모",
+          "text": "안 잤어요"
+        },
+        {
+          "sender": "구윤모",
+          "text": "잘 들어가셨죠?"
+        },
+        {
+          "sender": "나서윤",
+          "text": "네"
+        },
+        {
+          "sender": "나서윤",
+          "text": "잘 들어왔어요"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "짧게 닫혔다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한 학기 인사 자리 다음의 새벽 카톡인데, 좀 더 풀어서 응할 걸 그랬다."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h4_06_close_decision"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-14 dawn",
+    "activeHeroines": [
+      "H4"
+    ]
+  }
+}

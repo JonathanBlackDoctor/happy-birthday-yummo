@@ -1,0 +1,156 @@
+{
+  "id": "ch04_07_close",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_studio_room",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_main_theme",
+      "volume": 0.5,
+      "fade": 4
+    },
+    {
+      "type": "NARRATION",
+      "text": "5월 3일 일요일 밤 11시. 자취방. 도서관에서 돌아온 윤모가 책상 앞에 앉는다. 본과 1학년 첫 시험은 내일 모레."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한 주."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "도서관, 카페, 실험실, 본관 앞."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "의대 안에서만 도는데 한 주에 다섯 명 다 만난 셈이네."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "그게 가능한 한 주였다는 게 좀 신기하다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 폰 화면을 살짝 살핀다. 카톡 친구 목록."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한설 선생님은 컵라면 식는 모습이었고."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "차세린 선생님은 새벽 카페 머그잔이었고."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "윤하정은 책상에 엎드려 자고 있었고."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "나서윤은 본관 앞 봄볕 옆모습이었고."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "장윤영은 9시 5분 응원이었지."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "다섯 명 다 시험기간 한복판에서 본 셈이라, 누구 모습이든 시험 빼고는 떠오르질 않는다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "책상 한쪽에 차세린에게 받은 명함, 다른 한쪽에 한설이 준 실습 자료가 놓여 있다. 폰 화면 한쪽엔 \"나서윤\" 친구 추가 표시."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "본과 1학년 첫 시험을 한 주 앞두고 다섯 명을 다 만나는 게 좋은 건지 안 좋은 건지는."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "이번 주 끝나봐야 알겠지."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "일단 시험은 시험이고, 다섯 명은 다섯 명이고. 머릿속에서 두 트랙으로 나눠 두자."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "smile",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "일단 오늘은 자야겠다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "시험 일주일 전이고. 한 발씩."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한 발씩 가야지."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 책상 등을 끄고 침대 쪽으로 향한다. 화면이 천천히 어두워진다."
+    },
+    {
+      "type": "BG",
+      "image": "black"
+    },
+    {
+      "type": "NARRATION",
+      "text": "— 끝 → Ch.5 \"5월의 분기\""
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch05_01_test_end"
+    }
+  ],
+  "meta": {
+    "chapter": 4,
+    "time": "2026-05-03 night",
+    "activeHeroines": [
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "gyumin",
+      "gyeongmin",
+      "nathan",
+      "wook",
+      "junhyuk",
+      "mom",
+      "taeho"
+    ]
+  }
+}

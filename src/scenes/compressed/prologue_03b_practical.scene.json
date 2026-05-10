@@ -1,0 +1,30 @@
+{
+  "id": "prologue_03b_practical",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_prologue_close",
+      "value": "practical"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "일찍 자야겠다. 첫날부터 졸린 채로 가면 좀 그렇잖아."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "prologue_03_close"
+    }
+  ],
+  "meta": {
+    "chapter": 0,
+    "time": "2026-02-28 evening",
+    "activeHeroines": [
+      "gyumin",
+      "gyeongmin",
+      "nathan",
+      "wook",
+      "junhyuk"
+    ]
+  }
+}

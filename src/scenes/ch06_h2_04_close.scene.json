@@ -1,0 +1,52 @@
+{
+  "id": "ch06_h2_04_close",
+  "commands": [
+    {
+      "type": "NARRATION",
+      "text": "두 사람이 옥상에서 한 번 더 야경을 본다. 6월 밤바람이 한 번 더 머리카락을 흩뿌린다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...이제 가자."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤모",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤하정",
+      "transition": "fade"
+    },
+    {
+      "type": "NARRATION",
+      "text": "옥상 입구 쪽으로 두 사람이 잠깐 같이 걷는다. 도서관 옥상 야경이 한 번 더 멀어진다."
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "BG",
+      "image": "black"
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h2_05_evaluate"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-01 night, 11pm",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "id": "ch05_06b_h4",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_ch5_bonfire",
+      "value": "h4"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "차세린",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤하정",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "한설",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "장윤영",
+      "transition": "fade"
+    },
+    {
+      "type": "NARRATION",
+      "text": "다른 일행이 슬쩍 자리를 비켜준다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "pair_left",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "나서윤",
+      "sprite": "default",
+      "position": "pair_right",
+      "transition": "fade"
+    },
+    {
+      "type": "NARRATION",
+      "text": "펜션 안 부엌. 나서윤이 잔 몇 개를 헹구고 있다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "정리하시는 거예요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나서윤",
+      "text": "잔 몇 개만요. 손이 비어 있길래."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "같이 할게요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나서윤",
+      "text": "그러시구나."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "약대 본과 4학년 시험 끝난 뒤에 정리하시는 거 좀 의외네요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나서윤",
+      "text": "손이 비어 있는 게 더 어색해서요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나서윤",
+      "text": "...회식이든 MT든 처음엔 적응이 좀."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "그 마음 알아요. 저도 한 학기 처음이라."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch05_06_pair_pause"
+    }
+  ],
+  "meta": {
+    "chapter": 5,
+    "time": "2026-05-16 night",
+    "activeHeroines": [
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "gyumin",
+      "gyeongmin",
+      "nathan",
+      "wook",
+      "junhyuk",
+      "mom",
+      "taeho"
+    ]
+  }
+}

@@ -1,0 +1,293 @@
+{
+  "id": "prologue_01_home",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_bundang_home",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.5,
+      "fade": 2
+    },
+    {
+      "type": "NARRATION",
+      "text": "2026년 2월 25일, 늦은 밤. 분당 본가 거실. 벽 한쪽에 반쯤 닫힌 캐리어 두 개가 비스듬히 기대어 서 있다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "본과 1학년이라."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "진짜 됐네 이게."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "예과 2년에 휴학 1년... 길긴 길었다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "어머니가 거실로 들어와 윤모 옆 소파에 자리를 잡는다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "어머니",
+      "text": "윤모야, 짐 다 챙겼어?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어. 거의 다 했어."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "어머니",
+      "text": "본과 시작하면 또 한참 못 보겠다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "그러게... 시험기간 되면 더 그럴 거고."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "어머니",
+      "text": "자취방에 컵라면만 쌓아두지 말고."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어머니, 그건 좀."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "어머니",
+      "text": "이번엔 진짜 바빠질 텐데, 너무 무리는 마."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "알겠어. 본과가 좀 빡세긴 하겠지만, 무리는 안 할게."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "어머니",
+      "text": "그래도 너 잘 할 거야."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "응. 고마워."
+    },
+    {
+      "type": "NARRATION",
+      "text": "어머니가 자리에서 일어나려다 한 번 더 멈춘다. 한마디만 더 보태고 가려는 호흡."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "어머니",
+      "text": "윤모야. 본과 1년이 진짜 길다고 들었어. 한 학기 한 학기 천천히 챙겨가."
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "엄마, 진짜 잘 다녀올게요",
+          "tone": "warm_supportive"
+        },
+        {
+          "text": "어, 알겠어",
+          "tone": "direct_friendly"
+        },
+        {
+          "text": "야 뭐 별거 있겠어 ㅋㅋ",
+          "tone": "playful_casual"
+        }
+      ]
+    },
+    {
+      "type": "NARRATION",
+      "text": "어머니가 윤모의 어깨를 짧게 두드리고 다시 부엌 쪽으로 사라진다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "엄마는 변함이 없다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "학기 시작 전엔 늘 저렇게 챙겨준다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "매번 같은 말인데, 듣고 나면 마음이 좀 놓인다."
+    },
+    {
+      "type": "SFX",
+      "sound": "sfx_katalk_notify"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "어, 카톡."
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "김규민",
+          "text": "야 윤모야"
+        },
+        {
+          "sender": "김규민",
+          "text": "너 언제 내려오냐"
+        },
+        {
+          "sender": "구윤모",
+          "text": "모레"
+        },
+        {
+          "sender": "김규민",
+          "text": "ㄷㄷ 빡세네"
+        },
+        {
+          "sender": "김규민",
+          "text": "본과 시작 5일 전 ㅋㅋㅋㅋ"
+        },
+        {
+          "sender": "조나단",
+          "text": "ㄹㅇㅋㅋ"
+        },
+        {
+          "sender": "조나단",
+          "text": "윤모 과대인데 ㄷㄷ"
+        },
+        {
+          "sender": "김규민",
+          "text": "야 과대가 마지막에 내려옴 ㅋㅋㅋㅋㅋㅋ"
+        },
+        {
+          "sender": "구윤모",
+          "text": "ㅋㅋㅋㅋ"
+        },
+        {
+          "sender": "구윤모",
+          "text": "ㅇㅇ"
+        },
+        {
+          "sender": "구윤모",
+          "text": "분당 좀 더 누리다 갈래"
+        },
+        {
+          "sender": "김규민",
+          "text": "아 그래 그래"
+        },
+        {
+          "sender": "김규민",
+          "text": "와도 어차피 술 ㄱㄱ"
+        },
+        {
+          "sender": "표경민",
+          "text": "김규민 너 짐 정리는 했냐"
+        },
+        {
+          "sender": "김규민",
+          "text": "ㅇㅇ 거의"
+        },
+        {
+          "sender": "표경민",
+          "text": "거의를 어떻게 믿냐"
+        },
+        {
+          "sender": "조나단",
+          "text": "ㅋㅋㅋㅋㅋㅋㅋ"
+        },
+        {
+          "sender": "조나단",
+          "text": "표경민 칼같음"
+        },
+        {
+          "sender": "김규민",
+          "text": "야 표경민 너무함"
+        },
+        {
+          "sender": "김규민",
+          "text": "윤모야 너 먼저 내려와서 나 좀 챙겨줘"
+        },
+        {
+          "sender": "구윤모",
+          "text": "ㄴㄴ"
+        },
+        {
+          "sender": "구윤모",
+          "text": "너부터 내려와"
+        },
+        {
+          "sender": "조나단",
+          "text": "와ㅋㅋㅋㅋ"
+        },
+        {
+          "sender": "김규민",
+          "text": "배신감ㅋㅋㅋ"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "다들 똑같다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한 학기 쉬었다고 변할 애들 아니지."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "smile",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "근데 솔직히 좀 좋다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "다시 다 같이 모인다고 생각하면."
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "prologue_02_train"
+    }
+  ],
+  "meta": {
+    "chapter": 0,
+    "time": "2026-02-25 night",
+    "activeHeroines": [
+      "mom"
+    ]
+  }
+}

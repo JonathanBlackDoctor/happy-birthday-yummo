@@ -1,0 +1,162 @@
+{
+  "id": "ch06_h5_04_late_kakao",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_studio_room",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_katalk",
+      "volume": 0.4,
+      "fade": 3
+    },
+    {
+      "type": "NARRATION",
+      "text": "6월 6일 토요일 자정 12시 30분. 자취방. 의대 축제 주간 마지막 날 끝난 후."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "의대 축제 마지막 날 끝. 5조 부스 마무리 자료 정리하다 보니까 12시 30분 됐고."
+    },
+    {
+      "type": "SFX",
+      "sound": "sfx_katalk_notify"
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "장윤영",
+          "text": "선배~~~ 안 자세요?? ✨"
+        },
+        {
+          "sender": "장윤영",
+          "text": "저 의예과 부스 마무리 끝나고 자취방 와서 정리하다가 잠깐 카톡 켰는데"
+        },
+        {
+          "sender": "장윤영",
+          "text": "선배 부스 운영 마무리 잘 하셨어요?"
+        },
+        {
+          "sender": "장윤영",
+          "text": "의대 축제 마지막 날인데 진짜 신났어요!! 🥹"
+        }
+      ]
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "구윤모",
+          "text": "어 안 잤어"
+        },
+        {
+          "sender": "구윤모",
+          "text": "5조 부스 마무리 자료 정리 중"
+        },
+        {
+          "sender": "장윤영",
+          "text": "헉 선배도 정리 중이세요?"
+        },
+        {
+          "sender": "장윤영",
+          "text": "저랑 같은 시간에 같은 거 하시네요!! ✨"
+        },
+        {
+          "sender": "장윤영",
+          "text": "선배 의대 축제 마지막 날 어떠셨어요?"
+        },
+        {
+          "sender": "구윤모",
+          "text": "5조 동기들 다 모인 자리라 잘 마무리됐어"
+        },
+        {
+          "sender": "구윤모",
+          "text": "의예과 부스도 인기 많았다고 단톡에 올라오던데"
+        },
+        {
+          "sender": "장윤영",
+          "text": "헉 그거 보셨어요?? 🥹"
+        },
+        {
+          "sender": "장윤영",
+          "text": "의예과 단톡에 사진 한 장 올린 게 본과 단톡까지 흘러갔다고 하더라고요"
+        },
+        {
+          "sender": "장윤영",
+          "text": "저 진짜 신났어요!"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "12시 30분. 사흘 동안 부스 메인이었는데. 이 시간까지 켜두고 정리한다는 건 피로가 꽤 깊다는 뜻이고."
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "장윤영",
+          "text": "선배 한 학기 동안 5조 부스 운영하시면서 의예과 부스까지 들러주신 거 잠깐 더 짚고 싶어서요"
+        },
+        {
+          "sender": "장윤영",
+          "text": "사흘 동안 한 번씩 마주친 순간들 다 마음에 두고 있거든요"
+        },
+        {
+          "sender": "장윤영",
+          "text": "학기 마무리 직전이라 한 번 짚어두는 거예요"
+        },
+        {
+          "sender": "장윤영",
+          "text": "🥹"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "학기 마무리 직전 한 마디. 12시 30분이라는 시간이, 그 활기 위에 진심을 한층 더 올려놓는다."
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "마음 잘 받을게, 이제 자야 돼. 너도 자",
+          "next": "ch06_h5_04b_sleep",
+          "tone": "bright_forward",
+          "isKey": true,
+          "descriptor": "ch6_h5_late_kakao"
+        },
+        {
+          "text": "마무리 잘 됐다는 거 받을게, 잘 자",
+          "next": "ch06_h5_04b_quick",
+          "tone": "direct_friendly"
+        },
+        {
+          "text": "직진 또 시작이네, 학기 마무리는 마무리로 두자",
+          "next": "ch06_h5_04b_avoid",
+          "tone": "mature_serious"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-06 late night",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

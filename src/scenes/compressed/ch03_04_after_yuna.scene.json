@@ -1,0 +1,84 @@
+{
+  "id": "ch03_04_after_yuna",
+  "commands": [
+    {
+      "type": "NARRATION",
+      "text": "장윤영이 휴대폰을 꺼내 윤모와 번호를 주고받는다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "선배님 카톡 바로 드릴게요!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 그래."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "그럼 오늘 정말 만나서 반가웠어요!"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "장윤영",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "...야. 너 오늘 레지던트 누나 만나고 의예과2 후배까지 알게 됐네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "조나단",
+      "text": "풍년이다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "표경민",
+      "text": "풍년이긴 한데, 본과 시험 임박이라는 거 잊지 마라."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "알아. (작게) 풍년 같은 거 아니야. 그냥 우연."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "김규민",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "표경민",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "조나단",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "우연이라고 입으로는 말했는데. 머리에는 아직 두 얼굴이 다 남아 있고."
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch03_05_kakao_night"
+    }
+  ],
+  "meta": {
+    "chapter": 3,
+    "time": "2026-04-06 afternoon",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

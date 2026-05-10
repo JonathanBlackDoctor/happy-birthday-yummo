@@ -1,0 +1,1062 @@
+[
+  {
+    "id": "ch01_01_ot_intro",
+    "file": "ch01_01_ot_intro.scene.json",
+    "commandCount": 14
+  },
+  {
+    "id": "ch01_02_meet_hajeong",
+    "file": "ch01_02_meet_hajeong.scene.json",
+    "commandCount": 11
+  },
+  {
+    "id": "ch01_02b_serious",
+    "file": "ch01_02b_serious.scene.json",
+    "commandCount": 7
+  },
+  {
+    "id": "ch01_02b_casual",
+    "file": "ch01_02b_casual.scene.json",
+    "commandCount": 7
+  },
+  {
+    "id": "ch01_02_after_meet",
+    "file": "ch01_02_after_meet.scene.json",
+    "commandCount": 12
+  },
+  {
+    "id": "ch01_03_kakao_evening",
+    "file": "ch01_03_kakao_evening.scene.json",
+    "commandCount": 15
+  },
+  {
+    "id": "ch01_04_first_lecture",
+    "file": "ch01_04_first_lecture.scene.json",
+    "commandCount": 39
+  },
+  {
+    "id": "ch01_05_cafe",
+    "file": "ch01_05_cafe.scene.json",
+    "commandCount": 31
+  },
+  {
+    "id": "ch01_05b_serious",
+    "file": "ch01_05b_serious.scene.json",
+    "commandCount": 7
+  },
+  {
+    "id": "ch01_05b_playful",
+    "file": "ch01_05b_playful.scene.json",
+    "commandCount": 7
+  },
+  {
+    "id": "ch01_05b_vague",
+    "file": "ch01_05b_vague.scene.json",
+    "commandCount": 8
+  },
+  {
+    "id": "ch01_05_close",
+    "file": "ch01_05_close.scene.json",
+    "commandCount": 13
+  },
+  {
+    "id": "ch02_01_anatomy_morning",
+    "file": "ch02_01_anatomy_morning.scene.json",
+    "commandCount": 33
+  },
+  {
+    "id": "ch02_02_cadaver_first",
+    "file": "ch02_02_cadaver_first.scene.json",
+    "commandCount": 13
+  },
+  {
+    "id": "ch02_02b_steady",
+    "file": "ch02_02b_steady.scene.json",
+    "commandCount": 8
+  },
+  {
+    "id": "ch02_02b_silent",
+    "file": "ch02_02b_silent.scene.json",
+    "commandCount": 5
+  },
+  {
+    "id": "ch02_02_after_choice",
+    "file": "ch02_02_after_choice.scene.json",
+    "commandCount": 24
+  },
+  {
+    "id": "ch02_03_biochem_lab",
+    "file": "ch02_03_biochem_lab.scene.json",
+    "commandCount": 25
+  },
+  {
+    "id": "ch02_03b_apologize",
+    "file": "ch02_03b_apologize.scene.json",
+    "commandCount": 8
+  },
+  {
+    "id": "ch02_03b_quick",
+    "file": "ch02_03b_quick.scene.json",
+    "commandCount": 7
+  },
+  {
+    "id": "ch02_04_seol_recover",
+    "file": "ch02_04_seol_recover.scene.json",
+    "commandCount": 35
+  },
+  {
+    "id": "ch02_05_kakao_night",
+    "file": "ch02_05_kakao_night.scene.json",
+    "commandCount": 17
+  },
+  {
+    "id": "ch02_06_close",
+    "file": "ch02_06_close.scene.json",
+    "commandCount": 7
+  },
+  {
+    "id": "ch03_01_dongsan_lobby",
+    "file": "ch03_01_dongsan_lobby.scene.json",
+    "commandCount": 40
+  },
+  {
+    "id": "ch03_02_serin_meet",
+    "file": "ch03_02_serin_meet.scene.json",
+    "commandCount": 39
+  },
+  {
+    "id": "ch03_02b_serious",
+    "file": "ch03_02b_serious.scene.json",
+    "commandCount": 8
+  },
+  {
+    "id": "ch03_02b_casual",
+    "file": "ch03_02b_casual.scene.json",
+    "commandCount": 5
+  },
+  {
+    "id": "ch03_03_card_exchange",
+    "file": "ch03_03_card_exchange.scene.json",
+    "commandCount": 21
+  },
+  {
+    "id": "ch03_04_back_to_school",
+    "file": "ch03_04_back_to_school.scene.json",
+    "commandCount": 55
+  },
+  {
+    "id": "ch03_04b_honest",
+    "file": "ch03_04b_honest.scene.json",
+    "commandCount": 9
+  },
+  {
+    "id": "ch03_04b_neutral",
+    "file": "ch03_04b_neutral.scene.json",
+    "commandCount": 8
+  },
+  {
+    "id": "ch03_04_after_yuna",
+    "file": "ch03_04_after_yuna.scene.json",
+    "commandCount": 15
+  },
+  {
+    "id": "ch03_05_kakao_night",
+    "file": "ch03_05_kakao_night.scene.json",
+    "commandCount": 24
+  },
+  {
+    "id": "ch03_06_close",
+    "file": "ch03_06_close.scene.json",
+    "commandCount": 8
+  },
+  {
+    "id": "ch04_01_library_late",
+    "file": "ch04_01_library_late.scene.json",
+    "commandCount": 25
+  },
+  {
+    "id": "ch04_01b_share",
+    "file": "ch04_01b_share.scene.json",
+    "commandCount": 14
+  },
+  {
+    "id": "ch04_01b_later",
+    "file": "ch04_01b_later.scene.json",
+    "commandCount": 5
+  },
+  {
+    "id": "ch04_01_close",
+    "file": "ch04_01_close.scene.json",
+    "commandCount": 6
+  },
+  {
+    "id": "ch04_02_cafe_late",
+    "file": "ch04_02_cafe_late.scene.json",
+    "commandCount": 24
+  },
+  {
+    "id": "ch04_02b_care",
+    "file": "ch04_02b_care.scene.json",
+    "commandCount": 11
+  },
+  {
+    "id": "ch04_02b_neutral",
+    "file": "ch04_02b_neutral.scene.json",
+    "commandCount": 5
+  },
+  {
+    "id": "ch04_02_close",
+    "file": "ch04_02_close.scene.json",
+    "commandCount": 8
+  },
+  {
+    "id": "ch04_03_lab_late",
+    "file": "ch04_03_lab_late.scene.json",
+    "commandCount": 24
+  },
+  {
+    "id": "ch04_03b_meal",
+    "file": "ch04_03b_meal.scene.json",
+    "commandCount": 17
+  },
+  {
+    "id": "ch04_03b_quiet",
+    "file": "ch04_03b_quiet.scene.json",
+    "commandCount": 6
+  },
+  {
+    "id": "ch04_03_close",
+    "file": "ch04_03_close.scene.json",
+    "commandCount": 5
+  },
+  {
+    "id": "ch04_04_seoyoon_meet",
+    "file": "ch04_04_seoyoon_meet.scene.json",
+    "commandCount": 52
+  },
+  {
+    "id": "ch04_05_seoyoon_kakao",
+    "file": "ch04_05_seoyoon_kakao.scene.json",
+    "commandCount": 10
+  },
+  {
+    "id": "ch04_05b_replied",
+    "file": "ch04_05b_replied.scene.json",
+    "commandCount": 4
+  },
+  {
+    "id": "ch04_05b_short",
+    "file": "ch04_05b_short.scene.json",
+    "commandCount": 4
+  },
+  {
+    "id": "ch04_05_close",
+    "file": "ch04_05_close.scene.json",
+    "commandCount": 4
+  },
+  {
+    "id": "ch04_06_yuna_morning",
+    "file": "ch04_06_yuna_morning.scene.json",
+    "commandCount": 33
+  },
+  {
+    "id": "ch04_07_close",
+    "file": "ch04_07_close.scene.json",
+    "commandCount": 13
+  },
+  {
+    "id": "ch05_01_test_end",
+    "file": "ch05_01_test_end.scene.json",
+    "commandCount": 28
+  },
+  {
+    "id": "ch05_02_pub_first",
+    "file": "ch05_02_pub_first.scene.json",
+    "commandCount": 8
+  },
+  {
+    "id": "ch05_02b_h1",
+    "file": "ch05_02b_h1.scene.json",
+    "commandCount": 11
+  },
+  {
+    "id": "ch05_02b_h2",
+    "file": "ch05_02b_h2.scene.json",
+    "commandCount": 16
+  },
+  {
+    "id": "ch05_02b_h3",
+    "file": "ch05_02b_h3.scene.json",
+    "commandCount": 15
+  },
+  {
+    "id": "ch05_02b_h4",
+    "file": "ch05_02b_h4.scene.json",
+    "commandCount": 12
+  },
+  {
+    "id": "ch05_02b_h5",
+    "file": "ch05_02b_h5.scene.json",
+    "commandCount": 15
+  },
+  {
+    "id": "ch05_02_close",
+    "file": "ch05_02_close.scene.json",
+    "commandCount": 16
+  },
+  {
+    "id": "ch05_03_kakao_dawn",
+    "file": "ch05_03_kakao_dawn.scene.json",
+    "commandCount": 9
+  },
+  {
+    "id": "ch05_03b_kind",
+    "file": "ch05_03b_kind.scene.json",
+    "commandCount": 4
+  },
+  {
+    "id": "ch05_03b_warm",
+    "file": "ch05_03b_warm.scene.json",
+    "commandCount": 4
+  },
+  {
+    "id": "ch05_03b_cold",
+    "file": "ch05_03b_cold.scene.json",
+    "commandCount": 4
+  },
+  {
+    "id": "ch05_03_close",
+    "file": "ch05_03_close.scene.json",
+    "commandCount": 5
+  },
+  {
+    "id": "ch05_04_mt_decision",
+    "file": "ch05_04_mt_decision.scene.json",
+    "commandCount": 7
+  },
+  {
+    "id": "ch05_04b_go",
+    "file": "ch05_04b_go.scene.json",
+    "commandCount": 4
+  },
+  {
+    "id": "ch05_04b_skip",
+    "file": "ch05_04b_skip.scene.json",
+    "commandCount": 7
+  },
+  {
+    "id": "ch05_05_mt_pension",
+    "file": "ch05_05_mt_pension.scene.json",
+    "commandCount": 22
+  },
+  {
+    "id": "ch05_06_bonfire",
+    "file": "ch05_06_bonfire.scene.json",
+    "commandCount": 7
+  },
+  {
+    "id": "ch05_06b_h1",
+    "file": "ch05_06b_h1.scene.json",
+    "commandCount": 15
+  },
+  {
+    "id": "ch05_06b_h2",
+    "file": "ch05_06b_h2.scene.json",
+    "commandCount": 16
+  },
+  {
+    "id": "ch05_06b_h3",
+    "file": "ch05_06b_h3.scene.json",
+    "commandCount": 15
+  },
+  {
+    "id": "ch05_06b_h4",
+    "file": "ch05_06b_h4.scene.json",
+    "commandCount": 16
+  },
+  {
+    "id": "ch05_06b_h5",
+    "file": "ch05_06b_h5.scene.json",
+    "commandCount": 17
+  },
+  {
+    "id": "ch05_06_pair_pause",
+    "file": "ch05_06_pair_pause.scene.json",
+    "commandCount": 17
+  },
+  {
+    "id": "ch05_07_close_evaluate",
+    "file": "ch05_07_close_evaluate.scene.json",
+    "commandCount": 8
+  },
+  {
+    "id": "ch05_07b_replied",
+    "file": "ch05_07b_replied.scene.json",
+    "commandCount": 4
+  },
+  {
+    "id": "ch05_07b_short",
+    "file": "ch05_07b_short.scene.json",
+    "commandCount": 4
+  },
+  {
+    "id": "ch05_07_close",
+    "file": "ch05_07_close.scene.json",
+    "commandCount": 14
+  },
+  {
+    "id": "ch06_h1_01_festival_visit",
+    "file": "ch06_h1_01_festival_visit.scene.json",
+    "commandCount": 32
+  },
+  {
+    "id": "ch06_h1_01b_thanks",
+    "file": "ch06_h1_01b_thanks.scene.json",
+    "commandCount": 10
+  },
+  {
+    "id": "ch06_h1_01b_quick",
+    "file": "ch06_h1_01b_quick.scene.json",
+    "commandCount": 5
+  },
+  {
+    "id": "ch06_h1_01b_light",
+    "file": "ch06_h1_01b_light.scene.json",
+    "commandCount": 8
+  },
+  {
+    "id": "ch06_h1_01_close",
+    "file": "ch06_h1_01_close.scene.json",
+    "commandCount": 9
+  },
+  {
+    "id": "ch06_h1_02_late_cafe",
+    "file": "ch06_h1_02_late_cafe.scene.json",
+    "commandCount": 28
+  },
+  {
+    "id": "ch06_h1_02b_care",
+    "file": "ch06_h1_02b_care.scene.json",
+    "commandCount": 10
+  },
+  {
+    "id": "ch06_h1_02b_neutral",
+    "file": "ch06_h1_02b_neutral.scene.json",
+    "commandCount": 5
+  },
+  {
+    "id": "ch06_h1_02b_distant",
+    "file": "ch06_h1_02b_distant.scene.json",
+    "commandCount": 8
+  },
+  {
+    "id": "ch06_h1_02_close",
+    "file": "ch06_h1_02_close.scene.json",
+    "commandCount": 10
+  },
+  {
+    "id": "ch06_h1_03_walk",
+    "file": "ch06_h1_03_walk.scene.json",
+    "commandCount": 23
+  },
+  {
+    "id": "ch06_h1_03b_noona",
+    "file": "ch06_h1_03b_noona.scene.json",
+    "commandCount": 13
+  },
+  {
+    "id": "ch06_h1_03b_sunbae",
+    "file": "ch06_h1_03b_sunbae.scene.json",
+    "commandCount": 5
+  },
+  {
+    "id": "ch06_h1_03b_teacher",
+    "file": "ch06_h1_03b_teacher.scene.json",
+    "commandCount": 8
+  },
+  {
+    "id": "ch06_h1_03_close",
+    "file": "ch06_h1_03_close.scene.json",
+    "commandCount": 9
+  },
+  {
+    "id": "ch06_h1_04_evaluate",
+    "file": "ch06_h1_04_evaluate.scene.json",
+    "commandCount": 2
+  },
+  {
+    "id": "ch06_h1_true",
+    "file": "ch06_h1_true.scene.json",
+    "commandCount": 36
+  },
+  {
+    "id": "ch06_h1_happy",
+    "file": "ch06_h1_happy.scene.json",
+    "commandCount": 26
+  },
+  {
+    "id": "ch06_h1_normal",
+    "file": "ch06_h1_normal.scene.json",
+    "commandCount": 25
+  },
+  {
+    "id": "ch06_h1_bad",
+    "file": "ch06_h1_bad.scene.json",
+    "commandCount": 33
+  },
+  {
+    "id": "ch06_h2_01_festival_booth",
+    "file": "ch06_h2_01_festival_booth.scene.json",
+    "commandCount": 34
+  },
+  {
+    "id": "ch06_h2_01b_thanks",
+    "file": "ch06_h2_01b_thanks.scene.json",
+    "commandCount": 12
+  },
+  {
+    "id": "ch06_h2_01b_quick",
+    "file": "ch06_h2_01b_quick.scene.json",
+    "commandCount": 5
+  },
+  {
+    "id": "ch06_h2_01b_light",
+    "file": "ch06_h2_01b_light.scene.json",
+    "commandCount": 8
+  },
+  {
+    "id": "ch06_h2_01_close",
+    "file": "ch06_h2_01_close.scene.json",
+    "commandCount": 9
+  },
+  {
+    "id": "ch06_h2_02_dongseong",
+    "file": "ch06_h2_02_dongseong.scene.json",
+    "commandCount": 30
+  },
+  {
+    "id": "ch06_h2_02b_walk",
+    "file": "ch06_h2_02b_walk.scene.json",
+    "commandCount": 9
+  },
+  {
+    "id": "ch06_h2_02b_stay",
+    "file": "ch06_h2_02b_stay.scene.json",
+    "commandCount": 10
+  },
+  {
+    "id": "ch06_h2_03_walk",
+    "file": "ch06_h2_03_walk.scene.json",
+    "commandCount": 15
+  },
+  {
+    "id": "ch06_h2_03b_recall",
+    "file": "ch06_h2_03b_recall.scene.json",
+    "commandCount": 9
+  },
+  {
+    "id": "ch06_h2_03b_neutral",
+    "file": "ch06_h2_03b_neutral.scene.json",
+    "commandCount": 5
+  },
+  {
+    "id": "ch06_h2_03_extend",
+    "file": "ch06_h2_03_extend.scene.json",
+    "commandCount": 7
+  },
+  {
+    "id": "ch06_h2_03b_extend_warm",
+    "file": "ch06_h2_03b_extend_warm.scene.json",
+    "commandCount": 8
+  },
+  {
+    "id": "ch06_h2_03b_extend_quick",
+    "file": "ch06_h2_03b_extend_quick.scene.json",
+    "commandCount": 6
+  },
+  {
+    "id": "ch06_h2_03b_extend_light",
+    "file": "ch06_h2_03b_extend_light.scene.json",
+    "commandCount": 8
+  },
+  {
+    "id": "ch06_h2_03_close",
+    "file": "ch06_h2_03_close.scene.json",
+    "commandCount": 4
+  },
+  {
+    "id": "ch06_h2_04_rooftop",
+    "file": "ch06_h2_04_rooftop.scene.json",
+    "commandCount": 18
+  },
+  {
+    "id": "ch06_h2_04b_honest",
+    "file": "ch06_h2_04b_honest.scene.json",
+    "commandCount": 14
+  },
+  {
+    "id": "ch06_h2_04b_direct",
+    "file": "ch06_h2_04b_direct.scene.json",
+    "commandCount": 8
+  },
+  {
+    "id": "ch06_h2_04b_friend",
+    "file": "ch06_h2_04b_friend.scene.json",
+    "commandCount": 8
+  },
+  {
+    "id": "ch06_h2_04_close",
+    "file": "ch06_h2_04_close.scene.json",
+    "commandCount": 7
+  },
+  {
+    "id": "ch06_h2_05_evaluate",
+    "file": "ch06_h2_05_evaluate.scene.json",
+    "commandCount": 2
+  },
+  {
+    "id": "ch06_h2_true",
+    "file": "ch06_h2_true.scene.json",
+    "commandCount": 37
+  },
+  {
+    "id": "ch06_h2_happy",
+    "file": "ch06_h2_happy.scene.json",
+    "commandCount": 23
+  },
+  {
+    "id": "ch06_h2_normal",
+    "file": "ch06_h2_normal.scene.json",
+    "commandCount": 15
+  },
+  {
+    "id": "ch06_h2_bad",
+    "file": "ch06_h2_bad.scene.json",
+    "commandCount": 20
+  },
+  {
+    "id": "ch06_h3_01_festival_booth",
+    "file": "ch06_h3_01_festival_booth.scene.json",
+    "commandCount": 27
+  },
+  {
+    "id": "ch06_h3_01b_care",
+    "file": "ch06_h3_01b_care.scene.json",
+    "commandCount": 13
+  },
+  {
+    "id": "ch06_h3_01b_invite",
+    "file": "ch06_h3_01b_invite.scene.json",
+    "commandCount": 7
+  },
+  {
+    "id": "ch06_h3_01b_join",
+    "file": "ch06_h3_01b_join.scene.json",
+    "commandCount": 8
+  },
+  {
+    "id": "ch06_h3_01_close",
+    "file": "ch06_h3_01_close.scene.json",
+    "commandCount": 12
+  },
+  {
+    "id": "ch06_h3_02_walk",
+    "file": "ch06_h3_02_walk.scene.json",
+    "commandCount": 30
+  },
+  {
+    "id": "ch06_h3_02b_admire",
+    "file": "ch06_h3_02b_admire.scene.json",
+    "commandCount": 13
+  },
+  {
+    "id": "ch06_h3_02b_polite",
+    "file": "ch06_h3_02b_polite.scene.json",
+    "commandCount": 6
+  },
+  {
+    "id": "ch06_h3_02b_silent",
+    "file": "ch06_h3_02b_silent.scene.json",
+    "commandCount": 7
+  },
+  {
+    "id": "ch06_h3_02_close",
+    "file": "ch06_h3_02_close.scene.json",
+    "commandCount": 14
+  },
+  {
+    "id": "ch06_h3_03_late_night_lab",
+    "file": "ch06_h3_03_late_night_lab.scene.json",
+    "commandCount": 43
+  },
+  {
+    "id": "ch06_h3_03b_honest",
+    "file": "ch06_h3_03b_honest.scene.json",
+    "commandCount": 16
+  },
+  {
+    "id": "ch06_h3_03b_safe",
+    "file": "ch06_h3_03b_safe.scene.json",
+    "commandCount": 5
+  },
+  {
+    "id": "ch06_h3_03b_distant",
+    "file": "ch06_h3_03b_distant.scene.json",
+    "commandCount": 8
+  },
+  {
+    "id": "ch06_h3_03_close",
+    "file": "ch06_h3_03_close.scene.json",
+    "commandCount": 9
+  },
+  {
+    "id": "ch06_h3_04_evaluate",
+    "file": "ch06_h3_04_evaluate.scene.json",
+    "commandCount": 2
+  },
+  {
+    "id": "ch06_h3_true",
+    "file": "ch06_h3_true.scene.json",
+    "commandCount": 40
+  },
+  {
+    "id": "ch06_h3_happy",
+    "file": "ch06_h3_happy.scene.json",
+    "commandCount": 23
+  },
+  {
+    "id": "ch06_h3_normal",
+    "file": "ch06_h3_normal.scene.json",
+    "commandCount": 25
+  },
+  {
+    "id": "ch06_h4_01_open",
+    "file": "ch06_h4_01_open.scene.json",
+    "commandCount": 14
+  },
+  {
+    "id": "ch06_h4_01b_warm",
+    "file": "ch06_h4_01b_warm.scene.json",
+    "commandCount": 4
+  },
+  {
+    "id": "ch06_h4_01b_neutral",
+    "file": "ch06_h4_01b_neutral.scene.json",
+    "commandCount": 4
+  },
+  {
+    "id": "ch06_h4_01_close",
+    "file": "ch06_h4_01_close.scene.json",
+    "commandCount": 4
+  },
+  {
+    "id": "ch06_h4_02_campus_lunch",
+    "file": "ch06_h4_02_campus_lunch.scene.json",
+    "commandCount": 14
+  },
+  {
+    "id": "ch06_h4_02b_cheer",
+    "file": "ch06_h4_02b_cheer.scene.json",
+    "commandCount": 11
+  },
+  {
+    "id": "ch06_h4_02b_quick",
+    "file": "ch06_h4_02b_quick.scene.json",
+    "commandCount": 5
+  },
+  {
+    "id": "ch06_h4_02b_push",
+    "file": "ch06_h4_02b_push.scene.json",
+    "commandCount": 8
+  },
+  {
+    "id": "ch06_h4_02_close",
+    "file": "ch06_h4_02_close.scene.json",
+    "commandCount": 5
+  },
+  {
+    "id": "ch06_h4_03_perv_pair",
+    "file": "ch06_h4_03_perv_pair.scene.json",
+    "commandCount": 12
+  },
+  {
+    "id": "ch06_h4_03b_replied",
+    "file": "ch06_h4_03b_replied.scene.json",
+    "commandCount": 4
+  },
+  {
+    "id": "ch06_h4_03b_short",
+    "file": "ch06_h4_03b_short.scene.json",
+    "commandCount": 4
+  },
+  {
+    "id": "ch06_h4_03_close",
+    "file": "ch06_h4_03_close.scene.json",
+    "commandCount": 5
+  },
+  {
+    "id": "ch06_h4_04_date",
+    "file": "ch06_h4_04_date.scene.json",
+    "commandCount": 37
+  },
+  {
+    "id": "ch06_h4_04b_distance",
+    "file": "ch06_h4_04b_distance.scene.json",
+    "commandCount": 9
+  },
+  {
+    "id": "ch06_h4_04b_direct",
+    "file": "ch06_h4_04b_direct.scene.json",
+    "commandCount": 6
+  },
+  {
+    "id": "ch06_h4_04b_push",
+    "file": "ch06_h4_04b_push.scene.json",
+    "commandCount": 8
+  },
+  {
+    "id": "ch06_h4_04_close",
+    "file": "ch06_h4_04_close.scene.json",
+    "commandCount": 10
+  },
+  {
+    "id": "ch06_h4_05_late_kakao",
+    "file": "ch06_h4_05_late_kakao.scene.json",
+    "commandCount": 7
+  },
+  {
+    "id": "ch06_h4_05b_replied",
+    "file": "ch06_h4_05b_replied.scene.json",
+    "commandCount": 4
+  },
+  {
+    "id": "ch06_h4_05b_short",
+    "file": "ch06_h4_05b_short.scene.json",
+    "commandCount": 4
+  },
+  {
+    "id": "ch06_h4_06_close_decision",
+    "file": "ch06_h4_06_close_decision.scene.json",
+    "commandCount": 8
+  },
+  {
+    "id": "ch06_h4_06b_close_warm",
+    "file": "ch06_h4_06b_close_warm.scene.json",
+    "commandCount": 4
+  },
+  {
+    "id": "ch06_h4_06b_close_neutral",
+    "file": "ch06_h4_06b_close_neutral.scene.json",
+    "commandCount": 4
+  },
+  {
+    "id": "ch06_h4_07_evaluate",
+    "file": "ch06_h4_07_evaluate.scene.json",
+    "commandCount": 4
+  },
+  {
+    "id": "ch06_h4_true",
+    "file": "ch06_h4_true.scene.json",
+    "commandCount": 36
+  },
+  {
+    "id": "ch06_h4_normal",
+    "file": "ch06_h4_normal.scene.json",
+    "commandCount": 20
+  },
+  {
+    "id": "ch06_h4_reject",
+    "file": "ch06_h4_reject.scene.json",
+    "commandCount": 5
+  },
+  {
+    "id": "ch06_h5_01_festival_booth",
+    "file": "ch06_h5_01_festival_booth.scene.json",
+    "commandCount": 23
+  },
+  {
+    "id": "ch06_h5_01b_take",
+    "file": "ch06_h5_01b_take.scene.json",
+    "commandCount": 14
+  },
+  {
+    "id": "ch06_h5_01b_quick",
+    "file": "ch06_h5_01b_quick.scene.json",
+    "commandCount": 6
+  },
+  {
+    "id": "ch06_h5_01b_light",
+    "file": "ch06_h5_01b_light.scene.json",
+    "commandCount": 9
+  },
+  {
+    "id": "ch06_h5_01_close",
+    "file": "ch06_h5_01_close.scene.json",
+    "commandCount": 9
+  },
+  {
+    "id": "ch06_h5_02_club_event",
+    "file": "ch06_h5_02_club_event.scene.json",
+    "commandCount": 18
+  },
+  {
+    "id": "ch06_h5_02b_help",
+    "file": "ch06_h5_02b_help.scene.json",
+    "commandCount": 13
+  },
+  {
+    "id": "ch06_h5_02b_help_quick",
+    "file": "ch06_h5_02b_help_quick.scene.json",
+    "commandCount": 5
+  },
+  {
+    "id": "ch06_h5_02b_partial",
+    "file": "ch06_h5_02b_partial.scene.json",
+    "commandCount": 6
+  },
+  {
+    "id": "ch06_h5_02_close",
+    "file": "ch06_h5_02_close.scene.json",
+    "commandCount": 11
+  },
+  {
+    "id": "ch06_h5_03_morning_library",
+    "file": "ch06_h5_03_morning_library.scene.json",
+    "commandCount": 18
+  },
+  {
+    "id": "ch06_h5_03b_distance",
+    "file": "ch06_h5_03b_distance.scene.json",
+    "commandCount": 18
+  },
+  {
+    "id": "ch06_h5_03b_quick",
+    "file": "ch06_h5_03b_quick.scene.json",
+    "commandCount": 5
+  },
+  {
+    "id": "ch06_h5_03_close",
+    "file": "ch06_h5_03_close.scene.json",
+    "commandCount": 6
+  },
+  {
+    "id": "ch06_h5_04_late_kakao",
+    "file": "ch06_h5_04_late_kakao.scene.json",
+    "commandCount": 12
+  },
+  {
+    "id": "ch06_h5_04b_sleep",
+    "file": "ch06_h5_04b_sleep.scene.json",
+    "commandCount": 8
+  },
+  {
+    "id": "ch06_h5_04b_quick",
+    "file": "ch06_h5_04b_quick.scene.json",
+    "commandCount": 4
+  },
+  {
+    "id": "ch06_h5_04b_avoid",
+    "file": "ch06_h5_04b_avoid.scene.json",
+    "commandCount": 4
+  },
+  {
+    "id": "ch06_h5_04_close",
+    "file": "ch06_h5_04_close.scene.json",
+    "commandCount": 5
+  },
+  {
+    "id": "ch06_h5_05_blossom_path",
+    "file": "ch06_h5_05_blossom_path.scene.json",
+    "commandCount": 20
+  },
+  {
+    "id": "ch06_h5_05b_call",
+    "file": "ch06_h5_05b_call.scene.json",
+    "commandCount": 17
+  },
+  {
+    "id": "ch06_h5_05b_call_partial",
+    "file": "ch06_h5_05b_call_partial.scene.json",
+    "commandCount": 6
+  },
+  {
+    "id": "ch06_h5_05b_keep",
+    "file": "ch06_h5_05b_keep.scene.json",
+    "commandCount": 5
+  },
+  {
+    "id": "ch06_h5_05_close",
+    "file": "ch06_h5_05_close.scene.json",
+    "commandCount": 7
+  },
+  {
+    "id": "ch06_h5_06_evaluate",
+    "file": "ch06_h5_06_evaluate.scene.json",
+    "commandCount": 2
+  },
+  {
+    "id": "ch06_h5_true",
+    "file": "ch06_h5_true.scene.json",
+    "commandCount": 47
+  },
+  {
+    "id": "ch06_h5_solo_fallback",
+    "file": "ch06_h5_solo_fallback.scene.json",
+    "commandCount": 2
+  },
+  {
+    "id": "end_solo_summer_main",
+    "file": "end_solo_summer_main.scene.json",
+    "commandCount": 44
+  },
+  {
+    "id": "prologue_01_home",
+    "file": "prologue_01_home.scene.json",
+    "commandCount": 21
+  },
+  {
+    "id": "prologue_02_train",
+    "file": "prologue_02_train.scene.json",
+    "commandCount": 8
+  },
+  {
+    "id": "prologue_02b_positive",
+    "file": "prologue_02b_positive.scene.json",
+    "commandCount": 3
+  },
+  {
+    "id": "prologue_02b_serious",
+    "file": "prologue_02b_serious.scene.json",
+    "commandCount": 3
+  },
+  {
+    "id": "prologue_02b_chill",
+    "file": "prologue_02b_chill.scene.json",
+    "commandCount": 3
+  },
+  {
+    "id": "prologue_02_after_choice",
+    "file": "prologue_02_after_choice.scene.json",
+    "commandCount": 5
+  },
+  {
+    "id": "prologue_03_studio",
+    "file": "prologue_03_studio.scene.json",
+    "commandCount": 13
+  },
+  {
+    "id": "prologue_03b_steady",
+    "file": "prologue_03b_steady.scene.json",
+    "commandCount": 3
+  },
+  {
+    "id": "prologue_03b_practical",
+    "file": "prologue_03b_practical.scene.json",
+    "commandCount": 3
+  },
+  {
+    "id": "prologue_03_close",
+    "file": "prologue_03_close.scene.json",
+    "commandCount": 7
+  }
+]

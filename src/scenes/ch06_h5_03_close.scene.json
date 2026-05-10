@@ -1,0 +1,53 @@
+{
+  "id": "ch06_h5_03_close",
+  "commands": [
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "장윤영",
+      "transition": "fade"
+    },
+    {
+      "type": "NARRATION",
+      "text": "장윤영이 의예과 강의실 쪽으로 사라진다. 도서관 앞 광장에 봄볕이 한 톤 더 짙어진다. 의대 축제 주간이 마무리되어 가는 시간."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "도서관 앞 9시 5분 응원."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "시험 일주일 전 도서관에서 시작된 마주침이, 어느새 이번 학기 마지막 즈음까지 흘러왔다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한 살 어린 후배와의 거리가 조금씩 풀어져 가는 중이고."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤모",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "BG",
+      "image": "black"
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h5_04_late_kakao"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-05 morning",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

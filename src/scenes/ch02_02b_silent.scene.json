@@ -1,0 +1,44 @@
+{
+  "id": "ch02_02b_silent",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h2_cadaver_response",
+      "value": "silent"
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모는 말 없이 윤하정 옆으로 한 발짝 더 다가선다. 손이 닿지는 않을 만큼."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "지금 말 걸어도 되는 건지 모르겠다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "그냥 옆에 있는 게 나을 수도 있고."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "같은 자리에 같이 서 있는 것만으로도 뭔가 전해진다고 믿어보자."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤하정의 손 떨림은 잠시 그대로다. 한참 뒤에야 천천히 멎는다."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch02_02_after_choice"
+    }
+  ],
+  "meta": {
+    "chapter": 2,
+    "time": "2026-03-16 morning, anatomy lab",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

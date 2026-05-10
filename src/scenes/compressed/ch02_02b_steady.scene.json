@@ -1,0 +1,52 @@
+{
+  "id": "ch02_02b_steady",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h2_cadaver_response",
+      "value": "calm"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "...괜찮아? 천천히 해."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤하정의 손 떨림이 살짝 멎는다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤하정",
+      "sprite": "smile_small",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...어. 어. 너야말로 괜찮아 보이네. 의외로."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "의외라니. 나도 떨려. 그냥... 같이 가면 되지."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...그래. 같이."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch02_02_after_choice"
+    }
+  ],
+  "meta": {
+    "chapter": 2,
+    "time": "2026-03-16 morning, anatomy lab",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": "ch06_h4_03_close",
+  "commands": [
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 폰을 책상에 내려놓고 부스 자료로 시선을 돌린다. 자취방 창밖이 6월 저녁 색으로 어둑해진다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "약대 가운 사진 한 장."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "평소랑은 분위기가 좀 다르더라."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "시험 마지막 주 끝나면 직접 뵐 수 있겠지."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "BG",
+      "image": "black"
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h4_04_date"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-04 evening",
+    "activeHeroines": [
+      "H4"
+    ]
+  }
+}

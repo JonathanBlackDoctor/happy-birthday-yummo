@@ -1,0 +1,56 @@
+{
+  "id": "ch02_03b_quick",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h3_apology",
+      "value": "quick"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "죄송합니다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 한 발 뒤로 물러선다. 한설이 키트로 유리를 정리한다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "한설",
+      "sprite": "serious",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...괜찮아요. 첫 실험이니까."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "가운 끝자락 시약 묻은 거 화장실에서 닦아요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네... 감사합니다."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch02_04_seol_recover"
+    }
+  ],
+  "meta": {
+    "chapter": 2,
+    "time": "2026-03-17 afternoon",
+    "activeHeroines": [
+      "H2",
+      "H3"
+    ],
+    "coFireNpcs": [
+      "taeho"
+    ]
+  }
+}

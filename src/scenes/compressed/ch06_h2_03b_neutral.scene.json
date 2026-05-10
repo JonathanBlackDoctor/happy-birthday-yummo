@@ -1,0 +1,36 @@
+{
+  "id": "ch06_h2_03b_neutral",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h2_recall",
+      "value": "neutral"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "그런 답 한 줄로 정리할 게 아니지."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...어, 그래."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "무난하게 넘어갔다."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h2_03_extend"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-01 night",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": "ch04_01_close",
+  "commands": [
+    {
+      "type": "NARRATION",
+      "text": "도서관 시계가 11시 30분을 넘긴다. 윤모가 챕터 한 개를 더 넘긴다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "일단 한 챕터 더."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "카페인이 떨어져 가네. 잠깐 커피 사러 갔다 와야겠다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "본관 옆 24시간 카페가 시험기간엔 의대생 반, 약대생 반이라고 들었다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 자리에서 일어난다. 표경민이 자기 책으로 다시 시선을 돌린다."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤하정",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "표경민",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch04_02_cafe_late"
+    }
+  ],
+  "meta": {
+    "chapter": 4,
+    "time": "2026-04-27 night",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

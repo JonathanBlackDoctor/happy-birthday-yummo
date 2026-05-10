@@ -1,0 +1,87 @@
+{
+  "id": "ch06_h1_02b_care",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h1_late_cafe",
+      "value": "care"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "선생님."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "새벽 1시까지 버티시는 거, 가볍지 않아요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "머그잔 한 잔 비우려고 30분 빼시는 거 알겠는데, 본인부터 챙기세요. 가운 어깨도 좀 정리하시고요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "Ch.4 때도 같은 말씀 드렸는데, 한 학기 지나서도 그대로네요."
+    },
+    {
+      "type": "NARRATION",
+      "text": "차세린이 잠깐 멈춘다. 시선이 머그잔에서 윤모 쪽으로 옮겨진다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "차세린",
+      "sprite": "smile",
+      "position": "left",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "...학생."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "그러게요. Ch.4에서 들었던 거 그대로네요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "의국에선 다들 비슷하게 피곤하니까 서로 무뎌져 있거든요. 이렇게 챙겨주는 사람이 잘 없고요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "...잘 받았어요. 진짜로."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "\"잘 받았어요. 진짜로.\""
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한 학기 만에 또 들었다. Ch.4에서 처음 들었을 때보다 따뜻하게 닿는다."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h1_02_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-02 dawn 1am",
+    "activeHeroines": [
+      "H1"
+    ]
+  }
+}

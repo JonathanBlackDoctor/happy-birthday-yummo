@@ -1,0 +1,72 @@
+{
+  "id": "ch05_07b_replied",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h4_dawn_reply",
+      "value": "on_time"
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "구윤모",
+          "text": "안 잤어요"
+        },
+        {
+          "sender": "구윤모",
+          "text": "오늘 부엌에서 정리하시는 모습이 자연스러워서 같이 했어요"
+        },
+        {
+          "sender": "구윤모",
+          "text": "고맙다는 인사 받을 일 아니고요"
+        },
+        {
+          "sender": "나서윤",
+          "text": "그래도요"
+        },
+        {
+          "sender": "나서윤",
+          "text": "MT 분위기 한 번 봤네요 처음이라"
+        },
+        {
+          "sender": "구윤모",
+          "text": "처음이세요?"
+        },
+        {
+          "sender": "나서윤",
+          "text": "약대는 학년별로 분위기가 단단해서 본격 MT는 잘 안 가요"
+        },
+        {
+          "sender": "나서윤",
+          "text": "오늘 와본 거 다행이에요"
+        },
+        {
+          "sender": "나서윤",
+          "text": "잘 자요 🥺"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "시크하시면서 끝에 🥺 하나."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "평소가 정중한 분이라 그 이모지 하나가 묵직하게 다가온다."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch05_07_close"
+    }
+  ],
+  "meta": {
+    "chapter": 5,
+    "time": "2026-05-17 dawn",
+    "activeHeroines": [
+      "H4"
+    ]
+  }
+}

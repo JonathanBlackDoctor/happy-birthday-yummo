@@ -1,0 +1,36 @@
+{
+  "id": "ch06_h4_03_close",
+  "commands": [
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "약대 가운 사진 한 장. 시험 마지막 주 끝나면 직접 뵐 수 있겠지."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "BG",
+      "image": "black"
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h4_04_date"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-04 evening",
+    "activeHeroines": [
+      "H4"
+    ]
+  }
+}

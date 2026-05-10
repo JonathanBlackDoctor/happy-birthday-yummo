@@ -1,0 +1,200 @@
+{
+  "id": "ch06_h1_02_late_cafe",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_campus_cafe_night",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.4,
+      "fade": 3
+    },
+    {
+      "type": "NARRATION",
+      "text": "같은 날 밤 11시. 윤모가 도서관에서 한 챕터를 정리하고 동산병원 1층 옆 24시간 카페로 향한다. 새벽 1시 5분 도착."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "진짜 가는 거지."
+    },
+    {
+      "type": "SFX",
+      "sound": "sfx_katalk_notify"
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "김규민",
+          "text": "야 윤모 어디"
+        },
+        {
+          "sender": "구윤모",
+          "text": "동산병원 카페"
+        },
+        {
+          "sender": "김규민",
+          "text": "ㄷㄷ 새벽인데"
+        },
+        {
+          "sender": "구윤모",
+          "text": "그러게"
+        },
+        {
+          "sender": "김규민",
+          "text": "누구 만나러 가는 거임"
+        },
+        {
+          "sender": "구윤모",
+          "text": "답 못 함"
+        },
+        {
+          "sender": "김규민",
+          "text": "ㅋㅋㅋㅋ 솔로의 외침"
+        },
+        {
+          "sender": "김규민",
+          "text": "잘 갔다와라"
+        }
+      ]
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 카페 문을 천천히 연다. 평일 새벽이라 손님이 거의 없다. 창가 자리에 한 사람이 머그잔을 두 손으로 감싸고 있다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "차세린",
+      "sprite": "tired",
+      "position": "left",
+      "transition": "fade"
+    },
+    {
+      "type": "CG",
+      "image": "cg_serin_cafe_late",
+      "cgId": "cg_serin_cafe_late"
+    },
+    {
+      "type": "NARRATION",
+      "text": "새벽 1시 동산병원 1층 옆 24시간 카페. 차세린이 창가 자리에서 머그잔을 두 손으로 감싸고 있다. 흰 가운에 청록 스크럽 그대로, 가운 어깨가 한쪽 구겨진 채. 표정엔 옅은 피로."
+    },
+    {
+      "type": "CG_HIDE"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "선생님."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "...아, 학생. 진짜 왔네요. 농담인 줄 알았는데."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "도서관 마치고 자연스러운 동선이라."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "앉아요. 한 잔 시켜와요."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 따뜻한 음료를 받아 차세린 맞은편에 앉는다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "남희석 선배가 당직 사이에 카페 한 번 다녀오라고 권하셨어요. \"차세린, 새벽 1시쯤엔 머그잔 정도는 있어야지.\" 그게 다였어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "의국에선 다들 비슷하게 피곤하니까 서로 이런 거 잘 안 챙겨요. 남희석 선배는 가끔 챙겨주시고요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "Ch.3 첫 견학 때 길 잃은 저를 의국까지 데려다주셨던 분이에요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "그랬구나. 좋은 사람이에요."
+    },
+    {
+      "type": "FLAG_INC",
+      "key": "H1",
+      "delta": 5
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_romantic",
+      "volume": 0.4,
+      "fade": 2
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "피곤이 그대로 묻어 있다. 머그잔 따뜻한지부터 챙겨드리는 게 먼저다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "학생. 오후에 부스 입구에서 학생이 한 말이요. 30분 시간 낸 게 가볍지 않다고 했던 거. 그게 새벽까지 남아 있네요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "7살이나 차이 나는데 그렇게 받아주는 학생, 흔하진 않거든요."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "7살 차이. 누나 입으로 먼저 꺼내셨다."
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "새벽 1시까지 버티시는 거 가볍지 않아요. 본인부터 챙기세요",
+          "next": "ch06_h1_02b_care",
+          "tone": "mature_serious",
+          "isKey": true,
+          "descriptor": "ch6_h1_late_cafe_care"
+        },
+        {
+          "text": "선생님 오늘도 수고하셨네요",
+          "next": "ch06_h1_02b_neutral",
+          "tone": "warm_supportive"
+        },
+        {
+          "text": "7살 차이는 7살 차이고요",
+          "next": "ch06_h1_02b_distant",
+          "tone": "direct_friendly"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-02 dawn 1am",
+    "activeHeroines": [
+      "H1"
+    ]
+  }
+}

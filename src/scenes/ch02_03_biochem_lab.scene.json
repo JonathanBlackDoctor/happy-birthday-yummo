@@ -1,0 +1,225 @@
+{
+  "id": "ch02_03_biochem_lab",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_anatomy_lab",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.5,
+      "fade": 2
+    },
+    {
+      "type": "NARRATION",
+      "text": "다음 날 오후. 본과 1학년 첫 생화학 실험. 실험실에 학생들이 자리 잡고, 한쪽엔 흰 가운에 안경을 쓴 조교가 차분히 자료를 정리하고 있다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "NARRATION",
+      "text": "5조 실험대. 윤하정, 오준혁이 옆에 있다. 이문규, 정욱은 옆 자리."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "어제가 워낙 무거웠던 탓인지, 오늘 실험은 마음이 좀 가볍다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "안 좋은 의미는 아니고. 살아 있는 사람이 다루는 시약이니까."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "한설",
+      "sprite": "default",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "안녕하세요. 이번 학기 본과 1학년 생화학실험 조교 한설입니다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "박사과정 5년차고요. 실험은 매주 한 번, 두 시간씩 진행될 거예요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "첫 실험은 간단한 단백질 정량부터 시작합니다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "시약 다룰 때 라벨 두 번 확인하는 거 잊지 마세요."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "차분하시다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "말씀에 군더더기가 없다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "본과 들어와서 처음 만나는 어른 같다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "한설이 각 조 실험대를 한 번씩 돌아본다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "한설",
+      "sprite": "serious",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "이 시약은 무게가 중요해요. 0.5g, 0.1g 단위까지."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "그리고 이 시약병은 살짝 무거우니까 두 손으로 받쳐서 들어주세요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 알겠습니다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "네."
+    },
+    {
+      "type": "NARRATION",
+      "text": "실험이 시작된다. 다섯 명이 분담해서 시약을 계량하고 비커를 채운다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "카데바 바로 다음 날에 정량 실험이라."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "머리는 안 흔들리는데, 손이 평소보다 무겁다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 시약병을 두 손으로 받쳐 든다. 라벨을 확인한다. 한 번 더 확인한다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "오준혁이 다른 시약을 윤모에게 건넨다. 받는 손이 살짝 헛돌고, 시약병 하나가 실험대 모서리에 부딪친다."
+    },
+    {
+      "type": "SFX",
+      "sound": "sfx_glass_drop",
+      "volume": 0.6
+    },
+    {
+      "type": "NARRATION",
+      "text": "시약병이 바닥에 떨어져 깨진다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "...아.",
+      "subtype": "normal"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "panic",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "NARRATION",
+      "text": "짧은 침묵. 옆 조 학생들이 흘끗 시선을 보낸다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "한설",
+      "sprite": "serious",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "NARRATION",
+      "text": "한설이 빠른 걸음으로 5조 자리에 다가온다. 표정은 침착하다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "다친 사람 없어요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네... 죄송합니다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "오준혁",
+      "text": "죄송합니다, 제가 건네면서 자세가 안 좋았어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "일단 둘 다 뒤로 한 발씩 물러서요. 유리 조각 밟지 말고."
+    },
+    {
+      "type": "NARRATION",
+      "text": "한설이 옆 보관함에서 깨진 유리 처리 키트를 꺼내 빠르게 정리하기 시작한다."
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "정말 죄송합니다. 청소도 도와드릴게요.",
+          "next": "ch02_03b_apologize",
+          "tone": "warm_supportive",
+          "isKey": true,
+          "descriptor": "ch2_apology"
+        },
+        {
+          "text": "죄송합니다.",
+          "next": "ch02_03b_quick",
+          "tone": "mature_serious"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 2,
+    "time": "2026-03-17 afternoon",
+    "activeHeroines": [
+      "H2",
+      "H3"
+    ],
+    "coFireNpcs": [
+      "taeho"
+    ]
+  }
+}

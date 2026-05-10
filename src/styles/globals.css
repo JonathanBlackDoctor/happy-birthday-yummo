@@ -1,0 +1,170 @@
+@import './tokens.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-main);
+  font-size: var(--font-size-text);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  overflow: hidden;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--color-accent-hover);
+  outline-offset: 2px;
+}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* UI-SPEC §10 + MASTER-PLAN §5.5 — 세로모드 회전 안내 (모바일/태블릿 한정) */
+.orientation-lock-overlay {
+  position: fixed;
+  inset: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: rgba(31, 24, 34, 0.96); /* var(--color-dark-bg) 거의 불투명 — 게임 완전 가림 */
+  color: var(--color-textbox-text);
+  z-index: var(--z-toast);
+  padding: 24px;
+  text-align: center;
+}
+
+.orientation-lock-icon {
+  font-size: 64px;
+  animation: orientation-rotate 2s ease-in-out infinite;
+}
+
+.orientation-lock-message {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.orientation-lock-sub {
+  font-size: 14px;
+  color: var(--color-dark-accent);
+}
+
+@keyframes orientation-rotate {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(-90deg); }
+}
+
+@media (pointer: coarse) and (orientation: portrait) {
+  .orientation-lock-overlay {
+    display: flex;
+  }
+}
+
+body[data-kmu-reduce-motion='true'] .orientation-lock-icon {
+  animation: none;
+}
+
+/*
+ * AffectionToast / ChapterFader는 prefers-reduced-motion 환경에서 CSS animation/transition이
+ * 강제 단축되는 문제를 회피하기 위해 store-driven step 또는 inline state로 직접 제어 (CSS 무관).
+ */
+
+/* ANIMATION-SPEC §3·§3.5·§4·§4.5 — 캐릭터 워킹 등·퇴장 + 화자/표정 zoom.
+   class selector(.char-anim-*)로 적용해 prefers-reduced-motion 글로벌 룰을
+   동일 selector로 specificity 동률에서 명시 override (PM 결정 2026-05-09:
+   캐릭터 워킹·zoom은 reduce-motion 환경에서도 시각 유지). */
+@keyframes characterEnterFromLeft {
+  from { transform: translateX(calc(var(--char-walk-distance) * -1)); opacity: 0; }
+  to   { transform: translateX(0);                                    opacity: 1; }
+}
+@keyframes characterEnterFromRight {
+  from { transform: translateX(var(--char-walk-distance)); opacity: 0; }
+  to   { transform: translateX(0);                         opacity: 1; }
+}
+@keyframes characterExitToLeft {
+  from { transform: translateX(0);                                    opacity: 1; }
+  to   { transform: translateX(calc(var(--char-walk-distance) * -1)); opacity: 0; }
+}
+@keyframes characterExitToRight {
+  from { transform: translateX(0);                         opacity: 1; }
+  to   { transform: translateX(var(--char-walk-distance)); opacity: 0; }
+}
+@keyframes characterBob {
+  0%, 100% { transform: translateY(0); }
+  14.3%    { transform: translateY(calc(var(--char-bob-amp) * -1)); }
+  28.6%    { transform: translateY(0); }
+  42.9%    { transform: translateY(calc(var(--char-bob-amp) * -1)); }
+  57.1%    { transform: translateY(0); }
+  71.4%    { transform: translateY(calc(var(--char-bob-amp) * -1)); }
+  85.7%    { transform: translateY(0); }
+}
+@keyframes characterZoom {
+  0%   { transform: scale(1); }
+  45%  { transform: scale(var(--char-zoom-scale)); }
+  100% { transform: scale(1); }
+}
+
+.char-anim-enter-left {
+  animation: characterEnterFromLeft var(--char-walk-ms) cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.char-anim-enter-right {
+  animation: characterEnterFromRight var(--char-walk-ms) cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.char-anim-exit-left {
+  animation: characterExitToLeft var(--char-walk-ms) cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.char-anim-exit-right {
+  animation: characterExitToRight var(--char-walk-ms) cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.char-anim-bob {
+  animation: characterBob var(--char-walk-ms) ease-in-out;
+}
+.char-anim-zoom {
+  animation: characterZoom var(--char-zoom-ms) ease-in-out;
+}
+
+body[data-kmu-reduce-motion='true'] .char-anim-enter-left,
+body[data-kmu-reduce-motion='true'] .char-anim-enter-right,
+body[data-kmu-reduce-motion='true'] .char-anim-exit-left,
+body[data-kmu-reduce-motion='true'] .char-anim-exit-right,
+body[data-kmu-reduce-motion='true'] .char-anim-bob {
+  animation-duration: var(--char-walk-ms) !important;
+}
+body[data-kmu-reduce-motion='true'] .char-anim-zoom {
+  animation-duration: var(--char-zoom-ms) !important;
+}
+
+/* ModeSelect 타이틀 이미지 — 심장박동 펄스(lub-dub-rest, transform: scale 기반, .char-anim-zoom과 동일 패턴).
+   tokens.css의 글로벌 reduce-motion 룰(*에 0.01ms 강제)을 깨뜨리기 위해 !important 사용.
+   PM 결정 2026-05-09: 타이틀 펄스는 reduce-motion 환경에서도 브랜드 시각 유지(캐릭터 워킹·zoom 룰과 동일 패턴). */
+@keyframes titleHeartbeat {
+  0%   { transform: scale(1); }
+  14%  { transform: scale(1.06); }   /* lub — 1차 수축 */
+  28%  { transform: scale(1); }
+  42%  { transform: scale(1.06); }   /* dub — 2차 수축 */
+  70%  { transform: scale(1); }      /* 휴지기 시작 */
+  100% { transform: scale(1); }
+}
+.title-float {
+  animation: titleHeartbeat 1s ease-in-out infinite !important;
+  will-change: transform;
+}

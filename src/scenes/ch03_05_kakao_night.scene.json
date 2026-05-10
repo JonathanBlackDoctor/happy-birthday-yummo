@@ -1,0 +1,359 @@
+{
+  "id": "ch03_05_kakao_night",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_studio_room",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_katalk",
+      "volume": 0.4,
+      "fade": 3
+    },
+    {
+      "type": "NARRATION",
+      "text": "같은 날 늦은 저녁. 자취방. 윤모가 책상 앞에 앉아 있다. 휴대폰 화면 위로 새 카톡 알림 두 개가 깜빡인다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "긴 하루였다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "견학 갔다가 길 잃었다가, 부스 앞에선 후배한테 한 방까지 맞고."
+    },
+    {
+      "type": "SFX",
+      "sound": "sfx_katalk_notify"
+    },
+    {
+      "type": "NARRATION",
+      "text": "1:1 카톡방. \"차세린 선생님\" (저장 직후)."
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "차세린",
+          "text": "학생, 오늘 무사히 학교 복귀했나요?"
+        },
+        {
+          "sender": "구윤모",
+          "text": "네 잘 도착했습니다"
+        },
+        {
+          "sender": "구윤모",
+          "text": "오늘 길 알려주셔서 감사했습니다"
+        },
+        {
+          "sender": "차세린",
+          "text": "별일 아니에요"
+        },
+        {
+          "sender": "차세린",
+          "text": "견학생 챙기는 것도 펠로우/전공의 일이고요"
+        },
+        {
+          "sender": "구윤모",
+          "text": "그래도 감사합니다"
+        },
+        {
+          "sender": "차세린",
+          "text": "다음에 또 길 잃으면 의국으로 와요 ㅎ"
+        },
+        {
+          "sender": "구윤모",
+          "text": "네 명심하겠습니다"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "ㅎ 한 번 쓰시네. 의외다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "평소엔 안 쓰실 것 같은 분이라 더 어른스럽게 느껴진다."
+    },
+    {
+      "type": "SFX",
+      "sound": "sfx_katalk_notify"
+    },
+    {
+      "type": "NARRATION",
+      "text": "1:1 카톡방. \"장윤영\" (오늘 받은 번호)."
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "장윤영",
+          "text": "선배~~~ 카톡 보낼 수 있게 해주셔서 감사해요!! ✨"
+        },
+        {
+          "sender": "장윤영",
+          "text": "저 오늘 진짜 신났어요 본과 선배님이랑 얘기한 거 ㅎㅎㅎ"
+        },
+        {
+          "sender": "구윤모",
+          "text": "아 그렇게까지"
+        },
+        {
+          "sender": "장윤영",
+          "text": "선배 답장 빠르시네요!"
+        },
+        {
+          "sender": "장윤영",
+          "text": "저 답장 빠른 사람 좋아하거든요 🥹"
+        },
+        {
+          "sender": "구윤모",
+          "text": "어 알겠어"
+        },
+        {
+          "sender": "장윤영",
+          "text": "선배 점심 보통 어디서 드세요?"
+        },
+        {
+          "sender": "장윤영",
+          "text": "저랑 한 번 같이 드실래요?"
+        },
+        {
+          "sender": "구윤모",
+          "text": "직진 폼 미쳤네"
+        },
+        {
+          "sender": "장윤영",
+          "text": "헉 들켰다!"
+        },
+        {
+          "sender": "장윤영",
+          "text": "저 직진형이거든요 미리 알려드릴게요!!"
+        },
+        {
+          "sender": "구윤모",
+          "text": "어"
+        },
+        {
+          "sender": "구윤모",
+          "text": "점심은 일정 보고"
+        },
+        {
+          "sender": "장윤영",
+          "text": "네!!! 일정 알려주시면 제가 맞출게요!!! 🥹✨"
+        },
+        {
+          "sender": "구윤모",
+          "text": "알겠어"
+        },
+        {
+          "sender": "구윤모",
+          "text": "자라"
+        },
+        {
+          "sender": "장윤영",
+          "text": "헉 벌써요"
+        },
+        {
+          "sender": "장윤영",
+          "text": "알겠어요 선배도 잘 자요!! 좋은 꿈 꾸세요 ✨"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "직진은 진짜 직진이네.",
+      "subtype": "normal"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "차 선생님 카톡이랑은 완전 정반대고."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "두 사람한테 같은 날 첫 카톡이 들어오다니, 4월 첫 주가 진짜 본격으로 시작됐다."
+    },
+    {
+      "type": "SFX",
+      "sound": "sfx_katalk_notify"
+    },
+    {
+      "type": "NARRATION",
+      "text": "5조 단톡방. \"본과 1학년 해부 5조\"."
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "오준혁",
+          "text": "윤모 견학 길 잃었다며 ㅋㅋㅋ"
+        },
+        {
+          "sender": "구윤모",
+          "text": "김규민 폼 미쳤네"
+        },
+        {
+          "sender": "구윤모",
+          "text": "단톡에 다 풀었음?"
+        },
+        {
+          "sender": "오준혁",
+          "text": "ㅇㅇ ㅋㅋㅋㅋ"
+        },
+        {
+          "sender": "이문규",
+          "text": "레지던트 누나 만났다는 것까지 다 들음"
+        },
+        {
+          "sender": "정욱",
+          "text": "ㄷㄷ 윤모 능력자"
+        },
+        {
+          "sender": "구윤모",
+          "text": "ㄴㄴ"
+        },
+        {
+          "sender": "구윤모",
+          "text": "그냥 길 알려주신 거임"
+        },
+        {
+          "sender": "윤하정",
+          "text": "ㅋㅋ 됐고"
+        },
+        {
+          "sender": "윤하정",
+          "text": "너네 다음 주 시험 임박인 건 알지"
+        },
+        {
+          "sender": "오준혁",
+          "text": "ㅠㅠㅠㅠ"
+        },
+        {
+          "sender": "이문규",
+          "text": "ㅠ 진짜 그러게"
+        },
+        {
+          "sender": "구윤모",
+          "text": "ㄷㄷ"
+        },
+        {
+          "sender": "구윤모",
+          "text": "도서관 가야지"
+        },
+        {
+          "sender": "정욱",
+          "text": "5조 도서관 자리 미리 잡자"
+        }
+      ]
+    },
+    {
+      "type": "SFX",
+      "sound": "sfx_katalk_notify"
+    },
+    {
+      "type": "NARRATION",
+      "text": "1:1 카톡방. \"윤하정\"에게서."
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "윤하정",
+          "text": "야 견학 진짜 어땠음"
+        },
+        {
+          "sender": "구윤모",
+          "text": "별거 없어"
+        },
+        {
+          "sender": "구윤모",
+          "text": "길 잃은 거 빼고는 무난"
+        },
+        {
+          "sender": "윤하정",
+          "text": "의국까지 들어간 게 무난이냐 ㅋㅋㅋ"
+        },
+        {
+          "sender": "구윤모",
+          "text": "그건 묻어주고"
+        },
+        {
+          "sender": "구윤모",
+          "text": "됐음"
+        },
+        {
+          "sender": "윤하정",
+          "text": "됐고 자라"
+        },
+        {
+          "sender": "구윤모",
+          "text": "어"
+        },
+        {
+          "sender": "구윤모",
+          "text": "너두"
+        }
+      ]
+    },
+    {
+      "type": "FLAG_INC",
+      "key": "H2",
+      "delta": 1
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "윤하정도 짧지만 챙겨주네."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "단톡에서 한 마디, 1:1로 또 한 마디."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "윤하정답네."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "smile",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch03_06_close"
+    }
+  ],
+  "meta": {
+    "chapter": 3,
+    "time": "2026-04-06 night",
+    "activeHeroines": [
+      "H1",
+      "H2",
+      "H5"
+    ]
+  }
+}

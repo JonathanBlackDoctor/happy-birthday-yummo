@@ -1,0 +1,132 @@
+{
+  "id": "ch05_05_mt_pension",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_mt_pension",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.5,
+      "fade": 3
+    },
+    {
+      "type": "NARRATION",
+      "text": "5월 16일 토요일 저녁 7시. 가창 펜션. 본과 1학년 동기 12명, 의예과 후배 3명(장윤영 포함), 약대 승보와 나서윤. 한설은 늦게 합류 예정. 차세린은 동산병원 일정 후 합류 가능성."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "펜션 도착. 5월 저녁 공기. 대구 가창은 시내보다 조금 시원하다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "김규민",
+      "sprite": "default",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "윤모. 짐 풀고 모닥불 쪽으로 와."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 알겠어. 짐만 잠깐."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "다섯 명 다 올 가능성 있는 자리야. 한 잔 천천히 가자."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "한 잔 천천히. 알겠어."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "김규민",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한 학기에 한 번 있을까 말까 한 자리네. 결정 시간이 가까워지는 걸 모를 수가 없다."
+    },
+    {
+      "type": "BG",
+      "image": "bg_mt_pension",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_romantic",
+      "volume": 0.5,
+      "fade": 2
+    },
+    {
+      "type": "NARRATION",
+      "text": "마당. 모닥불이 한 단계 더 커져 있다. 펜션 마당 한쪽 차에서 차세린이 내린다. 한설도 함께 도착."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "차세린",
+      "sprite": "default",
+      "position": "left",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "한설",
+      "sprite": "default",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "학생들 잘 도착했어요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "선생님들 오셨다!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "조나단",
+      "text": "풍년 시즌2 풀 풍년!"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "다섯 명이 같은 펜션에. 4월에 따로따로 만났던 사람들이 학기 끝에 결국 같은 자리에 다 모인 셈이다."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch05_06_bonfire"
+    }
+  ],
+  "meta": {
+    "chapter": 5,
+    "time": "2026-05-16 evening",
+    "activeHeroines": [
+      "H1",
+      "H3",
+      "H4",
+      "H5"
+    ]
+  }
+}

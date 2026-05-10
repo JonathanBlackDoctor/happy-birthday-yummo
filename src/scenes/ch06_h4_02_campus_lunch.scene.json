@@ -1,0 +1,137 @@
+{
+  "id": "ch06_h4_02_campus_lunch",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_kmu_main",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.5,
+      "fade": 2
+    },
+    {
+      "type": "NARRATION",
+      "text": "6월 3일 수요일 12시 30분. 의대 본관 앞 광장. 점심 시간. 봄볕이 조금 더 따뜻해져서 여름 직전 분위기. 의대생, 약대생이 학식당 쪽으로 흘러간다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "의대 축제 부스 회의 끝나고 점심."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "학식당 평일 점심은 12시 반 넘어서 가야 줄이 좀 짧아진다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 학식당 쪽으로 향하는 길. 본관 앞 화단을 가로지르려는데, 약대 건물 쪽에서 빠른 걸음으로 걸어오는 사람과 시선이 마주친다. 긴 갈색 웨이브 머리, 흰 셔츠, 한 손엔 약대 교재 두 권. 표정엔 옅은 피로."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "나서윤",
+      "sprite": "default",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "어. 서윤씨다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "4월에 처음 마주쳤던 그 본관 앞 화단. 또 같은 자리에서 만나네. 묘한 우연이다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나서윤",
+      "text": "...아."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "안녕하세요. 시험 마지막 주 직전이시죠?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나서윤",
+      "text": "네, 자료 정리하러 도서관 가는 길이에요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나서윤",
+      "text": "윤모씨는 학식 가시는 거예요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 부스 회의 끝나고 점심 늦게 먹으러요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나서윤",
+      "text": "그러시구나."
+    },
+    {
+      "type": "NARRATION",
+      "text": "잠깐 침묵. 나서윤이 시선을 살짝 비스듬히 내린다. 표정엔 시크함과 옅은 피로가 같이 얹혀 있다. 윤모가 호흡을 한 번 가다듬는다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "점심 같이 가자고 하기엔, 도서관 가신다고 하셨고."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "시험 직전인데 학식까지 끌고 가면 부담만 드릴 거다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "짧게 응원만 하고 보내드려야겠다."
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "잠깐 멈춰주셔서 감사해요, 시험 잘 보세요",
+          "next": "ch06_h4_02b_cheer",
+          "tone": "warm_supportive",
+          "isKey": true,
+          "descriptor": "ch6_h4_exam_cheer",
+          "mechanism": "h4_facing_key"
+        },
+        {
+          "text": "학식 가는 길이라 시간 안 뺏을게요. 시험 잘 보세요",
+          "next": "ch06_h4_02b_quick",
+          "tone": "direct_friendly"
+        },
+        {
+          "text": "한 끼 같이 가요, 굶으면 안 되니까",
+          "next": "ch06_h4_02b_push",
+          "tone": "bright_forward"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-03 lunch",
+    "activeHeroines": [
+      "H4"
+    ]
+  }
+}

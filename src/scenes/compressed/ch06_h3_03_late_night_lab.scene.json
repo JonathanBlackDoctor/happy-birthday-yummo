@@ -1,0 +1,275 @@
+{
+  "id": "ch06_h3_03_late_night_lab",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_biochem_lab_night",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.3,
+      "fade": 3
+    },
+    {
+      "type": "NARRATION",
+      "text": "같은 날 밤 11시 → 새벽 1시. 윤모가 도서관에서 한 챕터 마치고 일어선다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "도서관 한 챕터 끝났다. 11시 약속이었는데 챕터 한 번 더 정리하다 보니 1시 다 됐네."
+    },
+    {
+      "type": "SFX",
+      "sound": "sfx_katalk_notify"
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "김규민",
+          "text": "야 윤모 어디"
+        },
+        {
+          "sender": "구윤모",
+          "text": "편의점"
+        },
+        {
+          "sender": "김규민",
+          "text": "새벽인데"
+        },
+        {
+          "sender": "구윤모",
+          "text": "야식 사러"
+        },
+        {
+          "sender": "김규민",
+          "text": "ㄷㄷ 누구 줄 거임"
+        },
+        {
+          "sender": "구윤모",
+          "text": "답 못 함"
+        },
+        {
+          "sender": "김규민",
+          "text": "ㅋㅋㅋㅋ 비밀ㅋ"
+        },
+        {
+          "sender": "김규민",
+          "text": "솔로의 눈물"
+        }
+      ]
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 편의점에서 김밥 두 줄, 따뜻한 캔커피 하나, 컵라면 한 개를 비닐봉지에 담는다."
+    },
+    {
+      "type": "BG",
+      "image": "bg_biochem_lab_night",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.4,
+      "fade": 2
+    },
+    {
+      "type": "NARRATION",
+      "text": "새벽 1시 5분. 생화학실험실 문 앞."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "한설",
+      "sprite": "tired",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "NARRATION",
+      "text": "실험실 안. 한설이 책상 앞에서 데이터 정리 중. 가운은 의자 등받이에 걸쳐져 있고 카디건 차림 그대로. 안경은 책상 한쪽에 내려놓은 상태."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "선생님, 늦었네요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "어... 학생. 11시쯤 들른다고 했는데 1시 넘은 거 보니 도서관 챕터가 길어졌나 봐요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 한 챕터 더 정리하다가 늦었어요. 죄송합니다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...괜찮아요. 저도 마무리 직전이거든요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "편의점 들렀다 왔어요. 김밥 두 줄, 따뜻한 캔커피, 컵라면도 같이 가져왔습니다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "책상 위 컵라면 끓이다 만 거 보여서요. 식은 라면은 또 다른 음식이라."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...학생. 어떻게 알았어요. 끓이다 그릇만 두고 데이터로 돌아간 거."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "컵라면 모양이 끓이다 만 모양이고요. 머그잔도 식어 있고요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...학생이 챙기는 디테일이 의외로 깊네요."
+    },
+    {
+      "type": "FLAG_INC",
+      "key": "H3",
+      "delta": 5
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "김밥 한 줄만 받을게요. 정말 그것만요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "한 줄은 부족해 보여서 두 줄 가져왔어요. 한 줄은 옆에 두고 드시고 싶을 때 드세요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...학생. (잠시) 박사 5년차한테 학생이 야식 챙겨주는 거 처음이에요. 보통은 조교가 학생 챙기는 흐름인데."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "가끔은 학생이 조교 챙기는 것도 자연스럽다고, 산책로에서 말씀드린 그대로예요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...그러네요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...오랜만에 따뜻한 거 먹네요. 점심도 컵라면이었고, 저녁은 산책로 다녀온 다음에 잊고 데이터 들어왔어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "박사 5년차 챕터가 길어지면 식사 간격 늘어지는 거 자연스럽긴 하지만, 무리하시진 마세요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...그러니까... 음... 학생이 그렇게 자연스럽게 챙겨주니까 잠깐 풀어진 채로 앉게 되네요."
+    },
+    {
+      "type": "FLAG_INC",
+      "key": "H3",
+      "delta": 5
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "풀어진 채로 앉게 되네요. 한설 선생님이 본인 입으로 풀린 모습 흘리신 거. 어른스러움 안에서 잠깐 풀린 톤이 의외다."
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_romantic",
+      "volume": 0.4,
+      "fade": 2
+    },
+    {
+      "type": "CG",
+      "image": "cg_seol_late_night",
+      "cgId": "cg_seol_late_night"
+    },
+    {
+      "type": "NARRATION",
+      "text": "새벽 1시 생화학실험실. 한설이 책상 앞에 앉아 식어가는 머그잔을 두 손으로 감싸고 있다. 안경은 책상 한쪽에 내려놓은 채. 사이드 가르마 머리 한 가닥이 옆으로 흘러내려 카디건 자락에 닿아 있다."
+    },
+    {
+      "type": "CG_HIDE"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "학생."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...오늘 산책로에서 학생이 다른 사람 같다고 했던 거. (시선 잠깐 멈춤) 거울 한 번 보고 부스 갔다 산책로 다녀와서, 새벽 1시 실험실에 안경 내려놓고 앉아 있는 거."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...그러니까... 음... 박사 5년차 모습에서 잠깐 풀린 톤으로 가는 거 학생 앞에서 처음이라. 의외로 본인이 더 의외예요."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "본인이 더 의외시란다. 솔직하게 가야 할 순간이다."
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "학생이 아니라 사람으로 옆에 있고 싶어요",
+          "next": "ch06_h3_03b_honest",
+          "tone": "warm_supportive",
+          "isKey": true,
+          "descriptor": "ch6_h3_late_night_honest"
+        },
+        {
+          "text": "선생님 풀어진 모습 의외로 자연스러우세요",
+          "next": "ch06_h3_03b_safe",
+          "tone": "warm_supportive"
+        },
+        {
+          "text": "학생-조교 자리는 학생-조교니까요",
+          "next": "ch06_h3_03b_distant",
+          "tone": "mature_serious"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-03 dawn 1am",
+    "activeHeroines": [
+      "H3"
+    ]
+  }
+}

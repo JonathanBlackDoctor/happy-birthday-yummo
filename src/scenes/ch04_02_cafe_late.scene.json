@@ -1,0 +1,182 @@
+{
+  "id": "ch04_02_cafe_late",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_campus_cafe_night",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_katalk",
+      "volume": 0.4,
+      "fade": 3
+    },
+    {
+      "type": "NARRATION",
+      "text": "4월 28일 새벽 0시 30분. 의대 본관 옆 24시간 카페. 평일 새벽이라 손님이 적다. 창밖으로 캠퍼스 가로등이 듬성듬성 박혀 있고, 벚꽃은 거의 끝물."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "새벽 카페 진짜 한적하네."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "본관 가까워서 시험기간엔 사람이 들끓는다더니, 새벽 0시 반은 또 비어 있구나."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "아메리카노 한 잔이면 두 시간은 더 버틸 수 있겠다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 카운터에서 주문을 받고 잠시 기다린다. 시선이 무심히 안쪽 좌석을 훑는데, 구석 창가에 흰 가운 안 청록 스크럽 차림인 사람이 머그잔 하나를 두 손으로 감싸고 멍하니 창을 보고 있다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "차세린",
+      "sprite": "default",
+      "position": "left",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "...어."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "차세린 선생님?"
+    },
+    {
+      "type": "CG",
+      "image": "cg_serin_cafe_late",
+      "cgId": "cg_serin_cafe_late"
+    },
+    {
+      "type": "NARRATION",
+      "text": "새벽 카페. 차세린이 창가 자리에 앉아 머그잔을 두 손으로 감싸고 있다. 가운 어깨 한쪽이 살짝 구겨졌고, 평소의 단정한 분위기는 그대로지만 표정에 옅은 피로. 미디엄 헤어가 한쪽으로 흘러내려 있다."
+    },
+    {
+      "type": "CG_HIDE"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "며칠 전 견학 때 의국 복도에서 봤을 때랑 분위기가 또 다르네."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "그땐 일하는 모드였고, 지금은 일 끝나고 한숨 돌리시는 모드."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 음료를 받아 잠시 망설인다. 모르는 척 지나가도 자연스러운 거리고, 인사하고 가는 것도 부자연스럽지 않은 거리. 잠깐 고민하다가 차세린 자리 쪽으로 다가간다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "선생님, 안녕하세요. 늦은 시간에 죄송합니다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "...아."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "학생. 저번에 의국 복도에서 길 잃었던."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 구윤모입니다. 그날 길 알려주셔서 정말 감사했어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "이 시간에 카페에 있다는 건 도서관에 있다 잠깐 나온 거예요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 시험 일주일 전이라서요. 카페인 좀 떨구러 잠깐 나왔습니다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "그렇겠네요. 본과 1학년 시험이 4월 말이니까 지금이 제일 빡빡한 주일 거예요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "선생님은 당직이세요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "당직 끝나고 잠깐 들렀어요. 의국까지 바로 걸어가기엔 정신이 좀 흐트러져서요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "새벽엔 다른 선생님들이 의국에서 자고 있을 때가 많거든요. 들어가는 발소리만으로도 깨울 수 있어서."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "한 30분 머그잔 비우고 가는 게 서로 편해요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "아, 그러시구나. 카페에서 한숨 돌리는 시간이 따로 있으신 거네요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "그런 셈이죠. 학생도 도서관 새벽 자리에 익숙해지면 자기만의 한숨 돌리는 자리가 하나 생길 거예요."
+    },
+    {
+      "type": "NARRATION",
+      "text": "차세린이 다시 머그잔으로 시선을 떨어뜨린다. 옅은 피로가 그대로 표정에 남는다."
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "괜찮으세요? 좀 쉬세요",
+          "next": "ch04_02b_care",
+          "tone": "warm_supportive",
+          "isKey": true,
+          "descriptor": "ch4_care"
+        },
+        {
+          "text": "오늘도 수고 많으셨네요",
+          "next": "ch04_02b_neutral",
+          "tone": "warm_supportive"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 4,
+    "time": "2026-04-28 dawn",
+    "activeHeroines": [
+      "H1"
+    ]
+  }
+}

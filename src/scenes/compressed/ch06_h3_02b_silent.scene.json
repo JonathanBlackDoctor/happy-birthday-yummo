@@ -1,0 +1,45 @@
+{
+  "id": "ch06_h3_02b_silent",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h3_admire",
+      "value": "silent"
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 옅게 미소 짓는다. 말 없이."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...학생, 표정으로만 답하는 건가요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "아, 죄송해요. 어떻게 풀어야 할지 잠깐 멈췄어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...괜찮아요. 본인 모습 어색했던 거니까요."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "솔직하게 한마디 꺼냈어야 할 순간에 말이 안 나왔네."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h3_02_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-02 evening",
+    "activeHeroines": [
+      "H3"
+    ]
+  }
+}

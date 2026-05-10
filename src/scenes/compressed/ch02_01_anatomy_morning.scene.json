@@ -1,0 +1,179 @@
+{
+  "id": "ch02_01_anatomy_morning",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_studio_room",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_tension",
+      "volume": 0.4,
+      "fade": 2
+    },
+    {
+      "type": "NARRATION",
+      "text": "2026년 3월 16일 월요일 오전 8시. 자취방. 윤모가 흰 가운을 꺼낸다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "serious",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "2주가 빠르네. 막상 오늘이 닥치니까... 다르긴 다르다."
+    },
+    {
+      "type": "BG",
+      "image": "bg_kmu_main",
+      "transition": "fade"
+    },
+    {
+      "type": "SFX",
+      "sound": "sfx_footsteps",
+      "volume": 0.3
+    },
+    {
+      "type": "NARRATION",
+      "text": "의대 본관 앞. 동기들이 오늘은 짧게 인사만 나누고 지나간다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "김규민",
+      "sprite": "default",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "윤모."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어. 왔어?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "...같이 가자."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어. 가자."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "김규민",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "김규민이 농담 한 마디 안 던지고 인사만 하는 모습, 처음 본다."
+    },
+    {
+      "type": "BG",
+      "image": "bg_anatomy_lab",
+      "transition": "fade"
+    },
+    {
+      "type": "NARRATION",
+      "text": "실습실 입구. 본과 1학년 50명이 흰 가운에 마스크를 쓰고 모여 있다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤하정",
+      "sprite": "outfit_lab_coat",
+      "position": "left",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "어. 왔어."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어. 다들 일찍 왔네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...어차피 늦으면 안 되잖아."
+    },
+    {
+      "type": "NARRATION",
+      "text": "입구 옆문이 열리고, 흰 가운을 입은 40대 남자 교수가 나온다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "이태호",
+      "text": "자, 모였죠? 시간 됐습니다. 들어가기 전에 한 번만 짧게."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "이태호",
+      "text": "오늘 만날 분들은 본인의 의지로 우리에게 몸을 내어주신 분들입니다. 우리는 그 의지에 답하기 위해 여기 모인 거고요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "이태호",
+      "text": "들어가서 묵념 한 번 같이 합시다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "이태호",
+      "text": "사진, 영상, 카톡 — 다 절대 안 됩니다. 가운 안 주머니에 폰 넣어두세요."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "평소 농담 잘 던지시던 교수님이 저렇게 진지하시니까... 더 무거워진다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "이태호",
+      "text": "그럼 들어갑시다."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "이태호",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤하정",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤모",
+      "transition": "fade"
+    },
+    {
+      "type": "SFX",
+      "sound": "sfx_lab_door_open",
+      "volume": 0.4
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch02_02_cadaver_first"
+    }
+  ],
+  "meta": {
+    "chapter": 2,
+    "time": "2026-03-16 morning",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

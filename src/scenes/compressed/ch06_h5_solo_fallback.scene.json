@@ -1,0 +1,20 @@
+{
+  "id": "ch06_h5_solo_fallback",
+  "commands": [
+    {
+      "type": "NARRATION",
+      "text": "— H5 1위이지만 트루 진입 조건 미달 (호감도 <80 또는 키 <3). BRANCH-GRAPH §6.2 도달성 주의 명시: SOLO 폴백 라우팅."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "end_solo_summer_main"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "branch fallback to end_solo_summer",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

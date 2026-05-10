@@ -1,0 +1,26 @@
+{
+  "id": "prologue_02b_chill",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_prologue_tone",
+      "value": "chill"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "어떻게든 되겠지 ㅋ 가서 부딪혀 보자."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "prologue_02_after_choice"
+    }
+  ],
+  "meta": {
+    "chapter": 0,
+    "time": "2026-02-28 day",
+    "activeHeroines": [
+      "mom"
+    ]
+  }
+}

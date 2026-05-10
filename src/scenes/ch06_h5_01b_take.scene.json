@@ -1,0 +1,102 @@
+{
+  "id": "ch06_h5_01b_take",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h5_open",
+      "value": "take"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "윤영아."
+    },
+    {
+      "type": "NARRATION",
+      "text": "장윤영이 잠깐 멈춘다. 평소 활기 그대로의 표정에 미세한 멈칫. 처음 이름을 불린 순간이다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "장윤영",
+      "sprite": "blush",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "선배... 저 처음으로 이름 불러주셨어요!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "응. 두 개나 들고 한 시간이나 빠져나와 줬는데, 그게 가벼운 마음은 아니잖아."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "자기네 동아리 쉬는 시간을 5조 응원하러 다 써준 거잖아. 그 마음 정중히 받을게."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "헉... 진짜요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "사실 저 직진하는 거 부담된다고 하시는 분도 계셔서, 막대 두 개 들고 빠져나올 때 잠깐 망설였거든요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "근데 선배가 그렇게 풀어 주시니까 마음이 가벼워졌어요. 🥹"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "부담된다고 하면 그건 부담이지. 진심이 들어 있는 응원이라는 거 알면 그냥 받는 게 맞고."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "선배 그런 말까지 풀어주시는 거 의외예요!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "알겠어요! 그럼 한 시간 동안 신나게 응원해드릴게요! ✨"
+    },
+    {
+      "type": "FLAG_INC",
+      "key": "H5",
+      "delta": 5
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "응원 막대 두 개 들고 빠져나온 그 마음."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "윤영이 직진을 그냥 직진으로만 받아 넘기지 않은 게 다행이다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한 살 어린 후배라는 거리감 안에서 진심을 진심으로 돌려주는 게 자연스러우니까."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h5_01_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-01 afternoon",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

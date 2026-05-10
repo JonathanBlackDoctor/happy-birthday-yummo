@@ -1,0 +1,151 @@
+{
+  "id": "ch06_h5_03b_distance",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h5_morning",
+      "value": "distance"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "그렇게 거리감 챙겨주는 마음 잘 받을게."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "직진하면서도 한 번씩 그어주는 게 의외고. 단톡 자랑 한 번 안 한 것도 그 마음의 일부지."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "후배 입장에서 본인 쪽이 먼저 거리감 챙겨주는 거, 사실 무게 푸는 가장 좋은 방법이고."
+    },
+    {
+      "type": "NARRATION",
+      "text": "장윤영이 잠깐 멈춘다. 평소 활기 그대로의 표정이 한 톤 더 차분해진다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "장윤영",
+      "sprite": "blush",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "선배... 그렇게 풀어주시는 거 진짜."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "사실 직진하는 거, 한 번씩 부담된다는 거 저도 알거든요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "그래서 단톡 자랑 한 번 안 한 거고요. 사진 같이 찍었다는 한 마디만 짚고 끝낸 거고."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "그 마음이 한 학기 동안 깊어진 거지."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "헉 선배 그렇게까지 짚어주시면 저 잠깐 멈춰요...!"
+    },
+    {
+      "type": "NARRATION",
+      "text": "봄볕이 광장 한쪽으로 옅게 퍼진다. 장윤영이 가방을 한 번 고쳐 매고 의예과 강의실 쪽으로 시선을 잠깐 돌린다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "선배."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "저 인천 출신이라는 거, 카톡으로 한 번 짧게 말씀드린 적 있죠."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "6월 마지막 주에 인천 본가 한 번 갔다 와요. 의예과 2학기 시작 전에 챙겨두려고요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "의대 축제 끝나고 일주일 정도 후 될 거예요. 카톡으론 짧게 말씀드릴 거고요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "인천 본가."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "2학기 전에 본가 챙기는 거. 미리 짚어준 마음이 의외다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "사실 첫 인천 본가 일정이에요!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "의예과 1학년 때는 본가 가기 빡빡해서 못 챙겼거든요. 의예과 2학년 첫 본가고요!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "그러게. 의예과 1학년이 빡빡하지."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "인천 본가 잘 챙기고 와. 2학기는 또 2학기대로 풀어 가면 되고."
+    },
+    {
+      "type": "FLAG_INC",
+      "key": "H5",
+      "delta": 5
+    },
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h5_incheon",
+      "value": "mentioned"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "인천 본가 일주일."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "윤하정이 부산 본가 흘렸던 흐름이랑은 다르지만, 본가 디테일 미리 짚어주는 마음은 닮았다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "윤영이가 본가 얘기 흘리는 거, 평소 직진 안에서 한층 더 들어온 자리네."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h5_03_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-05 morning",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

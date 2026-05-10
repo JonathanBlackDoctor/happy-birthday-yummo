@@ -1,0 +1,80 @@
+{
+  "id": "ch01_05_close",
+  "commands": [
+    {
+      "type": "DIALOGUE",
+      "speaker": "오준혁",
+      "text": "뭐 얘기 중이었어."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "본과 1학년 각오."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "오준혁",
+      "text": "거짓말이지?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "표경민",
+      "text": "거짓말이야."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "조나단",
+      "text": "(큭큭)"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "오준혁",
+      "text": "됐고. 5조 첫 모임 언제 잡을지나 정하자."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "smile",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "본과 1학년 둘째 날. 익숙한 얼굴이 벌써 몇 생겼다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "카데바는 2주 뒤. 일단 천천히 가자."
+    },
+    {
+      "type": "BG",
+      "image": "bg_campus_cafe"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_main_theme",
+      "volume": 0.5,
+      "fade": 4
+    },
+    {
+      "type": "NARRATION",
+      "text": "창 밖으로 캠퍼스에 연한 봄볕이 내려앉는다. — 끝 → Ch.2 \"카데바\""
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch02_01_anatomy_morning"
+    }
+  ],
+  "meta": {
+    "chapter": 1,
+    "time": "2026-03-03 afternoon",
+    "activeHeroines": [
+      "gyumin",
+      "gyeongmin",
+      "nathan",
+      "junhyuk"
+    ]
+  }
+}

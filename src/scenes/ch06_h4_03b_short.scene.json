@@ -1,0 +1,52 @@
+{
+  "id": "ch06_h4_03b_short",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h4_perv_kakao",
+      "value": "short"
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "구윤모",
+          "text": "잘 어울리세요"
+        },
+        {
+          "sender": "구윤모",
+          "text": "시험 잘 보세요"
+        },
+        {
+          "sender": "나서윤",
+          "text": "네"
+        },
+        {
+          "sender": "나서윤",
+          "text": "감사해요"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "짧게 닫혔다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "사진 한 장 보내신 마음을 짧은 답장으로 받은 셈이다. 좀 더 풀어서 응할 걸."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h4_03_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-04 evening",
+    "activeHeroines": [
+      "H4"
+    ]
+  }
+}

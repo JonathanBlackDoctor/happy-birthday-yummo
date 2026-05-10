@@ -1,0 +1,162 @@
+{
+  "id": "ch02_02_after_choice",
+  "commands": [
+    {
+      "type": "CG",
+      "image": "cg_hajeong_anatomy",
+      "cgId": "cg_hajeong_anatomy"
+    },
+    {
+      "type": "NARRATION",
+      "text": "마스크가 살짝 흘러내린 채로 윤하정이 옆을 흘끗 본다. 윤모와 시선이 잠시 마주친다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "이 순간만큼은 잊지 말아야겠다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "농담거리로 흘려보낼 일이 아니다."
+    },
+    {
+      "type": "CG_HIDE"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "이태호",
+      "text": "자, 5조부터 차례로 봅시다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 한 발 앞으로 나선다. 다른 조원들도 같이."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "첫 대면."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "...",
+      "subtype": "normal"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "됐다. 봤다. 마음에 새겼다.",
+      "subtype": "normal"
+    },
+    {
+      "type": "NARRATION",
+      "text": "옆 조에서 누군가 작게 헛기침을 한다. 다른 조에서는 한 학생이 잠시 자리를 떠 화장실 쪽으로 빠진다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "다들 자기 나름대로 견디는 중이다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "정답이 있는 자리도 아니고."
+    },
+    {
+      "type": "NARRATION",
+      "text": "시간이 천천히 흐른다. 누구도 사담을 하지 않는다. 이태호 교수의 짧은 설명만이 공간을 채우다 멎는다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "한 시간 뒤. 첫 실습이 끝난다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "이태호",
+      "text": "오늘은 여기까지. 다 같이 한 번 더 묵념하고 나갑시다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "묵념. 학생들이 천천히 실습실을 빠져나간다."
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 3
+    },
+    {
+      "type": "BG",
+      "image": "bg_kmu_main"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "serious",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤하정",
+      "sprite": "serious",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "NARRATION",
+      "text": "본관 앞. 햇볕이 의외로 밝다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "가운에 뭐 묻지도 않았는데, 손을 씻고 싶다.",
+      "subtype": "normal"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "야."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...아까. 고마워."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "됐고. 점심 먹자. 5조 다 같이."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어. 그러자."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤하정",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤모",
+      "transition": "fade"
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch02_03_biochem_lab"
+    }
+  ],
+  "meta": {
+    "chapter": 2,
+    "time": "2026-03-16 morning, anatomy lab",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

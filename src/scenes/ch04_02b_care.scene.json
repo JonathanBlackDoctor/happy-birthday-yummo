@@ -1,0 +1,92 @@
+{
+  "id": "ch04_02b_care",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h1_care",
+      "value": "yes"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "선생님, 괜찮으세요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "가운 어깨도 그렇고 표정도 좀 무거우시고. 좀 더 쉬다 가셔도 될 것 같아요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "의국 들어가는 거 너무 서두르지 마시고요."
+    },
+    {
+      "type": "NARRATION",
+      "text": "차세린이 시선을 들어 윤모를 한 번 본다. 머그잔을 든 손이 잠깐 멈춘다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "차세린",
+      "sprite": "smile",
+      "position": "left",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "...학생이 그런 말 해주는 거 처음이에요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "의국에선 다들 똑같이 피곤하니까 서로 그런 말 잘 안 하거든요. 서로 무뎌져 있는 거죠."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "죄송해요, 주제 넘었으면 흘리시고요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "아니에요. 주제 넘은 게 아니라, 그냥 오랜만에 들은 거라 잠깐 멈췄어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "잘 받았어요. 진짜로."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "학생도 시험 잘 보고요. 카페인은 카페인이고, 잠은 또 잠이니까 무리는 마요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 무리 안 하겠습니다. 선생님도 머그잔 비우시고 천천히 가세요."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "잘 받았다고 하시네."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "어른은 이렇게 풀어주시는구나. 잠깐 멈췄다가, 그러고 나서 잘 받았다고."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch04_02_close"
+    }
+  ],
+  "meta": {
+    "chapter": 4,
+    "time": "2026-04-28 dawn",
+    "activeHeroines": [
+      "H1"
+    ]
+  }
+}

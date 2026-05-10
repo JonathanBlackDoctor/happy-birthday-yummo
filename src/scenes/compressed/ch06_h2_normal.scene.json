@@ -1,0 +1,139 @@
+{
+  "id": "ch06_h2_normal",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_studio_room"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.4,
+      "fade": 3
+    },
+    {
+      "type": "NARRATION",
+      "text": "2026년 6월 8일 월요일 저녁. 자취방."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "SFX",
+      "sound": "sfx_katalk_notify"
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "윤하정",
+          "text": "야 5조"
+        },
+        {
+          "sender": "윤하정",
+          "text": "다음 주 본과 1학년 단체 회식 있다"
+        },
+        {
+          "sender": "오준혁",
+          "text": "ㅇㅇ ㄱㄱ"
+        },
+        {
+          "sender": "이문규",
+          "text": "ㄱ"
+        },
+        {
+          "sender": "정욱",
+          "text": "가요"
+        },
+        {
+          "sender": "윤하정",
+          "text": "5조 다 모이는 자리니까 윤모도 와"
+        },
+        {
+          "sender": "구윤모",
+          "text": "어 갈게"
+        },
+        {
+          "sender": "윤하정",
+          "text": "어"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "5조 단톡에선 한 마디. 1:1엔 한 학기 통틀어 아무것도 없네."
+    },
+    {
+      "type": "SFX",
+      "sound": "sfx_katalk_notify"
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "윤하정",
+          "text": "야"
+        },
+        {
+          "sender": "윤하정",
+          "text": "옥상 일은 그냥 5조 동기로 두자"
+        },
+        {
+          "sender": "윤하정",
+          "text": "너랑 친구잖아"
+        },
+        {
+          "sender": "윤하정",
+          "text": "5조 한 학기 더 가야 하니까"
+        },
+        {
+          "sender": "구윤모",
+          "text": "어 알겠어"
+        },
+        {
+          "sender": "윤하정",
+          "text": "어"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "\"너랑 친구잖아.\" 5조 한 학기는 더 길게 가야 하니까, 그게 맞는 선택이지."
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.5,
+      "fade": 2
+    },
+    {
+      "type": "BG",
+      "image": "black"
+    },
+    {
+      "type": "NARRATION",
+      "text": "— 끝."
+    },
+    {
+      "type": "NARRATION",
+      "text": "**윤하정 노멀 엔딩 — 동기로 남은 봄**"
+    },
+    {
+      "type": "ENDING",
+      "endingId": "END_H2_NORMAL"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-08 evening",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

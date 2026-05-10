@@ -1,0 +1,34 @@
+{
+  "id": "ch06_h2_03_close",
+  "commands": [
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤모",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤하정",
+      "transition": "fade"
+    },
+    {
+      "type": "NARRATION",
+      "text": "두 사람이 캠퍼스 입구를 지나 본관 방향으로 걷는다. 본관 4층 도서관 옥상 입구가 가까워진다."
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h2_04_rooftop"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-01 night",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

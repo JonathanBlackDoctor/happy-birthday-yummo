@@ -1,0 +1,217 @@
+{
+  "id": "ch06_h2_02_dongseong",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_dongseong_street",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.6,
+      "fade": 2
+    },
+    {
+      "type": "SFX",
+      "sound": "sfx_bar_ambient",
+      "volume": 0.4
+    },
+    {
+      "type": "NARRATION",
+      "text": "같은 날 저녁 8시. 동성로 술집. 부스 운영 끝나고 본과 1학년 + 의예과 후배 + 약대 합석. 5조 자리는 한쪽 끝. 단체 분위기 풀려 있다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "부스 끝나고 단체 합석 자리."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "5월 회식 때랑 비슷한데 좀 더 풀어진 분위기다. 시험 끝난 지도 좀 됐고, 축제 첫날이라 그런 듯."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤하정",
+      "sprite": "outfit_party",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤하정이 5조 자리 끝쪽에 앉아 있다. 잔을 두 손으로 감싸고 있는 모습이 5월 회식 때랑 비슷한데 표정이 살짝 더 풀려 있다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "어, 윤모. 옆자리 비었어."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 그래."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "부스 운영 진짜 빡셌다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "정욱 풍선 다섯 개 더 가져온다고 한 번 더 갔다 왔잖아."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "그래서 정욱 다음 주 부스는 풍선 안 시키기로 했어."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "그것도 챙긴 거고."
+    },
+    {
+      "type": "NARRATION",
+      "text": "단체 자리 한쪽에서 김규민이 잔 들고 큰 소리로 농담 중. 조나단이 옆에서 큭큭. 약대 승보가 합석한 자리 끝에서 잔 든다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "야 윤모! 5조 부스 폼 미쳤다고 단톡에 풀렸다!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "김규민 폼 미쳤네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "조나단",
+      "text": "5조 굿즈 매출 본과 1학년 부스 1위라네!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "매출 1위는 정확히는 굿즈 라인업 짠 거 + 풍선 디테일 합쳐진 거지."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "그것도 맞고."
+    },
+    {
+      "type": "NARRATION",
+      "text": "한 시간 정도 단체 시간이 흘러간다. 잔이 한 번씩 더 채워지고, 5조 자리는 5월 회식 때보다 편하게 풀린 분위기."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "야, 윤모."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "단체 자리 한 시간이면 충분하지 않아?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...나는 한 시간이 한계야. 단체 분위기 빡세서."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "그래?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...뭐, 너랑 잠깐 갈라져서 더 걸어도 될 것 같고."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "윤하정이 그런 말 꺼내는 거 의외다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...뭐, 단체 분위기 빡세서 그런 거지 다른 의미 없어."
+    },
+    {
+      "type": "FLAG_INC",
+      "key": "H2",
+      "delta": 3
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "\"다른 의미 없어\"라니."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "다른 의미 있다는 걸 본인이 직접 알려주는 셈이잖아."
+    },
+    {
+      "type": "NARRATION",
+      "text": "단체 자리에서 이문규가 윤하정에게 잔을 한 번 더 권한다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "이문규",
+      "text": "윤하정 한 잔 더!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "한 잔만 더 받을게."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "이문규",
+      "text": "오늘 풀어진 윤하정 이문규가 처음 봐ㅋㅋ"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "풀어진 거 아니야. 한 잔만 더 받을 뿐이지."
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "단체 한 시간 정도면 충분하지. 잠깐 같이 나가자",
+          "next": "ch06_h2_02b_walk",
+          "tone": "direct_friendly"
+        },
+        {
+          "text": "윤하정 한 잔 더 받는 거 받아주자",
+          "next": "ch06_h2_02b_stay",
+          "tone": "warm_supportive"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-01 evening",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

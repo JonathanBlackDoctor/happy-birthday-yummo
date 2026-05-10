@@ -1,0 +1,72 @@
+{
+  "id": "ch06_h4_04b_push",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h4_date",
+      "value": "push"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "오늘 한 잔 더 하시고 나서 저녁까지 같이 가요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "시험 끝난 다음 날인데 풀어드리고 싶고요."
+    },
+    {
+      "type": "NARRATION",
+      "text": "나서윤이 잔을 잠깐 더 길게 잡고 본다. 표정이 옅게 굳는다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "나서윤",
+      "sprite": "distant",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나서윤",
+      "text": "윤모씨, 시험 끝난 다음 날 마음을 풀어드린다는 식으로 받기엔 좀 무거워요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나서윤",
+      "text": "한 학기 인사 자리는 인사 자리로 끝내는 게 저한텐 맞는 거라."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "...죄송해요. 분위기 못 맞췄네요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나서윤",
+      "text": "네, 다음에 보시죠."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "분위기 못 맞췄다. 두 번째."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "시크한 분에게 권유는 부담일 수 있다는 거. 점심 때 짚었던 자리에서 또 한 번 흔든 셈이다."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h4_04_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-13 saturday afternoon",
+    "activeHeroines": [
+      "H4"
+    ]
+  }
+}

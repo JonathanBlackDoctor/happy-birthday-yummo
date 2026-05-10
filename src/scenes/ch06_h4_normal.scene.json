@@ -1,0 +1,173 @@
+{
+  "id": "ch06_h4_normal",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_kmu_main"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.4,
+      "fade": 3
+    },
+    {
+      "type": "NARRATION",
+      "text": "2026년 6월 21일 일요일 오후. 데이트 후 한 주 지난 시점. 계명대 캠퍼스 인근. 6월 햇살이 살짝 옅어졌고, 거리엔 학기 끝낸 학생들이 잠깐씩 흐른다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "6월 둘째 주가 끝나고 한 주 지났다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "카톡 빈도가 조금씩 줄어들었다. 본인 속도 그대로."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "데이트 한 번이 정식 연인 직전 단계로 더 가지 못한 채 멈춰 있다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "폰 화면. \"나서윤\" 1:1 카톡방."
+    },
+    {
+      "type": "SFX",
+      "sound": "sfx_katalk_notify"
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "나서윤",
+          "text": "윤모씨"
+        },
+        {
+          "sender": "나서윤",
+          "text": "약대 마지막 보강 다음 주에 끝나요"
+        },
+        {
+          "sender": "나서윤",
+          "text": "그 다음 시험 끝나고 한 번 더 봬요"
+        },
+        {
+          "sender": "나서윤",
+          "text": "🥺"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "\"다음 시험 끝나고 봬요.\""
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한 학기 안에 결정짓는 게 아니라, 다음 학기로 미루는 분위기다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "정식 연인 직전 단계에서도 천천히 가는 분이고. 그 속도를 흔들 수는 없다."
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "구윤모",
+          "text": "네 다음 시험 끝나고 봬요"
+        },
+        {
+          "sender": "구윤모",
+          "text": "무리 마시고요"
+        },
+        {
+          "sender": "나서윤",
+          "text": "네"
+        }
+      ]
+    },
+    {
+      "type": "NARRATION",
+      "text": "카톡 모달이 닫힌다. 윤모가 폰을 책상에 내려놓고 캠퍼스 창밖을 본다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "CG",
+      "image": "cg_seoyoon_date",
+      "cgId": "cg_seoyoon_date"
+    },
+    {
+      "type": "NARRATION",
+      "text": "캠퍼스 카페 창가. 데이트 자리에서 봤던 옆모습이 살짝 어두워진 채로 다시 떠오른다. 베이지 코트 + 미니 원피스 + 옅은 미소. 햇살이 옅어진 분위기."
+    },
+    {
+      "type": "CG_HIDE"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "느리게 가는 인연도 있는 거니까."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한 학기 안에 결정 못 하는 사람도 있고. 자기 속도가 좀 더 늦은 사람도 있다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "다음 학기에 한 번 더 봤을 때 같이 갈 수 있을지는, 그때 가서 정할 일이고."
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.5,
+      "fade": 3
+    },
+    {
+      "type": "NARRATION",
+      "text": "화면이 천천히 페이드 아웃한다. 카페 BGM이 한 트랙 잔잔하게 흐른다."
+    },
+    {
+      "type": "BG",
+      "image": "black"
+    },
+    {
+      "type": "NARRATION",
+      "text": "— 끝."
+    },
+    {
+      "type": "NARRATION",
+      "text": "**나서윤 노멀 엔딩 — 느린 답장**"
+    },
+    {
+      "type": "ENDING",
+      "endingId": "END_H4_NORMAL"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-21 afternoon",
+    "activeHeroines": [
+      "H4"
+    ]
+  }
+}

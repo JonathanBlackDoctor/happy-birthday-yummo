@@ -1,0 +1,44 @@
+{
+  "id": "ch06_h4_02_close",
+  "commands": [
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "나서윤",
+      "transition": "fade"
+    },
+    {
+      "type": "NARRATION",
+      "text": "나서윤이 도서관 쪽으로 빠른 걸음으로 사라진다. 윤모가 잠깐 멈춰 봄볕이 살짝 짙어진 본관 앞을 본다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "같은 23학번이지만 한 살 위, 약대 4학년."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "그 부분 잊지 말고, 거리감 흔들지 말자."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤모",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h4_03_perv_pair"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-03 lunch",
+    "activeHeroines": [
+      "H4"
+    ]
+  }
+}

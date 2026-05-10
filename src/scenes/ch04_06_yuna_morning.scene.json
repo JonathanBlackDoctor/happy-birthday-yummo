@@ -1,0 +1,236 @@
+{
+  "id": "ch04_06_yuna_morning",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_kmu_main",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.5,
+      "fade": 2
+    },
+    {
+      "type": "NARRATION",
+      "text": "4월 30일 목요일 오전 9시. 도서관 앞 광장. 시험 직전이라 학생들이 일찍부터 도서관으로 들어간다. 봄볕에 마지막 벚꽃잎이 한 번 더 흩날린다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "도서관 매일 9시. 어제도 그제도 9시."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "그리고 9시 5분쯤 도서관 앞에서 매일 마주치는 한 명."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "우연이라 보기엔 시간이 너무 정확하지."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "장윤영",
+      "sprite": "smile_big",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "선배~~!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 또 마주쳤네. 이쯤 되면 진짜 마주친 게 맞나 싶기도 하고."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "마주친 게 아니라 제가 일부러 시간 맞춰서요!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "의예과 9시 강의 가는 길인데 도서관이 마침 같은 방향이거든요!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "그럼 마주쳤다기보다 맞춘 게 맞네. 솔직하게 말해줘서 고마워."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "헉! 들켰어요!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "선배 시험 일주일 전이시잖아요. 응원 한 번 하고 가려고요!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "응원이라. 어떻게 해줄 건데."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "화이팅!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "라고 외쳐드리는 거예요!"
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 살짝 웃는다. 옆을 지나가던 본과 1학년 동기 한 명이 큭큭거리며 지나간다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "동기들 다 보는 데서 응원받는 거 진짜 민망하긴 한데."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "또 진심이라 부정은 못 하겠다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "응원의 온도가 분명히 높긴 하네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 고마워. 화이팅 잘 들었어. 잘 봐야겠다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "시험기간이라 카톡은 짧을 수도 있는데, 응원은 잘 챙겨갈게."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "헉 받아주셨어요!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "카톡으로도 응원 보낼게요! 매일 짧게!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "답장 안 하셔도 되니까 부담은 안 가지셔도 돼요!"
+    },
+    {
+      "type": "FLAG_INC",
+      "key": "H5",
+      "delta": 5
+    },
+    {
+      "type": "NARRATION",
+      "text": "장윤영이 책가방을 한 번 매고 의예과 강의실 쪽으로 향한다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "시험기간이니까 카톡은 짧게 보낼게요!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "선배 자기 관리 잘 하시고요~~!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 너도 강의 잘 듣고."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "장윤영",
+      "transition": "fade"
+    },
+    {
+      "type": "NARRATION",
+      "text": "장윤영이 사라진 뒤 윤모가 캠퍼스 카페 쪽으로 발길을 옮긴다. 시험기간 음료 한 잔."
+    },
+    {
+      "type": "BG",
+      "image": "bg_campus_cafe",
+      "transition": "fade"
+    },
+    {
+      "type": "NARRATION",
+      "text": "카페 안. 한쪽 테이블에서 장윤영이 의예과 동기 두 명과 앉아 있다. 신나서 손짓하며 떠드는 옆모습. 봄볕이 창으로 들어와 갈색 머리에 살짝 비친다."
+    },
+    {
+      "type": "CG",
+      "image": "cg_yuna_cafe",
+      "cgId": "cg_yuna_cafe"
+    },
+    {
+      "type": "NARRATION",
+      "text": "캠퍼스 카페. 장윤영이 의예과 동기 두 명과 테이블 앞에 앉아 신나서 손을 움직이며 얘기하는 옆모습. 봄볕이 창으로 들어와 갈색 머리에 살짝 비치고, 표정이 환하다."
+    },
+    {
+      "type": "CG_HIDE"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "동기들이랑 있을 땐 또 저렇게 신나는구나."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "후배라기보다는 빛이 한 명 따로 다니는 것 같네."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "시험기간 도서관 앞 풍경이 잠깐 따뜻해진다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "장윤영이 윤모를 발견하더니 손을 한 번 흔든다. 윤모도 옅게 손을 들어 답한다. 장윤영이 다시 동기 쪽으로 시선을 돌린다."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤모",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch04_07_close"
+    }
+  ],
+  "meta": {
+    "chapter": 4,
+    "time": "2026-04-30 morning",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

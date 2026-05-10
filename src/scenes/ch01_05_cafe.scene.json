@@ -1,0 +1,250 @@
+{
+  "id": "ch01_05_cafe",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_campus_cafe",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.5,
+      "fade": 3
+    },
+    {
+      "type": "NARRATION",
+      "text": "같은 날 오후. 캠퍼스 카페. 윤모, 김규민, 표경민, 조나단이 창가 자리에 앉아 있다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "left",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "김규민",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "표경민",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "조나단",
+      "sprite": "default",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "야 윤모."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "5조에 윤하정 어떻게 생겼어."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "조나단",
+      "text": "김규민 본격 시동."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "표경민",
+      "text": "김규민, 첫날부터 그러지 마."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "정보 공유잖아."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "솔로의 권리야."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "조나단",
+      "text": "권리는 또 무슨."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "그냥 평범하지."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "긴 머리에, 무뚝뚝한 편."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "와, 무뚝뚝."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "윤모 너랑 스타일 비슷한 거 아니냐."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "조나단",
+      "text": "둘 다 단답형."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "표경민",
+      "text": "단답이 단답을 만나면 침묵이야."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "조나단",
+      "text": "정확."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "그건 또 그렇네."
+    },
+    {
+      "type": "NARRATION",
+      "text": "카페 문이 열리고, 오준혁이 책을 든 채 들어온다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "오준혁",
+      "sprite": "default",
+      "position": "right_back",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "오준혁",
+      "text": "어, 너네 여기 있었네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "어... 어."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "오준혁",
+      "text": "또 그 표정."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "조나단",
+      "text": "오준혁이라며. 진짜 여자."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "오준혁",
+      "text": "너네 정말. 맨날 그러면 진짜 짜증 난다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "표경민",
+      "text": "김규민 사과해."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "미안미안."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "오준혁",
+      "text": "됐고. 윤모 너 5조 단톡 답장 좀."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 금방 할게."
+    },
+    {
+      "type": "NARRATION",
+      "text": "오준혁이 음료 주문하러 카운터로 향한다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "야 윤모."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "너 5조에 여자 두 명이잖아."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "윤하정, 오준혁."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "솔직히 누가 더 마음에 드냐."
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "그런 거 아냐. 같은 조원일 뿐",
+          "next": "ch01_05b_serious",
+          "tone": "mature_serious",
+          "coFireNpcs": [
+            "gyeongmin",
+            "junhyuk"
+          ]
+        },
+        {
+          "text": "야 첫날부터 뭔 소리야",
+          "next": "ch01_05b_playful",
+          "tone": "playful_casual",
+          "coFireNpcs": [
+            "junhyuk"
+          ],
+          "effects": [
+            {
+              "type": "FLAG_INC",
+              "key": "gyumin",
+              "delta": -30
+            }
+          ]
+        },
+        {
+          "text": "...글쎄",
+          "next": "ch01_05b_vague",
+          "tone": "warm_supportive",
+          "coFireNpcs": [
+            "junhyuk"
+          ]
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 1,
+    "time": "2026-03-03 afternoon",
+    "activeHeroines": [
+      "gyumin",
+      "gyeongmin",
+      "nathan",
+      "junhyuk"
+    ]
+  }
+}

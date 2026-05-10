@@ -1,0 +1,50 @@
+{
+  "id": "ch04_03b_quiet",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h3_meal",
+      "value": "no"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "자료 받았으니까 조용히 가볼게요. 시험기간 데이터 정리에 방해가 되면 안 되니까요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "네, 시험 잘 봐요. 자료 보면서 모르는 거 있으면 단톡으로 물어봐도 되고요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 감사합니다. 선생님도 너무 무리하지 마시고요."
+    },
+    {
+      "type": "NARRATION",
+      "text": "무난한 인사. 한설은 다시 데이터로 시선을 옮긴다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "컵라면 식은 거 봤는데 그냥 지나친 게 좀 마음에 걸린다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "어른이라고 무조건 알아서 하시는 게 아닌데. 한 번 더 챙겼으면 좋았을지도."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch04_03_close"
+    }
+  ],
+  "meta": {
+    "chapter": 4,
+    "time": "2026-04-28 night",
+    "activeHeroines": [
+      "H3"
+    ]
+  }
+}

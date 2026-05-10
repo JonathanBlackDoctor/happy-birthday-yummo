@@ -1,0 +1,269 @@
+{
+  "id": "end_solo_summer_main",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_studio_room"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.4,
+      "fade": 4
+    },
+    {
+      "type": "NARRATION",
+      "text": "2026년 6월 27일 토요일 저녁 9시. 자취방 책상 앞. 본과 1학년 봄 학기가 끝난 직후 첫 주말."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "본과 1학년 봄 학기, 끝."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "시험 끝나고 첫 주말이라 그런가. 방이 유난히 조용하다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한 학기 동안 만난 다섯 명. 잠깐만 떠올려본다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "차세린 선생님. 동산병원 의국 복도에서 길 잃었다 부딪힌 첫 만남. 새벽 카페에서 머그잔 들고 멍하니 앉아 계시던 모습. 일곱 살 차이가 그대로 어른의 분위기로 흐르던 분이었다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "카톡에 ㅎ 슬쩍 한 번 쓰시던 게 기억난다. 우리 사이는 거기까지였구나."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "윤하정. 같은 5조 동기. 평소엔 무뚝뚝하다가도 가끔 진심을 툭 던지던 애. \"그건 정확히는\" 하고 말 시작하는 게 그 애답더라."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "도서관 옆자리에 앉아 같이 책장 넘기던 시간. 봄 내내 같은 조였는데, 우리도 딱 거기까지였다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한설 선생님. 생화학실험실 시약 사고 때 처음 뵀던 분. 안경 슬쩍 벗고 머그잔 들고 계시던 늦은 밤, 컵라면이 다 식어가던 모습."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "말끝을 살짝 흐리시는 게 인상 깊었다. 박사과정 거의 끝나가시는 분이랑 본과 1학년... 다섯 살 차이가 그렇게 멀게 느껴질 줄은 몰랐다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "나서윤 씨. 캠퍼스 본관 앞에서 우연히 마주친 첫 만남. 같은 23학번인데 한 살 누나, 약대 4학년이라는 게 묘하게 멀었다. 카톡 끝에 🥺 톡 붙이시던 거."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "\"답장 빠른 사람 진짜 드물어요\" 그 말이 자꾸 떠오른다. 봄 내내 답장 속도 맞춰 보려 했는데, 결국 못 맞췄다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "장윤영. 동아리 부스에서 \"선배~!\" 하고 외치던 첫 만남. 한 살 어린 의예과 후배. 카톡마다 ✨🥹 잔뜩 붙어 있던 게 그 애 스타일이었지."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "점점 더 적극적으로 다가오긴 했었다. 아침 9시 5분에 응원 카톡, 새벽 12시 30분에 또. 그런데 나는 거기서 한 발짝을 못 옮겼다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "...아니, 정확히는 한 발짝 옮길 뻔했다. 그게 더 맞는 말이다."
+    },
+    {
+      "type": "BG",
+      "image": "bg_bundang_home"
+    },
+    {
+      "type": "NARRATION",
+      "text": "분당 본가 거실 (회상). 어머니가 소파에 앉아 폰을 보고 계신 모습."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "다음 주에 본가 한번 다녀와야지."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "엄마, 가면 첫 마디로 뭐라 하시려나. 작년 12월에 내려갔을 땐 \"살 빠졌네, 학기 빡빡했나 보다\" 그러셨고."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "거실 소파에 늘어져서 한 학기를 천천히 풀어내는 시간. 6월 말 첫 주말에 딱 어울리는 그림이다."
+    },
+    {
+      "type": "BG",
+      "image": "bg_studio_room"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한 학기 동안 다섯 명 만났는데, 결국 아무하고도 안 됐다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "다섯 명 모두 각자의 매력이 분명한 사람들이었는데, 마음이 같은 방향으로 흐르질 않았다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "매력은 다 봤는데, 정작 거리를 좁히질 못했다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "그래도 한 학기 자체는 잘 버텼지. 본과 1학년 첫 시험 무사히 끝냈고, 축제 주간 5조 부스도 잘 마무리했고. 여름방학이 두 달이나 남아 있고."
+    },
+    {
+      "type": "SFX",
+      "sound": "sfx_katalk_notify"
+    },
+    {
+      "type": "NARRATION",
+      "text": "친구 단톡방. \"본과 1학년 동기들\"."
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "김규민",
+          "text": "야 윤모"
+        },
+        {
+          "sender": "김규민",
+          "text": "본가 안 갔냐"
+        },
+        {
+          "sender": "구윤모",
+          "text": "ㄴㄴ"
+        },
+        {
+          "sender": "구윤모",
+          "text": "다음 주 가"
+        },
+        {
+          "sender": "김규민",
+          "text": "ㅇㅋ"
+        },
+        {
+          "sender": "김규민",
+          "text": "여름방학에 한판 ㄱ?"
+        },
+        {
+          "sender": "표경민",
+          "text": "한판 ㄱ"
+        },
+        {
+          "sender": "조나단",
+          "text": "ㄱㄱ"
+        },
+        {
+          "sender": "구윤모",
+          "text": "ㅇㅋ"
+        },
+        {
+          "sender": "구윤모",
+          "text": "본가 갔다 와서 ㄱ"
+        },
+        {
+          "sender": "김규민",
+          "text": "ㄱㄱ"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "단톡방 한 번 흐르고 지나갔다. \"한판 ㄱ.\" 걔네들은 늘 그렇게 끝낸다. 다섯 명은 다 놓쳤는데, 동기들은 그대로구나."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "본과 1학년 봄 학기. 분당에서 KTX 타고 대구 자취방까지, 그 길 위에서 견뎌낸 봄이었다. 다섯 명을 만났고, 다섯 명 모두 어떤 순간엔 마음에 머물렀고."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "그리고 다섯 명 모두, 거기서 더는 가까워지지 못했다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "smile",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "그래도 본과 1학년 봄, 좋은 봄이었지."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "여름방학 두 달 천천히 정리하고, 본과 2학년 가서 다시 만나 보자."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "봄 학기. 끝. 혼자 여름방학. 이게 끝이다."
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.5,
+      "fade": 2
+    },
+    {
+      "type": "BG",
+      "image": "black"
+    },
+    {
+      "type": "NARRATION",
+      "text": "— 끝."
+    },
+    {
+      "type": "NARRATION",
+      "text": "**혼자 여름방학 — 본과 1학년 봄, 마무리**"
+    },
+    {
+      "type": "ENDING",
+      "endingId": "END_SOLO_SUMMER"
+    }
+  ],
+  "meta": {
+    "time": "2026-06-27 evening — first late June / early July"
+  }
+}

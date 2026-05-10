@@ -1,0 +1,138 @@
+{
+  "id": "ch04_01b_share",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h2_share",
+      "value": "now"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "단톡에 올려두자."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "자기 전에 폰 한 번 보면 볼 수 있게."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "표경민",
+      "text": "그게 맞지. 5조 다 같이 봐도 좋고."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 폰을 들어 5조 단톡에 족보 PDF를 업로드한다. 친구 단톡이라 짧은 톤."
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "구윤모",
+          "text": "5조 족보 정리한 거 올림"
+        },
+        {
+          "sender": "구윤모",
+          "text": "[해부학_족보_23~25.pdf]"
+        },
+        {
+          "sender": "구윤모",
+          "text": "신경계 부분 따로 형광펜 박았음"
+        },
+        {
+          "sender": "구윤모",
+          "text": "내일 보고 자라"
+        },
+        {
+          "sender": "오준혁",
+          "text": "윤모 굿"
+        },
+        {
+          "sender": "이문규",
+          "text": "ㅠㅠ 감사"
+        },
+        {
+          "sender": "정욱",
+          "text": "과대 폼 미쳤네"
+        }
+      ]
+    },
+    {
+      "type": "NARRATION",
+      "text": "잠들어 있던 윤하정이 책상에 놓인 폰 진동에 잠깐 눈을 뜬다. 화면을 잠깐 보다가 다시 책상에 머리를 대는데, 입꼬리가 살짝 올라간다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤하정",
+      "sprite": "smile_small",
+      "position": "left",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...야."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 깼어? 미안, 폰 진동에 깼나."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "5조에 올린 거."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...자기가 정리한 거잖아. 통째로 올려도 돼?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "시험인데 뭐. 내가 받아서 정리한 거고, 신경계 표시한 건 내가 한 거니까 못 줄 이유 없잖아."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...됐다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "고맙다, 진짜로."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤하정이 다시 잠든다. 표경민이 옆에서 작게 웃는다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "표경민",
+      "text": "윤하정이 너한테 고맙다 한 거 처음 들어본다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "그러게. 단톡에서도 답 짧게 끊는 애인데."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "표경민",
+      "text": "그래서 더 의미 있지."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch04_01_close"
+    }
+  ],
+  "meta": {
+    "chapter": 4,
+    "time": "2026-04-27 night",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "ch06_h4_07_evaluate",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "black"
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "NARRATION",
+      "text": "— 본과 1학년 봄, 약대 4학년 마지막. 학번 동기에 한 살 위. 한 학기 인사 자리."
+    },
+    {
+      "type": "EVALUATE_TIER",
+      "winner": "H4"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-14 dawn — branch evaluation",
+    "activeHeroines": [
+      "H4"
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "id": "ch05_02b_h4",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_ch5_seat",
+      "value": "h4"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "pair_left",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "나서윤",
+      "sprite": "default",
+      "position": "pair_right",
+      "transition": "fade"
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 약대 자리 쪽으로 향한다. 승보가 옆자리를 손짓하며 부른다. 나서윤은 승보 옆에 앉아 잔을 한 손으로 들고 있다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "약대 동기",
+      "text": "윤모, 이리 와. 자리 있어."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 감사합니다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "시험 끝나셨어요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나서윤",
+      "text": "네, 오늘 마지막이었어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "약대 본과 4학년 시험기간도 빡세다고 들었는데."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나서윤",
+      "text": "의대 본과 1학년이 더 빡세다던데요. 5일 도서관이라고 하셨었잖아요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "기억하시네요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나서윤",
+      "text": "카톡으로 들었으니까요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나서윤",
+      "text": "끝나서 다행이에요. 서로."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "카톡에서나 직접 뵐 때나 비슷하시구나."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "정중하시면서 살짝 거리가 있는 게 한결같으시다."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch05_02_close"
+    }
+  ],
+  "meta": {
+    "chapter": 5,
+    "time": "2026-05-11 evening"
+  }
+}

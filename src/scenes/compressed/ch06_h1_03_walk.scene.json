@@ -1,0 +1,147 @@
+{
+  "id": "ch06_h1_03_walk",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_campus_night_blossom",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_romantic",
+      "volume": 0.5,
+      "fade": 3
+    },
+    {
+      "type": "NARRATION",
+      "text": "2026년 6월 6일 토요일 저녁 6시 5분. 의대 본관 옆 산책로. 잎이 푸르러진 가지가 머리 위로 길게 드리워 있다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "차세린",
+      "sprite": "default",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "학생, 정시네요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네. 6시 정각."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "어른스럽네요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "새벽에 권하셨던 약속인데 어길 수가 없죠."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "학생. Ch.3 견학 때, 의국 복도에서 처음 봤던 거 기억나요? 학생이 화장실 다녀오다 길 잃었다고 했던."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "기억해요. 선생님이 \"괜찮아요? 견학생이죠?\" 그러셨던 거."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "그때 학생이 \"네, 본과 1학년입니다. 죄송해요\" 하면서 정중하게 인사했잖아요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "의대생 중에 그렇게 정중하게 받는 사람이 잘 없거든요. 그게 한 학기 지나도 가끔 떠올라요."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "그 짧은 인사를 아직 기억하고 계셨다."
+    },
+    {
+      "type": "FLAG_INC",
+      "key": "H1",
+      "delta": 5
+    },
+    {
+      "type": "NARRATION",
+      "text": "산책로 가운데에서 차세린이 잠깐 멈춘다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "학생. 한 가지만 물어도 돼요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 말씀하세요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "7살 차이가 가볍지 않아요. 레지던트한테 본과 1학년이 케어 말 해주는 게, 의국에선 좀 어색하거든요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "학생이 자연스러운 사람이라는 건 알겠는데요... 그래도 한 걸음 더 들어가는 데서 멈칫하게 되네요. ...괜찮을까요?"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "\"괜찮을까요\"라고. 어른이 망설이는 거 처음 본다. 답을 잘 골라야 한다."
+    },
+    {
+      "type": "FLAG_INC",
+      "key": "H1",
+      "delta": 5
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "누나",
+          "next": "ch06_h1_03b_noona",
+          "tone": "mature_serious",
+          "isKey": true,
+          "descriptor": "ch6_h1_call_noona"
+        },
+        {
+          "text": "선배요",
+          "next": "ch06_h1_03b_sunbae",
+          "tone": "warm_supportive"
+        },
+        {
+          "text": "선생님이 편해요",
+          "next": "ch06_h1_03b_teacher",
+          "tone": "mature_serious"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-06 evening",
+    "activeHeroines": [
+      "H1"
+    ]
+  }
+}

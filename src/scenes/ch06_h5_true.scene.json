@@ -1,0 +1,352 @@
+{
+  "id": "ch06_h5_true",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_campus_night_blossom"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_climax",
+      "volume": 0.6,
+      "fade": 4
+    },
+    {
+      "type": "NARRATION",
+      "text": "2026년 6월 27일 토요일 오후 5시. 계명대 캠퍼스 벚꽃길. 6월 말 햇살이 한층 짙다. 벚꽃 잎이 모두 떨어지고 잎이 푸르러진 길. 봄볕이 여름의 빛깔로 넘어가기 직전. 장윤영이 인천 본가 갔다 온 다음 날."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "smile",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "6월 말 토요일."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "윤영이가 인천 본가 갔다 온 다음 날 캠퍼스 벚꽃길에서 보자고 어제 카톡 보냈고."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "의대 축제 끝나고, 학기 마무리 시간이 여기서 한 점으로 모인다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "벚꽃길 한쪽. 의예과 2학년 봄 차림(미니 원피스 + 가벼운 카디건)에 가벼운 가방을 멘 사람이 길 한쪽에서 손을 흔든다. 마지막 산책에서 봤던 차분함과 평소의 활기가 자연스럽게 겹쳐진 모습."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "장윤영",
+      "sprite": "outfit_dress",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "VIDEO",
+      "src": "video_true_yuna"
+    },
+    {
+      "type": "CG",
+      "image": "cg_yuna_true",
+      "cgId": "cg_yuna_true"
+    },
+    {
+      "type": "NARRATION",
+      "text": "계명대 캠퍼스 벚꽃길. 장윤영이 푸르러진 잎길 한쪽에서 가방을 어깨에 메고 한 손을 잠깐 든 자세. 봄볕이 갈색 머리에 부드럽게 비치고, 평소 그대로의 환한 미소가 입가에 어려 있다. 늦은 벚꽃잎 한두 장이 두 사람 사이로 잠깐 흩날리는 변환의 순간."
+    },
+    {
+      "type": "CG_HIDE"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "오빠!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "...어. 선배."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "오빠."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 잠깐 멈춘다. 마지막 산책에서 호칭이 \"선배\" → \"오빠\"로 풀린 그날 이후, 인천 본가 일주일 사이에 장윤영 쪽에서 호칭이 한 단계 더 자리 잡은 모습. 평소 \"선배~!\"에서, 이제는 망설임 없이 \"오빠\"로 한 번 더."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "blush",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "...어."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "호칭 한 줄. 한 학기 풀어 가다가 한 발 더 풀렸네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "헉 인천 본가 일주일 동안 \"오빠\" 한 번 자연스럽게 부르려고 잠깐 연습했거든요!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "\"선배\" 한 번 안 붙이고 \"오빠\" 한 번 부르는 게 의외로 어렵더라고요!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "그러게. 어색하지."
+    },
+    {
+      "type": "NARRATION",
+      "text": "두 사람이 벚꽃길 한쪽 벤치 옆에서 잠깐 멈춘다. 6월 말 햇살이 푸른 잎 사이로 굴절되어 떨어진다. 가로등이 아직 들어오기 전, 잎이 가장 짙은 시간."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "오빠."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "인천 본가 일주일 동안 깨달은 게 있어서요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 들을게."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "본가 거실에서 엄마랑 의대 축제 부스 사진 한 장 같이 봤거든요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "엄마가 첫 마디가 그거였어요. \"윤영이 한 학기 동안 본가 안 챙겼는데도 의대 부스에서 본과 선배랑 사진 같이 찍었네.\""
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "본가 안 챙긴 만큼이 의예과랑 의대 축제랑 야간 카톡에 다 들어가 있었다는 뜻이라."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "그러게. 한 학기 마음이 다 모인 거지."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "그래서 인천에서 마지막 날 결심했어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "\"선배\" 호칭, \"오빠\"로 자리 잡혀 가자."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "본가 다녀온 다음 날 \"오빠\" 한 번 더 부르는 것부터."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "인천 본가 일주일."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "본가 다녀오면서 호칭 풀어볼 결심을 잡고 온 거구나."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "윤영이의 직진이 봄 내내 결을 바꿨고, 호칭은 그 마지막 결착이고."
+    },
+    {
+      "type": "FLAG_INC",
+      "key": "H5",
+      "delta": 5
+    },
+    {
+      "type": "NARRATION",
+      "text": "두 사람이 벤치에 잠깐 앉는다. 6월 말 햇살이 한 단계 누그러진다. 벤치 등받이가 살짝 따뜻하다. 푸르러진 잎이 한 번 흩날린다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "응, 오빠."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "봄 내내 직진해 와준 마음, 진짜 잘 받을게."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "봄 끝에 떠올린 다섯 명 중에 너만 다른 결로 깊어졌어. 그래서 자리가 다르고."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "그러니 같이 가는 게 맞고."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "헉 오빠 그렇게 짚어주시면 멈춰요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "그런데 진짜 좋아요. 🥹"
+    },
+    {
+      "type": "NARRATION",
+      "text": "장윤영이 시선을 푸르러진 잎 너머로 잠깐 옮긴다. 평소 활기 그대로의 표정 안에 더 깊은 따뜻함이 묻어난다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "오빠."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "의예과 2학기 시작이 9월이거든요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "그 사이 여름방학에 한 번 더 봐요. 인천 본가 한 번 와도 돼요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어. 갈게."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "헉! 인천 본가 한 번 오신다는 거 진짜요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "그래. 한 번 가보자. 분당에서 인천이면 가까운 거리고."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "알겠어요! 그럼 여름방학 중간에 인천에서 한 번 봐요!"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "여름방학 중간 인천."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "분당, 대구, 그리고 이번에 인천 한 번. 한 학기 동선이 또 한 줄로 이어진다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "봄 동안 윤영이가 천천히 깊어진 끝이 호칭 풀이였구나."
+    },
+    {
+      "type": "NARRATION",
+      "text": "두 사람이 벤치에서 일어선다. 6월 말 햇살이 푸르러진 잎 너머로 한 톤 더 옅어지는 시간."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "오빠."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "다음 학기도 가요. 여름에도. 의예과 2학기에도."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어. 한 학기 더 가자."
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_climax",
+      "volume": 0.7,
+      "fade": 2
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "smile",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "장윤영",
+      "sprite": "outfit_dress",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "NARRATION",
+      "text": "장윤영이 손을 한 번 더 흔들고 부스 쪽으로 뛰어간다. 가로등이 막 들어오는 순간, 화면이 천천히 페이드 아웃."
+    },
+    {
+      "type": "BG",
+      "image": "black"
+    },
+    {
+      "type": "NARRATION",
+      "text": "— 끝."
+    },
+    {
+      "type": "NARRATION",
+      "text": "**장윤영 트루 엔딩 — 벚꽃길 너머**"
+    },
+    {
+      "type": "ENDING",
+      "endingId": "END_H5_TRUE"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-27 afternoon",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

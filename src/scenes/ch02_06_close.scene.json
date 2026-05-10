@@ -1,0 +1,64 @@
+{
+  "id": "ch02_06_close",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_studio_room"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_main_theme",
+      "volume": 0.5,
+      "fade": 4
+    },
+    {
+      "type": "NARRATION",
+      "text": "침대에 누워 있는 윤모. 책상 등이 천천히 어두워진다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "본과 1학년 3주 차."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "카데바 첫 대면. 첫 실험. 첫 실수."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "그리고... 처음 마주한 어른의 침착함."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "다음 주는 동산병원 견학이라고 했나."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한 발씩 가면 되겠지."
+    },
+    {
+      "type": "NARRATION",
+      "text": "화면이 천천히 어두워진다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "— 끝 → Ch.3 \"동산\""
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch03_01_dongsan_lobby"
+    }
+  ],
+  "meta": {
+    "chapter": 2,
+    "time": "2026-03-17 night",
+    "activeHeroines": [
+      "H2",
+      "H3"
+    ]
+  }
+}

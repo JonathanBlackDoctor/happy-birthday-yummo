@@ -1,0 +1,112 @@
+{
+  "id": "ch03_03_card_exchange",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_dongsan_hallway"
+    },
+    {
+      "type": "NARRATION",
+      "text": "차세린이 가운 안주머니에서 명함을 한 장 꺼낸다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "학생, 견학 중에 또 무슨 일 있으면 연락해요. (명함 건네며) 의국 직통 번호 적혀 있어요. 제가 못 받아도 의국 누군가가 받으니까."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 정말 감사합니다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "견학생이 사고 나면 우리도 행정 처리 골치 아파요. 그러니까 사고 나도 빨리 알려주는 게 서로한테 좋고."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 명심하겠습니다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "명함에 적힌 이름: \"차세린 / 동산의료원 내과 전공의 2년차\"."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "차세린 선생님이라. 전공의 2년차이시구나. 7살쯤 위시겠네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "남희석",
+      "text": "윤모 학생, 어디 갔다 오는 거예요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "죄송합니다, 길을 잃었습니다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "남희석",
+      "text": "의국까지 들어갔네. (차세린 보며) 어, 차 선생. 견학생 챙겨주셨어요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "마침 같은 길이라서요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "남희석",
+      "text": "차 선생 평소엔 잘 안 웃는 분인데. 견학생이 운 좋네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "평소에도 잘 웃거든요. 선배가 안 봐서 그렇지."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "남희석",
+      "text": "알겠습니다. 자, 학생 단체 합류."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "어... 두 사람 친한 사이인 듯."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "차세린",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "남희석",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤모",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch03_04_back_to_school"
+    }
+  ],
+  "meta": {
+    "chapter": 3,
+    "time": "2026-04-06 morning, dongsan hospital",
+    "activeHeroines": [
+      "H1"
+    ]
+  }
+}

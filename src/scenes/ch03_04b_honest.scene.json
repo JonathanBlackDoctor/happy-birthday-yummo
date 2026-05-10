@@ -1,0 +1,67 @@
+{
+  "id": "ch03_04b_honest",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h5_first_tone",
+      "value": "honest"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "활기차네, 너."
+    },
+    {
+      "type": "NARRATION",
+      "text": "장윤영이 잠깐 멈추더니 더 환하게 웃는다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "장윤영",
+      "sprite": "blush",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "헉! 선배님 그렇게 보세요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "사람들이 활기차다고 자주 하는데, 선배님이 말씀하시니까 더 좋아요!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "자주 듣는 게 더 활기차다는 증거 같은데."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "맞아요! 헉 선배님 말투도 좋으세요!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "야, 윤모 너 무슨 마법사야."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "조나단",
+      "text": "\"활기차네\" 한 마디로."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch03_04_after_yuna"
+    }
+  ],
+  "meta": {
+    "chapter": 3,
+    "time": "2026-04-06 afternoon",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

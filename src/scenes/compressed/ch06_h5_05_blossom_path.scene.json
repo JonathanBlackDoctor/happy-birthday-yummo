@@ -1,0 +1,133 @@
+{
+  "id": "ch06_h5_05_blossom_path",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_campus_night_blossom",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_romantic",
+      "volume": 0.5,
+      "fade": 3
+    },
+    {
+      "type": "NARRATION",
+      "text": "6월 7일 일요일 저녁 6시. 캠퍼스 벚꽃길."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "캠퍼스 벚꽃길, 6월 저녁. 의예과 부스 마무리, 의대 축제 끝, 인천 본가 가기 직전 — 시간이 한군데로 모이는 시점이고."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "장윤영",
+      "sprite": "warm_smile",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "선배."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 윤영아."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "선배... 어제 자야 돼 너도 자, 두 번째 받았던 거 진짜 잘 잤어요. (작게) 지난번 새벽에도 그 한 마디 받고 잘 잤었거든요. 두 번째도 진짜 잘 잤고."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어. 두 번 다 잘 잤다는 거, 잘 받을게."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "헉 두 번 다 라는 그 한 마디에서 또 잠깐 멈췄어요. 선배."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "선배. 한 가지 짚을 게 있는데, 짚어도 돼요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 들을게."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "한 학기 동안 선배 호칭 말이에요. 저는 처음부터 \"선배~!\"였잖아요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "그런데 한 학기 지나서 자취방 카톡으로 진심 한 줄씩 풀어 가는 사이가 됐는데, 호칭은 그대로네요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "선배 호칭, 한 번 풀어볼까 싶어서요. (작게) 직진하는 거 부담된다는 거 알지만, 호칭 한 줄은 같이 풀어 가야 할 것 같아서."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "선배. (시선 잠깐 멈춤) ..."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "선배가 한 마디 더 거들어 주실 수 있어요?"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "학기 마무리 직전 산책에서 호칭이 풀려 간다 — 윤영이가 보여주는 가장 깊은 진심이지."
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "선배 말고 그냥 '오빠'라고 불러도 돼\" (호칭 변화, 선배",
+          "next": "ch06_h5_05b_call",
+          "tone": "bright_forward",
+          "isKey": true,
+          "descriptor": "ch6_h5_call_yunyoung"
+        },
+        {
+          "text": "호칭은 너 편한 대로",
+          "next": "ch06_h5_05b_call_partial",
+          "tone": "warm_supportive"
+        },
+        {
+          "text": "선배 호칭 한 학기 더 가도 자연스러운데",
+          "next": "ch06_h5_05b_keep",
+          "tone": "mature_serious"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-07 evening",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

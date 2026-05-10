@@ -1,0 +1,144 @@
+{
+  "id": "ch06_h4_03_perv_pair",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_studio_room",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_katalk",
+      "volume": 0.4,
+      "fade": 3
+    },
+    {
+      "type": "NARRATION",
+      "text": "6월 4일 목요일 저녁 9시. 자취방. 윤모가 책상 앞에 앉아 의대 축제 부스 자료를 정리하고 있다. 폰이 책상 한쪽에 엎어져 있다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "SFX",
+      "sound": "sfx_katalk_notify"
+    },
+    {
+      "type": "NARRATION",
+      "text": "1:1 카톡방. \"나서윤\"."
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "나서윤",
+          "text": "윤모씨"
+        },
+        {
+          "sender": "나서윤",
+          "text": "시험 자료 정리하다 잠깐 쉬는 시간이라"
+        },
+        {
+          "sender": "나서윤",
+          "text": "어제 점심 응원 잘 받았다는 말 한 번 더 적어요"
+        },
+        {
+          "sender": "나서윤",
+          "text": "🥺"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "또 먼저 보내셨네."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "시크하다고 생각했는데, 의외로 챙기시는 분이다."
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "나서윤",
+          "text": "약대 가운 입고 도서관 가는 길이라 사진 한 장 첨부해요"
+        },
+        {
+          "sender": "나서윤",
+          "text": "윤모씨가 의대 가운 한 번 보여주셨으니까 저도 약대 가운 보내는 거예요"
+        },
+        {
+          "sender": "나서윤",
+          "text": "",
+          "image": "/img/sprites/seoyoon_outfit_school.webp"
+        }
+      ]
+    },
+    {
+      "type": "NARRATION",
+      "text": "카톡 모달에 사진 한 장. 약대 학생회관 앞. 약대 가운 + 안경 + 미니 가방. 평소 흰 셔츠 차림과는 다른, 어른스러운 분위기가 짙어진 모습."
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_katalk",
+      "volume": 0.4,
+      "fade": 1
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "답장은 자연스럽게. 약대 가운 사진 받았으니 사진에 대한 한마디 + 응원 한마디."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "분위기에 맞춰드리면 된다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "카톡 모달 위쪽에 알림 바가 작게 깜빡인다. \"답장하기 (15초)\"."
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "나서윤",
+          "text": "답장 짧게라도 부탁드려요"
+        }
+      ],
+      "affectionDecay": {
+        "target": "H4",
+        "perSecond": 5
+      },
+      "choices": [
+        {
+          "text": "약대 가운 어른스러우시네요, 시험 잘 보세요",
+          "next": "ch06_h4_03b_replied",
+          "tone": "warm_supportive",
+          "isKey": true,
+          "descriptor": "ch6_h4_uniform_reply",
+          "mechanism": "h4_reply_speed"
+        },
+        {
+          "text": "잘 어울리세요. 시험 잘 보세요",
+          "next": "ch06_h4_03b_short",
+          "tone": "direct_friendly",
+          "mechanism": "h4_reply_speed"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-04 evening",
+    "activeHeroines": [
+      "H4"
+    ]
+  }
+}

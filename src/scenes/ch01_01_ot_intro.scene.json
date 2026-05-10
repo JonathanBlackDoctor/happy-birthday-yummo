@@ -1,0 +1,134 @@
+{
+  "id": "ch01_01_ot_intro",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_lecture_day",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.6,
+      "fade": 2
+    },
+    {
+      "type": "NARRATION",
+      "text": "2026년 3월 2일 오전 9시. 본과 1학년 OT 첫날. 계단식 강의실에 본과 1학년 50명이 자리 잡고 있다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "진짜 시작이네."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "어제까지 자취방 먼지나 털고 있었는데."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "50명이 한자리에 모이니까 그제야 실감 난다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "학과장 인사가 끝나고, 학생회 임원이 마이크를 윤모 쪽으로 넘긴다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "학생회 임원",
+      "text": "그럼 과대 짧게 인사 한번 부탁할게요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 안녕하세요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "본과 1학년 1학기 과대 맡은 구윤모입니다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "길게는 안 끌게요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "한 학기 잘 부탁드리겠습니다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "부족한 거 있으면 편하게 말씀해 주세요."
+    },
+    {
+      "type": "NARRATION",
+      "text": "강의실 곳곳에서 옅은 박수."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "됐다. 짧고 깔끔하게."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "즉흥이 차라리 낫다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "학생회 임원",
+      "text": "그럼 해부조 배정 발표하겠습니다. 슬라이드 봐주세요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "학생회 임원",
+      "text": "본인 조 확인하고 조원들 얼굴 익혀두세요."
+    },
+    {
+      "type": "NARRATION",
+      "text": "슬라이드에 1조부터 10조까지 명단이 뜬다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "5조... 윤하정, 오준혁, 이문규, 정욱."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "윤하정. 처음 듣는 이름이네."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "smile",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "과대니까 미리 얼굴이라도 익혀둬야겠다."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch01_02_meet_hajeong"
+    }
+  ],
+  "meta": {
+    "chapter": 1,
+    "time": "2026-03-02 morning"
+  }
+}

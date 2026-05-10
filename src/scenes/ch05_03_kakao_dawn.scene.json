@@ -1,0 +1,115 @@
+{
+  "id": "ch05_03_kakao_dawn",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_studio_room"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_katalk",
+      "volume": 0.4,
+      "fade": 3
+    },
+    {
+      "type": "NARRATION",
+      "text": "5월 12일 화요일 새벽 1시 30분. 자취방. 윤모가 양치를 끝내고 침대로 향하려는데 폰이 울린다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "SFX",
+      "sound": "sfx_katalk_notify"
+    },
+    {
+      "type": "NARRATION",
+      "text": "1:1 카톡방. \"장윤영\"."
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "장윤영",
+          "text": "선배~~~~~ 자요?"
+        },
+        {
+          "sender": "장윤영",
+          "text": "저 아직 안 자요!!"
+        },
+        {
+          "sender": "장윤영",
+          "text": "오늘 회식 진짜 신났어요 ✨✨"
+        },
+        {
+          "sender": "장윤영",
+          "text": "선배 잔 받아주신 거 진짜 진짜 좋았어요 🥹"
+        },
+        {
+          "sender": "장윤영",
+          "text": "저 술 한 잔 더 했거든요 친구네서요"
+        },
+        {
+          "sender": "장윤영",
+          "text": "선배 진짜 다정하시구나 오늘 알았어요 🫶"
+        },
+        {
+          "sender": "장윤영",
+          "text": "헉 너무 많이 보냈나"
+        },
+        {
+          "sender": "장윤영",
+          "text": "선배 안 자고 있으면 답장 한 번만요"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "술 한 잔 더 했네."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "내일 일어나서 후회할 카톡, 딱 그걸 쓰고 있다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "답장은 짧고 따뜻하게. 그리고 자라고 한마디."
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "지금 자야 돼, 너도 자",
+          "next": "ch05_03b_kind",
+          "tone": "bright_forward",
+          "isKey": true,
+          "descriptor": "ch5_late_kakao"
+        },
+        {
+          "text": "응원 잘 받았어, 잘 자",
+          "next": "ch05_03b_warm",
+          "tone": "warm_supportive"
+        },
+        {
+          "text": "...내일 답장할게",
+          "next": "ch05_03b_cold",
+          "tone": "mature_serious"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 5,
+    "time": "2026-05-12 dawn",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "id": "ch04_05_seoyoon_kakao",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_studio_room",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_katalk",
+      "volume": 0.4,
+      "fade": 3
+    },
+    {
+      "type": "NARRATION",
+      "text": "같은 날 밤 11시. 자취방. 윤모가 책상 앞에 시험 자료를 펼쳐놓고 있다. 폰이 책상 한쪽에 엎어져 있다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "점심에 만난 거 따로 카톡 안 했고."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "시험 직전이라 빨리 들어간다 했으니까 보낼 타이밍 잡기 애매하네."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "먼저 보내는 게 좋을지, 자연스러운 흐름으로 기다리는 게 좋을지."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "일단 시험 자료부터 한 챕터 더 돌리자."
+    },
+    {
+      "type": "SFX",
+      "sound": "sfx_katalk_notify"
+    },
+    {
+      "type": "NARRATION",
+      "text": "폰 화면이 환하게 켜진다. \"나서윤\" 1:1 카톡방. 새 메시지."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "어. 먼저 와 있네. 타이밍은 서윤씨 쪽에서 먼저 잡으셨다."
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "나서윤",
+          "text": "안녕하세요"
+        },
+        {
+          "sender": "나서윤",
+          "text": "낮에 승보 오빠한테 친추 받으셨다고 들었어요"
+        }
+      ]
+    },
+    {
+      "type": "NARRATION",
+      "text": "메시지가 들어오는 동시에 카톡 모달 위쪽에 알림 바가 작게 깜빡인다. \"답장하기 (15초)\"."
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "나서윤",
+          "text": "본과 1학년 시험기간 힘들다고 들었어요"
+        },
+        {
+          "sender": "나서윤",
+          "text": "시험 잘 보세요"
+        }
+      ],
+      "affectionDecay": {
+        "target": "H4",
+        "perSecond": 5
+      },
+      "choices": [
+        {
+          "text": "정중 인사 + 시험 응원",
+          "next": "ch04_05b_replied",
+          "tone": "warm_supportive",
+          "isKey": true,
+          "descriptor": "ch4_first_reply",
+          "mechanism": "h4_reply_speed"
+        },
+        {
+          "text": "ㅇㅇ 감사",
+          "next": "ch04_05b_short",
+          "tone": "direct_friendly",
+          "mechanism": "h4_reply_speed"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 4,
+    "time": "2026-04-29 night",
+    "activeHeroines": [
+      "H4"
+    ]
+  }
+}

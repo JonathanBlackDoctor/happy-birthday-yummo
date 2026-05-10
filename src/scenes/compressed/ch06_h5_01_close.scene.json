@@ -1,0 +1,54 @@
+{
+  "id": "ch06_h5_01_close",
+  "commands": [
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "장윤영",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "야 윤모, 너 응원 잘 받았다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "조나단",
+      "text": "응원 막대까지 들고 왔는데 잘 받아야지."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "표경민",
+      "text": "의예과 후배 한 명 챙기는 거."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "응원 막대 한 개. 자기 쉬는 시간을 통째로 5조한테 써준 사람의 진심이, 손에 그대로 남아 있다."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤모",
+      "transition": "fade"
+    },
+    {
+      "type": "BG",
+      "image": "black"
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h5_02_club_event"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-01 afternoon",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

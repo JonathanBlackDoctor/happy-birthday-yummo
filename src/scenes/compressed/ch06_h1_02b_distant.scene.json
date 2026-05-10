@@ -1,0 +1,53 @@
+{
+  "id": "ch06_h1_02b_distant",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h1_late_cafe",
+      "value": "distant"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "7살 차이는 7살 차이고요."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "차세린",
+      "sprite": "concerned",
+      "position": "left",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "...어, 그래요. (옅게) 학생-선생님 사이. 그게 맞는 거지요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 그게 아니라."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "괜찮아요. 학생이 정리하면 그렇게 가는 거니까."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "망했다. 누나가 어렵게 7살 차이 꺼내셨는데. 거리 두는 식으로 받아버렸다."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h1_02_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-02 dawn 1am",
+    "activeHeroines": [
+      "H1"
+    ]
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "id": "ch05_06_bonfire",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_mt_pension",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_romantic",
+      "volume": 0.5,
+      "fade": 3
+    },
+    {
+      "type": "NARRATION",
+      "text": "모닥불 시퀀스. 사람들이 둥글게 앉아 한 잔씩 천천히 비운다. 5월 밤공기가 살짝 차고, 모닥불 빛이 한 번씩 사람들 얼굴에 닿았다 흘러간다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "모닥불 빛은 신기하단 말이지. 평소 무뚝뚝한 사람도 표정이 풀려 보인다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "한 시간 정도 단체 시간이 흐른다. 한 명씩 마당 끝, 펜션 안, 다른 모닥불 쪽으로 흩어지면서 잠깐씩 1:1 시간이 생겨난다."
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "차세린 선생님이 마당 끝에서 머그잔 들고 계심",
+          "next": "ch05_06b_h1",
+          "effects": [
+            {
+              "type": "FLAG_INC",
+              "key": "H1",
+              "delta": 25
+            },
+            {
+              "type": "KEY_CHOICE",
+              "heroine": "H1",
+              "choiceId": "ch5_bonfire"
+            }
+          ]
+        },
+        {
+          "text": "윤하정이 모닥불 옆에서 한 잔 더 채우는 중",
+          "next": "ch05_06b_h2",
+          "effects": [
+            {
+              "type": "FLAG_INC",
+              "key": "H2",
+              "delta": 25
+            },
+            {
+              "type": "KEY_CHOICE",
+              "heroine": "H2",
+              "choiceId": "ch5_bonfire"
+            }
+          ]
+        },
+        {
+          "text": "한설 선생님이 펜션 입구에서 잠깐 바람 쐬는 중",
+          "next": "ch05_06b_h3",
+          "effects": [
+            {
+              "type": "FLAG_INC",
+              "key": "H3",
+              "delta": 25
+            },
+            {
+              "type": "KEY_CHOICE",
+              "heroine": "H3",
+              "choiceId": "ch5_bonfire"
+            }
+          ]
+        },
+        {
+          "text": "나서윤씨가 펜션 안 부엌에서 잔 정리 중",
+          "next": "ch05_06b_h4",
+          "effects": [
+            {
+              "type": "FLAG_INC",
+              "key": "H4",
+              "delta": 25
+            },
+            {
+              "type": "KEY_CHOICE",
+              "heroine": "H4",
+              "choiceId": "ch5_bonfire"
+            }
+          ]
+        },
+        {
+          "text": "장윤영이 모닥불 너머에서 후배들이랑 떠들다 윤모 쪽 봄",
+          "next": "ch05_06b_h5",
+          "effects": [
+            {
+              "type": "FLAG_INC",
+              "key": "H5",
+              "delta": 25
+            },
+            {
+              "type": "KEY_CHOICE",
+              "heroine": "H5",
+              "choiceId": "ch5_bonfire"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 5,
+    "time": "2026-05-16 night",
+    "activeHeroines": [
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "gyumin",
+      "gyeongmin",
+      "nathan",
+      "wook",
+      "junhyuk",
+      "mom",
+      "taeho"
+    ]
+  }
+}

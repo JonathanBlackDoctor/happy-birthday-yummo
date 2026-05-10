@@ -1,0 +1,124 @@
+{
+  "id": "ch06_h3_happy",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_biochem_lab_night"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.4,
+      "fade": 3
+    },
+    {
+      "type": "NARRATION",
+      "text": "2026년 6월 14일 일요일 밤 11시. 본과 1학년 첫 시험 종료 후 한 주 지난 시점."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "smile",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "한설",
+      "sprite": "tired",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "본과 1학년 첫 시험 끝나고 한 주. 케이크 한 박스 들고 늦은 밤 실험실 들렀고."
+    },
+    {
+      "type": "CG",
+      "image": "cg_seol_late_night",
+      "cgId": "cg_seol_late_night"
+    },
+    {
+      "type": "NARRATION",
+      "text": "생화학실험실 한쪽. 한설이 책상 앞에서 데이터 정리 중. Ch.4 이후 본 적 있는 평소와 다른 모습 그대로."
+    },
+    {
+      "type": "CG_HIDE"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "학생, 시험 잘 끝났어요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 무사히 끝냈어요. 케이크 한 박스 가져왔고요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "케이크는 의외로 부담스럽긴 한데... 음... 한 조각 잘라서 같이 먹는 식이면 괜찮을 것 같아요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "학생. (잠시) 새벽 1시 실험실에서 학생이 사람으로 옆에 있고 싶다고 한 말. (시선 잠깐 멈춤) 그 답을 잠깐 두고 가자 했고요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...아직 답이 정리되진 않았어요. 박사 5년차 본업이 무게가 있는 자리고, 본인 모습도 좀 더 정리할 시간이 필요할 것 같고요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 선생님. 답은 답대로 두시고요. 다음 학기에도 학생-조교 자리 잘 부탁드린다는 한마디면 충분합니다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...학생. 그렇게 풀어 받아주는 거 의외로 가볍지가 않네요. (잠시) 다음 학기에도 잘 부탁해요. ...그리고 한 가지."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "학생이 새벽 1시 실험실에서 흘려보낸 그 한마디, 마음에 두고 갈게요. ...고맙게 들었어요."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "\"...잘 받았어요.\" 다음 학기에 사람-사람으로 가는지는 그때 정리될 모먼트지."
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_romantic",
+      "volume": 0.5,
+      "fade": 2
+    },
+    {
+      "type": "BG",
+      "image": "black"
+    },
+    {
+      "type": "NARRATION",
+      "text": "— 끝."
+    },
+    {
+      "type": "NARRATION",
+      "text": "**한설 해피 엔딩 — 실험실의 밤**"
+    },
+    {
+      "type": "ENDING",
+      "endingId": "END_H3_HAPPY"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-14 night",
+    "activeHeroines": [
+      "H3"
+    ]
+  }
+}

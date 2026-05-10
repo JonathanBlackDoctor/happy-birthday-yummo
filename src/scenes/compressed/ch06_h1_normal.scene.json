@@ -1,0 +1,137 @@
+{
+  "id": "ch06_h1_normal",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_campus_cafe"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.4,
+      "fade": 3
+    },
+    {
+      "type": "NARRATION",
+      "text": "2026년 6월 10일 수요일 오후 4시. 의대 본관 옆 카페."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "차세린",
+      "sprite": "default",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "6월 둘째 주 수요일 오후. 차세린 선생님이 외래 사이에 카페에서 보자고 카톡 보내셨다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "학생."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "선생님, 시간 내주셔서 감사해요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "학생. 한 가지 풀어 말할 게 있는데, 받아줄래요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "학생, 저는 좀 부담스러워요. 6일 산책로에서 호칭을 권한 게, 제 입장에선 좀 빨랐던 것 같아요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "한 학기 동안 어색하지 않게 풀린 건 맞는데. 그 다음 단계로 넘어가는 건 제 안에서 멈춰지더라고요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 선생님. 그렇게 말씀해주신 거, 잘 받았습니다. 천천히 가는 게 자연스럽다면 그게 맞아요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "학생, 그렇게 받아주는 모습이 어른스럽네요. 한 학기 동안 카페에서, 도서관에서, 의국에서 챙겨주신 거. 마음에 두고 갈게요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "학생-선생님으로 한 학기 더. 그게 자연스러운 거리예요."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "빨랐던 거다. 7살이 가벼운 거리는 아니었다. 그래도 좋은 인연이었다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "학생, 본과 1학년 마무리 잘 챙겨요. 다음 학기 견학에서 한 번씩 봬요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 선생님도 무리하지 마시고요."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "차세린",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤모",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.4,
+      "fade": 2
+    },
+    {
+      "type": "BG",
+      "image": "black"
+    },
+    {
+      "type": "NARRATION",
+      "text": "— 끝."
+    },
+    {
+      "type": "NARRATION",
+      "text": "**차세린 노멀 엔딩 — 선후배의 거리**"
+    },
+    {
+      "type": "ENDING",
+      "endingId": "END_H1_NORMAL"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-10 afternoon",
+    "activeHeroines": [
+      "H1"
+    ]
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ch06_h1_01b_thanks",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h1_visit",
+      "value": "thanks"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "선생님."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "30분 시간 내서 와주신 거. 가볍지 않아요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "시험 끝나고 늘어지는 시기에, 일부러 빼서 와주셨다는 게... 저도 다시 책상 앞에 앉을 때 자세를 챙기게 되네요. 감사히 받을게요."
+    },
+    {
+      "type": "NARRATION",
+      "text": "차세린이 잠깐 멈춘다. 시선이 종이가방에서 윤모 쪽으로 옮겨진다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "차세린",
+      "sprite": "smile",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "...학생, 정색하면서 그렇게 말하는 거 처음 듣네요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "정색은 아니에요. 솔직하게 말씀드린 거예요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "그렇게 받아주니까, 와본 보람이 있다는 마음이 드네요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "...잘 받았어요. 진짜로."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "\"잘 받았어요. 진짜로.\""
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "Ch.4 새벽 카페에서 처음 들었던 그 말. 한 학기 지나서 다시 듣는다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "어깨가 살짝 가벼워진다. 잘 챙겨드린 것 같다."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h1_01_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-01 afternoon",
+    "activeHeroines": [
+      "H1"
+    ]
+  }
+}

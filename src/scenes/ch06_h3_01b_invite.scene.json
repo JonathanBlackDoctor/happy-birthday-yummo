@@ -1,0 +1,56 @@
+{
+  "id": "ch06_h3_01b_invite",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h3_booth",
+      "value": "invite"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "선생님 같이 부스 한 시간 도와주실래요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "어... 그러니까... 음..."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "한 시간은 좀 무리일 것 같아요. 실험 데이터 정리가 오늘 안에 끝나야 하는 게 있어서."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "아, 그러시구나. 죄송해요, 제가 일정 못 챙겼네요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "아니에요. 제가 잠깐 들렀다가 들어가는 식으로 할게요."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "박사 5년차 일정에 한 시간을 권한 거."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "본업 챙겨드리는 게 우선인데 가볍게 던졌네. 한 번 더 돌려서 챙겨드렸어야 했는데."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h3_01_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-02 afternoon",
+    "activeHeroines": [
+      "H3"
+    ]
+  }
+}

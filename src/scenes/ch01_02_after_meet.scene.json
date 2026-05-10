@@ -1,0 +1,90 @@
+{
+  "id": "ch01_02_after_meet",
+  "commands": [
+    {
+      "type": "NARRATION",
+      "text": "옆에서 다른 여학생이 가방을 메고 다가온다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "오준혁",
+      "sprite": "default",
+      "position": "left",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "오준혁",
+      "text": "윤하정. 여기 5조?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "어, 5조. 너도?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "오준혁",
+      "text": "어. 오준혁."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어... 안녕."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "오준혁",
+      "text": "이름 때문에 자주 오해받아. 됐어, 익숙해."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "아, 응. 안녕, 준혁아."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "5조 단톡 만들자. 번호 줘."
+    },
+    {
+      "type": "NARRATION",
+      "text": "셋이 카톡방을 만든다. \"본과 1학년 해부 5조\" 단톡 개설."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "자, 5조 시작이다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "윤하정. 무뚝뚝한데, 그래도 정 없진 않다."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤하정",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "오준혁",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch01_03_kakao_evening"
+    }
+  ],
+  "meta": {
+    "chapter": 1,
+    "time": "2026-03-02 morning, after 조 배정",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

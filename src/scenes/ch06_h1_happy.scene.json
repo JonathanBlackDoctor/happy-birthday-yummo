@@ -1,0 +1,193 @@
+{
+  "id": "ch06_h1_happy",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_dongsan_hallway"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_romantic",
+      "volume": 0.5,
+      "fade": 3
+    },
+    {
+      "type": "NARRATION",
+      "text": "2026년 6월 27일 토요일 저녁 7시. 동산병원 내과 의국 휴게실. 차세린이 당직 막 끝낸 시간. 토요일 저녁이라 평소보다 분위기가 풀려 있다. 윤모가 견학 마무리 후 인사하러 들른 시간."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "smile",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "차세린",
+      "sprite": "tired",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "6월 마지막 토요일."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "누나 당직 끝나는 시간 맞춰서 잠깐 들렀다."
+    },
+    {
+      "type": "CG",
+      "image": "cg_serin_first_meet",
+      "cgId": "cg_serin_first_meet"
+    },
+    {
+      "type": "NARRATION",
+      "text": "의국 휴게실 소파. 차세린이 흰 가운에 청록 스크럽 그대로 앉아 있다. 미디엄 헤어가 어깨선에 단정히 떨어져 있고, Ch.3 첫 만남 의국 복도에서 봤던 어른의 분위기 그대로지만, 입가에 옅은 미소가 그때보다 부드럽게 풀려 있다."
+    },
+    {
+      "type": "CG_HIDE"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "윤모 학생."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "누나, 당직 수고하셨어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "견학은 잘 마무리했어요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 남희석 선배님 가이드 한 번 더 받았어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "한 학기 지나니까, 의국 복도가 익숙해졌네요."
+    },
+    {
+      "type": "NARRATION",
+      "text": "두 사람이 소파 양쪽에 앉는다. 차세린이 머그잔을 두 손으로 감싼다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "윤모 학생."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "6일 산책로에서 호칭 받아준 거."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "그게 6월 마무리 가까워지면서 다시 떠올랐어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "...누나-동생 사이까지는 좀 더 시간이 필요한 것 같아요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "학생-선생님에서 한 걸음 풀어진 건 맞는데, 그 다음 단계는 제 안에서 정리할 시간이 필요해요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 누나."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "천천히 가는 게 자연스럽다면 그게 맞아요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "다음 학기에 의국 한 번씩 들러도 돼요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "...다음에도 와줄래요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "의국에서 보는 건 그대로 두고요. 그쪽이 자연스러워지면, 그때 다음 단계 가요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 천천히 갈게요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "...한 학기 잘 와줬어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "새벽 카페, 산책로, 부스. 모두 마음에 두고 갈게요."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "\"한 학기 잘 와줬어요.\""
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "\"잘 받았어요\"는 아니지만, 무게가 비슷하다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "다음 학기에 의국 휴게실 한 번 더 가는 게 정해졌다."
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_romantic",
+      "volume": 0.6,
+      "fade": 2
+    },
+    {
+      "type": "BG",
+      "image": "black"
+    },
+    {
+      "type": "NARRATION",
+      "text": "— 끝."
+    },
+    {
+      "type": "NARRATION",
+      "text": "**차세린 해피 엔딩 — 내과 의국의 늦봄**"
+    },
+    {
+      "type": "ENDING",
+      "endingId": "END_H1_HAPPY"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-27 evening",
+    "activeHeroines": [
+      "H1"
+    ]
+  }
+}

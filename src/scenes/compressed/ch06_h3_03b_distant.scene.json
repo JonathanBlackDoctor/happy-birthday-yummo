@@ -1,0 +1,53 @@
+{
+  "id": "ch06_h3_03b_distant",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h3_late_night",
+      "value": "distant"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "학생-조교 사이는 학생-조교니까요."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "한설",
+      "sprite": "concerned",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...어, 그래요. (잠시) 학생-조교 사이, 그 거리에 무게가 있긴 하니까요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 그게 아니라."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "괜찮아요. 학생이 그렇게 정리하면 거기서부터 시작하는 거고요."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "거리 두는 한마디로 받은 셈이네."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h3_03_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-03 dawn 1am",
+    "activeHeroines": [
+      "H3"
+    ]
+  }
+}

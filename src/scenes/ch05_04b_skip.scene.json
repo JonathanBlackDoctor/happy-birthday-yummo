@@ -1,0 +1,82 @@
+{
+  "id": "ch05_04b_skip",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_mt",
+      "value": "skip"
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "구윤모",
+          "text": "고민해볼게"
+        },
+        {
+          "sender": "김규민",
+          "text": "에이~"
+        },
+        {
+          "sender": "조나단",
+          "text": "윤모 쉬고 싶구나"
+        },
+        {
+          "sender": "표경민",
+          "text": "시험 끝나고 한 번 쉬는 것도 맞지"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "회식 한 번으로도 충분히 봤다는 마음이 있긴 한데."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "5월 16일까진 며칠 남았으니까 천천히 정해도 되고."
+    },
+    {
+      "type": "NARRATION",
+      "text": "다음 날 새벽까지 윤모가 한참 더 고민하다, 결국 가기로 결정한다. 김규민에게 카톡."
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "구윤모",
+          "text": "김규민"
+        },
+        {
+          "sender": "구윤모",
+          "text": "가는 걸로"
+        },
+        {
+          "sender": "김규민",
+          "text": "ㅇㅋ"
+        },
+        {
+          "sender": "김규민",
+          "text": "알았다"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "다섯 명이 다 모이는 자리는 흔치 않으니까."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch05_05_mt_pension"
+    }
+  ],
+  "meta": {
+    "chapter": 5,
+    "time": "2026-05-13 evening",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

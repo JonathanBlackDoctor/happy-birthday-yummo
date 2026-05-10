@@ -1,0 +1,140 @@
+{
+  "id": "ch06_h2_bad",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_lecture_day"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_sad",
+      "volume": 0.4,
+      "fade": 4
+    },
+    {
+      "type": "NARRATION",
+      "text": "2026년 6월 3일 수요일 오후. 본과 1학년 강의실. 의대 축제 주간 진행 중인데 5조 분위기가 조금 굳어 있다. 부스 운영 후속 회의 자리."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "sad",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "의대 축제 주간 둘째 날."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "5조 부스 후속 회의에 윤하정이 좀 늦게 들어왔다. 분위기가 굳어 있다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤하정",
+      "sprite": "pout",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "NARRATION",
+      "text": "강의실 한쪽. 5조가 부스 후속 정리를 하고 있다. 윤모가 윤하정 옆자리에 잠깐 다가가지만, 윤하정이 시선을 한 번도 옆으로 주지 않는다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "윤하정."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "어."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어제 옥상에서 내가 어설프게 한 게 좀 있었던 거 같아서."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...뭐, 됐어."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "5조 후속 정리 끝내고 갈래."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "오준혁",
+      "sprite": "default",
+      "position": "left",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "오준혁",
+      "text": "형, 윤하정 누나 오늘 컨디션 안 좋대요. 살살 가요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어. 알겠어."
+    },
+    {
+      "type": "NARRATION",
+      "text": "5조 후속 회의가 한 시간 동안 진행된다. 윤모와 윤하정이 한 마디도 직접 나누지 않은 채 회의가 끝난다."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤하정",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "어설프게 던진 한 마디가 5조 분위기까지 굳혀버렸다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한 학기 같이 가는 5조인데, 이 분위기로 다음 학기까지 가야 한다는 게."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "풀려면 풀어야 하는데, 한 학기 안에는 못 풀 거 같다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "강의실에서 윤모가 마지막에 자리를 정리한다. 6월 햇살이 조금 옅어진 모습으로 창에 닿는다."
+    },
+    {
+      "type": "BG",
+      "image": "black"
+    },
+    {
+      "type": "NARRATION",
+      "text": "— 끝."
+    },
+    {
+      "type": "NARRATION",
+      "text": "**윤하정 배드 엔딩 — 엇갈린 신호**"
+    },
+    {
+      "type": "ENDING",
+      "endingId": "END_H2_BAD"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-03 evening",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

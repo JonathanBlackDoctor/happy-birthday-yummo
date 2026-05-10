@@ -1,0 +1,86 @@
+{
+  "id": "ch06_h2_03b_extend_warm",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h2_walk",
+      "value": "extend"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "잠깐 더 걸을까."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "도서관 옥상 같이 가자. 본관 4층, 5분이면 도착이고."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "첫 야경 옆에 누구 있는 게 의미 있지."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤하정이 잠깐 멈춘다. 거리 끝에서 캠퍼스 입구 가로등이 조금 더 부드럽게 보인다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤하정",
+      "sprite": "blush",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...야."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "그렇게 챙겨주는 거 너 답지 않다고 했잖아."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "그러게. 오늘 한 번 더 너 답지 않은 모습으로 가는 셈."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...뭐, 알겠어. 같이 가자."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...어차피 부산 본가 가기 전에 야경 한 번은 봐야 하니까."
+    },
+    {
+      "type": "NARRATION",
+      "text": "두 사람이 캠퍼스 방향으로 다시 걷기 시작한다. 거리 가로등이 잠깐씩 어깨에 닿았다 흘러간다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "부산 본가 가기 전에 야경 한 번."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한 학기 끝나는 자리에서 부산 얘기를 흘렸다. 가볍게 한 말 같지만 그게 아니다."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h2_03_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-01 night",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

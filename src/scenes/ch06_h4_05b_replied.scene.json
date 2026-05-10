@@ -1,0 +1,72 @@
+{
+  "id": "ch06_h4_05b_replied",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h4_dawn",
+      "value": "on_time"
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "구윤모",
+          "text": "안 잤어요"
+        },
+        {
+          "sender": "구윤모",
+          "text": "오늘 분위기 맞춰주셔서 감사해요"
+        },
+        {
+          "sender": "구윤모",
+          "text": "한 학기 인사 자리가 한 번 더 의미 있었어요"
+        },
+        {
+          "sender": "구윤모",
+          "text": "이렇게 또 보내주셔서 마음 가벼워졌어요"
+        },
+        {
+          "sender": "나서윤",
+          "text": "네"
+        },
+        {
+          "sender": "나서윤",
+          "text": "답장 빠른 사람 진짜 드물어요"
+        },
+        {
+          "sender": "나서윤",
+          "text": "약대 4년 동안 답장 빠른 사람 한두 명 있었는데, 다들 자기 속도만 빠르고 분위기 맞춰주는 사람은 따로였거든요"
+        },
+        {
+          "sender": "나서윤",
+          "text": "윤모씨는 둘 다 같이 가는 분이라 잠깐 무겁게 들었어요"
+        },
+        {
+          "sender": "나서윤",
+          "text": "🥺"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "\"답장 빠른 사람\"이랑 \"분위기 맞춰주는 사람\"이 따로였다는 말."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "시크한 분이 잠깐 풀어서 마음 한 자락 보여주셨네. 무게가 또 다르다."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h4_06_close_decision"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-14 dawn",
+    "activeHeroines": [
+      "H4"
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": "ch06_h5_03b_quick",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h5_morning",
+      "value": "quick"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 사진 같이 찍은 건 같이 가는 거야. 부담은 안 둬도 돼."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "헉 알겠어요!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "그럼 강의 가볼게요!"
+    },
+    {
+      "type": "NARRATION",
+      "text": "장윤영이 의예과 강의실 쪽으로 빠른 걸음으로 향한다. 봄볕이 광장 한쪽으로 옅게 퍼진다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "무난하게 받았다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "거리감 챙겨준 그 마음을, 한 번 더 풀어 받았어도 좋았을 텐데. 인천 본가 얘기는 다음 카톡으로 미뤄진 셈이고."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h5_03_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-05 morning",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

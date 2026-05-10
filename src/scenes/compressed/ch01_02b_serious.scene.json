@@ -1,0 +1,48 @@
+{
+  "id": "ch01_02b_serious",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h2_first_tone",
+      "value": "serious"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어. 앞으로 잘 부탁할게."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤하정",
+      "sprite": "smile_small",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...어. 잘 부탁해. 무슨 과대가 첫 인사부터 그리 진중해."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어차피 같은 조잖아. 1년 갈 사이인데."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...그건 그렇네."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch01_02_after_meet"
+    }
+  ],
+  "meta": {
+    "chapter": 1,
+    "time": "2026-03-02 morning, after 조 배정",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

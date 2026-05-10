@@ -1,0 +1,67 @@
+{
+  "id": "ch06_h4_03b_replied",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h4_perv_kakao",
+      "value": "on_time"
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "구윤모",
+          "text": "약대 가운 처음 봤어요"
+        },
+        {
+          "sender": "구윤모",
+          "text": "어른스러운 분위기가 짙어지시네요"
+        },
+        {
+          "sender": "구윤모",
+          "text": "시험 마지막 주 잘 보세요"
+        },
+        {
+          "sender": "구윤모",
+          "text": "도서관 가시는 길 무리 마시고요"
+        },
+        {
+          "sender": "나서윤",
+          "text": "네"
+        },
+        {
+          "sender": "나서윤",
+          "text": "어른스러운 분위기라는 거 신기하게 들으시네요"
+        },
+        {
+          "sender": "나서윤",
+          "text": "의대생이 약대 가운 처음 보는 게 일상인데, 그걸 짚어주시는 게 자연스럽고"
+        },
+        {
+          "sender": "나서윤",
+          "text": "다음 주 끝나고 인사할 시간 잡아둘게요"
+        },
+        {
+          "sender": "나서윤",
+          "text": "🫶"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "🥺였다가 🫶가 됐네. 시크하긴 한데, 이모지 바뀐 자리에서 마음이 살짝 보인다."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h4_03_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-04 evening",
+    "activeHeroines": [
+      "H4"
+    ]
+  }
+}

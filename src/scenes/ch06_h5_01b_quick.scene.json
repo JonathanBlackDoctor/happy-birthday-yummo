@@ -1,0 +1,50 @@
+{
+  "id": "ch06_h5_01b_quick",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h5_open",
+      "value": "quick"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 응원 막대 잘 받을게."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "네!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "알겠어요! 두 개니까 하나씩 흔들어요! ✨"
+    },
+    {
+      "type": "NARRATION",
+      "text": "장윤영이 응원 막대 한 개를 윤모 쪽으로 건넨다. 표정은 환한데, 평소보다 살짝 차분해진 결이 잠시 비친다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "무난하게 끝났다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "두 개 들고 한 시간이나 빠져나와 준 마음을 한 마디로 받아버린 셈이네. 좀 더 풀어 받았어도 좋았을 텐데."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h5_01_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-01 afternoon",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

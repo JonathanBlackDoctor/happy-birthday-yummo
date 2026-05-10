@@ -1,0 +1,20 @@
+{
+  "id": "ch06_h5_06_evaluate",
+  "commands": [
+    {
+      "type": "NARRATION",
+      "text": "— 본과 1학년 봄 + 의대 축제 주간 + 의예과 동아리 행사 + 도서관 앞 9시 5분 + 12시 30분 카톡 + 캠퍼스 벚꽃길 호칭 풀이."
+    },
+    {
+      "type": "EVALUATE_TIER",
+      "winner": "H5"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "branch evaluation",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

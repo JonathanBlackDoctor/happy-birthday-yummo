@@ -1,0 +1,16 @@
+{
+  "id": "dummy_full_loop_kakao",
+  "meta": { "chapter": "test", "time": "W4 kakao verification" },
+  "commands": [
+    {
+      "type": "KAKAO",
+      "heroine": "H4",
+      "messages": [
+        { "sender": "H4", "text": "오늘 잘 들어가셨어요?", "delay": 600, "typing": true },
+        { "sender": "yunmo", "text": "네 잘 들어왔어요" },
+        { "sender": "H4", "text": "다행이네요!", "delay": 800, "typing": true }
+      ]
+    },
+    { "type": "JUMP", "sceneId": "dummy_full_loop_ending" }
+  ]
+}

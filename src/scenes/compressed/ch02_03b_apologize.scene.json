@@ -1,0 +1,57 @@
+{
+  "id": "ch02_03b_apologize",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h3_apology",
+      "value": "sincere"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "정말 죄송합니다. 청소도 도와드릴게요."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "한설",
+      "sprite": "smile_slight",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...아니에요. 유리 처리는 위험해서 제가 할게요. 학생은 가운 끝자락에 시약 묻은 거 화장실에서 닦고 와요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 알겠습니다. 정말 죄송합니다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...괜찮아요. 첫 실험이라 그래요. 다음부터 시약병 건네받을 땐 두 손 다 비워두세요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네. 명심하겠습니다."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch02_04_seol_recover"
+    }
+  ],
+  "meta": {
+    "chapter": 2,
+    "time": "2026-03-17 afternoon",
+    "activeHeroines": [
+      "H2",
+      "H3"
+    ],
+    "coFireNpcs": [
+      "taeho"
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "ch01_02b_casual",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h2_first_tone",
+      "value": "casual"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 조 잘 부탁~"
+    },
+    {
+      "type": "NARRATION",
+      "text": "가벼운 말투. 윤하정이 잠깐 윤모를 본다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤하정",
+      "sprite": "default",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...어."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "그래."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "어. 무뚝뚝해도 답은 해주네."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "차갑진 않다."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch01_02_after_meet"
+    }
+  ],
+  "meta": {
+    "chapter": 1,
+    "time": "2026-03-02 morning, after 조 배정",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ch06_h5_05b_keep",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h5_call",
+      "value": "keep"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "선배 호칭 한 학기 더 가도 자연스러운데."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "네... (시선 잠깐 비스듬) 알겠어요, 선배. 한 학기 더 그대로 가요."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "호칭 얘기를 닫아버린 시점."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h5_05_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-07 evening",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

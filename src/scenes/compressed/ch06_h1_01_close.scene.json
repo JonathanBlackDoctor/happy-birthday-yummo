@@ -1,0 +1,55 @@
+{
+  "id": "ch06_h1_01_close",
+  "commands": [
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "학생. 오늘 당직 6시 시작이고요. 새벽 1시쯤엔 동산병원 1층 옆 24시간 카페에 잠깐 들렀다가 의국 들어가요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "도서관에서 늦게까지 있을 거면, 그 카페 앞을 지나갈 수도 있겠네요. Ch.4 때 봤던 그 자리에서, 한 번 더 봐도 좋고요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 도서관 한 챕터 정리하고 새벽쯤 그쪽으로 갈게요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "그러면 거기서 봬요."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "차세린",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "새벽 1시. 동산병원 1층 카페. 누나 쪽에서 시간을 빼주셨다."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤모",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h1_02_late_cafe"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-01 afternoon",
+    "activeHeroines": [
+      "H1"
+    ]
+  }
+}

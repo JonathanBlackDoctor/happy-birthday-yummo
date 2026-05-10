@@ -1,0 +1,189 @@
+{
+  "id": "ch06_h5_01_festival_booth",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_festival",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.5,
+      "fade": 2
+    },
+    {
+      "type": "NARRATION",
+      "text": "2026년 6월 1일 월요일 오후 3시. 의대 축제 주간 첫날. 본관 앞 광장에 부스가 줄지어 늘어서 있다. 본과 1학년 5조 부스, 의예과 1·2학년 동아리 부스, 약대 부스도 한 켠에. 봄볕이 6월의 무게를 살짝 머금기 시작하는 시간. 광장 한복판에 세워둔 풍선 트리가 바람에 천천히 흔들린다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "의대 축제 첫날."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "부스 시작한 지 30분쯤 됐나. 이제 좀 한숨 돌려도 되겠다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "시험 끝난 다음 주라 다들 풀어진 표정이고."
+    },
+    {
+      "type": "NARRATION",
+      "text": "부스 한쪽 의자에 잠깐 걸터앉아 음료를 마시는데, 광장 저편에서 익숙한 환한 목소리가 들린다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "장윤영",
+      "sprite": "smile_big",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "선배~~! 선배~~~!"
+    },
+    {
+      "type": "NARRATION",
+      "text": "손을 흔들며 빠른 걸음으로 다가오는 사람. 긴 갈색 웨이브 머리에 의예과 동아리 행사 유니폼 — 밝은 노란 티셔츠와 청바지. 한 손엔 응원 막대 두 개. 봄볕에 머리카락이 가볍게 빛난다."
+    },
+    {
+      "type": "CG",
+      "image": "cg_yuna_festival",
+      "cgId": "cg_yuna_festival"
+    },
+    {
+      "type": "NARRATION",
+      "text": "의대 축제장 광장. 장윤영이 행사 유니폼 차림으로 응원 막대 두 개를 들고 환하게 웃으며 다가온다. 봄볕이 갈색 머리에 부드럽게 비치고, 표정은 평소 그대로의 활기."
+    },
+    {
+      "type": "CG_HIDE"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "선배! 5조 부스 운영 시작하셨다고 단톡에서 봤어요!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "응원 막대 들고 응원하러 왔거든요! ✨"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "진짜 응원 막대까지 들고 왔네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "의예과 행사 유니폼 입은 김에 응원 한 번 가야지 했죠!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "저희 부스 한 시간 쉬는 시간이라서요!"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "김규민",
+      "sprite": "default",
+      "position": "left",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "야 윤모, 의예과 동아리 손님이냐?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "조나단",
+      "text": "손님이 아니라 응원단인데."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "표경민",
+      "text": "의예과 후배가 본과 부스를 응원하러 다 오고."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "김규민",
+      "transition": "fade"
+    },
+    {
+      "type": "NARRATION",
+      "text": "5조 동기들이 부스 안쪽에서 한 번씩 시선을 흘리며 웃는다. 윤모가 의자에서 일어나 장윤영 쪽으로 한 걸음 나선다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "자기네 동아리 쉬는 시간을 응원하러 다 써주는구나."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "유니폼 그대로 뛰어나온 모양이네. 윤영이답다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "직진은 직진이지. 처음 봤을 때부터 변함없는 사람."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "선배! 이거 한 개 드릴게요!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "두 개 가져왔으니까 하나씩 흔들어요!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "5조 부스 운영하는 한 시간 동안만요! ✨"
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "그 마음 가볍지 않은 거 알아, 정중히 받을게",
+          "next": "ch06_h5_01b_take",
+          "tone": "bright_forward",
+          "isKey": true,
+          "descriptor": "ch6_h5_appeal_take"
+        },
+        {
+          "text": "어, 응원 막대 잘 받을게",
+          "next": "ch06_h5_01b_quick",
+          "tone": "direct_friendly"
+        },
+        {
+          "text": "너 너무 직진해, 너희 부스부터 챙겨야지",
+          "next": "ch06_h5_01b_light",
+          "tone": "mature_serious"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-01 afternoon",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

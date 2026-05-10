@@ -1,0 +1,47 @@
+{
+  "id": "ch05_03b_warm",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h5_late_kakao",
+      "value": "warm"
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "구윤모",
+          "text": "응원 잘 받았어"
+        },
+        {
+          "sender": "구윤모",
+          "text": "잘 자"
+        },
+        {
+          "sender": "장윤영",
+          "text": "헉 답장 ✨"
+        },
+        {
+          "sender": "장윤영",
+          "text": "선배도 잘 자요!!"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "짧게 부드럽게."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch05_03_close"
+    }
+  ],
+  "meta": {
+    "chapter": 5,
+    "time": "2026-05-12 dawn",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

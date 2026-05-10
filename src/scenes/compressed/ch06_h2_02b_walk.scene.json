@@ -1,0 +1,55 @@
+{
+  "id": "ch06_h2_02b_walk",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h2_dongseong",
+      "value": "walk"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "단체 한 시간이면 충분하지. 잠깐 같이 나가자."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "어."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "야 윤모 윤하정 잠깐 나간다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "조나단",
+      "text": "어, 알겠어. 천천히 와."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤모",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤하정",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h2_03_walk"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-01 evening",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

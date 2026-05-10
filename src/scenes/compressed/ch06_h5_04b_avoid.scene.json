@@ -1,0 +1,55 @@
+{
+  "id": "ch06_h5_04b_avoid",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h5_late_kakao",
+      "value": "avoid"
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "구윤모",
+          "text": "마음 받았는데"
+        },
+        {
+          "sender": "구윤모",
+          "text": "너 직진 또 시작이네"
+        },
+        {
+          "sender": "구윤모",
+          "text": "학기 마무리는 학기 마무리로 두자"
+        },
+        {
+          "sender": "장윤영",
+          "text": "..."
+        },
+        {
+          "sender": "장윤영",
+          "text": "어 알겠어요 선배"
+        },
+        {
+          "sender": "장윤영",
+          "text": "그럼 잘 자요 ✨"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "분위기 못 맞춘 거."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h5_04_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-06 late night",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

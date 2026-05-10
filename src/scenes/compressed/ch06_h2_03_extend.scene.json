@@ -1,0 +1,64 @@
+{
+  "id": "ch06_h2_03_extend",
+  "commands": [
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "야, 윤모. 도서관 옥상 알아?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "알지. 본관 4층 옥상."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...밤에 한 번도 안 가봤어. 시험기간엔 도서관 안에만 있었으니까."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "옥상 야경 본 적 없다는 거?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "어. (시선 거리 끝) ...뭐, 됐어. 다음에."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "\"다음에\"라니. 윤하정 입에서 저렇게 나오면 가고 싶다는 뜻이지. 받아주는 게 맞다."
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "잠깐 더 걸을까, 옥상 같이 가자",
+          "next": "ch06_h2_03b_extend_warm",
+          "tone": "direct_friendly",
+          "isKey": true,
+          "descriptor": "ch6_h2_walk_extend"
+        },
+        {
+          "text": "어, 다음에 가자",
+          "next": "ch06_h2_03b_extend_quick",
+          "tone": "warm_supportive"
+        },
+        {
+          "text": "너 술 한 잔 더 한 거 같은데 옥상은 좀 그렇지 않냐",
+          "next": "ch06_h2_03b_extend_light",
+          "tone": "playful_casual"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-01 night",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

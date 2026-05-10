@@ -1,0 +1,50 @@
+{
+  "id": "ch06_h1_01b_quick",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h1_visit",
+      "value": "quick"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "감사해요. 잘 챙겨갈게요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "네, 학생."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "부스 잘 마무리하세요."
+    },
+    {
+      "type": "NARRATION",
+      "text": "짧은 인사. 차세린이 본관 방향으로 한 걸음을 옮긴다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "무난하게 끝났는데... 30분이나 빼서 오신 건데, 이렇게만 보내드리려니 미안한 마음이 든다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한마디 더 얹었어야 했나."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h1_01_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-01 afternoon",
+    "activeHeroines": [
+      "H1"
+    ]
+  }
+}

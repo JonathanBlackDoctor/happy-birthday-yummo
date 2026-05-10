@@ -1,0 +1,92 @@
+{
+  "id": "ch06_h4_05_late_kakao",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_studio_room",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_katalk",
+      "volume": 0.4,
+      "fade": 3
+    },
+    {
+      "type": "NARRATION",
+      "text": "6월 14일 일요일 새벽 1시 30분. 자취방. 윤모가 양치하고 침대로 향하려는데 폰이 울린다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "SFX",
+      "sound": "sfx_katalk_notify"
+    },
+    {
+      "type": "NARRATION",
+      "text": "1:1 카톡방. \"나서윤\"."
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "나서윤",
+          "text": "안 자세요?"
+        },
+        {
+          "sender": "나서윤",
+          "text": "오늘 시간 같이 보낸 거 한 번 더 고맙다는 말 적으려고요"
+        },
+        {
+          "sender": "나서윤",
+          "text": "시험 끝난 다음 날에 분위기 맞춰주신 게 의외였어요"
+        }
+      ]
+    },
+    {
+      "type": "NARRATION",
+      "text": "카톡 모달 위쪽에 알림 바가 작게 깜빡인다. \"답장하기 (15초)\"."
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "나서윤",
+          "text": "잠깐 답장 가능하시면요"
+        }
+      ],
+      "affectionDecay": {
+        "target": "H4",
+        "perSecond": 5
+      },
+      "choices": [
+        {
+          "text": "안 잤어요, 오늘 자리 의미 있었어요",
+          "next": "ch06_h4_05b_replied",
+          "tone": "warm_supportive",
+          "isKey": true,
+          "descriptor": "ch6_h4_late_kakao",
+          "mechanism": "h4_reply_speed"
+        },
+        {
+          "text": "안 잤어요. 잘 들어가셨죠?",
+          "next": "ch06_h4_05b_short",
+          "tone": "direct_friendly",
+          "mechanism": "h4_reply_speed"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-14 dawn",
+    "activeHeroines": [
+      "H4"
+    ]
+  }
+}

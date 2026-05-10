@@ -1,0 +1,262 @@
+{
+  "id": "ch06_h1_01_festival_visit",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_festival",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.5,
+      "fade": 2
+    },
+    {
+      "type": "NARRATION",
+      "text": "2026년 6월 1일 월요일 오후 4시. 의대 본관 앞 광장에 축제 주간 첫날의 들뜬 공기가 깔려 있다. 본과 1학년 부스가 광장 한쪽에 자리를 잡았고, 5조가 메인으로 굴리는 동안 윤모는 과대 자격으로 부스 사이를 돌며 잠깐씩 챙긴다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "어제 저녁 차세린 선생님한테 카톡이 왔지. \"내일 외래 끝나고 부스 잠깐 들러볼게요.\" 그게 전부였다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "솔직히 못 오실 거라 생각했다. 외래 사이가 30분 빈다 해도 동산병원에서 캠퍼스까지 왕복하면 30분이 그대로 다 빠지니까."
+    },
+    {
+      "type": "NARRATION",
+      "text": "다른 부스 한 바퀴를 돌고 메인 부스로 돌아오던 길. 광장 입구 쪽에 누군가 멈춰 서 있다. 5조 이문규가 옆구리를 툭 친다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "이문규",
+      "text": "야. 누구냐 저분."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "...어."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "차세린",
+      "sprite": "outfit_casual",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "NARRATION",
+      "text": "평소 의국에서 보던 흰 가운에 청록 스크럽이 아니다. 오늘은 베이지 셔츠 원피스에 가벼운 카디건. 미디엄 헤어가 어깨선에 단정히 떨어져 있고, 한 손에 작은 종이가방."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "진짜 오셨네."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "가운 안 입은 모습 처음 본다. 같은 사람이 아닌 것 같다. 잠깐 발이 멈춘다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "이문규",
+      "text": "아, Ch.5 회식 때 그분이지? 윤모, 너 가서 인사해. 부스는 우리가 굴릴게."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어. 알겠어."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "이문규",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "차세린",
+      "sprite": "outfit_casual",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "학생."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "부스 잘 돌고 있나 싶어서요. 외래 끝나고 잠깐 빠져나왔어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "정말로 오셨네요. 못 오실 줄 알았어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "외래 사이가 30분 비어서요. 캠퍼스까지 걸어서 15분이라 빠듯하긴 한데, 한 번은 보고 가는 게 맞을 것 같아서."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "빠듯한 30분에 일부러 와주신 거다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "무게가 묵직하게 닿아서 어떻게 받아야 할지 잠깐 머뭇거린다."
+    },
+    {
+      "type": "CG",
+      "image": "cg_serin_festival",
+      "cgId": "cg_serin_festival"
+    },
+    {
+      "type": "NARRATION",
+      "text": "의대 본관 앞 광장. 차세린이 베이지 셔츠 원피스에 카디건을 걸치고 부스 입구 한쪽에 서 있다. 미디엄 헤어가 어깨선에 단정히 떨어져 있고, 봄볕이 옆모습에 옅게 닿는다. 손에는 작은 종이가방. 의국에서 익숙하던 어른의 거리감은 그대로지만, 사복 위로는 살짝 어색한 미소가 입가에 걸려 있다."
+    },
+    {
+      "type": "CG_HIDE"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "동산병원 1층 카페에서 산 쿠키예요. 부스 굴리는 사람들 한 봉지씩 나누세요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "외래 끝나고 단 거 들어가야 좀 살아나거든요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "와, 이런 것까지. 정말 감사합니다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "시험 끝나고 한 주는 풀어지는 시기인데, 부스 운영은 또 별개로 빡센 일이잖아요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "5조가 메인이긴 하고요. 다른 부스도 둘셋씩 사람 굴리고 있어요."
+    },
+    {
+      "type": "NARRATION",
+      "text": "차세린이 종이가방을 건넨 손을 거두고 본관 방향을 흘끗 본다. 손목시계를 한 번 확인."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "학생."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "축제 주간 동안 동산병원 외래가 좀 빡빡해져요. 본과 1학년 단체 견학도 잡혀 있고요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "학생도 견학 일정 있죠?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 금요일 오후요. 남희석 선배님 가이드로 내과 단체 견학 잡혔어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "남희석 선배네요. 저도 일정 맞으면 잠깐 합류할 수도 있고요."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "남희석 선배님."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "Ch.3 첫 견학 때 길 잃은 나를 의국까지 데려다주셨던 분이지. 차세린 선생님이 그쪽 후배라는 게 그제야 머리에서 이어진다."
+    },
+    {
+      "type": "FLAG_INC",
+      "key": "H1",
+      "delta": 5
+    },
+    {
+      "type": "NARRATION",
+      "text": "차세린이 손목시계를 다시 확인한다. 30분이 거의 다 흘러간 표정."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "학생, 저는 들어가야겠어요. 오늘 당직이 6시부터라."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "부스 잘 마무리하시고요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 살펴 가세요. 당직 무리하지 마시고요."
+    },
+    {
+      "type": "NARRATION",
+      "text": "차세린이 본관 방향으로 한 걸음을 옮기다 잠깐 멈춰 선다. 한마디 더 보태고 갈지 망설이는 듯한 호흡."
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "30분 시간 내주신 거 가볍지 않아요. 감사히 받을게요",
+          "next": "ch06_h1_01b_thanks",
+          "tone": "mature_serious",
+          "isKey": true,
+          "descriptor": "ch6_h1_visit_take_care"
+        },
+        {
+          "text": "감사해요, 잘 챙겨갈게요",
+          "next": "ch06_h1_01b_quick",
+          "tone": "warm_supportive"
+        },
+        {
+          "text": "선생님 직접 오시니까 분위기 살아나네요ㅋㅋ",
+          "next": "ch06_h1_01b_light",
+          "tone": "playful_casual"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-01 afternoon",
+    "activeHeroines": [
+      "H1"
+    ]
+  }
+}

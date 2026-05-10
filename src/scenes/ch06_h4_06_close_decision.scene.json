@@ -1,0 +1,97 @@
+{
+  "id": "ch06_h4_06_close_decision",
+  "commands": [
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 폰을 책상 한쪽에 내려놓는다. 자취방 창밖이 조금씩 푸르러져 간다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_main_theme",
+      "volume": 0.5,
+      "fade": 4
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한 학기 끝."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "조용히 자기 속도대로 가는 분이고. 답장은 좀 늦는 편이고. 그 속도 그대로 두는 게 맞는 거지."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "카톡 답장 하나로 무게가 갈리는 분이라, 그 부분이 무겁다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "폰이 한 번 더 깜빡인다. \"나서윤\" 1:1 카톡방."
+    },
+    {
+      "type": "SFX",
+      "sound": "sfx_katalk_notify"
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "나서윤",
+          "text": "윤모씨"
+        },
+        {
+          "sender": "나서윤",
+          "text": "한 학기 인사 자리 끝났는데 한 마디 더 적을게요"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한 마디 더."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "결정 직전인데, 그쪽이 먼저 꺼내신 셈이다."
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "또 봐요, 한 학기 가지고 갈게요",
+          "next": "ch06_h4_06b_close_warm",
+          "tone": "warm_supportive",
+          "isKey": true,
+          "descriptor": "ch6_h4_close_reply",
+          "mechanism": "h4_facing_key"
+        },
+        {
+          "text": "네 잘 자요",
+          "next": "ch06_h4_06b_close_neutral",
+          "tone": "direct_friendly"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-14 dawn",
+    "activeHeroines": [
+      "H4"
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "id": "ch05_07_close_evaluate",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_mt_pension",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_katalk",
+      "volume": 0.4,
+      "fade": 3
+    },
+    {
+      "type": "NARRATION",
+      "text": "5월 17일 일요일 새벽 2시. MT 펜션 한 방."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "SFX",
+      "sound": "sfx_katalk_notify"
+    },
+    {
+      "type": "NARRATION",
+      "text": "1:1 카톡방. \"나서윤\"."
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "나서윤",
+          "text": "안 자세요?"
+        },
+        {
+          "sender": "나서윤",
+          "text": "오늘 부엌에서 같이 정리해주신 거 고마웠어요"
+        }
+      ]
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "나서윤",
+          "text": "잠깐 답장 가능하시면요"
+        }
+      ],
+      "affectionDecay": {
+        "target": "H4",
+        "perSecond": 5
+      },
+      "choices": [
+        {
+          "text": "안 잤어요, 같이 정리한 게 자연스러웠어요",
+          "next": "ch05_07b_replied",
+          "tone": "warm_supportive",
+          "isKey": true,
+          "descriptor": "ch5_dawn_reply",
+          "mechanism": "h4_reply_speed"
+        },
+        {
+          "text": "안 잤어요. 별일 없죠?",
+          "next": "ch05_07b_short",
+          "tone": "direct_friendly",
+          "mechanism": "h4_reply_speed"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 5,
+    "time": "2026-05-17 dawn",
+    "activeHeroines": [
+      "H4"
+    ]
+  }
+}

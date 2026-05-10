@@ -1,0 +1,160 @@
+{
+  "backgrounds": [
+    "bg_anatomy_lab",
+    "bg_biochem_lab_night",
+    "bg_bundang_home",
+    "bg_cafe_serin",
+    "bg_campus_cafe",
+    "bg_campus_cafe_night",
+    "bg_campus_night_blossom",
+    "bg_dongdaegu_station",
+    "bg_dongsan_hallway",
+    "bg_dongsan_lobby",
+    "bg_dongseong_street",
+    "bg_festival",
+    "bg_kmu_main",
+    "bg_kmu_pharm",
+    "bg_ktx_window",
+    "bg_lecture_day",
+    "bg_library_day",
+    "bg_library_night",
+    "bg_mt_pension",
+    "bg_studio_room"
+  ],
+  "characters": {
+    "윤모": [
+      "blush",
+      "default",
+      "panic",
+      "perv",
+      "recover",
+      "sad",
+      "serious",
+      "smile"
+    ],
+    "윤하정": [
+      "blush",
+      "default",
+      "pout",
+      "serious",
+      "smile_small",
+      "warm_smile"
+    ],
+    "오준혁": [
+      "default"
+    ],
+    "김규민": [
+      "default"
+    ],
+    "조나단": [
+      "default"
+    ],
+    "한설": [
+      "blush",
+      "concerned",
+      "default",
+      "no_glasses",
+      "serious",
+      "smile_slight",
+      "tired",
+      "warm_smile"
+    ],
+    "표경민": [
+      "default"
+    ],
+    "차세린": [
+      "blush",
+      "concerned",
+      "default",
+      "smile",
+      "smile_warm",
+      "tired"
+    ],
+    "장윤영": [
+      "blush",
+      "pout",
+      "smile_big",
+      "warm_smile"
+    ],
+    "나서윤": [
+      "default",
+      "distant",
+      "smile_full",
+      "smile_slight",
+      "warm"
+    ]
+  },
+  "cgs": [
+    "cg_hajeong_anatomy",
+    "cg_hajeong_drunk",
+    "cg_hajeong_library",
+    "cg_hajeong_true",
+    "cg_seol_festival",
+    "cg_seol_lab_first",
+    "cg_seol_late_night",
+    "cg_seol_true",
+    "cg_seoyoon_date",
+    "cg_seoyoon_first_meet",
+    "cg_seoyoon_reject",
+    "cg_seoyoon_true",
+    "cg_serin_cafe_late",
+    "cg_serin_festival",
+    "cg_serin_first_meet",
+    "cg_serin_true",
+    "cg_yuna_booth",
+    "cg_yuna_cafe",
+    "cg_yuna_festival",
+    "cg_yuna_true"
+  ],
+  "videos": [
+    "video_meet_hajeong",
+    "video_meet_seol",
+    "video_meet_seoyoon",
+    "video_meet_serin",
+    "video_meet_yuna",
+    "video_opening",
+    "video_reject_seoyoon",
+    "video_true_hajeong",
+    "video_true_seol",
+    "video_true_seoyoon",
+    "video_true_serin",
+    "video_true_yuna"
+  ],
+  "bgms": [
+    "bgm_climax",
+    "bgm_comic",
+    "bgm_daily",
+    "bgm_katalk",
+    "bgm_main_theme",
+    "bgm_romantic",
+    "bgm_sad",
+    "bgm_tension"
+  ],
+  "sfx": [
+    "sfx_affection_down",
+    "sfx_affection_up",
+    "sfx_bar_ambient",
+    "sfx_click",
+    "sfx_footsteps",
+    "sfx_glass_drop",
+    "sfx_katalk_notify",
+    "sfx_katalk_send",
+    "sfx_ktx_run",
+    "sfx_lab_door_open",
+    "sfx_light_off",
+    "sfx_pageturn",
+    "sfx_realize",
+    "sfx_timer_out"
+  ],
+  "_meta": {
+    "generatedAt": "2026-05-08T08:55:17.842Z",
+    "sceneCount": 216,
+    "registered": {
+      "bg": 17,
+      "sprite": 58,
+      "cg": 20,
+      "video": 12
+    },
+    "notes": []
+  }
+}

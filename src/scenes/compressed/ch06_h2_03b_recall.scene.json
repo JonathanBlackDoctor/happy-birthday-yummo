@@ -1,0 +1,58 @@
+{
+  "id": "ch06_h2_03b_recall",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h2_recall",
+      "value": "warm"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "잊을 수 없지. 너 도서관에서 잠든 모습 보면서, 옆에서 한 페이지 한 페이지 더 넘긴 시간이라."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "옆자리 책장 넘어가는 소리 한 번씩 들리는 게 새벽의 핵심이고. 그 소리가 한 학기 시험 자료의 절반이었어."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤하정",
+      "sprite": "smile_small",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...야. (시선 비스듬) 그렇게 정색하고 말하는 거 너 답지 않잖아."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "너 답지 않은 모습도 가끔 보여야지."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...뭐, 알겠어. (시선 거리) ...너만 페이지 넘긴 거 아니거든? 나도 너 옆자리 있는 거 보면서 한 페이지 더 넘긴 거야."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "\"나도 너 옆자리 있는 거 보면서 한 페이지 더 넘긴 거야.\" 윤하정 입에서 이런 말 처음 듣는다."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h2_03_extend"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-01 night",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

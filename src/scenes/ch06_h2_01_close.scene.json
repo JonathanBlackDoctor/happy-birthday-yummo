@@ -1,0 +1,59 @@
+{
+  "id": "ch06_h2_01_close",
+  "commands": [
+    {
+      "type": "NARRATION",
+      "text": "부스가 본격 굴러간다. 손님이 한 명씩 들어와 굿즈를 본다. 오후 5시까지 5조가 부스를 같이 운영한다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "두 시간이 한 호흡으로 흘러갔다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "5조 다섯 명이 부스 안에서 자연스럽게 굴러간다."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "정욱",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "오준혁",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "이문규",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤하정",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤모",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h2_02_dongseong"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-01 afternoon",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

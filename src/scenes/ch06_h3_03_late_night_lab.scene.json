@@ -1,0 +1,389 @@
+{
+  "id": "ch06_h3_03_late_night_lab",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_biochem_lab_night",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.3,
+      "fade": 3
+    },
+    {
+      "type": "NARRATION",
+      "text": "같은 날 밤 11시 → 새벽 1시. 윤모가 도서관에서 한 챕터 마치고 일어선다. 본관 1층 옆 24시간 편의점에 잠깐 들렀다 생화학실험실 쪽으로 걸음을 옮긴다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "도서관 한 챕터 끝났다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "11시 약속이었는데 챕터 한 번 더 정리하다 보니 1시 다 됐네."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한설 선생님 한두 시간이라 하셨으니까 새벽 1시면 마무리 직전이거나 막 끝난 시점일 거고."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "그냥 인사만 드리고 가려 했는데, 이왕 가는 거 야식 챙기는 게 자연스럽지 싶다."
+    },
+    {
+      "type": "SFX",
+      "sound": "sfx_katalk_notify"
+    },
+    {
+      "type": "NARRATION",
+      "text": "폰 진동. \"본과 1학년 동기들\" 단톡 알림. 친구 단톡 톤 그대로."
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "김규민",
+          "text": "야 윤모 어디"
+        },
+        {
+          "sender": "구윤모",
+          "text": "편의점"
+        },
+        {
+          "sender": "김규민",
+          "text": "새벽인데"
+        },
+        {
+          "sender": "구윤모",
+          "text": "야식 사러"
+        },
+        {
+          "sender": "김규민",
+          "text": "ㄷㄷ 누구 줄 거임"
+        },
+        {
+          "sender": "구윤모",
+          "text": "답 못 함"
+        },
+        {
+          "sender": "김규민",
+          "text": "ㅋㅋㅋㅋ 비밀ㅋ"
+        },
+        {
+          "sender": "김규민",
+          "text": "솔로의 눈물"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "김규민 새벽까지 안 자고 있었네."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "답 못 한다고 흘려도 알아서 풀어주는 친구. 친구는 친구다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 편의점에서 김밥 두 줄, 따뜻한 캔커피 하나, 컵라면 한 개를 비닐봉지에 담는다. 캠퍼스 가로등이 듬성듬성 깔린 새벽길을 지나 의대 본관으로 향한다."
+    },
+    {
+      "type": "BG",
+      "image": "bg_biochem_lab_night",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.4,
+      "fade": 2
+    },
+    {
+      "type": "NARRATION",
+      "text": "새벽 1시 5분. 생화학실험실 문 앞. 안에서 형광등이 켜진 채 환풍기 소리만 깔린다. 윤모가 노크 후 문을 천천히 연다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "한설",
+      "sprite": "tired",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "NARRATION",
+      "text": "실험실 안. 한설이 책상 앞에서 데이터 정리 중. 가운은 의자 등받이에 걸쳐져 있고 카디건 차림 그대로. 안경은 책상 한쪽에 내려놓은 상태. 머리는 사이드 가르마지만 한 가닥이 옆으로 살짝 흘러내려 있다. 책상 끝에 식어가는 머그잔, 그 옆에 끓이다 만 듯한 컵라면."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "선생님, 늦었네요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "어... 학생."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "11시쯤 들른다고 했는데 1시 넘은 거 보니 도서관 챕터가 길어졌나 봐요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 한 챕터 더 정리하다가 늦었어요. 죄송합니다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...괜찮아요. 저도 마무리 직전이거든요."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 비닐봉지를 책상 한쪽에 내려놓는다. 한설이 시선을 봉지로 옮긴다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "편의점 들렀다 왔어요. 김밥 두 줄, 따뜻한 캔커피, 컵라면도 같이 가져왔습니다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "책상 위 컵라면 끓이다 만 거 보여서요. 식은 라면은 또 다른 음식이라, 한 번 바꿔드리는 게 좋을 것 같아서요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...학생."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "어떻게 알았어요. 끓이다 그릇만 두고 데이터로 돌아간 거."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "컵라면 모양이 끓이다 만 모양이고요. 머그잔도 식어 있고요. 책상 분위기가 그렇게 보였어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...학생이 챙기는 디테일이 의외로 깊네요."
+    },
+    {
+      "type": "NARRATION",
+      "text": "한설이 봉지에서 김밥 한 줄을 꺼낸다. 윤모가 식은 컵라면을 한쪽으로 치우고 새 컵라면 봉지를 정리한다."
+    },
+    {
+      "type": "FLAG_INC",
+      "key": "H3",
+      "delta": 5
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "김밥 한 줄만 받을게요. 정말 그것만요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "한 줄은 부족해 보여서 두 줄 가져왔어요. 한 줄은 옆에 두고 드시고 싶을 때 드세요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...학생."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "박사 5년차한테 학생이 야식 챙겨주는 거 처음이에요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "보통은 조교가 학생 챙기는 흐름인데."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "가끔은 학생이 조교 챙기는 것도 자연스럽다고, 산책로에서 말씀드린 그대로예요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...그러네요."
+    },
+    {
+      "type": "NARRATION",
+      "text": "한설이 김밥 한 줄을 풀어 한 입 먹는다. 책상 앞 데이터 화면이 잠깐 멈춘다. 환풍기 소리가 새벽 1시 실험실에 깔린다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...오랜만에 따뜻한 거 먹네요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "점심도 컵라면이었고, 저녁은 산책로 다녀온 다음에 잊고 데이터 들어왔어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "박사 5년차 챕터가 길어지면 식사 간격 늘어지는 거 자연스럽긴 하지만, 무리하시진 마세요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...그러니까... 음... 학생이 그렇게 자연스럽게 챙겨주니까 잠깐 풀어진 채로 앉게 되네요."
+    },
+    {
+      "type": "FLAG_INC",
+      "key": "H3",
+      "delta": 5
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "풀어진 채로 앉게 되네요."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한설 선생님이 본인 입으로 풀린 모습 흘리신 거. 어른스러움 안에서 잠깐 풀린 톤이 의외다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "새벽 1시 실험실, 환풍기 소리, 식어가는 컵. 자연스럽게 풀어내기 좋은 시간이고."
+    },
+    {
+      "type": "NARRATION",
+      "text": "한설이 김밥 한 줄을 마저 먹고 책상 옆에 시선을 둔다. 안경이 책상 한쪽에 그대로 놓여 있다. 머리 한 가닥이 다시 옆으로 흘러내려 카디건 자락에 닿았다 정리된다."
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_romantic",
+      "volume": 0.4,
+      "fade": 2
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "야식 챙기는 게 우선이고."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한설 선생님 한숨 받아드리는 자리. 분위기 따라가면 되는 거다."
+    },
+    {
+      "type": "CG",
+      "image": "cg_seol_late_night",
+      "cgId": "cg_seol_late_night"
+    },
+    {
+      "type": "NARRATION",
+      "text": "새벽 1시 생화학실험실. 한설이 책상 앞에 앉아 식어가는 머그잔을 두 손으로 감싸고 있다. 안경은 책상 한쪽에 내려놓은 채. 사이드 가르마 머리 한 가닥이 옆으로 흘러내려 카디건 자락에 닿아 있다. 환풍기 소리가 일정하게 깔리고, 형광등 불빛이 책상 위 데이터 노트에 따뜻하게 떨어진다."
+    },
+    {
+      "type": "CG_HIDE"
+    },
+    {
+      "type": "NARRATION",
+      "text": "한설이 길게 한숨 쉰다. 시선이 데이터 화면에서 윤모 쪽으로 옮겨진다. 안경 없는 채."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "학생."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...오늘 산책로에서 학생이 다른 사람 같다고 했던 거."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "거울 한 번 보고 부스 갔다 산책로 다녀와서, 새벽 1시 실험실에 안경 내려놓고 앉아 있는 거."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...그러니까... 음... 박사 5년차 모습에서 잠깐 풀린 톤으로 가는 거 학생 앞에서 처음이라."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "의외로 본인이 더 의외예요."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "본인이 더 의외시란다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한설 선생님이 본인 입으로 풀어 꺼내신 한마디. 새벽 1시 실험실에서 자연스럽게 흘려 보내신 거고."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "평소 어른스러우신 모습에 잠깐 풀린 모습까지 같이 보여주신 자리. 솔직하게 가야 할 순간이다."
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "학생이 아니라 사람으로 옆에 있고 싶어요",
+          "next": "ch06_h3_03b_honest",
+          "tone": "warm_supportive",
+          "isKey": true,
+          "descriptor": "ch6_h3_late_night_honest"
+        },
+        {
+          "text": "선생님 풀어진 모습 의외로 자연스러우세요",
+          "next": "ch06_h3_03b_safe",
+          "tone": "warm_supportive"
+        },
+        {
+          "text": "학생-조교 자리는 학생-조교니까요",
+          "next": "ch06_h3_03b_distant",
+          "tone": "mature_serious"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-03 dawn 1am",
+    "activeHeroines": [
+      "H3"
+    ]
+  }
+}

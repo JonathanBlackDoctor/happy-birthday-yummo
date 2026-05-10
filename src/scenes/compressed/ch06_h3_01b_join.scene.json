@@ -1,0 +1,53 @@
+{
+  "id": "ch06_h3_01b_join",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h3_booth",
+      "value": "join"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "선생님도 부스 굴려보세요ㅋㅋ"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "한설",
+      "sprite": "concerned",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "그러니까... 음... 부스 굴려보라는 게 어떤 의미인지 잠깐 헷갈려서요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "아, 죄송해요. 농담으로 가볍게 가려다가 분위기 못 맞췄네요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...괜찮아요. 학생들 사이에선 그런 표현 자연스럽다는 건 알고 있고요."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "박사 5년차한테 친구 톤으로 가볍게 던진 셈."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h3_01_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-02 afternoon",
+    "activeHeroines": [
+      "H3"
+    ]
+  }
+}

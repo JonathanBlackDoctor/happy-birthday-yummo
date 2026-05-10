@@ -1,0 +1,101 @@
+name: CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+# 단일 워크플로우 동시 실행 1개 (PR 푸시 누적 시 옛 잡 자동 취소)
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build & Validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: TypeScript typecheck
+        run: npm run typecheck
+
+      - name: ESLint
+        run: npm run lint
+
+      - name: Vitest unit tests (72건 — branchEvaluator / toneMatrix / saveSlots / rejectLines)
+        run: npm run test
+
+      - name: Compile scenarios (.md → .scene.json)
+        run: npm run compile
+
+      - name: Validate build (16개 엔딩 + BG/CG/VIDEO/BGM/SFX 화이트리스트)
+        run: npm run validate
+
+      - name: Audit asset flow — 풀 모드 (위치/BG/스프라이트 입출 정합 — 비차단)
+        run: npx tsx scripts/audit-asset-flow.ts
+        continue-on-error: true
+
+      - name: Compile scenarios — 압축 모드 (압축 audit 의존성)
+        run: npm run compile:compressed
+
+      - name: Audit asset flow — 압축 모드 (위치/BG/스프라이트 입출 정합 — 비차단)
+        run: npx tsx scripts/audit-asset-flow.ts --mode=compressed
+        continue-on-error: true
+
+      - name: Build asset manifest (public/manifest.json)
+        run: npm run manifest
+
+      - name: Vite production build
+        run: npm run build
+
+      - name: Upload Pages artifact
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  e2e:
+    name: Playwright E2E (16개 엔딩 자동 플레이)
+    runs-on: ubuntu-latest
+    needs: build
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: package-lock.json
+      - name: Install dependencies
+        run: npm ci
+      - name: Compile scenarios (preview에서 사용할 dist 산출용)
+        run: npm run compile
+      - name: Vite production build (preview 서버가 dist 서빙)
+        run: npm run build
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+      - name: Run E2E (16개 엔딩 — ch05_07_close + flags 주입 → EVALUATE_BRANCH)
+        run: npm run test:e2e
+      - name: Upload Playwright report on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 7

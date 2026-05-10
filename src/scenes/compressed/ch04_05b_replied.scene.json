@@ -1,0 +1,79 @@
+{
+  "id": "ch04_05b_replied",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h4_first_reply",
+      "value": "on_time"
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "구윤모",
+          "text": "네 안녕하세요"
+        },
+        {
+          "sender": "구윤모",
+          "text": "친추 받아주셔서 감사해요"
+        },
+        {
+          "sender": "구윤모",
+          "text": "점심에 갑자기 인사드린 게 시험기간 방해는 안 됐길 바라요"
+        },
+        {
+          "sender": "구윤모",
+          "text": "시험 잘 보세요"
+        },
+        {
+          "sender": "나서윤",
+          "text": "네"
+        },
+        {
+          "sender": "나서윤",
+          "text": "방해 아니었어요"
+        },
+        {
+          "sender": "나서윤",
+          "text": "휴학하고 본과 1학년이라고 들었어요. 약대도 본과 4학년이 빡센데 의대 본과 1학년도 사람 갈리는 학년이라고 하더라고요"
+        },
+        {
+          "sender": "구윤모",
+          "text": "네 갈리는 학년 맞는 것 같아요"
+        },
+        {
+          "sender": "구윤모",
+          "text": "시험 끝나고 나면 한 번 시간 내서 정식으로 인사드릴게요"
+        },
+        {
+          "sender": "구윤모",
+          "text": "그쪽도 시험 잘 보시고 무리 마세요"
+        },
+        {
+          "sender": "나서윤",
+          "text": "네"
+        },
+        {
+          "sender": "나서윤",
+          "text": "시험 잘 보고요 🥺"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "답장 짧고 시크한데, 끝에 🥺 하나 붙이셨네. 딱딱하시기만 한 분은 아니구나."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch04_05_close"
+    }
+  ],
+  "meta": {
+    "chapter": 4,
+    "time": "2026-04-29 night",
+    "activeHeroines": [
+      "H4"
+    ]
+  }
+}

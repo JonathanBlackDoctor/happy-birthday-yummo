@@ -1,0 +1,76 @@
+{
+  "id": "ch06_h5_02_close",
+  "commands": [
+    {
+      "type": "NARRATION",
+      "text": "30분 후. 풍선 정리와 부스 청소가 마무리된다. 의예과 동아리 회원 두 명이 사진 한 장을 부탁한다. 윤모가 옅게 웃으며 부스 앞에 잠깐 선다. 장윤영이 윤모 옆에 자연스럽게 서서 한 손을 살짝 든다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "셔터 한 번. 사진 한 장."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "선배 사진 같이 찍어주신 것도 진짜 감사해요!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "의예과 동아리 단톡에 올려도 돼요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "의예과 단톡에 본과 선배 사진? 부스 분위기 사진이라면 OK."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "부스 분위기 사진으로 올릴게요! ✨"
+    },
+    {
+      "type": "NARRATION",
+      "text": "장윤영이 폰을 만지더니 의예과 동아리 단톡에 사진 한 장을 올린다. 부스 천막 위로 봄볕이 한 톤 옅어지는 시간."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "장윤영",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "사진 한 장."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "35분 같이 보낸 부스 시간이, 이번 학기 어딘가에 슬며시 새겨졌다."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤모",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "BG",
+      "image": "black"
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h5_03_morning_library"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-03 afternoon",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

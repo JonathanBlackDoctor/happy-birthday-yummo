@@ -1,0 +1,71 @@
+{
+  "id": "ch06_h2_04b_friend",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h2_rooftop",
+      "value": "friend"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "친구로 좋은데?"
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤하정이 잠깐 멈춘다. 시선이 야경 끝으로 한 번 흘러갔다 돌아오지 않는다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤하정",
+      "sprite": "pout",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...어, 그래."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "친구. 그래 친구로."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 그게 아니라."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "됐어. 친구가 맞다면 친구로."
+    },
+    {
+      "type": "NARRATION",
+      "text": "잠깐 어색한 침묵. 6월 밤바람이 옥상에서 한 번 더 차게 깔린다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "윤하정이 진심을 꺼내줬는데, 나는 회피로 받았다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한 학기 처음 꺼낸 진심을 \"친구\"라는 말로 닫아버렸네. 분위기가 더 굳어졌다."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h2_04_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-01 night, 11pm",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

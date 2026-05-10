@@ -1,0 +1,109 @@
+{
+  "id": "ch05_02_close",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_dongseong_street"
+    },
+    {
+      "type": "NARRATION",
+      "text": "한 시간 정도 지난다. 자리가 한 번 섞이고, 다들 한 잔씩 더 따라준다. 술집 분위기가 조금 풀린다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한 시간이 한 시간 같지 않게 흘러갔다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "다섯 명이 한자리에 다 있는 회식이 또 있을까 싶기도 하다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "차세린이 자리에서 일어나며 한설에게 인사한다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "저는 이만 들어갈게요. 다음 당직 준비도 있고."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "네, 살펴 가세요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "학생도 무리 마요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 살펴 가세요. 짧은 시간이었지만 감사했습니다."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "차세린",
+      "transition": "fade"
+    },
+    {
+      "type": "NARRATION",
+      "text": "한설도 잠시 후 인사하고 자리를 뜬다. 본과 1학년 동기들과 약대, 의예과 후배들이 남아 분위기를 이어간다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "야 윤모, MT 얘기 나왔다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "조나단",
+      "text": "다음 주 토요일."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "표경민",
+      "text": "펜션 잡혔대."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "MT라."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "다음 주 토요일이면 5월 16일이네. 시험 끝나고 한 주 쉬고 가는 거고."
+    },
+    {
+      "type": "NARRATION",
+      "text": "회식 끝. 자정이 넘은 시간, 윤모가 자취방 쪽으로 걸어간다."
+    },
+    {
+      "type": "BG",
+      "image": "bg_studio_room",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch05_03_kakao_dawn"
+    }
+  ],
+  "meta": {
+    "chapter": 5,
+    "time": "2026-05-11 evening"
+  }
+}

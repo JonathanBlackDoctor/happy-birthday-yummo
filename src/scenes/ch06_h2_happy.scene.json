@@ -1,0 +1,158 @@
+{
+  "id": "ch06_h2_happy",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_campus_cafe"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.5,
+      "fade": 3
+    },
+    {
+      "type": "NARRATION",
+      "text": "2026년 6월 14일 일요일 오후. 의대 본관 옆 24시간 카페. 6월 햇살이 창가 자리에 살짝 닿는다. 시험 끝난 한 주 지난 시점."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "smile",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤하정",
+      "sprite": "default",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "의대 축제 주간 끝나고 한 주 지났다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "5조 단톡에 윤하정이 카페 한 번 가자고 짧게 한 마디 보낸 게 시작이고."
+    },
+    {
+      "type": "CG",
+      "image": "cg_hajeong_drunk",
+      "cgId": "cg_hajeong_drunk"
+    },
+    {
+      "type": "NARRATION",
+      "text": "카페 창가 자리. 윤하정이 따뜻한 음료 한 잔을 두 손으로 감싸고 있다. 살짝 발그레한 모습이 5월 회식 자리 분위기를 떠올리게 하지만, 조금 더 밝은 카페 햇살에서 봐서 평소 무표정과의 차이가 살짝 더 부드럽다."
+    },
+    {
+      "type": "CG_HIDE"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "어, 윤모. 늦었네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "5분 전이라니까."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "5분 전 = 늦은 거. 너 좀 익혀라."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "알겠어. 다음부턴 10분 전."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "야."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...옥상에서 너 답한 거, 살짝 빨랐던 거 같아."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어. 살짝 빨랐지."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "친구에서 시작하자."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "5조 동기로, 그리고 너 답지 않은 모습 가끔 보이는 친구로."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "그래. 친구에서 시작하자."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "친구에서 시작하자."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "빨랐던 게 천천히 가는 시작으로 정리되는 거."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "본과 1학년 한 학기 끝나는 자리에서 좀 더 천천히 가는 식도 있는 거고."
+    },
+    {
+      "type": "NARRATION",
+      "text": "두 사람이 한 잔 더 음료를 시키고 카페에서 한 시간 더 머무른다. 평소 5조 단톡으로는 안 했던 시험 회상이 잠깐씩 흘러간다."
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.6,
+      "fade": 2
+    },
+    {
+      "type": "BG",
+      "image": "black"
+    },
+    {
+      "type": "NARRATION",
+      "text": "— 끝."
+    },
+    {
+      "type": "NARRATION",
+      "text": "**윤하정 해피 엔딩 — 해부 5조의 둘**"
+    },
+    {
+      "type": "ENDING",
+      "endingId": "END_H2_HAPPY"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-14 afternoon",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

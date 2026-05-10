@@ -1,0 +1,92 @@
+{
+  "id": "ch05_02b_h2",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_ch5_seat",
+      "value": "h2"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "pair_left",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤하정",
+      "sprite": "default",
+      "position": "pair_right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "어, 윤모."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "옆자리 비었네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "앉아."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "너 한 잔 했네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "한 잔 정도. 시험 끝나서 풀어진 거지."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "풀어진 윤하정 처음 본다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...자주 보는 거 아니야."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "알겠어. 오늘만 보는 걸로 할게."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "너 도서관에서 새벽까지 같이 있어 준 거. 그거 갚아야 하는데."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "그런 게 어디 있어. 같은 5조잖아."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...그래도."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "풀어진 윤하정이 더 솔직하네."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch05_02_close"
+    }
+  ],
+  "meta": {
+    "chapter": 5,
+    "time": "2026-05-11 evening"
+  }
+}

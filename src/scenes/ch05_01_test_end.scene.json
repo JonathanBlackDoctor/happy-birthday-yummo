@@ -1,0 +1,227 @@
+{
+  "id": "ch05_01_test_end",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_lecture_day",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.5,
+      "fade": 2
+    },
+    {
+      "type": "NARRATION",
+      "text": "2026년 5월 11일 월요일 오후 5시. 본과 1학년 첫 시험, 마지막 과목이 막 끝났다. 강의실 곳곳에서 의자 빼는 소리, 시험지 한 장씩 모이는 소리, 누군가 길게 기지개 켜는 소리."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "끝났다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "5일 동안 도서관, 자취방, 카페. 그게 전부였던 한 주."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "김규민",
+      "sprite": "default",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "표경민",
+      "sprite": "default",
+      "position": "left_back",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "끝났다 윤모."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "끝났네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "표경민",
+      "text": "다들 어떻게 봤어."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "망함."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "김규민 항상 망함이지."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "조나단",
+      "sprite": "default",
+      "position": "center_back",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "조나단",
+      "text": "단톡 폭주 중이다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "조나단",
+      "text": "회식 가는 분위기."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "동성로 가자. 7시."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "표경민",
+      "text": "약대 쪽도 부른대?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "조나단",
+      "text": "승보 형이 합석 콜."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "의예과 후배 장윤영도 온다더라."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "다 모이는 자리네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "종강 회식이라 다 모이지."
+    },
+    {
+      "type": "NARRATION",
+      "text": "단톡 알림이 폭주한다."
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "조나단",
+          "text": "동성로 7시 ㄱㄱ"
+        },
+        {
+          "sender": "김규민",
+          "text": "ㅇㅇ ㄱ"
+        },
+        {
+          "sender": "오준혁",
+          "text": "ㄱ"
+        },
+        {
+          "sender": "이문규",
+          "text": "ㅇㅋ"
+        },
+        {
+          "sender": "정욱",
+          "text": "약대 승보 형도 같이 ㄱ?"
+        },
+        {
+          "sender": "김규민",
+          "text": "ㅇㅇ 부르자"
+        },
+        {
+          "sender": "김규민",
+          "text": "의예과 후배도 ㄱ"
+        },
+        {
+          "sender": "조나단",
+          "text": "풍년이네"
+        },
+        {
+          "sender": "윤하정",
+          "text": "다 모이게?"
+        },
+        {
+          "sender": "김규민",
+          "text": "ㅇㅇ ㄱㄱ"
+        },
+        {
+          "sender": "구윤모",
+          "text": "ㅇㅇ"
+        },
+        {
+          "sender": "구윤모",
+          "text": "자취방 들렀다 ㄱ"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "종강 회식이라."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "벌써 5월 둘째 주네. 한 학기가 반쯤 지났다는 게 실감이 안 난다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "smile",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "김규민",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "표경민",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "조나단",
+      "transition": "fade"
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch05_02_pub_first"
+    }
+  ],
+  "meta": {
+    "chapter": 5,
+    "time": "2026-05-11 afternoon",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

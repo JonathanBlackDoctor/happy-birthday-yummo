@@ -1,0 +1,40 @@
+{
+  "id": "prologue_03b_steady",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_prologue_close",
+      "value": "steady"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "내일 잘 해보자."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "본과 1학년. 첫 단추다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "첫 단추는 잘 끼워야지."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "prologue_03_close"
+    }
+  ],
+  "meta": {
+    "chapter": 0,
+    "time": "2026-02-28 evening",
+    "activeHeroines": [
+      "gyumin",
+      "gyeongmin",
+      "nathan",
+      "wook",
+      "junhyuk"
+    ]
+  }
+}

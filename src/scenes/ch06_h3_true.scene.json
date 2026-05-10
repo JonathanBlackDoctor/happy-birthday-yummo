@@ -1,0 +1,343 @@
+{
+  "id": "ch06_h3_true",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_anatomy_lab"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_climax",
+      "volume": 0.6,
+      "fade": 4
+    },
+    {
+      "type": "NARRATION",
+      "text": "2026년 6월 26일 금요일 저녁 7시. 의대 본관 생화학교실 박사 논문실. 박사과정 학생들이 따로 쓰는 작은 사무 공간. 한설의 책상이 창가에 있고, 책상 한쪽엔 작은 화분 두 개. 푸르러진 잎사귀가 형광등 불빛에 부드럽게 닿는다. 한설의 박사 논문 예심 발표가 오후에 끝난 직후. 종강 직전 6월 말."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "smile",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "6월 말 금요일 저녁."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한설 선생님 박사 논문 예심 발표가 오후 4시에 끝났다고, 어제 1:1 카톡으로 들었다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "발표 끝나고 한 시간 정도 박사 논문실에서 한숨 돌리실 거라 하셨고. 응원 가는 게 자연스럽지 싶다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "본관 1층 꽃집에서 작은 꽃다발 하나 받아 들고 박사 논문실 문 앞까지 걸어왔다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "박사 논문실 문 앞. 윤모가 노크한다. 안에서 작은 답이 들리고 윤모가 천천히 문을 연다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "한설",
+      "sprite": "warm_smile",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "VIDEO",
+      "src": "video_true_seol"
+    },
+    {
+      "type": "CG",
+      "image": "cg_seol_true",
+      "cgId": "cg_seol_true"
+    },
+    {
+      "type": "NARRATION",
+      "text": "박사 논문실. 한설이 책상 앞에 앉아 안경을 막 벗어 책상 한쪽에 내려놓고 한 손으로 머리를 정리한 모습. 책상 한쪽엔 작은 화분 두 개와 그 옆에 한설이 직접 적은 듯한 작은 식물 일지. 평소 카디건 안 블라우스 차림에, 박사 논문 예심 발표 후 살짝 풀린 자세. 가운은 의자 등받이에 걸쳐져 있다. 평소 어른스러움 그대로면서 한 챕터 끝낸 따뜻한 미소가 입가에 닿아 있다."
+    },
+    {
+      "type": "CG_HIDE"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...학생."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "안녕하세요. 박사 논문 예심 발표 끝나신 거 축하드려요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "후... 이제 한 단계 끝났네요."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 작은 꽃다발을 한 손에 든 채 책상 옆으로 한 발 걸어간다. 한설이 자세를 풀고 책상 옆 의자를 한 손으로 가리킨다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "잠깐 앉아도 돼요. 학생, 오늘 도서관 안 가요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "오늘은 박사 논문실 응원이 본업이에요. 도서관은 내일 가도 되고요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...학생, 그렇게 풀어 받아주는 게."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "후... 정말 6월 말다운 자리네요."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 꽃다발을 책상 한쪽에 내려놓는다. 한설이 꽃다발을 잠시 보고는 손끝으로 잎사귀를 가볍게 만진다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "화분 옆에 두면 잘 어울리겠어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "책상 화분 두 개 옆에 학생 꽃다발. 박사 논문실 분위기가 한 번에 부드러워지네요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "책상에 화분 두 개시구나. 평소 본 적 없었어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "박사 논문실에 따로 두는 거예요. 실험실 화분은 여러 사람이 같이 보는 자리니까요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "박사 논문실 화분은 박사 논문실 자리고요."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 화분 옆에 시선을 둔다. 화분 옆에 한설이 직접 적어둔 식물 일지가 시야에 들어온다. 작은 메모 한 줄."
+    },
+    {
+      "type": "NARRATION",
+      "text": "(식물 일지 메모) \"2026.06.26 잎 한 장 새로 났음. 박사 논문 예심 끝난 날.\""
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "잎 한 장 새로 났음."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "박사 논문 예심 끝난 날 화분 잎이 한 장 같이 났단다. 한설 선생님이 손글씨로 책상 옆에 적어두신 거고."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "박사 5년차가 한 챕터 끝낸 날, 화분 잎도 같이 한 장. 그게 무게다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "선생님."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "화분 일지 잠깐 봤어요. 잎 한 장 새로 난 거 같이 적혀 있고요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "박사 논문 예심 끝난 날 잎 한 장 새로 났다는 거. 정말 잘 어울리네요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...학생."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "그 일지까지 봐주는 거 의외예요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "화분 일지는 본인 혼자 적어두는 자린데, 학생이 그것까지 챙겨주니까 마음이 따뜻하네요."
+    },
+    {
+      "type": "FLAG_INC",
+      "key": "H3",
+      "delta": 5
+    },
+    {
+      "type": "NARRATION",
+      "text": "짧은 침묵. 박사 논문실 창밖으로 6월 말 저녁 햇살이 길게 깔린다. 한설이 책상 한쪽에 내려놨던 안경을 만지작거리다 다시 옆에 둔다. 안경 없는 채로 윤모를 본다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "학생."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "새벽 1시 실험실에서 학생이 사람으로 옆에 있고 싶다고 한 그 말."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "그 답을 잠깐 두고 가자고 그날 정리했고요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "박사 논문 예심 발표 끝난 오늘이 그 답 정리하기 좋은 날이고요."
+    },
+    {
+      "type": "NARRATION",
+      "text": "한설이 시선을 화분 잎사귀로 옮기더니 다시 윤모 쪽으로 돌린다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "학생... 이제 학생이라고 부르기 좀 그러네요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...윤모씨."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "사람으로 옆에 있는 거, 그쪽도 같이 가요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "학생-조교 사이는 학생-조교 사이대로 그대로 두고요. 박사 5년차 본업도 본업 그대로 두고요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...단지 박사 논문실 화분 옆에 학생 꽃다발 하나 자연스럽게 두는 자리 하나 더."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "그게 사람으로 옆에 있는 모먼트고요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 선생님."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "박사 5년차 본업 그대로, 학생 본업 그대로. 사람-사람 자리 하나 더."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "그렇게 가요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "...윤모씨."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "그 말 정말 잘 받았어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "..."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "\"...잘 받았어요. ...여러 마디 풀어 들으면 윤모씨 한 마디 더 따라가고 싶어지네요.\""
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한설 선생님 말끝 흐림 그대로. 어른스러움 안에서 살짝 풀린 모습까지 같이 합쳐진 한마디고."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "학생에서 윤모씨로 한 발 옮겨진 자리. 6월 말 박사 논문실 화분 잎 한 장 새로 난 자리에서."
+    },
+    {
+      "type": "NARRATION",
+      "text": "박사 논문실 창밖으로 6월 말 저녁 햇살이 부드럽게 떨어진다. 한설이 안경을 다시 끼지 않은 채 책상 위 화분 옆 작은 식물 일지에 한 줄 더 적기 시작한다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "(식물 일지 추가 메모) \"2026.06.26 저녁. 화분 옆 꽃다발 하나 더. 윤모씨가.\""
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_climax",
+      "volume": 0.7,
+      "fade": 2
+    },
+    {
+      "type": "NARRATION",
+      "text": "한설이 안경을 다시 천천히 쓴다. 형광등이 한 번 깜빡이고, 실험실의 새벽이 고요하게 닫힌다. 박사 논문실 책상 위 화분 두 개와 꽃다발 하나, 그리고 한설의 식물 일지 한 줄이 마지막까지 비친다."
+    },
+    {
+      "type": "BG",
+      "image": "black"
+    },
+    {
+      "type": "NARRATION",
+      "text": "— 끝."
+    },
+    {
+      "type": "NARRATION",
+      "text": "**한설 트루 엔딩 — 박사 논문의 늦은 봄**"
+    },
+    {
+      "type": "ENDING",
+      "endingId": "END_H3_TRUE"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-26 evening",
+    "activeHeroines": [
+      "H3"
+    ]
+  }
+}

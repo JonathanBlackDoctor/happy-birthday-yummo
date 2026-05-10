@@ -1,0 +1,67 @@
+{
+  "id": "ch06_h2_01b_light",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h2_booth",
+      "value": "light"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "윤하정 너 너무 빡세게 안 가도 돼."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤하정이 잠깐 멈춘다. 표정이 옅게 굳는다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤하정",
+      "sprite": "pout",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "빡세게 가는 게 아니라 부스 운영 기본이거든?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "...뭐, 됐어."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 미안. 가볍게 가려다 분위기 못 맞췄네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "알면 됐어."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "분위기 못 맞췄다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "윤하정한테 이런 식으로 들어가면 부스 분위기까지 가라앉는다는 걸, 또 까먹었네."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h2_01_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-01 afternoon",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

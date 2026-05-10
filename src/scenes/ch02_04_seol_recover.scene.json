@@ -1,0 +1,232 @@
+{
+  "id": "ch02_04_seol_recover",
+  "commands": [
+    {
+      "type": "CHARACTER",
+      "id": "한설",
+      "sprite": "smile_slight",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "VIDEO",
+      "src": "video_meet_seol"
+    },
+    {
+      "type": "CG",
+      "image": "cg_seol_lab_first",
+      "cgId": "cg_seol_lab_first"
+    },
+    {
+      "type": "NARRATION",
+      "text": "한설이 정리를 마치고 자리로 돌아간다. 가운 + 안경 + 옅은 미소. 평소보다 약간 풀어진 표정."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "안경 너머로 살짝 미소가 비친다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "차분하시던 분이 잠깐 풀어진 표정이다."
+    },
+    {
+      "type": "CG_HIDE"
+    },
+    {
+      "type": "NARRATION",
+      "text": "5조 자리에 돌아온 윤모. 윤하정과 오준혁이 흘끗 본다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤하정",
+      "sprite": "pout",
+      "position": "left",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "야 너 진짜 깬다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "알겠다고."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "그래도 조교님 침착하시네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "오준혁",
+      "text": "다른 분이었으면 명단 적어서 들어가셨을 거다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "...그러게."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "다음엔 조심해야지."
+    },
+    {
+      "type": "NARRATION",
+      "text": "실험이 마무리되어 가는 시간. 학생들이 한두 조씩 정리를 끝내고 나간다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "5조도 비커를 씻고 노트를 정리한다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "한설이 자기 자리에서 안경을 벗어 가운 자락으로 천천히 닦는다."
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_comic",
+      "volume": 0.4,
+      "fade": 1
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "perv",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "...어. 안경.",
+      "subtype": "perv_start"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "안경 벗으셨을 때 표정이 평소랑 살짝 다른데... 차분하시던 분이 저렇게 풀어지시기도 하는구나.",
+      "subtype": "perv_start"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "만약에 야간 실험 끝나고 똑같이 안경 닦으시는 순간을 옆에서 보게 되면, 그때는 또 다른 표정이 있을 것도 같고...",
+      "subtype": "perv_start"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "recover",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "아 진짜. 시약 깬 학생이 무슨 망상을.",
+      "subtype": "self_aware"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "감싸주신 분께 무슨 짓이야.",
+      "subtype": "self_aware"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "정신 차려라 구윤모.",
+      "subtype": "self_aware"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.5,
+      "fade": 1
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "가방. 가방 챙기자.",
+      "subtype": "recover"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "다음 실험 때 잘하면 된다. 다음엔 안 깨먹는다.",
+      "subtype": "recover"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "한설",
+      "sprite": "default",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "NARRATION",
+      "text": "한설이 안경을 다시 쓰고 자료를 정리한다. 5조에 짧게 인사한다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "다음 주에 봐요. 조심히 가요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네. 다음 주에 뵙겠습니다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "감사합니다, 조교님."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "한설",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤하정",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤모",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch02_05_kakao_night"
+    }
+  ],
+  "meta": {
+    "chapter": 2,
+    "time": "2026-03-17 afternoon",
+    "activeHeroines": [
+      "H2",
+      "H3"
+    ],
+    "coFireNpcs": [
+      "taeho"
+    ]
+  }
+}

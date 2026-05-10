@@ -1,0 +1,45 @@
+{
+  "id": "ch06_h2_01b_quick",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h2_booth",
+      "value": "quick"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 부스 잘 굴리자."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "윤하정",
+      "text": "어."
+    },
+    {
+      "type": "NARRATION",
+      "text": "짧은 응답. 부스 카운터에서 두 사람이 자기 자리를 잡는다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "무난하게 끝났다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한마디만 더 붙였어도 좋았을 텐데. 윤하정이 정욱까지 챙겨준 걸 못 알아본 셈이 됐다."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h2_01_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-01 afternoon",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

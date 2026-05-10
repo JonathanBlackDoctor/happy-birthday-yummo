@@ -1,0 +1,71 @@
+{
+  "id": "ch06_h1_03b_teacher",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h1_call",
+      "value": "teacher"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "선생님이 편해요."
+    },
+    {
+      "type": "NARRATION",
+      "text": "차세린이 잠깐 멈춘다. 시선이 산책로 끝으로 흘러간다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "차세린",
+      "sprite": "concerned",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "...어, 그래요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "그게 편하다면, 그쪽으로 가는 거지요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 그게 아니라."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "괜찮아요. 자연스러운 거 고르세요."
+    },
+    {
+      "type": "NARRATION",
+      "text": "어색한 정적. 가로등이 한 번 더 깜빡인다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "닫아버렸다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "누나가 어렵게 꺼내신 말을, 안전한 답으로 막아선 셈이다. 후회된다."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h1_03_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-06 evening",
+    "activeHeroines": [
+      "H1"
+    ]
+  }
+}

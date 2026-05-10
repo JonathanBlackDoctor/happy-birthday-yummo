@@ -1,0 +1,295 @@
+{
+  "id": "ch06_h1_true",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_cafe_serin"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_climax",
+      "volume": 0.6,
+      "fade": 4
+    },
+    {
+      "type": "NARRATION",
+      "text": "2026년 7월 4일 토요일 오전 11시. 분당 본가 근처 카페 창가 자리. 7월 초 햇살이 카페 안쪽까지 길게 깔린다. 차세린의 짧은 휴가 첫날. 윤모가 본가에 와 있는 주말."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "smile",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "6월 말, 누나한테 카톡이 왔다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "\"휴가 첫날 분당 한 번 가요. 본가 근처 카페 좋은 데 추천해줘요.\" 그게 전부였다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한 학기 동안 누나가 먼저 약속을 잡아준 건 처음이다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 카페 문을 열고 들어선다. 창가 자리에 한 사람이 이미 앉아 있다. 머그잔 옆에 손이 잠깐 멈춰 있다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "차세린",
+      "sprite": "outfit_winter_coat",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "NARRATION",
+      "text": "차세린이 베이지 트렌치 코트 안에 흰 블라우스 차림. 7월 초 분당 카페 햇살 안에서는 평소 의국에서 보이던 사람과 어쩐지 다른 사람 같다. 의국에서 보이던 피로가 거의 없고, 머그잔을 든 손 위로 햇살이 길게 떨어진다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "..."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "누나."
+    },
+    {
+      "type": "NARRATION",
+      "text": "차세린이 시선을 들어 윤모를 본다. 카페 안 햇살이 옆모습에 한 번 닿는다. 짧은 정적."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "...왔네요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "분당 카페 입구에서, 학생이라고 안 부르고 누나라고 부르네요. 산책로 말고는 처음."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "...어색하시면."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "어색한 게 아니라."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "한 번 더 듣고 싶었던 것 같아요."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "차세린",
+      "sprite": "outfit_winter_coat",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "VIDEO",
+      "src": "video_true_serin"
+    },
+    {
+      "type": "CG",
+      "image": "cg_serin_true",
+      "cgId": "cg_serin_true"
+    },
+    {
+      "type": "NARRATION",
+      "text": "분당 본가 근처 카페 창가. 차세린이 머그잔을 두 손으로 감싸고, 시선을 천천히 들어 윤모 쪽으로 옮기고 있다. 7월 초 햇살이 창가 너머로 옅게 닿아 미디엄 헤어가 어깨선에서 잠깐 빛난다. 의국에서 보이던 어른의 거리감은 그대로지만, 휴가 첫날 풀린 모습이 거기에 겹쳐져 있다. 입가에는 따뜻한 미소."
+    },
+    {
+      "type": "CG_HIDE"
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 차세린 맞은편에 앉는다. 둘 사이에 잠깐의 정적. 카페 안 잔잔한 음악과 햇살."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "어색하다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "6일 산책로에서 헤어진 게 거의 한 달 만이고, 그동안은 카톡 몇 줄이 다였다. 그런데 누나라는 호칭은 이제 자연스럽다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "분당은 익숙하지 않아요. 저는 서울에서 자랐거든요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "그래도 윤모 학생 본가 동네라고 들어서, 한 번 와보고 싶었어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "본가 동네까지 챙겨주셔서 감사해요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "분당에서 KTX 타고 대구 자취방 다닌 게 한 학기 됐는데. 분당에서 누나 만나는 건 처음이에요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "그래서 와봤어요. 본가, 자취방, 의국. 윤모 학생이 다니는 곳들 중에 본가만 못 가봤거든요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "마저 들러본 기분으로요."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "본가만 못 가봤다고."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "의국 휴게실, 산책로, 카페... 이미 다 들러주신 거고. 마지막으로 본가까지 챙기러 오신 거다."
+    },
+    {
+      "type": "FLAG_INC",
+      "key": "H1",
+      "delta": 5
+    },
+    {
+      "type": "NARRATION",
+      "text": "잠깐의 정적. 차세린이 머그잔을 한 모금 마시고 시선을 다시 윤모 쪽으로 옮긴다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "윤모 학생."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "산책로에서 누나라고 부르고, 그 후로 한 달 동안 카톡 짧게 주고받았잖아요. 그 사이에 제 안에서도 정리된 게 있어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "...이제 학생이라는 호칭도 풀어볼까 싶어요."
+    },
+    {
+      "type": "NARRATION",
+      "text": "차세린이 시선을 살짝 떨어뜨렸다 다시 든다. 한 박자 늦은 호흡."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "윤모."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "...이제, 학생 말고 윤모라고 부를게요."
+    },
+    {
+      "type": "NARRATION",
+      "text": "짧은 정적. 윤모가 잠깐 멈춘다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "누나-학생에서, 누나-윤모로."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "호칭이 한 단어 바뀐 건데 무겁게 닿는다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "네, 누나."
+    },
+    {
+      "type": "NARRATION",
+      "text": "차세린이 머그잔 옆에 손을 잠깐 내려놓는다. 7월 햇살이 머그잔 표면에 잠깐 머문다. 정적이 부드럽게 깔린다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "윤모."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "...잘 받았어요. 진짜로."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "\"잘 받았어요. 진짜로.\""
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "마지막에 한 번 더 들었다. 이번엔 학생이 아니라, 윤모로."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "봄이 길어진다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "카페 창가에 7월 햇살이 길게 깔린다. 차세린이 머그잔을 두 손으로 감싸고, 옅은 미소 그대로 앉아 있다."
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_climax",
+      "volume": 0.7,
+      "fade": 2
+    },
+    {
+      "type": "NARRATION",
+      "text": "머그잔 두 개가 테이블 위에 나란히 놓인 채, 카페 안이 7월 오후의 정적으로 천천히 채워진다. 분당 카페 창가에 7월 초 햇살이 마지막까지 비친다."
+    },
+    {
+      "type": "BG",
+      "image": "black"
+    },
+    {
+      "type": "NARRATION",
+      "text": "— 끝."
+    },
+    {
+      "type": "NARRATION",
+      "text": "**차세린 트루 엔딩 — 분당의 봄**"
+    },
+    {
+      "type": "ENDING",
+      "endingId": "END_H1_TRUE"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-07-04 morning",
+    "activeHeroines": [
+      "H1"
+    ]
+  }
+}

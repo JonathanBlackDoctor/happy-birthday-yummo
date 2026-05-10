@@ -1,0 +1,55 @@
+{
+  "id": "ch06_h5_05b_call_partial",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h5_call",
+      "value": "partial"
+    },
+    {
+      "type": "NARRATION",
+      "text": "장윤영이 잠깐 멈춘다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "네, 선배."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "호칭은 너 편한 대로. 한 학기 동안 선배 호칭이 자연스러웠으니까, 그쪽이 익숙하면 그대로 가도 돼."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "헉 그럼 한 학기 더 선배 호칭으로 갈게요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "천천히요."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "호칭 얘기를 너 편한 대로로 받아 넘긴 흐름."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "본인이 먼저 꺼낸 마음에 한 발 미뤄 답한 셈이네. 한 번 더 풀어 받았어도 좋았을 텐데."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h5_05_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-07 evening",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

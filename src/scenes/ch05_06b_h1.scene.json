@@ -1,0 +1,109 @@
+{
+  "id": "ch05_06b_h1",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_ch5_bonfire",
+      "value": "h1"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤하정",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "한설",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "나서윤",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "장윤영",
+      "transition": "fade"
+    },
+    {
+      "type": "NARRATION",
+      "text": "다른 일행이 슬쩍 자리를 비켜준다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "pair_left",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "차세린",
+      "sprite": "default",
+      "position": "pair_right",
+      "transition": "fade"
+    },
+    {
+      "type": "NARRATION",
+      "text": "마당 끝. 차세린이 머그잔을 두 손으로 감싸고 모닥불을 한 번 바라본다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "선생님, 머그잔만 드시는 거예요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "동산병원에서 회식 한 번 끝낸 다음이라."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "무리 마세요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "학생도 한 잔 천천히 드세요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "5월 밤공기 좋네요. 의대 생활 중에 이런 시간이 흔하진 않아요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "선생님이 같이 계셔주신 게 학생들한텐 의미가 더 커요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "...학생, 그 말 잘 받았어요."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch05_06_pair_pause"
+    }
+  ],
+  "meta": {
+    "chapter": 5,
+    "time": "2026-05-16 night",
+    "activeHeroines": [
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "gyumin",
+      "gyeongmin",
+      "nathan",
+      "wook",
+      "junhyuk",
+      "mom",
+      "taeho"
+    ]
+  }
+}

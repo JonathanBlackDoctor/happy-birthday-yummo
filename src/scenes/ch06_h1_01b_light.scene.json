@@ -1,0 +1,72 @@
+{
+  "id": "ch06_h1_01b_light",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h1_visit",
+      "value": "light"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "선생님 직접 오시니까 분위기 살아나네요ㅋㅋ"
+    },
+    {
+      "type": "NARRATION",
+      "text": "차세린이 잠깐 멈춘다. 표정이 옅게 굳는다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "차세린",
+      "sprite": "concerned",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "...학생."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "ㅋ 같은 건 카톡에서만 쓰는 거고요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "마주 보고 있을 땐 좀 부드럽게 말해주는 게 자연스럽지요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "아, 죄송해요. 가볍게 가려다가 톤을 못 맞췄네요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "괜찮아요."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "아, 망했다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "카톡 톤이 입으로 그대로 흘러나왔다. 어른 앞에선 어울리는 게 아닌데."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h1_01_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-01 afternoon",
+    "activeHeroines": [
+      "H1"
+    ]
+  }
+}

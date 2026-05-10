@@ -1,0 +1,38 @@
+{
+  "id": "ch06_h4_01_close",
+  "commands": [
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 폰을 책상 한쪽에 내려놓는다. 의대 축제 부스 단톡이 한 번 더 울리지만 잠깐 미뤄둔다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "시험 끝나는 게 6월 12일 금요일."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "그럼 그다음 토요일쯤이 자연스럽겠다."
+    },
+    {
+      "type": "BG",
+      "image": "black"
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h4_02_campus_lunch"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-01 evening",
+    "activeHeroines": [
+      "H4"
+    ]
+  }
+}

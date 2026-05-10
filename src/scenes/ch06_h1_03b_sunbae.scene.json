@@ -1,0 +1,51 @@
+{
+  "id": "ch06_h1_03b_sunbae",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h1_call",
+      "value": "sunbae"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "선배요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "...어, 네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "선배도 한 걸음 풀린 호칭이긴 해요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "그쪽이 자연스럽다면, 거기서 시작해도 좋고요."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "안전하게 갔다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "누나만큼은 아니지만, 선생님보다는 조금 가까워졌다."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h1_03_close"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-06 evening",
+    "activeHeroines": [
+      "H1"
+    ]
+  }
+}

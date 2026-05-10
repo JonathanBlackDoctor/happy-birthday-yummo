@@ -1,0 +1,65 @@
+{
+  "id": "ch06_h4_06b_close_warm",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h4_close",
+      "value": "warm"
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "구윤모",
+          "text": "다음에 또 봐요"
+        },
+        {
+          "sender": "구윤모",
+          "text": "분위기 맞춰주신 거 한 학기 가지고 갈게요"
+        },
+        {
+          "sender": "구윤모",
+          "text": "시험 끝나고 한 마디 더 적어주신 마음도 같이요"
+        },
+        {
+          "sender": "나서윤",
+          "text": "네"
+        },
+        {
+          "sender": "나서윤",
+          "text": "다음에 또 봐요 윤모씨"
+        },
+        {
+          "sender": "나서윤",
+          "text": "🫶🫶"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "🫶 두 개."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "평소 🥺 하나였는데, 🫶 두 개. 무게가 좀 다르다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "마무리에 호감 한 마디 보탠 게 맞았다."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h4_07_evaluate"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-14 dawn",
+    "activeHeroines": [
+      "H4"
+    ]
+  }
+}

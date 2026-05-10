@@ -1,0 +1,61 @@
+{
+  "id": "ch06_h4_04_close",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_dongseong_street",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_romantic",
+      "volume": 0.4,
+      "fade": 2
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나서윤",
+      "text": "오늘 시간 잘 보냈어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "저도요. 다음에 한 번 더 자리 잡아봐요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "나서윤",
+      "text": "네."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "나서윤",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한 학기 인사 자리, 끝. 본인 속도대로 천천히 가시는 분이고. 그 속도 흔들지 말자."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤모",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h4_05_late_kakao"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-13 saturday afternoon",
+    "activeHeroines": [
+      "H4"
+    ]
+  }
+}

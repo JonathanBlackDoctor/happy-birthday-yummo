@@ -1,0 +1,50 @@
+{
+  "id": "ch04_01b_later",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_h2_share",
+      "value": "later"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "깨면 직접 줄게."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "잠결에 받아도 화면만 한 번 보고 다시 잘 거고, 그러면 자료가 못 자고 떠다니는 셈이라."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "표경민",
+      "text": "그것도 맞는 말이긴 하네. 자기 전에 정리해서 보는 게 더 나은 사람도 있고."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤하정의 머리카락이 살짝 흘러내려 책 위로 떨어진다. 윤모가 시선을 거두고 다시 책으로 향한다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "내일 첫 시간에 보면 자연스럽게 줘야지."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "자기 직전에 자료 손에 쥐는 게 부담되는 사람도 있다. 윤하정은 그쪽일 것 같다."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch04_01_close"
+    }
+  ],
+  "meta": {
+    "chapter": 4,
+    "time": "2026-04-27 night",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

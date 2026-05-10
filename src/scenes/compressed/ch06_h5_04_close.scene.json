@@ -1,0 +1,36 @@
+{
+  "id": "ch06_h5_04_close",
+  "commands": [
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "12시 30분 카톡 한 줄. 학기 끝나기 전에 한 번 더 만나는 시간이 남아 있고."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "BG",
+      "image": "black"
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h5_05_blossom_path"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-06 late night",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

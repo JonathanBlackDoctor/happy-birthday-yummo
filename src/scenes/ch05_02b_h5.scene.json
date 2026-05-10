@@ -1,0 +1,96 @@
+{
+  "id": "ch05_02b_h5",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_ch5_seat",
+      "value": "h5"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "pair_left",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "장윤영",
+      "sprite": "smile_big",
+      "position": "pair_right",
+      "transition": "fade"
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 의예과 후배 자리 쪽으로 향한다. 장윤영이 발견하고 손을 흔든다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "선배~~! 오셨어요!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "옆자리 비었네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "일부러 비워뒀어요!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "또 일부러였어?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "후배 특권이거든요!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "선배 시험 일주일 응원했으니까 한 잔은 받으셔야 해요!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 고마워."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "헉 받아주셨다!"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "일주일 응원해줬으니, 한 잔쯤은 마셔야지."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "선배 진짜 다정하시네요. 도서관 앞에선 그냥 시크하셨는데!"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "도서관 앞에서 봤을 때보다 텐션이 한 단계 위로 올라가 있다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "어디서 보든 환한 건 똑같네."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch05_02_close"
+    }
+  ],
+  "meta": {
+    "chapter": 5,
+    "time": "2026-05-11 evening"
+  }
+}

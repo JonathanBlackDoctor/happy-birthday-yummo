@@ -1,0 +1,44 @@
+{
+  "id": "ch04_03_close",
+  "commands": [
+    {
+      "type": "NARRATION",
+      "text": "윤모가 실험실 문을 닫고 복도로 나선다. 형광등이 깜빡거리는 빈 복도."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한설 선생님 안경 벗은 모습 처음 봤다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "평소 모습만 보다가 잠깐 풀려 있는 모습 보면 묘하긴 하다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "어떻게 보면 묘하고, 어떻게 보면 그냥 사람이고."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "한설",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch04_04_seoyoon_meet"
+    }
+  ],
+  "meta": {
+    "chapter": 4,
+    "time": "2026-04-28 night",
+    "activeHeroines": [
+      "H3"
+    ]
+  }
+}

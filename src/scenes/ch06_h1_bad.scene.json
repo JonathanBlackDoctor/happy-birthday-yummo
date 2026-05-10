@@ -1,0 +1,269 @@
+{
+  "id": "ch06_h1_bad",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_dongsan_hallway"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_sad",
+      "volume": 0.4,
+      "fade": 4
+    },
+    {
+      "type": "NARRATION",
+      "text": "2026년 6월 5일 금요일 오후 3시. 동산병원 내과 의국 복도. 본과 1학년 단체 견학. 남희석 펠로우 가이드. 견학이 거의 끝나갈 무렵."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "sad",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "표경민",
+      "sprite": "default",
+      "position": "left",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "견학 마지막에 의국 복도를 지나가는 동선."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "표경민이 옆에서 잠깐 본다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "표경민",
+      "text": "야, 윤모. 너 아까 의국 옆 자판기 앞에서."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "표경민",
+      "text": "무슨 일 있었냐."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어, 잠깐. 차세린 선생님 마주쳤어. 단체랑 분리돼서."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "표경민",
+      "text": "...단체 견학 중에 분리됐다고?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어. 잠깐 말씀드릴 게 있어서."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "표경민",
+      "text": "학생들 보는 데서?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "..."
+    },
+    {
+      "type": "NARRATION",
+      "text": "표경민이 더 묻지 않고 단체 쪽으로 돌아간다."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "표경민",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "아까 자판기 앞."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "본과 1학년 12명이 의국 옆 자판기 줄 서 있는데. 차세린 선생님이 지나가시는 거 보고, 잠깐 부르고 따로 한마디 던졌다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한마디라기엔, \"선생님 새벽 카페 약속 또 있어요?\" 그 한마디."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "본과 1학년 다 보는 앞에서. 새벽 카페라는 단어를 꺼낸 거다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "차세린",
+      "sprite": "concerned",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "NARRATION",
+      "text": "의국 복도 한쪽. 차세린이 흰 가운에 청록 스크럽 차림 그대로 서 있다. 평소 어른의 분위기 그대로지만, 시선이 윤모 쪽으로 한 번 옮겨졌다 다시 거둬진다. 평소엔 안 하던 모습."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "학생."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "선생님."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "아까 자판기 앞에서."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "본과 1학년 동기들 다 듣는 데서, 새벽 카페라는 말 꺼낸 건 좀 곤란했어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "..."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "죄송해요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "동산병원 안에서 전공의가 본과 1학년이랑 따로 만난다는 게, 동기들 사이에서 어떻게 도는지는 학생도 알잖아요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "견학 마무리 잘 하세요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "차세린",
+      "text": "..."
+    },
+    {
+      "type": "NARRATION",
+      "text": "짧고 굳은 인사. 차세린이 의국 안으로 한 걸음 옮긴다. 시선이 더 옮겨지지 않는다."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "차세린",
+      "transition": "fade"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "망쳤다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한 학기 동안 누나가 어른 쪽에서 학생 쪽으로 천천히 거리를 풀어주신 건데. 동기들 앞에서 그 거리감을 한 번에 까발린 셈이다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "새벽 카페가 자랑할 일도 아닌데, 그걸 동기들 앞에서 그렇게 꺼낸 거다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤모가 의국 복도에서 잠깐 멈춰선다. 6월 햇살이 복도 끝 창문 너머로 옅어진다."
+    },
+    {
+      "type": "SFX",
+      "sound": "sfx_katalk_notify"
+    },
+    {
+      "type": "NARRATION",
+      "text": "폰 진동. \"차세린\" 1:1 카톡방."
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "차세린",
+          "text": "학생 견학 마무리 잘 하세요"
+        },
+        {
+          "sender": "차세린",
+          "text": "한 학기 동안 카페에서 도서관에서 챙겨주신 거 마음에 두고 갈게요"
+        },
+        {
+          "sender": "차세린",
+          "text": "다만 동산병원 안에선 학생-선생님 자리로 정리하는 게 자연스러울 것 같아요"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "카톡 마지막 한 줄."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "정중하게 닫으셨다. 누나가 한 학기 동안 풀어주신 거리를, 윤모가 동기들 앞에서 가볍게 굴린 셈이라."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "잘못 짚었다. 마음이 앞선 게 아니라, 그 마음을 어디까지 보여도 되는지를 못 짚은 거다."
+    },
+    {
+      "type": "NARRATION",
+      "text": "의국 복도 끝 창문 너머로 6월 햇살이 옅어진다. 윤모가 의국 복도를 천천히 빠져나간다."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤모",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_sad",
+      "volume": 0.5,
+      "fade": 2
+    },
+    {
+      "type": "BG",
+      "image": "black"
+    },
+    {
+      "type": "NARRATION",
+      "text": "— 끝."
+    },
+    {
+      "type": "NARRATION",
+      "text": "**차세린 배드 엔딩 — 잘못 짚은 마음**"
+    },
+    {
+      "type": "ENDING",
+      "endingId": "END_H1_BAD"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-05 afternoon",
+    "activeHeroines": [
+      "H1"
+    ]
+  }
+}

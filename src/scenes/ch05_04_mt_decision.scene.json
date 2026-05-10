@@ -1,0 +1,103 @@
+{
+  "id": "ch05_04_mt_decision",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_studio_room",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_daily",
+      "volume": 0.4,
+      "fade": 2
+    },
+    {
+      "type": "NARRATION",
+      "text": "5월 13일 수요일 저녁. 자취방. 윤모가 책상 앞에 앉아 있다."
+    },
+    {
+      "type": "SFX",
+      "sound": "sfx_katalk_notify"
+    },
+    {
+      "type": "NARRATION",
+      "text": "본과 1학년 동기 단톡."
+    },
+    {
+      "type": "KAKAO",
+      "messages": [
+        {
+          "sender": "김규민",
+          "text": "야 MT 5월 16일 토요일 ㄱㄱ"
+        },
+        {
+          "sender": "김규민",
+          "text": "펜션 가창 쪽 잡았음"
+        },
+        {
+          "sender": "김규민",
+          "text": "본과 1학년 + 의예과 2 일부 + 약대 승보 형"
+        },
+        {
+          "sender": "조나단",
+          "text": "풍년 시즌2 ㄱㄱ"
+        },
+        {
+          "sender": "표경민",
+          "text": "인원 정리 좀"
+        },
+        {
+          "sender": "오준혁",
+          "text": "ㅇㅇ ㄱ"
+        },
+        {
+          "sender": "이문규",
+          "text": "ㄱ"
+        },
+        {
+          "sender": "정욱",
+          "text": "ㄱ"
+        },
+        {
+          "sender": "윤하정",
+          "text": "ㄱ"
+        },
+        {
+          "sender": "김규민",
+          "text": "윤모 ㄱ?"
+        }
+      ]
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "MT라."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "다섯 명 다 거기 모이는 분위기일까."
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "ㄱ",
+          "next": "ch05_04b_go"
+        },
+        {
+          "text": "고민해볼게",
+          "next": "ch05_04b_skip"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 5,
+    "time": "2026-05-13 evening",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

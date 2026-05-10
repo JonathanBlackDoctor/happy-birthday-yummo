@@ -1,0 +1,44 @@
+{
+  "id": "ch06_h5_05_close",
+  "commands": [
+    {
+      "type": "DIALOGUE",
+      "speaker": "장윤영",
+      "text": "오... 아니, 선배. (해사하게 살짝) 헉 호칭 풀어주신 거 자연스러워지려면 시간 좀 더 필요할 거 같아요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "어. 천천히."
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "장윤영",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER_HIDE",
+      "id": "윤모",
+      "transition": "fade"
+    },
+    {
+      "type": "BGM_STOP",
+      "fade": 2
+    },
+    {
+      "type": "BG",
+      "image": "black"
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch06_h5_06_evaluate"
+    }
+  ],
+  "meta": {
+    "chapter": 6,
+    "time": "2026-06-07 evening",
+    "activeHeroines": [
+      "H5"
+    ]
+  }
+}

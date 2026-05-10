@@ -1,0 +1,49 @@
+{
+  "id": "ch01_05b_serious",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_friend_joke",
+      "value": "serious"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "그런 거 아냐."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "같은 조원일 뿐."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "김규민",
+      "text": "에이~ 재미없네."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "조나단",
+      "text": "윤모 또 정색."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "표경민",
+      "text": "옳은 답."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch01_05_close"
+    }
+  ],
+  "meta": {
+    "chapter": 1,
+    "time": "2026-03-03 afternoon",
+    "activeHeroines": [
+      "gyumin",
+      "gyeongmin",
+      "nathan",
+      "junhyuk"
+    ]
+  }
+}

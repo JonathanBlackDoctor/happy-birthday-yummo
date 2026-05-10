@@ -1,0 +1,87 @@
+{
+  "id": "ch05_02b_h3",
+  "commands": [
+    {
+      "type": "FLAG_SET",
+      "key": "flag_ch5_seat",
+      "value": "h3"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "default",
+      "position": "pair_left",
+      "transition": "fade"
+    },
+    {
+      "type": "CHARACTER",
+      "id": "한설",
+      "sprite": "default",
+      "position": "pair_right",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "선생님들, 옆자리 괜찮을까요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "윤모 학생, 앉아요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "선생님 격려차 오셨다고 들었어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "네, 잠깐만요. 다들 시험 끝났으니까 한 잔 따라주러 왔어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "선생님이 직접 따라주시면 그게 어디예요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "학생, 표현이 늘었네요. 도서관 5일이 사람을 바꾸는구나."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "책 보면서 표현 가다듬을 시간이 많았어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "잘 봤어요?"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "구윤모",
+      "text": "채점 전이라 모르겠지만, 자료 주신 거 보면서 든든했어요."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "한설",
+      "text": "그 자료가 도움 됐다니 다행이에요."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한설 선생님 회식 자리에서 뵙는 건 또 다르네. 실험실에서 봤던 무방비 모습이 잠깐 떠오르긴 했다."
+    },
+    {
+      "type": "JUMP",
+      "sceneId": "ch05_02_close"
+    }
+  ],
+  "meta": {
+    "chapter": 5,
+    "time": "2026-05-11 evening"
+  }
+}

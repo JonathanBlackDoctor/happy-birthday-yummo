@@ -1,0 +1,97 @@
+{
+  "id": "ch02_02_cadaver_first",
+  "commands": [
+    {
+      "type": "BG",
+      "image": "bg_anatomy_lab"
+    },
+    {
+      "type": "BGM",
+      "track": "bgm_tension",
+      "volume": 0.5
+    },
+    {
+      "type": "NARRATION",
+      "text": "실습실 안. 5조가 실습대 옆에 자리 잡는다. 학생들의 눈빛, 깊은 숨, 마스크 위로 보이는 떨리는 속눈썹."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤모",
+      "sprite": "serious",
+      "position": "center",
+      "transition": "fade"
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "이태호",
+      "text": "그럼 묵념하겠습니다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "...",
+      "subtype": "normal"
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "한 분 한 분에게 가족이 있었을 거고. 그분들이 어떤 마음으로 보내셨을지... 가늠이 안 된다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "잘 배우겠습니다. 그 말밖에 안 떠오른다."
+    },
+    {
+      "type": "DIALOGUE",
+      "speaker": "이태호",
+      "text": "됐습니다. 시작합시다."
+    },
+    {
+      "type": "CHARACTER",
+      "id": "윤하정",
+      "sprite": "outfit_lab_coat",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "type": "NARRATION",
+      "text": "윤하정의 손이 실습대 모서리를 잡고 있다. 그 손이 살짝 떨린다."
+    },
+    {
+      "type": "MONOLOGUE",
+      "speaker": "구윤모",
+      "text": "손이 떨리고 있다. 카페에서 농담 치던 모습이 아니다, 지금은."
+    },
+    {
+      "type": "CHOICE",
+      "choices": [
+        {
+          "text": "괜찮아? 천천히 해\" 작게 말한다",
+          "next": "ch02_02b_steady",
+          "tone": "direct_friendly",
+          "isKey": true,
+          "descriptor": "ch2_cadaver_calm",
+          "coFireNpcs": [
+            "junhyuk"
+          ]
+        },
+        {
+          "text": "같이 침묵하며 옆에 선다",
+          "next": "ch02_02b_silent",
+          "tone": "warm_supportive",
+          "coFireNpcs": [
+            "taeho"
+          ]
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "chapter": 2,
+    "time": "2026-03-16 morning, anatomy lab",
+    "activeHeroines": [
+      "H2"
+    ]
+  }
+}

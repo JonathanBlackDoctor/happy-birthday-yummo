@@ -1,0 +1,142 @@
+/* 05-ui-design/COLOR-TOKENS.md + UI-SPEC.md §1 SSoT 미러 */
+
+:root {
+  /* Color (메인 팔레트) */
+  --color-bg: #FFE4EC;
+  --color-accent: #FFB8D1;
+  --color-accent-hover: #FFA0BD;
+  --color-text: #3A2E3F;
+  --color-text-light: #6B5B70;
+  --color-mint: #A8DADC;
+  --color-mint-dark: #7CC4C7;
+
+  /* 시맨틱 */
+  --color-success: #A8DADC;
+  --color-warning: #FFCC99;
+  --color-danger: #D89090;
+  --color-info: #B8D4FF;
+
+  /* 텍스트박스 */
+  --color-textbox-bg: rgba(58, 46, 63, 0.85);
+  --color-textbox-text: #FFF8FA;
+  --color-textbox-name: #3A2E3F;
+  --color-textbox-name-bg: var(--color-mint);
+
+  /* 카톡 모달 */
+  --kakao-bg: #FFE4EC;
+  --kakao-bubble-self: #FEE500; /* 카카오톡 노란색 (본인) */
+  --kakao-bubble-other: #FFFFFF;
+  --kakao-text-self: #3A2E3F;
+  --kakao-text-other: #3A2E3F;
+  --kakao-timestamp: #999999;
+  --kakao-font-size: 18px; /* 카톡 메시지 본문 — 본문 폰트와 별개 */
+  --kakao-name-size: 14px; /* 카톡 발신자 이름 (그룹 헤더) */
+  --kakao-typing-dot: #666666;
+
+  /* 다크 시퀀스 (거절·배드 엔딩) */
+  --color-dark-bg: #1F1822;
+  --color-dark-text: #D8C8DC;
+  --color-dark-accent: #A88B98;
+
+  /* Layout */
+  --textbox-bottom: 56px;
+  --textbox-width: 80%;
+  --textbox-height: 22%;
+  --textbox-padding: 24px 36px;
+  --textbox-radius: 16px;
+
+  /* MiniControls 위치 (PC) — 대사창 아래 우하단 (2026-05-09 PM 정정).
+     초기 240px(대사창 위)에서 8px(아래)로 복귀 + 대사창 height 24%→22%로 축소 + 버튼 작게 만들어 겹침 회피. */
+  --controls-bottom: 8px;
+
+  /* Typography */
+  --font-main: 'Pretendard', -apple-system, sans-serif;
+  --font-size-text: 26px;
+  --font-size-name: 28px;
+  --font-size-monologue: 25px;
+  --line-height: 1.6;
+  --letter-spacing: -0.2px;
+
+  /* UI Controls */
+  --btn-padding: 10px 20px;
+  --btn-radius: 8px;
+  --btn-bg: rgba(255, 184, 209, 0.9);
+  --btn-bg-hover: rgba(255, 160, 189, 1);
+  --btn-text: #3A2E3F;
+
+  /* Animation */
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+  --transition-slow: 600ms ease;
+
+  /* Character animation (ANIMATION-SPEC §3·§3.5·§4·§4.5).
+     2026-05-09 PM 미세 튜닝 라운드 #2: 900ms도 빠른 인상 → 1500ms,
+     3px 보빙도 부족 → 6px로 명확한 워킹 사이클 인지. */
+  --char-walk-ms: 1500ms;
+  --char-walk-distance: 220px;
+  --char-bob-amp: 6px;
+  --char-zoom-ms: 450ms;
+  --char-zoom-scale: 1.04;
+
+  /* AffectionToast (UI-SPEC §10) — 풍성 온도계 + 미니 하트 도트 공용 */
+  --toast-card-bg: rgba(255, 248, 250, 0.94);
+  --toast-card-border: rgba(255, 184, 209, 0.6);
+  --toast-shadow: 0 12px 28px rgba(216, 80, 140, 0.22);
+  --toast-text: #3A2E3F;
+  --toast-text-muted: #6B5B70;
+  --toast-delta-up: #E64178;
+  --toast-delta-down: #8A6B7A;
+  --therm-fill-top: #FF6FA8;
+  --therm-fill-mid: #FFB8D1;
+  --therm-fill-bot: #FFD9E5;
+  --therm-glass-stroke: rgba(255, 255, 255, 0.55);
+  --therm-highlight: rgba(255, 255, 255, 0.45);
+  --therm-bulb-glow: rgba(255, 111, 168, 0.45);
+  --therm-tick: rgba(58, 46, 63, 0.35);
+  --therm-scale: 1;
+
+  /* Z-index 레이어 */
+  --z-bg: 0;
+  --z-character: 10;
+  --z-cg: 50;
+  --z-textbox: 100;
+  --z-controls: 110;
+  --z-menu: 200;
+  --z-modal: 300;
+  --z-toast: 400;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --textbox-bottom: 20px;
+    --textbox-width: 92%;
+    --textbox-height: 38%;
+    --textbox-padding: 18px 24px;
+    --font-size-text: 22px;
+    --font-size-name: 24px;
+    --font-size-monologue: 21px;
+    --therm-scale: 0.75;
+  }
+}
+
+/* (윤모 첫 등장 임팩트 애니메이션 .yunmo-enter는 PM 결정 2026-05-10에 제거됨.
+   윤모도 다른 캐릭터와 동일하게 char-anim-enter-{left|right} 워킹 애니메이션만 사용.) */
+@keyframes char-enter {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.char-enter {
+  animation: char-enter 600ms ease-out both;
+}
+
+/* Reduce-motion 정책 (PM 결정 2026-05-10):
+   OS의 prefers-reduced-motion 신호를 무시하고, 게임 내 settings.reduceMotion 토글만 따른다.
+   App.tsx에서 settings 변화에 따라 body[data-kmu-reduce-motion="true"] 속성을 동기화한다.
+   사유: 의대생/시각 콘텐츠 게임 특성상 사용자가 OS 설정을 따로 건드리지 않고도 결과창
+        시퀀스 애니메이션을 볼 수 있어야 함 + 게임 내 토글로 명시적 의지를 받는다. */
+body[data-kmu-reduce-motion='true'] *,
+body[data-kmu-reduce-motion='true'] *::before,
+body[data-kmu-reduce-motion='true'] *::after {
+  animation-duration: 0.01ms !important;
+  transition-duration: 0.01ms !important;
+}
