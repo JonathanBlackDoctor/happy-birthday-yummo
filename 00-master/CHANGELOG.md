@@ -16,6 +16,17 @@
 
 ## 이력
 
+### 2026-05-11 — CI e2e 근본 원인 처방: autoAdvanceUntilEnding idle 대기 가드
+
+- **재진단 (옵션 C 30분도 부족 보고 후)**: 90s timeout 자체보다 더 근본 회귀 발견. `gameStore.ts:231` 초기 `runtimeMode: 'idle'` + `helpers.ts:101` autoAdvance가 `'idle' → return` 조기 종료. CI cold-cache로 scene JSON 로드 지연 시 autoAdvance가 startScene 완료 전 'idle' 상태로 읽고 즉시 return → expectEnding이 90초 동안 DOM 기다리다 timeout. retry에선 OS file cache로 startScene이 빨리 끝나 'scene' 상태로 진입해 통과. 매 테스트 NEW context로 OS 캐시 미공유였던 패턴 설명.
+- **처방**: `tests/e2e/helpers.ts` autoAdvanceUntilEnding 진입 직후 idle 대기 가드 30초 추가. `runtimeMode !== 'idle'`까지 50ms 폴링 → 그 이후에도 'idle'이면 진짜 idle 상태(엔딩 완료 후 등)로 종료. timeout 증가 대신 race 해소.
+- **수정 1건**: `tests/e2e/helpers.ts` (`autoAdvanceUntilEnding` 초기 idle 대기 블록 신규).
+- **무수정**: `expectEnding` timeoutMs(90s) 그대로 / playwright retries 그대로 / CI timeout-minutes 30 그대로. 근본 처방이라 cushion 불필요.
+- **검증**: typecheck 0 + lint 0 errors + 본 라운드 helpers 변경은 E2E 도구 영역(브라우저 preview 비대상).
+- **모듈** (status: review): `tests/e2e/helpers.ts`.
+- **사유**: PM "30분도 부족" 보고 후 재진단. 옵션 C 단순 timeout 상향은 증상 가림이라 폐기, 근본 race 처방.
+- **승인**: PM 구두 (2026-05-11).
+
 ### 2026-05-11 — 베타 출시 ✅ + CI e2e job timeout 15→30분 (옵션 C)
 
 - **베타 출시 성공**: 라이브 URL `https://jonathanblackdoctor.github.io/Cuyeonsi-beta/` HTTP 200 OK 확인 (Last-Modified 2026-05-10 17:41 GMT). `<title>구연시: 본과 1학년의 봄</title>` + og:title/og:image/twitter card 정상. `deploy.yml`(Pages 배포)은 `ci.yml`과 독립이라 e2e 실패 무관 첫 푸시 직후 성공.

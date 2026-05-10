@@ -90,6 +90,19 @@ export async function autoAdvanceUntilEnding(
       await new Promise((r) => requestAnimationFrame(() => r(undefined)));
       await new Promise((r) => setTimeout(r, 50));
 
+      // 2026-05-11 CI cold-cache 처방: startScene 비동기 완료 전 'idle' 조기 종료 회귀.
+      // CI 러너에서 scene JSON 로드가 지연되면 autoAdvance가 'idle' 상태로 읽고 즉시 return →
+      // expectEnding이 90초 동안 DOM 기다리다 timeout (retry에선 OS 캐시로 즉시 통과).
+      // 최대 30초까지 'idle' 탈출 대기 — 그 이후에도 'idle'이면 진짜 idle 상태(엔딩 완료 후 등)로 종료.
+      {
+        const idleWaitStart = Date.now();
+        while (Date.now() - idleWaitStart < 30_000) {
+          const s = store.getState();
+          if (s.runtimeMode !== 'idle') break;
+          await new Promise((r) => setTimeout(r, 50));
+        }
+      }
+
       let stuckCount = 0;
       let lastSnapshot = '';
 
