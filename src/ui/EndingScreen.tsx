@@ -81,6 +81,9 @@ export function EndingScreen() {
   const [showNpc, setShowNpc] = useState(false);
   // 공유 결과 토스트 (텍스트+URL 공유 후 사용자 피드백)
   const [shareToast, setShareToast] = useState<string | null>(null);
+  // 모바일: Web Share API 미지원 환경 폴백. blob/새 탭은 in-app 웹뷰에서 흰 화면이 떠
+  // 페이지 내 오버레이에 이미지를 노출 → 사용자가 길게 눌러 저장.
+  const [savePreview, setSavePreview] = useState<string | null>(null);
   // metaStore 자동 기록 — StrictMode 이중 호출 방지 ref. endingId 변동 시 새 기록 1회만.
   const recordedEndingRef = useRef<string | null>(null);
   const recordEnding = useMetaStore((s) => s.recordEnding);
@@ -166,7 +169,11 @@ export function EndingScreen() {
       });
       if (result.kind === 'downloaded') setShareToast('이미지를 저장했습니다.');
       else if (result.kind === 'shared') setShareToast('이미지를 공유했습니다.');
-      else if (result.kind === 'opened') setShareToast('이미지를 길게 눌러 저장하세요.');
+      else if (result.kind === 'preview') {
+        setSavePreview(result.dataUrl);
+        setShareToast(null);
+        return;
+      }
       else setShareToast(`이미지 저장 실패: ${result.message}`);
       window.setTimeout(() => setShareToast(null), 2400);
     } catch (e) {
@@ -418,6 +425,61 @@ export function EndingScreen() {
             }}
           >
             {shareToast}
+          </div>
+        )}
+        {savePreview && (
+          <div
+            role="dialog"
+            aria-label="엔딩 이미지 저장"
+            data-testid="ending-save-preview"
+            onClick={() => setSavePreview(null)}
+            style={{
+              position: 'fixed',
+              inset: 0,
+              zIndex: 9999,
+              background: 'rgba(0,0,0,0.88)',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '16px',
+              overflowY: 'auto',
+            }}
+          >
+            <p style={{
+              color: '#FFF8FA', fontSize: '15px', marginBottom: '12px',
+              textAlign: 'center', lineHeight: 1.5,
+            }}>
+              이미지를 <b>꾹 눌러서</b> "이미지 저장" 또는 "사진에 저장"을 선택하세요.
+              <br />
+              <span style={{ opacity: 0.7, fontSize: '13px' }}>(빈 곳을 누르면 닫힘)</span>
+            </p>
+            <img
+              src={savePreview}
+              alt="엔딩 결과 이미지"
+              onClick={(e) => e.stopPropagation()}
+              style={{
+                maxWidth: '100%',
+                maxHeight: '70vh',
+                borderRadius: '12px',
+                boxShadow: '0 8px 32px rgba(0,0,0,0.5)',
+                touchAction: 'manipulation',
+              }}
+            />
+            <button
+              type="button"
+              onClick={() => setSavePreview(null)}
+              style={{
+                marginTop: '16px',
+                padding: '8px 20px',
+                borderRadius: '8px',
+                background: 'rgba(255,255,255,0.15)',
+                color: '#FFF8FA',
+                fontSize: '14px',
+              }}
+            >
+              닫기
+            </button>
           </div>
         )}
         {showNpc && (

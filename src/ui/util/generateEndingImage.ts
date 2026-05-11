@@ -231,7 +231,7 @@ function isMobileUA(): boolean {
 export async function downloadEndingImage(input: EndingImageInput): Promise<
   | { kind: 'downloaded' }
   | { kind: 'shared' }
-  | { kind: 'opened' }
+  | { kind: 'preview'; dataUrl: string }
   | { kind: 'error'; message: string }
 > {
   try {
@@ -243,7 +243,7 @@ export async function downloadEndingImage(input: EndingImageInput): Promise<
 
     const mobile = isMobileUA();
 
-    // 모바일: Web Share API (files) 우선 시도
+    // 모바일: Web Share API (files) 우선 시도 — 사진 앱으로 직접 저장 가능
     if (mobile && typeof navigator !== 'undefined' && 'canShare' in navigator) {
       try {
         const file = new File([blob], filename, { type: 'image/png' });
@@ -253,26 +253,23 @@ export async function downloadEndingImage(input: EndingImageInput): Promise<
           return { kind: 'shared' };
         }
       } catch (e) {
-        // AbortError(사용자 취소)는 그대로 던져 호출자가 토스트 처리
         if (e instanceof Error && e.name === 'AbortError') {
           return { kind: 'error', message: '저장이 취소되었습니다' };
         }
-        // 그 외 실패는 새 탭 폴백으로
+        // 그 외 실패는 인라인 미리보기 폴백
       }
     }
 
-    const url = URL.createObjectURL(blob);
-
-    // 모바일 share 폴백: 새 탭에 이미지 표시 → 사용자가 길게 눌러 저장
+    // 모바일 폴백: 인라인 오버레이로 이미지 노출 → 사용자가 길게 눌러 저장.
+    // 새 탭/blob URL은 in-app 웹뷰에서 흰 화면 뜨는 경우가 있어 사용 X.
+    // base64 data URL이어야 모든 모바일 브라우저의 long-press → "이미지 저장" 메뉴가 동작.
     if (mobile) {
-      const win = window.open(url, '_blank');
-      // 팝업 차단 시 location.href로 강제 이동
-      if (!win) window.location.href = url;
-      setTimeout(() => URL.revokeObjectURL(url), 60_000);
-      return { kind: 'opened' };
+      const dataUrl = await blobToDataURL(blob);
+      return { kind: 'preview', dataUrl };
     }
 
     // PC: a[download]로 즉시 다운로드
+    const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
     a.download = filename;
@@ -284,6 +281,15 @@ export async function downloadEndingImage(input: EndingImageInput): Promise<
   } catch (e) {
     return { kind: 'error', message: e instanceof Error ? e.message : String(e) };
   }
+}
+
+function blobToDataURL(blob: Blob): Promise<string> {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(reader.result as string);
+    reader.onerror = () => reject(reader.error ?? new Error('FileReader 실패'));
+    reader.readAsDataURL(blob);
+  });
 }
 
 /**
