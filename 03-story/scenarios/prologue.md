@@ -277,7 +277,7 @@ status: review
 [지문] 윤모가 책상 앞 의자에 앉는다. 창밖으로 자취방 골목이 어둑하게 가라앉아 있다.
 
 [CHOICE]
-- "내일 잘 해보자" {tone:direct_friendly} → next: prologue_03b_steady
+- "내일 잘 해보자" {tone:direct_friendly, coFire:gyumin} → next: prologue_03b_steady
 - "일찍 자야겠다" {tone:mature_serious} → next: prologue_03b_practical
 [/CHOICE]
 

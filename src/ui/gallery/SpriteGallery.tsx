@@ -13,6 +13,7 @@ import { SPRITE_CATALOG, ALL_SPRITE_IDS, spriteVariantLabel } from '@/data/sprit
 
 export function SpriteGallery() {
   const unlocked = useMetaStore((s) => s.unlocked_sprites);
+  const newlyUnlocked = useMetaStore((s) => s.newly_unlocked_sprites);
   const [openId, setOpenId] = useState<string | null>(null);
 
   const total = ALL_SPRITE_IDS.length;
@@ -52,12 +53,13 @@ export function SpriteGallery() {
                     </div>
                   );
                 }
+                const isNew = newlyUnlocked.includes(id);
                 return (
                   <button
                     key={id}
                     type="button"
                     onClick={() => setOpenId(id)}
-                    className="aspect-[3/4] rounded-lg overflow-hidden bg-text-light/10 hover:scale-[1.04] transition-transform focus:outline-none focus:ring-2 focus:ring-accent flex flex-col"
+                    className="relative aspect-[3/4] rounded-lg overflow-hidden bg-text-light/10 hover:scale-[1.04] transition-transform focus:outline-none focus:ring-2 focus:ring-accent flex flex-col"
                     data-testid={`sprite-slot-${id}`}
                     title={id}
                   >
@@ -76,6 +78,19 @@ export function SpriteGallery() {
                     <div className="text-[10px] text-text-light bg-bg/70 py-1 px-1 truncate text-center">
                       {variant}
                     </div>
+                    {isNew && (
+                      <span
+                        data-testid={`sprite-slot-${id}-new`}
+                        className="absolute top-1 right-1 text-[9px] font-bold px-1.5 py-0.5 rounded"
+                        style={{
+                          background: 'rgba(245,215,110,0.95)',
+                          color: '#1f1822',
+                          boxShadow: '0 0 8px rgba(245,215,110,0.6)',
+                        }}
+                      >
+                        NEW
+                      </span>
+                    )}
                   </button>
                 );
               })}

@@ -40,23 +40,25 @@ export function PauseMenu() {
 
   return (
     <div
-      className="absolute inset-0 flex items-center justify-center p-4 overflow-y-auto"
+      className="absolute inset-0 overflow-y-auto"
       style={{ zIndex: 'var(--z-menu)', background: 'rgba(58, 46, 63, 0.85)' }}
     >
-      <div className="bg-bg text-text rounded-2xl p-6 md:p-8 w-full max-w-2xl flex flex-col gap-5">
-        <h2 className="text-2xl font-bold">메뉴</h2>
-        <AffectionStatusPanel />
-        <div className="flex flex-col gap-3">
-          {items.map((it) => (
-            <button
-              key={it.label}
-              type="button"
-              onClick={it.onClick}
-              className="min-h-[44px] px-4 py-3 bg-accent hover:bg-accent-hover text-text rounded-lg text-left"
-            >
-              {it.label}
-            </button>
-          ))}
+      <div className="min-h-full flex items-center justify-center p-4">
+        <div className="bg-bg text-text rounded-2xl p-6 md:p-8 w-full max-w-2xl flex flex-col gap-5">
+          <h2 className="text-2xl font-bold">메뉴</h2>
+          <AffectionStatusPanel />
+          <div className="flex flex-col gap-3">
+            {items.map((it) => (
+              <button
+                key={it.label}
+                type="button"
+                onClick={it.onClick}
+                className="min-h-[44px] px-4 py-3 bg-accent hover:bg-accent-hover text-text rounded-lg text-left"
+              >
+                {it.label}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
     </div>

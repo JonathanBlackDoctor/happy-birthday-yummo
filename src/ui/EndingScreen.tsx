@@ -82,6 +82,13 @@ export function EndingScreen() {
   const rankingEnabled = isRankingEnabled();
   const [showRanking, setShowRanking] = useState(false);
 
+  // 2026-05-11 — TRUE 엔딩 도달 시 보상으로 새로 해금된 캐릭터 이미지 개수를 마운트 시점 snapshot.
+  // 사용자가 갤러리를 열어서 newly_unlocked_sprites를 비워도 본 화면에 표시된 숫자는 유지(혼란 방지).
+  const newlyUnlockedSpritesCount = useMetaStore(
+    (s) => s.newly_unlocked_sprites.length,
+  );
+  const [spriteUnlockSnapshot] = useState(() => newlyUnlockedSpritesCount);
+
   // TRUE 카테고리 엔딩 도달 시 hasAchievedTrueEnding 기록 (영구) — ModeSelect 다음 진입 시
   // 자동재생 잠금해제 모달 트리거. category 비-TRUE는 무시. settings는 confirmAndResetGame 후에도 유지.
   useEffect(() => {
@@ -298,6 +305,21 @@ export function EndingScreen() {
           <EndingStatsPanelAnimated flags={flags} endingId={endingId} />
         ) : (
           <EndingStatsPanelDefault flags={flags} endingId={endingId} />
+        )}
+
+        {spriteUnlockSnapshot > 0 && (
+          <div
+            data-testid="ending-sprite-unlock-notice"
+            className="mt-3 text-sm md:text-base px-4 py-2 rounded-md"
+            style={{
+              background: 'rgba(245,215,110,0.14)',
+              color: 'rgba(255,248,232,0.98)',
+              border: '1px solid rgba(245,215,110,0.55)',
+              textShadow: '0 1px 4px rgba(0,0,0,0.6)',
+            }}
+          >
+            🎨 갤러리에 캐릭터 이미지 {spriteUnlockSnapshot}개가 새로 해금됐어요
+          </div>
         )}
 
         <div className="mt-4 flex flex-row items-center gap-2 flex-wrap justify-center">

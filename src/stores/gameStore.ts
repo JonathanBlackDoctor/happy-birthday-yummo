@@ -257,11 +257,59 @@ function applyEffects(state: RuntimeState, effects: SceneCommand[] | undefined):
  * 미박이거나 빈 배열이면 fallback으로 5명 모두 적용(점진 마이그레이션, 기존 시나리오 무영향).
  * late_reply_count는 H4 미니게임 시스템 결과라 active 필터 무관.
  */
-function applyChoiceEffects(
+/**
+ * 한 CHOICE 픽 안에서 같은 대상에 대해 발생한 FLAG_INC 이벤트를 1건으로 묶는다 (2026-05-11).
+ * 예: ch01_05_cafe 옵션 B는 explicit effects(gyumin +30) + tone 매트릭스(gyumin +45) → 종전엔 토스트 2개 → 합쳐서 +75 1개.
+ * 플래그 누적치는 unchanged (applyOne의 clamp/누적은 그대로). 단 토스트 표시용 이벤트만 축약.
+ */
+function mergeAffectionEventsPerTarget(
+  before: AffectionEvent[],
+  after: AffectionEvent[],
+): AffectionEvent[] {
+  const beforeIds = new Set(before.map((e) => e.id));
+  const olderKept: AffectionEvent[] = [];
+  const fresh: AffectionEvent[] = [];
+  for (const e of after) {
+    if (beforeIds.has(e.id)) olderKept.push(e);
+    else fresh.push(e);
+  }
+  if (fresh.length < 2) return after;
+
+  const grouped = new Map<AffinityTargetId, AffectionEvent[]>();
+  for (const e of fresh) {
+    const arr = grouped.get(e.heroine);
+    if (arr) arr.push(e);
+    else grouped.set(e.heroine, [e]);
+  }
+  const merged: AffectionEvent[] = [];
+  for (const events of grouped.values()) {
+    if (events.length === 1) {
+      merged.push(events[0]);
+      continue;
+    }
+    events.sort((a, b) => a.ts - b.ts);
+    const summedDelta = events.reduce((s, e) => s + e.delta, 0);
+    merged.push({
+      id: events[0].id,
+      heroine: events[0].heroine,
+      prevValue: events[0].prevValue,
+      newValue: events[events.length - 1].newValue,
+      delta: summedDelta,
+      ts: events[0].ts,
+      consumed: false,
+    });
+  }
+  merged.sort((a, b) => a.ts - b.ts);
+  return [...olderKept, ...merged];
+}
+
+/** @internal — 테스트 노출용. 외부 호출 시 직접 사용 금지. */
+export function applyChoiceEffects(
   state: RuntimeState,
   choice: Choice,
   sceneMeta?: SceneMeta,
 ): RuntimeState {
+  const initialEvents = state.affectionEvents;
   let next = applyEffects(state, choice.effects);
 
   // ── tone·effects 미박 fallback (2026-05-08 사용자 결정) ──
@@ -389,6 +437,12 @@ function applyChoiceEffects(
         lastAffectionChange: { heroine: topInc.heroine, delta: topInc.delta, ts: Date.now() },
       };
     }
+  }
+
+  // 본 CHOICE 픽 동안 같은 대상에 누적된 이벤트 → 1건으로 합치기 (토스트 1개로 표시).
+  const mergedEvents = mergeAffectionEventsPerTarget(initialEvents, next.affectionEvents);
+  if (mergedEvents !== next.affectionEvents) {
+    next = { ...next, affectionEvents: mergedEvents };
   }
 
   return next;
@@ -884,10 +938,13 @@ export const useGameStore = create<GameState>()(
           // yunmo_perv_1: CharacterLayer가 perv_start 동안 yunmo_perv ↔ yunmo_perv_1을 0.5초 swap
           // 렌더링하지만(CharacterLayer.tsx:168-179, 433-434) CHARACTER 명령은 'perv'만 박혀
           // unlock 미발화. 임의 TRUE 엔딩 도달 시 보상.
-          meta.unlockSprite('yunmo_perv_1');
-          for (const id of TRUE_ENDING_UNLOCK[cmd.endingId] ?? []) {
-            meta.unlockSprite(id);
-          }
+          const candidates = ['yunmo_perv_1', ...(TRUE_ENDING_UNLOCK[cmd.endingId] ?? [])];
+          // 이미 풀려 있던 sprite는 "새로 해금"으로 안 침 — 재달성 시 NEW 뱃지 안 뜸.
+          const newlyUnlocked = candidates.filter(
+            (id) => !meta.unlocked_sprites.includes(id),
+          );
+          for (const id of candidates) meta.unlockSprite(id);
+          if (newlyUnlocked.length > 0) meta.markSpritesAsNew(newlyUnlocked);
         }
       },
 

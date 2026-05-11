@@ -177,13 +177,14 @@
           "next": "ch01_05b_playful",
           "tone": "playful_casual",
           "coFireNpcs": [
+            "gyumin",
             "junhyuk"
           ],
           "effects": [
             {
               "type": "FLAG_INC",
               "key": "gyumin",
-              "delta": -30
+              "delta": 30
             }
           ]
         },
@@ -192,6 +193,7 @@
           "next": "ch01_05b_vague",
           "tone": "warm_supportive",
           "coFireNpcs": [
+            "gyumin",
             "junhyuk"
           ]
         }

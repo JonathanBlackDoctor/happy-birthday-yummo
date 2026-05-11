@@ -25,12 +25,17 @@ export interface EndingRecord {
 }
 
 export interface MetaData {
-  version: 2;
+  version: 3;
   unlocked_endings: EndingId[];
   unlocked_cgs: string[];
   unlocked_bgms: string[];
   /** 인게임에서 [CHARACTER]로 등장한 적 있는 스프라이트 ID 목록 (2026-05-10 추가). */
   unlocked_sprites: string[];
+  /**
+   * 직전 TRUE 엔딩 보상 등으로 새로 해금됐지만 아직 SpriteGallery에서 한 번도 확인하지 않은 ID.
+   * SpriteGallery에 NEW 뱃지 노출용. GalleryScreen 닫힐 때 비움. (2026-05-11 A+C 라운드)
+   */
+  newly_unlocked_sprites: string[];
   /** 엔딩 도달 누적 기록 — 같은 엔딩 재달성 시 push. EndingGallery / 통계 화면에서 사용. */
   endingHistory: EndingRecord[];
   total_play_count: number;
@@ -38,11 +43,12 @@ export interface MetaData {
 }
 
 export const DEFAULT_META: MetaData = {
-  version: 2,
+  version: 3,
   unlocked_endings: [],
   unlocked_cgs: [],
   unlocked_bgms: [],
   unlocked_sprites: [],
+  newly_unlocked_sprites: [],
   endingHistory: [],
   total_play_count: 0,
   has_cleared_once: false,
@@ -56,6 +62,10 @@ interface MetaActions {
   unlockEnding: (id: EndingId) => void;
   /** [CHARACTER] 명령 적용 시 호출. gameStore.applyCommand에서 sprite ID와 함께 호출. */
   unlockSprite: (id: string) => void;
+  /** TRUE 엔딩 보상 등 "새로 해금됐다"고 갤러리에 알릴 ID들을 큐에 push. (2026-05-11) */
+  markSpritesAsNew: (ids: readonly string[]) => void;
+  /** SpriteGallery에서 확인 완료 후 호출 — newly_unlocked_sprites 비움. GalleryScreen 닫힐 때 트리거. */
+  markSpritesSeen: () => void;
   /** 테스트용 / 데이터 초기화 메뉴 — UI에서 confirm 후 호출. */
   resetMeta: () => void;
 }
@@ -94,20 +104,52 @@ export const useMetaStore = create<MetaData & MetaActions>()(
         if (cur.unlocked_sprites.includes(id)) return;
         set({ unlocked_sprites: [...cur.unlocked_sprites, id] });
       },
+      markSpritesAsNew: (ids) => {
+        const cur = get();
+        const fresh = ids.filter((id) => !cur.newly_unlocked_sprites.includes(id));
+        if (fresh.length === 0) return;
+        set({ newly_unlocked_sprites: [...cur.newly_unlocked_sprites, ...fresh] });
+      },
+      markSpritesSeen: () => {
+        const cur = get();
+        if (cur.newly_unlocked_sprites.length === 0) return;
+        set({ newly_unlocked_sprites: [] });
+      },
       resetMeta: () => set({ ...DEFAULT_META }),
     }),
     {
       name: 'kmu-vn-meta',
       storage: createJSONStorage(() => localStorage),
-      version: 2,
+      version: 3,
       migrate: (persisted, fromVersion) => {
         const base = (persisted ?? {}) as Partial<MetaData>;
         if (fromVersion < 1) {
-          return { ...DEFAULT_META, ...base, version: 2, unlocked_sprites: [] } as MetaData;
+          return {
+            ...DEFAULT_META,
+            ...base,
+            version: 3,
+            unlocked_sprites: [],
+            newly_unlocked_sprites: [],
+          } as MetaData;
         }
         if (fromVersion < 2) {
           // v1 → v2: unlocked_sprites 추가 (2026-05-10 캐릭터 이미지 갤러리 라운드).
-          return { ...DEFAULT_META, ...base, version: 2, unlocked_sprites: [] } as MetaData;
+          return {
+            ...DEFAULT_META,
+            ...base,
+            version: 3,
+            unlocked_sprites: [],
+            newly_unlocked_sprites: [],
+          } as MetaData;
+        }
+        if (fromVersion < 3) {
+          // v2 → v3: newly_unlocked_sprites 추가 (2026-05-11 SpriteGallery NEW 뱃지 + EndingScreen 알림).
+          return {
+            ...DEFAULT_META,
+            ...base,
+            version: 3,
+            newly_unlocked_sprites: [],
+          } as MetaData;
         }
         return { ...DEFAULT_META, ...base } as MetaData;
       },

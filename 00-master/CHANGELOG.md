@@ -16,6 +16,52 @@
 
 ## 이력
 
+### 2026-05-11 — 김규민 호감도 천장 ~+120 + 동일 대상 토스트 합치기 (Plan 120-drifting-pebble)
+
+- **배경**: `evaluateRoute` F-1b(`max(NPC) > max(H)` → END_SOLO_SUMMER)는 룰상 존재했지만 김규민(gyumin) best-play 천장이 ~+45라 winner H 누적(~+113~125)을 못 넘어 사문화돼 있었음. 김규민 집중 플레이로 SOLO 진입을 가능하게 하기 위해 천장을 ~+120까지 상향.
+- **변경 1 — 시나리오 (.md SSoT, 풀+압축 양쪽)**:
+  - `03-story/scenarios/{ch01_ot.md,compressed/ch01_ot.md}` ch01_05_cafe — 옵션 B `effects: -30 gyumin` 제거 + `+30 gyumin` 신설, `coFire:junhyuk` → `coFire:gyumin+junhyuk` 확장 (tone playful_casual gyumin +45 발동). 옵션 C `coFire:junhyuk` → `coFire:gyumin+junhyuk`로 확장(warm gyumin +15).
+  - `03-story/scenarios/{prologue.md,compressed/prologue.md}` prologue_03_studio — 옵션 A `{tone:direct_friendly}` → `{tone:direct_friendly, coFire:gyumin}` 추가 (직설 gyumin +45 안정 발동, 옛 1-NPC pick 시 wook 동률 의존 제거).
+  - best-play 합산: prologue A +45 + cafe B (+30 explicit + +45 tone) = **+120**. cafe C 경로는 +60.
+- **변경 2 — 토스트 이벤트 합치기**:
+  - `src/stores/gameStore.ts` `mergeAffectionEventsPerTarget` 신설. `applyChoiceEffects` 끝에서 호출, 본 CHOICE 픽 동안 같은 대상에 발생한 `AffectionEvent`를 1건으로 묶음(delta 합, prev = 첫 prev, new = 마지막 new). 플래그 누적치는 unchanged — 토스트 표시용 이벤트만 축약.
+  - 사유: 옵션 B는 explicit effects(+30) + tone(+45)이 분리 적용되어 토스트 카드 2개로 떴음. UX상 "한 선택지=한 카드" 원칙에 맞춰 합쳐서 +75 1개로 노출.
+  - 테스트 노출 위해 `applyChoiceEffects` `export` 추가 (`@internal`).
+- **신규 자산**:
+  - `scripts/simulateGyuminCeiling.ts` — 천장 sim. prologue A + cafe B 시퀀스에서 gyumin=120, route=END_SOLO_SUMMER 검증. 회귀 3종(gyumin-warm/neutral/H5 winner) 포함.
+  - `tests/unit/affectionEventMerge.test.ts` — 합치기 동작 3 케이스.
+- **모듈**: `03-story/scenarios/prologue.md`, `03-story/scenarios/ch01_ot.md`, `03-story/scenarios/compressed/prologue.md`, `03-story/scenarios/compressed/ch01_ot.md`, `src/stores/gameStore.ts`, `scripts/simulateGyuminCeiling.ts`, `tests/unit/affectionEventMerge.test.ts`. 자동 생성물 `src/scenes/{prologue_03_studio,ch01_05_cafe,compressed/...}.scene.json`은 `npm run compile:all`로 재컴파일됨.
+- **검증**:
+  - `npm run compile:all` — 212개 씬 컴파일(기존 IF 경고 6건 무관).
+  - `npm run typecheck` 무에러.
+  - `npx tsx scripts/simulateGyuminCeiling.ts` — gyumin-focused: 120/SOLO ✓ / gyumin-warm: 60/SOLO ✓ (otherH=0 sim 가정) / neutral H2 winner: gyumin 0 / chapter6/H2 ✓ / H5 winner(sim 125) + gyumin 120: chapter6/H5 ✓.
+  - `npm run test` — 107/107 그린 (신규 3 케이스 포함).
+  - `npm run test:e2e` — 16/16 엔딩(SOLO 포함) 그린.
+  - 프리뷰 ch01_05_cafe 옵션 B 픽: 토스트 카드 `김규민 +75` 1건 + `오준혁 +30` 1건 — 동일 대상 분리 안 됨 ✓.
+- **승인**: PM 직접 plan(`120-drifting-pebble`) 승인 + 동일 대상 토스트 합치기 후속 지시.
+
+---
+
+### 2026-05-11 — 트루 엔딩 보상 해금 사용자 가시화 (A+C 라운드)
+
+- **신고**: PM — "해당 스프라이트들이 게임플레이에서 등장하지 않지만 해금되는 걸 플레이어가 알 수 있어?"
+- **원인**: 직전 라운드의 TRUE 엔딩 보상 해금은 silent unlock. 사용자가 갤러리에 능동적으로 들어가야 카운터 변화로만 인지 가능 → 인과(엔딩 도달 → 보상 해금)가 안 보임.
+- **변경**: A안(EndingScreen 한 줄 알림) + C안(SpriteGallery NEW 뱃지) 동시 적용.
+  - `src/stores/metaStore.ts` — `newly_unlocked_sprites: string[]` 필드 추가, `markSpritesAsNew(ids)` / `markSpritesSeen()` 액션 추가, persist version 2→3 마이그레이션.
+  - `src/stores/gameStore.ts` TRUE 엔딩 unlock 블록 — `unlocked_sprites`에 이미 없는 ID만 추려 `markSpritesAsNew` 큐에 push (재달성 시 NEW 뱃지 X).
+  - `src/ui/EndingScreen.tsx` — 마운트 시점에 `newly_unlocked_sprites.length`를 `useState` 초기화 함수로 snapshot 캡처(이후 갤러리 열어서 비워져도 본 화면 숫자 유지). 통계 패널 하단에 `🎨 갤러리에 캐릭터 이미지 N개가 새로 해금됐어요` 안내 박스 (`data-testid="ending-sprite-unlock-notice"`).
+  - `src/ui/gallery/SpriteGallery.tsx` — 슬롯에 `position: relative` + 우상단 NEW 뱃지(`data-testid="sprite-slot-<id>-new"`).
+  - `src/ui/gallery/GalleryScreen.tsx` — 닫기 버튼 onClick에서 `markSpritesSeen()` 호출. (useEffect cleanup이 아닌 onClick 사용 이유: StrictMode 이중 마운트로 cleanup이 dev 환경에서 즉시 발화 → 첫 진입에도 NEW 뱃지 안 보이는 버그 회피.)
+  - `tests/unit/metaStore.test.ts` — persist version 기댓값 2→3 갱신.
+- **모듈**: `src/stores/metaStore.ts`, `src/stores/gameStore.ts`, `src/ui/EndingScreen.tsx`, `src/ui/gallery/SpriteGallery.tsx`, `src/ui/gallery/GalleryScreen.tsx`, `tests/unit/metaStore.test.ts`.
+- **검증**:
+  - `npx tsc --noEmit` 무에러
+  - `npx vitest run` 104/104 그린
+  - 브라우저 (dev 5175): metaStore에 newly_unlocked_sprites=['serin_smile_warm','serin_serious','serin_surprised','yunmo_perv_1'] 시드 후 reload. (1) `pendingEnding='END_H1_TRUE'` 강제 set → EndingScreen에 `🎨 갤러리에 캐릭터 이미지 4개가 새로 해금됐어요` 정상 노출. (2) 갤러리 → 캐릭터 이미지 탭 → 4개 슬롯 모두 NEW 뱃지(`sprite-slot-*-new` 4개 testid 확인). (3) 닫기 클릭 → newly_unlocked_sprites 빈 배열, galleryOpen=false.
+- **승인**: PM 직접 지시 (A+C 선택).
+
+---
+
 ### 2026-05-11 — 캐릭터 갤러리 미해금 14종 트루 엔딩 보상 처방
 
 - **신고**: PM — "갤러리에 있는 스프라이트들이 모두 해금될 수 있는 구조야? 63개의 스프라이트가 모두 사용되고 있어?"

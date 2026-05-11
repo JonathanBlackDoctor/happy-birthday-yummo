@@ -6,6 +6,7 @@
 
 import { useState } from 'react';
 import { useGameStore } from '@/stores/gameStore';
+import { useMetaStore } from '@/stores/metaStore';
 import { CGGallery } from './CGGallery';
 import { BGMGallery } from './BGMGallery';
 import { EndingGallery } from './EndingGallery';
@@ -24,7 +25,16 @@ const TABS: Array<{ id: Tab; label: string }> = [
 
 export function GalleryScreen() {
   const close = useGameStore((s) => s.setGalleryOpen);
+  const markSpritesSeen = useMetaStore((s) => s.markSpritesSeen);
   const [tab, setTab] = useState<Tab>('ending');
+
+  // 닫기 클릭 시 NEW 뱃지 큐 비움 — 사용자가 갤러리 한 번 봤다고 간주. (2026-05-11 A+C 라운드)
+  // useEffect cleanup으로 안 쓰는 이유: StrictMode 이중 마운트 시 cleanup이 즉시 발화해
+  // 첫 진입에서도 뱃지가 안 뜬다 (개발 환경 한정 버그). onClick은 결정론적.
+  const handleClose = () => {
+    markSpritesSeen();
+    close(false);
+  };
 
   return (
     <div
@@ -45,7 +55,7 @@ export function GalleryScreen() {
         ))}
         <button
           type="button"
-          onClick={() => close(false)}
+          onClick={handleClose}
           className="ml-auto min-h-[44px] min-w-[44px] px-3 py-1 text-text-light hover:text-text"
         >
           닫기

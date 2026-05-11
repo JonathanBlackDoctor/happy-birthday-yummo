@@ -232,7 +232,7 @@ status: review
 [구윤모 모놀로그] 다들 내일 본다. 익숙한 애들인데, 새 학기는 또 새 학기지.
 
 [CHOICE]
-- "내일 잘 해보자" {tone:direct_friendly} → next: prologue_03b_steady
+- "내일 잘 해보자" {tone:direct_friendly, coFire:gyumin} → next: prologue_03b_steady
 - "일찍 자야겠다" {tone:mature_serious} → next: prologue_03b_practical
 [/CHOICE]
 

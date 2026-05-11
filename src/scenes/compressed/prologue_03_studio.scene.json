@@ -181,7 +181,10 @@
         {
           "text": "내일 잘 해보자",
           "next": "prologue_03b_steady",
-          "tone": "direct_friendly"
+          "tone": "direct_friendly",
+          "coFireNpcs": [
+            "gyumin"
+          ]
         },
         {
           "text": "일찍 자야겠다",

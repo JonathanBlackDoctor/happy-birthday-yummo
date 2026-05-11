@@ -117,6 +117,6 @@ describe('metaStore — persist', () => {
     const parsed = JSON.parse(raw!);
     // zustand persist는 { state, version } 래핑.
     expect(parsed.state.unlocked_endings).toContain('END_H1_TRUE');
-    expect(parsed.version).toBe(2); // 2026-05-10 캐릭터 이미지 갤러리 라운드 v1→v2 bump
+    expect(parsed.version).toBe(3); // 2026-05-11 newly_unlocked_sprites 추가 v2→v3 bump
   });
 });
