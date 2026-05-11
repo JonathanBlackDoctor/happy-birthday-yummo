@@ -68,7 +68,9 @@ export function ModeSelect({ onComplete }: Props) {
           <span className="absolute -top-3 left-4 px-2 py-0.5 bg-mint-dark text-white text-xs font-bold rounded-full">
             추천 ★
           </span>
-          <div className="text-xl font-bold mb-2">압축 버전</div>
+          <div className="text-xl font-bold mb-2">
+            압축 버전 <span className="text-sm font-normal opacity-70">(~15분)</span>
+          </div>
           <div className="text-sm opacity-80">
             대사·카톡·선택지·CG 100% 보존, 지문 절반. 짧게 한 회차 돌릴 때 추천.
           </div>
@@ -79,7 +81,9 @@ export function ModeSelect({ onComplete }: Props) {
           className="flex-1 min-h-[120px] p-6 bg-accent hover:bg-accent-hover text-text rounded-2xl text-left transition-colors"
           data-testid="mode-select-full"
         >
-          <div className="text-xl font-bold mb-2">풀 스토리</div>
+          <div className="text-xl font-bold mb-2">
+            풀 스토리 <span className="text-sm font-normal opacity-70">(~20분)</span>
+          </div>
           <div className="text-sm opacity-80">
             모든 지문·독백·연출이 그대로. 본과 1학년의 봄을 천천히 따라가는 정석 버전.
           </div>
@@ -102,7 +106,9 @@ export function ModeSelect({ onComplete }: Props) {
               🔒 잠김
             </span>
           )}
-          <div className="text-xl font-bold mb-2">팔정팟 각색</div>
+          <div className="text-xl font-bold mb-2">
+            팔정팟 각색 <span className="text-sm font-normal opacity-70">(~7분)</span>
+          </div>
           <div className="text-sm opacity-80">
             {palJeongPotUnlocked
               ? '팔정팟이 다시 들려주는 봄의 이야기. 가장 짧지만 가장 풍성한 버전.'

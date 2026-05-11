@@ -170,10 +170,12 @@ export function AffectionToastStack() {
   return (
     <>
       {activeCards.map((card, idx) => {
-        // 모바일 QA 2026-05-11 2차: base top/right를 CSS var로 우회 — tokens.css의
-        // `@media (max-height: 480px) and (orientation: landscape)` 룰이 작은 폰 가로에서 더 작게 박음.
+        // 모바일 QA 2026-05-11 4차: 카드 간격(stride)도 CSS var로 — CSS transform: scale은 layout을 차지 X.
+        // 가로 모드 작은 폰에서 시각 크기는 0.35배지만 inline px 간격은 그대로(118px)라 카드끼리 화면 중앙까지 벌어짐.
+        // tokens.css에서 `--toast-card-stride`를 가로 모드 시 더 작게 박아 카드 간격을 시각 크기에 맞춤.
         const top = `var(--toast-base-top, ${TOAST_BASE_TOP}px)`;
-        const right = `calc(var(--toast-base-right, ${TOAST_BASE_RIGHT}px) + ${idx * (TOAST_CARD_W + TOAST_GAP)}px)`;
+        const stride = `var(--toast-card-stride, ${TOAST_CARD_W + TOAST_GAP}px)`;
+        const right = `calc(var(--toast-base-right, ${TOAST_BASE_RIGHT}px) + ${idx} * ${stride})`;
         return <RichToastCard key={card.id} event={card} top={top} right={right} />;
       })}
     </>

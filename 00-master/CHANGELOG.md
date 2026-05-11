@@ -16,6 +16,119 @@
 
 ## 이력
 
+### 2026-05-11 — 캐릭터 갤러리 미해금 14종 트루 엔딩 보상 처방
+
+- **신고**: PM — "갤러리에 있는 스프라이트들이 모두 해금될 수 있는 구조야? 63개의 스프라이트가 모두 사용되고 있어?"
+- **감사 결과**: 카탈로그 63종, 자산 파일도 63종(`public/img/sprites/*.webp`)으로 1:1 정합. 하지만 시나리오 `[CHARACTER]` 명령(unlock 유일 트리거)이 닿지 않는 sprite가 **14종** — 갤러리 카운터 이론 상한 49 / 63. 14종 분류:
+  - 진짜 미사용 12종: `serin_smile_warm·serin_serious·serin_surprised`, `hajeong_drunk·hajeong_panic`, `seoyoon_blush·seoyoon_serious·seoyoon_thinking`, `yuna_default·yuna_excited·yuna_sad·yuna_serious`.
+  - 인게임 렌더는 되지만 unlock 우회 2종: `yunmo_perv_1`(perv_start MONOLOGUE 동안 `CharacterLayer.tsx:168-179, 433-434`가 `yunmo_perv ↔ yunmo_perv_1` 0.5초 swap, CHARACTER는 'perv'만 박힘) / `seoyoon_outfit_school`(ch06_h4_03_perv_pair에서 KAKAO 사진 메시지로만 등장).
+- **변경**: `src/stores/gameStore.ts` `applyCommand` BGM unlock 블록 직후에 TRUE 엔딩 보상 unlock 블록 추가. `cmd.type === 'ENDING' && cmd.endingId.endsWith('_TRUE')`일 때:
+  - `yunmo_perv_1`은 임의 TRUE 엔딩에서 무조건 해금
+  - `END_H{1,2,4,5}_TRUE` 각각에 해당 히로인의 미사용 sprite 정적 리스트를 화이트리스트로 박아 해금 (H3은 미사용 0종이라 빈 항목 — 보상 없음)
+- **모듈**: `src/stores/gameStore.ts` (단일 파일, ~25줄). 시나리오 .md 무수정. KAKAO image 자동 unlock 정규식 같은 별도 처방 불필요.
+- **사유**: 시나리오 보강안(12개 [CHARACTER] 컷 풀·압축본 양쪽 박기)은 분량·무드 손상 위험. 트루 엔딩 보상으로 일괄 처리하면 (1) 시나리오 무수정, (2) 갤러리 완주 동기 부여, (3) `seoyoon_outfit_school`이 "카톡 사진으로만 보여주는 H4 시크 무드"를 본문에서 깨지 않음.
+- **검증**: `npx tsc --noEmit` 무에러. `npx vitest run` 104/104 그린(테스트 변경 없음, 회귀 그린). 인게임 검증은 H1/H2/H4/H5 TRUE 각 1회 도달 시 갤러리 카운터 63 / 63 도달(zustand persist 누적).
+- **미정합 잔여**: 압축본 `hajeong_sleeping`·`seol_smile_small` 시나리오↔카탈로그 미스매치 2건은 별도 라운드 (감사 스크립트가 잡아둠).
+- **승인**: PM 직접 지시 + 1회 코스 코렉션("시나리오 보강 ❌, 트루 엔딩 일괄 해금 ✅ — 미사용 14종만 한정").
+
+---
+
+### 2026-05-11 — ModeSelect 카드에 플레이타임 표기 추가
+
+- **변경**: `src/ui/ModeSelect.tsx` 세 모드 카드 타이틀 옆에 작은 회색 텍스트로 예상 플레이타임 표기.
+  - 압축 버전 → `(~15분)`
+  - 풀 스토리 → `(~20분)`
+  - 팔정팟 각색 → `(~7분)`
+- **모듈**: `src/ui/ModeSelect.tsx`
+- **근거**: 자동재생 0.5초 + 텍스트 normal 속도 기준 1라우트(1엔딩) 추정.
+  - 풀(`src/scenes/*.scene.json`, h1 라우트): 텍스트 1,091줄 / 29,533자 + 카톡 213 / 2,131자 → ~22~23분 → **~20분**으로 표기(소수 라우트는 짧음).
+  - 압축(`src/scenes/compressed/*.scene.json`, h1 라우트): 텍스트 695줄 / 20,500자 + 카톡 213 / 2,131자 → ~16~17분 → **~15분**.
+  - 팔정팟 각색(`03-story/scenarios/palJeongPot/*.md` 기반 distill, merged_scenario.md 추정 환산): 1라우트 텍스트 ~316줄 / ~7,150자 + 카톡 ~98 → ~7분 → **~7분**.
+- **검증**: dev preview(`localhost:5175`)에서 `localStorage.kmu-vn-settings.state.storyMode=null` 후 reload → IntroTyping 통과 → OP 영상 종료 → ModeSelect 화면에서 세 카드 모두 정상 표기 확인(`data-testid="mode-select"` innerText 스냅샷).
+- **승인**: PM 직접 지시.
+
+---
+
+### 2026-05-11 — 슬롯 불러오기 시 배경/CG 유실 fix
+
+- **신고**: PM — "메뉴에서 슬롯 저장내역을 불러올 때, 배경이 안 그려지고 스프라이트만 보임."
+- **원인**: `gameStore.applySnapshot`이 인터프리터 시킹 후 `bg/characters/cg`를 빈 값으로 초기화하고 `advance()`에 시각 재구축을 위임했으나, `advance()`는 `commands[currentCommandIndex]` 한 개만 실행함. 저장 시점 이전에 깔린 BG/CHARACTER/CG 명령은 한 번도 재생되지 않아 화면이 텅 빔.
+- **수정**: `src/stores/gameStore.ts` `applySnapshot` (line ~954). 시킹 직후 `commands[0..currentCommandIndex-1]`를 순회해 BG/CHARACTER/CHARACTER_HIDE/CG/CG_HIDE만 reducer로 합성한 결과를 `set`에 직접 박음. 같은 BG ID 가드 + black/white 폴백 시 캐릭터 보존 룰은 `applyOne`의 BG 분기와 동일하게 미러. CG 잔존 시 `runtimeMode='cg'`로 복원해 CGOverlay 재마운트 보장.
+- **무시한 것**: BGM/SFX/VIDEO·FLAG·HISTORY는 재생 안 함 — audio는 `slot.audio`로, flags/history는 슬롯에서 직접 복원되므로 중복 적용 회피.
+- **하위 호환**: SaveSlot 스키마 변경 없음. 기존 슬롯도 그대로 정상 로드.
+- **검증**: dev preview에서 prologue 진입 → 10 advance → snapshot → 시각 강제 클리어 → applySnapshot. before/after 모두 `bg=bg_bundang_home`, characters=`{윤모}`로 일치.
+- **승인**: PM 직접 신고 라운드, 검증 완료 후 적용.
+
+---
+
+### 2026-05-11 — 모바일 QA 4차 처방 (토스트 간격 / 회상 온도계 / OG 130% / VEO skip)
+
+- **변경 배경**: PM 실기기 재검증 후 추가 신고 4건. 직전 3차에서 안드로이드 ▶️ 회귀는 HTML5 기본 비디오 컨트롤 오버레이로 진단 확인 + 처방 효과 확인. 신규 신고:
+  1. 모바일 가로 모드에서 호감도 변동 토스트가 여러 개 뜰 때 카드끼리 화면 중앙까지 벌어짐(우측 정렬 깨짐).
+  2. 챕터 종료 회상 화면(`ChapterTransitionRecap`)에서 모바일 가로 모드 시 온도계가 너무 커서 상단 요약 해설을 가림.
+  3. OG 미리보기 이미지가 작아 — 130% 확대해서 타이틀이 더 크게, 가장자리는 덜.
+  4. VEO 재생을 건너뛸 수 있는 작고 반투명한 skip 버튼 필요.
+
+- **(1) AffectionToast 카드 간격 — CSS var `--toast-card-stride`**:
+  - **원인**: `transform: scale(var(--therm-scale))`가 layout 차지 영역 X — 시각 크기는 0.35배지만 카드 누적 px(`idx * 118px`)는 그대로. 가로 412 화면에서 두 번째 카드 right=150, 세 번째 268… 화면 가운데까지 튀어나옴.
+  - **수정**: `src/ui/affection/AffectionToastStack.tsx` line 174 `right` 계산식을 `calc(var(--toast-base-right) + idx * var(--toast-card-stride, ${TOAST_CARD_W + TOAST_GAP}px))`로 변경. `--toast-card-stride` 변수 신규.
+  - **tokens.css**: 가로 모드(`max-height: 480px and orientation: landscape`)에서 `--toast-card-stride: 45px` 박음(기본 118 → 45). 카드 간격이 시각 크기에 맞춰 좁아짐 → 우측 정렬 유지.
+
+- **(2) 챕터 회상 온도계 — CSS var `--recap-therm-scale`**:
+  - **원인**: `ChapterTransitionRecap.tsx:394` inline scale `0.65 / 0.55`가 모든 viewport에 고정. 460px × 0.65 ≈ 299px → 가로 412 화면의 73% 차지 → 상단 요약 해설 텍스트 가림.
+  - **수정**: line 394 inline transform을 `scale(calc(0.65 * var(--recap-therm-scale, 1)))`로, height도 `calc(... * var(--recap-therm-scale, 1))`로 우회. 카드 minWidth도 `var(--recap-card-min-w, 96px)`로 외부화.
+  - **tokens.css**: 가로 모드에서 `--recap-therm-scale: 0.5; --recap-card-min-w: 60px`. 결과 0.65×0.5 = 0.325 → 460×0.325 ≈ 150px(가로 412의 36%) → 상단 해설 노출 보장.
+
+- **(3) OG 이미지 130% 확대**:
+  - **자산**: `public/img/title-og.webp` 재생성. 기존 height-fit 0.42 scale → `0.42 × 1.3 = 0.546` scale로 1500×1500 원본을 819×819로 키워 1200×630 캔버스 중앙 정렬. 상하 (819-630)/2 = 94px씩 잘림(가장자리 장식 제거), 양옆 (1200-819)/2 = 190px씩 핑크(`#FED8E5`) letterbox. 결과 47KB → 56KB. 타이틀 글자가 확연히 크게 — 가장자리 doodle은 덜 보임.
+
+- **(4) VEO + OP skip 버튼**:
+  - **VideoLayer**: 우상단(top:12, right:12) 작은 반투명 버튼 — 11px 폰트, `padding: 4px 10px`, `background: rgba(0,0,0,0.35)`, `border-radius: 999`, `backdrop-filter: blur(2px)`, `opacity: 0.7`(hover 1). 텍스트 "Skip ▶▶".
+  - **노출 시점**: `videoReady=true`(onPlaying 이벤트) + `skipping=false`(중복 클릭 가드)일 때만. 페이드인 끝나야 노출 — 시청 흐름 방해 최소.
+  - **클릭 동작**: 기존 `handleEnded()` 호출. 페이드 아웃 300ms × 12 step 후 `onEnded()` 트리거. 자연 종료와 동일한 시퀀스. `skipping` flag로 자연 종료와 중복 트리거 방지.
+  - **헤더 주석**: "모든 영상은 끝까지 재생" 부분 제거(2026-05-08 PM 결정 무효화). skipable 옵션 정식 재도입 — PM 명시 요구.
+  - **OpeningVideo 동일 패턴 추가**: VEO와 같은 시각·디자인. `data-testid="opening-video-skip"`. 클릭 시 `onCompleteRef.current()` 즉시 호출(OP는 별도 페이드아웃 없이 App.tsx의 `setShowOpening(false)`로 모달 unmount).
+  - **OpeningVideo window-level 이벤트 block 예외**: OP는 capture phase에서 window click을 흡수해 underlying advance 차단하는데, skip 버튼 클릭도 함께 차단되는 문제. block listener에 `e.target.closest('[data-testid="opening-video-skip"]')` 분기 추가 — skip 버튼 또는 그 자손이면 통과.
+
+- **검증** (preview port 5175):
+  - 915×412 가로 모드: `--toast-card-stride: 45px ✓, --recap-therm-scale: 0.5 ✓, --recap-card-min-w: 60px ✓`. 콘솔/서버 에러 0.
+  - 1280×800 데스크톱: 모두 fallback(118px / 1 / 96px) 사용 — PC 회귀 없음 ✓.
+  - OG 이미지: 1200×630, 56KB, 타이틀 819px 확대 + 가운데 정렬 시각 확인 ✓.
+  - VideoLayer skip 버튼: dev 환경에서 VEO 디렉티브 씬(ch01_02_meet_hajeong 등)으로 점프해야 확인. 핵심 로직(useState + onPlaying 노출 + handleEnded 호출 + skipping 가드)는 코드 리뷰로 확인.
+
+- **모듈 (status: review)**:
+  - `src/ui/affection/AffectionToastStack.tsx` (stride CSS var 우회).
+  - `src/ui/ChapterTransitionRecap.tsx` (recap-therm-scale CSS var).
+  - `src/styles/tokens.css` (가로 모드 룰에 stride/recap 변수 추가).
+  - `src/ui/VideoLayer.tsx` (skip 버튼 + skipping 가드).
+  - `src/ui/OpeningVideo.tsx` (skip 버튼 + window block listener 예외).
+  - `public/img/title-og.webp` (130% 확대 재생성).
+
+- **PM 후속**:
+  1. 안드로이드 S22 Ultra 가로 모드 — 호감도 토스트 여러 개 우측 정렬 + 회상 화면 해설 노출 + VEO skip 버튼 동작 시각 확인.
+  2. OG 미리보기 카톡/페북에서 130% 확대 적용 확인 — 캐시 갱신 트릭(디버거 또는 새 메시지 전송) 필요.
+
+- **승인**: PM 직접 (2026-05-11 채팅, 4건 신고).
+
+### 2026-05-11 — 안드로이드 video ▶️ 인디케이터 회귀 차단 (OpeningVideo + VideoLayer 공통)
+
+- **변경 배경**: PM이 직전 모바일 QA 2차 처방(OrientationLock JS 제거 등) 후 실기기 재검증. "VEO를 재생할 때마다 웹 재생 아이콘이 떠"라고 신고. 회전 모드 무관, 모든 video 재생 시점에서 발생. OrientationLock 변경은 이미 JS 의존 0으로 되돌렸으므로 그 자체는 원인이 아니라는 판단.
+- **원인 진단**: 안드로이드 Chrome이 `<video muted playsInline preload="auto">` 조합에서도 일부 OEM(Samsung/저전력/데이터 saver 등)·정책 강화 빌드에서 native ▶️ 인디케이터를 띄움. 차단 시도가 발생하면 video element 위에 OS 레벨 UI라 CSS 오버레이로 못 가림. OpeningVideo는 추가로 `setTimeout 800ms 후 v.play()` 호출이 user gesture 만료 → 차단 가능성 가중.
+- **처방**:
+  - **OpeningVideo.tsx**: `<video>`에 `autoPlay` 속성 명시 추가. 기존 `useEffect` 안의 setTimeout 마지막 step에서 호출하던 `v.play()` 제거 — autoplay가 mount 시점 동기 재생을 보장. 검정 fade 800ms 동안 video가 이미 재생되어 있어도 오버레이가 가리므로 시각적으로 동일.
+  - **VideoLayer.tsx**: 이미 `autoPlay` 있음. cmd 변경 시 `v.currentTime = 0; v.play()` 호출은 유지(rewind 회귀 방지).
+  - **공통**: 두 컴포넌트 모두 useEffect에서 mount 직후 `v.disablePictureInPicture = true; v.disableRemotePlayback = true; v.controlsList = 'nodownload nofullscreen noremoteplayback noplaybackrate';` 박음. native UI(PIP/cast/▶️) 강제 비활성.
+  - **공통 — 방어막**: `<video onPlaying={() => setVideoReady(true)} style={{ opacity: videoReady ? 1 : 0, transition: 'opacity 120ms ease-out' }}>` 패턴. 재생 성공 이벤트 전까지 video opacity 0 → ▶️ 인디케이터까지 함께 가림. 검정 페이드 오버레이는 그대로 video 위에서 작동(z-index 0)이므로 페이드인 의도 유지.
+- **검증** (preview port 5175, 데스크톱):
+  - OpeningVideo 마운트 후 `<video>` 속성 직접 점검: `autoplay: true, muted: true, playsInline: true, disablePictureInPicture: true, disableRemotePlayback: true, controlsList: "nodownload nofullscreen noremoteplayback noplaybackrate", opacity: 1 (onPlaying 후), paused: false, readyState: 4` 모두 정상. ✓
+  - 콘솔/서버 에러 0건.
+  - 안드로이드 실기기 검증은 PM이 별도 — 데스크톱에선 ▶️ 자체 재현 불가.
+- **모듈 (status: review)**:
+  - `src/ui/OpeningVideo.tsx` (autoPlay 속성 + native UI 비활성 + opacity 가림).
+  - `src/ui/VideoLayer.tsx` (native UI 비활성 + opacity 가림).
+- **PM 후속**: 안드로이드 S22 Ultra에서 IntroTyping → OP, 시나리오 중 VEO 디렉티브(예: `ch01_02_meet_hajeong` 인트로 영상) 양쪽 모두 ▶️ 사라졌는지 재검증. 여전하면 디바이스/Chrome 버전별 정책 — 코드 차원 회피 한계.
+- **승인**: PM 직접 (2026-05-11 채팅, 추가 회귀 신고).
+
 ### 2026-05-11 — 실기기 QA 후속 5건 (안드로이드 OP 회귀 회피 / 햄버거 화면 확장 / 폰트 MIN 10 / 가로 모드 / OG 절대 URL)
 
 - **변경 배경**: 직전 라운드 모바일 QA 처방 4건을 안드로이드(S22 Ultra)·아이패드·데스크톱에서 실기기 검증. 5건 신고: (1) 안드로이드에서만 IntroTyping → OpeningVideo 페이드 진입 시 '툭' 사운드 + 커다란 ▶️ 재생 아이콘. PM 판단 "수정 이전으로 돌리는 게 좋아 보임". 회전 모드 무관(portrait/landscape 모두). (2) MiniControls가 시나리오 진행 시에만 떠 — ModeSelect/Gallery에서도 햄버거 형태로. (3) <480px 폰트 더 줄여달라. 기본 14, 슬라이더로 더 줄일 수 있게. (4) 작은 폰 가로 모드(height ≤ 약 480px)에서 호감도 온도계가 화면 거의 가득, ModeSelect 타이틀 납작, 회상에서 다른 UI 가려짐. (5) 카톡/페북 OG 미리보기가 안 뜸.

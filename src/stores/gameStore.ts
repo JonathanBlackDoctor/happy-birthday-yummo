@@ -865,6 +865,30 @@ export const useGameStore = create<GameState>()(
         if (cmd.type === 'BGM' && cmd.track) {
           useMetaStore.getState().unlockBgm(cmd.track);
         }
+        // 2026-05-11 — TRUE 엔딩 도달 시, 시나리오 [CHARACTER]에 박히지 않은 "미사용 스프라이트"만
+        // 보상으로 일괄 해금. 시나리오 보강 없이 갤러리 63/63 도달 가능.
+        // (감사 결과 미사용 14개. yunmo_perv_1은 변태망상 swap으로 렌더는 되지만 unlock 트리거 우회.)
+        if (cmd.type === 'ENDING' && cmd.endingId.endsWith('_TRUE')) {
+          const TRUE_ENDING_UNLOCK: Partial<Record<EndingId, readonly string[]>> = {
+            END_H1_TRUE: ['serin_smile_warm', 'serin_serious', 'serin_surprised'],
+            END_H2_TRUE: ['hajeong_drunk', 'hajeong_panic'],
+            END_H4_TRUE: [
+              'seoyoon_blush',
+              'seoyoon_serious',
+              'seoyoon_thinking',
+              'seoyoon_outfit_school',
+            ],
+            END_H5_TRUE: ['yuna_default', 'yuna_excited', 'yuna_sad', 'yuna_serious'],
+          };
+          const meta = useMetaStore.getState();
+          // yunmo_perv_1: CharacterLayer가 perv_start 동안 yunmo_perv ↔ yunmo_perv_1을 0.5초 swap
+          // 렌더링하지만(CharacterLayer.tsx:168-179, 433-434) CHARACTER 명령은 'perv'만 박혀
+          // unlock 미발화. 임의 TRUE 엔딩 도달 시 보상.
+          meta.unlockSprite('yunmo_perv_1');
+          for (const id of TRUE_ENDING_UNLOCK[cmd.endingId] ?? []) {
+            meta.unlockSprite(id);
+          }
+        }
       },
 
       appendHistory(entry: HistoryEntry) {
@@ -933,7 +957,49 @@ export const useGameStore = create<GameState>()(
         preloadSceneAssets(scene.commands);
         interpreter.seek(slot.currentCommandIndex);
 
-        // 2) 게임 state 복원 — flags/history/현재 위치
+        // 2) 시각 상태 복원 — commands[0..currentCommandIndex-1]를 시각 명령만 재생.
+        // (advance()는 다음 cmd 1개만 실행하므로 그 전까지 깔린 BG/CHARACTER/CG가 유실됨.
+        //  flags/history는 slot에 직접 있고, audio는 slot.audio로 별도 복원되므로
+        //  여기선 시각 명령만 추리고 부수효과 없이 reducer로 합성.)
+        const upto = Math.min(slot.currentCommandIndex, scene.commands.length);
+        let visualBg: RuntimeState['bg'] = { image: null };
+        let visualChars: RuntimeState['characters'] = {};
+        let visualCg: RuntimeState['cg'] = null;
+        for (let i = 0; i < upto; i++) {
+          const c = scene.commands[i];
+          switch (c.type) {
+            case 'BG':
+              if (visualBg.image !== c.image && c.image !== 'black' && c.image !== 'white') {
+                visualBg = { image: c.image };
+                visualChars = {};
+              } else {
+                visualBg = { image: c.image };
+              }
+              break;
+            case 'CHARACTER':
+              visualChars = {
+                ...visualChars,
+                [c.id]: { sprite: c.sprite, position: c.position },
+              };
+              break;
+            case 'CHARACTER_HIDE': {
+              const { [c.id]: _r, ...rest } = visualChars;
+              void _r;
+              visualChars = rest;
+              break;
+            }
+            case 'CG':
+              visualCg = { image: c.image, cgId: c.cgId };
+              break;
+            case 'CG_HIDE':
+              visualCg = null;
+              break;
+            default:
+              break;
+          }
+        }
+
+        // 3) 게임 state 복원 — flags/history/현재 위치 + 재생된 시각 상태
         set((s) => ({
           ...s,
           flags: slot.flags,
@@ -943,17 +1009,17 @@ export const useGameStore = create<GameState>()(
           currentCommand: null,
           currentTextCommandIndex: null,
           textCommandStack: [],
-          runtimeMode: 'scene',
+          runtimeMode: visualCg ? 'cg' : 'scene',
           // UI flag 초기화
           isPauseMenuOpen: false,
           isBacklogOpen: false,
           isGalleryOpen: false,
           saveLoadMode: null,
           isSettingsOpen: false,
-          // 시각 레이어는 advance가 새로 그릴 것 — 깔끔하게 비움
-          bg: { image: null },
-          characters: {},
-          cg: null,
+          // 시각 레이어 — 재생된 결과
+          bg: visualBg,
+          characters: visualChars,
+          cg: visualCg,
           chapterFadeOpacity: 0,
           awaitingChapterAdvance: false,
           _chapterAdvanceResolve: null,

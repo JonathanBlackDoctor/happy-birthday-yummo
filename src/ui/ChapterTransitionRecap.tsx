@@ -387,13 +387,15 @@ export function ChapterTransitionRecap() {
                 : 'rgba(220,220,225,0.7)';
 
           return (
-            <div key={e.target} className="flex flex-col items-center" style={{ minWidth: 96 }}>
+            <div key={e.target} className="flex flex-col items-center" style={{ minWidth: 'var(--recap-card-min-w, 96px)' }}>
               <div
                 style={{
                   opacity: localT > 0 ? 1 : 0,
-                  transform: `scale(${localT > 0 ? 0.65 : 0.55})`,
+                  // 모바일 QA 2026-05-11 4차: 가로 모드 작은 폰에서 460×0.65 ≈ 299px 높이가 412px 화면 거의 가득 차서
+                  // 상단 요약 해설 가림. tokens.css의 `--recap-therm-scale` 변수로 추가 축소(가로 모드 0.5).
+                  transform: `scale(calc(${localT > 0 ? 0.65 : 0.55} * var(--recap-therm-scale, 1)))`,
                   transformOrigin: 'top center',
-                  height: 460 * 0.65,
+                  height: `calc(${460 * 0.65}px * var(--recap-therm-scale, 1))`,
                   transition: 'opacity 250ms ease, transform 250ms ease',
                 }}
               >

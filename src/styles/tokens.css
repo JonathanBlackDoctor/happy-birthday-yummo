@@ -146,6 +146,12 @@
     --therm-scale: 0.35;
     --toast-base-top: 8px;
     --toast-base-right: 12px;
+    /* AffectionToast 카드 간격(stride) — 4차 처방: 시각 크기(0.35)에 맞춰 좁힘.
+       기본 118px → 45px. transform: scale은 layout 안 차지하므로 stride도 별도로 좁혀야 카드끼리 안 벌어짐. */
+    --toast-card-stride: 45px;
+    /* 챕터 회상 온도계 — 4차 처방: 0.65 * 0.5 ≈ 0.325 → 460*0.325 ≈ 150px (가로 412 높이의 36%) — 상단 해설 노출 보장. */
+    --recap-therm-scale: 0.5;
+    --recap-card-min-w: 60px;
     /* 대사창 — 짧은 화면이라 비율을 조금 더 크게 잡되 절대 height 보장 안 함 */
     --textbox-bottom: 8px;
     --textbox-height: 40%;

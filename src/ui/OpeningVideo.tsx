@@ -25,25 +25,32 @@ export function OpeningVideo({ onComplete }: Props) {
   const onCompleteRef = useRef(onComplete);
   onCompleteRef.current = onComplete;
   const [overlayOpacity, setOverlayOpacity] = useState(1);
+  // 모바일 QA 2026-05-11 3차: 안드로이드 Chrome이 autoplay 차단 시도 시 native ▶️ 인디케이터 노출 회귀.
+  // video를 onPlaying 전까지 opacity 0으로 가려 native UI까지 함께 hide.
+  const [videoReady, setVideoReady] = useState(false);
 
   // BGM은 App.tsx의 introCompleted effect 단일 진입점이 책임 (M-009, 2026-05-10).
-  // 과거에 fallback playBgm을 두었더니 IntroTyping 도입 이후 introCompleted 직후
-  // App.tsx와 OpeningVideo 두 곳에서 동시에 playBgm이 호출되며 mp3 로드 전 Howler `_queue`에
-  // fade 액션이 2건 적재 → 첫 fade(0→0.6) 종료 직후 두 번째 fade가 from=0으로 발동해
-  // 볼륨이 즉시 0으로 스냅되고 다시 페이드인되는 wow/cut 회귀가 발생함.
 
   useEffect(() => {
     const v = videoRef.current;
     if (!v) return;
+    // PIP/Remote/Cast 인디케이터 강제 비활성 — 일부 안드로이드 OEM이 ▶️처럼 노출.
+    v.disablePictureInPicture = true;
+    (v as HTMLVideoElement & { disableRemotePlayback?: boolean }).disableRemotePlayback = true;
+    try {
+      (v as HTMLVideoElement & { controlsList?: string }).controlsList = 'nodownload nofullscreen noremoteplayback noplaybackrate';
+    } catch {
+      /* 일부 구형 브라우저 미지원 — 무시 */
+    }
 
+    // 모바일 QA 2026-05-11 3차: setTimeout 800ms 후 play() 호출이 user gesture 만료로 안드로이드에서 차단.
+    // <video autoPlay> 속성으로 변경 — mount 직후 동기 자동재생. 검정 오버레이가 800ms fade 동안 가리므로
+    // 시각적으로는 동일(처음 800ms는 사용자에게 안 보임). play() 명시 호출 제거 → 차단 시도 자체 없음.
     const timers: number[] = [];
     const stepMs = Math.floor(FADE_MS / FADE_STEPS);
     for (let i = 1; i <= FADE_STEPS; i++) {
       const id = window.setTimeout(() => {
         setOverlayOpacity(1 - i / FADE_STEPS);
-        if (i === FADE_STEPS) {
-          void v.play().catch(() => onCompleteRef.current());
-        }
       }, i * stepMs);
       timers.push(id);
     }
@@ -53,10 +60,12 @@ export function OpeningVideo({ onComplete }: Props) {
   // OP 표시 중 모든 click/keydown(Space/Enter)을 capture phase에서 흡수
   // → underlying DialogueBox.handleClick (window keydown bubble handler) 및
   //   SceneRenderer.handleAreaClick으로 흐르는 advance 회귀를 근본 차단.
-  // App.tsx가 showOpening 동안 startScene 보류하므로 이론상 underlying handler는 없지만,
-  // 자동저장 복원 race나 향후 흐름 변경에도 견고하도록 OP 자체에 방어막 명시.
+  // 예외: skip 버튼([data-testid="opening-video-skip"]) 클릭은 통과 (4차 처방).
   useEffect(() => {
     const block = (e: Event) => {
+      if (e.type === 'click' && e.target instanceof HTMLElement && e.target.closest('[data-testid="opening-video-skip"]')) {
+        return; // skip 버튼은 정상 클릭 흐름 보장
+      }
       if (e.type === 'keydown') {
         const ke = e as KeyboardEvent;
         if (ke.code !== 'Space' && ke.code !== 'Enter' && ke.code !== 'Backspace') return;
@@ -83,9 +92,11 @@ export function OpeningVideo({ onComplete }: Props) {
       <video
         ref={videoRef}
         src="video/video_opening.mp4"
+        autoPlay
         muted
         playsInline
         preload="auto"
+        onPlaying={() => setVideoReady(true)}
         onEnded={() => onCompleteRef.current()}
         onError={() => {
           // eslint-disable-next-line no-console
@@ -93,6 +104,7 @@ export function OpeningVideo({ onComplete }: Props) {
           onCompleteRef.current();
         }}
         className="w-full h-full object-cover"
+        style={{ opacity: videoReady ? 1 : 0, transition: 'opacity 120ms ease-out' }}
       />
       <div
         aria-hidden="true"
@@ -104,6 +116,38 @@ export function OpeningVideo({ onComplete }: Props) {
           opacity: overlayOpacity,
         }}
       />
+      {/* Skip 버튼 — 모바일 QA 2026-05-11 4차. 페이드인 끝(videoReady)부터 노출, 클릭 시 onComplete 즉시 호출.
+          OP는 SceneRenderer 미진입 상태라 별도 페이드아웃 없이 바로 onComplete → App.tsx가 showOpening false 처리. */}
+      {videoReady && (
+        <button
+          type="button"
+          onClick={() => onCompleteRef.current()}
+          aria-label="오프닝 영상 건너뛰기"
+          data-testid="opening-video-skip"
+          style={{
+            position: 'absolute',
+            top: 12,
+            right: 12,
+            padding: '4px 10px',
+            fontSize: 11,
+            fontWeight: 600,
+            letterSpacing: 0.4,
+            color: 'rgba(255, 255, 255, 0.85)',
+            background: 'rgba(0, 0, 0, 0.35)',
+            border: '1px solid rgba(255, 255, 255, 0.25)',
+            borderRadius: 999,
+            backdropFilter: 'blur(2px)',
+            cursor: 'pointer',
+            opacity: 0.7,
+            transition: 'opacity 150ms ease',
+            zIndex: 1,
+          }}
+          onMouseEnter={(e) => (e.currentTarget.style.opacity = '1')}
+          onMouseLeave={(e) => (e.currentTarget.style.opacity = '0.7')}
+        >
+          Skip ▶▶
+        </button>
+      )}
     </div>
   );
 }
