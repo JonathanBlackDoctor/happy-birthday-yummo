@@ -16,6 +16,38 @@
 
 ## 이력
 
+### 2026-05-11 — RELEASE-RUNBOOK 신설 + DEPLOYMENT 운영/스펙 역할 분리
+
+- **변경**: 베타 첫 푸시 라운드(2026-05-11)에서 회고한 4종 함정 + 사전 점검 + 푸시 후 검증을 [`08-qa-deployment/RELEASE-RUNBOOK.md`](../08-qa-deployment/RELEASE-RUNBOOK.md) 단일 문서로 정착. DEPLOYMENT.md는 인프라 스펙으로 남고, RUNBOOK은 PM이 푸시 직전·직후 차례로 통과해야 할 체크리스트로 역할 분리.
+- **RELEASE-RUNBOOK 구조 (7 절)**:
+  - §0 SSoT 위치 — vite.config / 워크플로우 / helpers / playwright / build-manifest / compile-scene / .gitignore
+  - §1 사전 점검 8단계 — 자산 경로 grep / 워크플로우 grep / typecheck·lint·test / compile:all + validate / manifest / build / preview 자산 200 OK / e2e 로컬 (선택)
+  - §2 푸시 절차 — 정상 / hang 처방 / 인증 실패 처방
+  - §3 푸시 후 검증 — Actions 모니터링 / 라이브 자산 8종 200 OK / PM 실기 게이트
+  - §4 알려진 회귀 함정 4종 — 절대 자산경로 / E2E cold-cache race / ESLint scripts / 워크플로우 working-directory
+  - §5 정식 출시 시 추가 점검 — 새 repo / 상대경로 호환 / localStorage 키 보존 / 커스텀 도메인
+  - §6 빠른 푸시 체크리스트 (1줄 요약 8줄)
+  - §7 변경 이력
+- **함정 4종 상세 (RUNBOOK §4)**:
+  - **§4.1 자산 절대경로** — `/img/`, `/snd/`, `/video/` → `img/`, `snd/`, `video/` 일괄 치환 PowerShell 패턴 박힘. 본 라운드 처방 사례 인용.
+  - **§4.2 E2E cold-cache idle race** — `helpers.ts:autoAdvanceUntilEnding` 진입 직후 30s idle 대기 가드 처방. timeout 상향(옵션 C 30분)은 증상 가림이라 폐기 결정.
+  - **§4.3 ESLint scripts 에러** — `scripts/` 미사용 변수 → `_` prefix / `let` → `const` / `[+\-]` → `[+-]` 등 8건 처방 패턴.
+  - **§4.4 워크플로우 옵션 A 위반** — `working-directory: game-project` + `cache-dependency-path: game-project/...` + 아티팩트 `path: game-project/...` 박혀 있으면 옵션 B로 추정. 옵션 A는 모두 미지정 또는 `game-project/` prefix 없음.
+- **수정 3건**:
+  - `08-qa-deployment/RELEASE-RUNBOOK.md` 신설 (200줄+ runbook)
+  - `08-qa-deployment/DEPLOYMENT.md` 본문 첫 줄에 RELEASE-RUNBOOK 크로스레퍼런스 추가 (인프라 스펙 vs 운영 RUNBOOK 역할 분리 명시)
+  - 본 CHANGELOG 엔트리
+- **모듈** (status: review): `08-qa-deployment/RELEASE-RUNBOOK.md` · `08-qa-deployment/DEPLOYMENT.md`.
+- **사유**: PM 요청 "정식 버전과 다음 베타 버전 푸시 시에도 이런 곤란함을 겪지 않도록 로그를 잘 작성해". 본 라운드 4종 함정이 다음 베타 푸시·정식 출시 푸시에서 재발할 가능성 큰 운영 함정이라 단일 체크리스트로 정착.
+- **승인**: PM 구두 (2026-05-11).
+
+### 2026-05-11 — 카톡/대사 타이밍 완화 + 카톡 자동 진행 settings 분리 + 히로인/일반 분리
+
+- **변경**: (1) `KAKAO_ACCEL_COOLDOWN_MS` 600→300ms, (2) 카톡 메시지 자동 흐름 간격을 `settingsStore.autoAdvanceDelay`에서 분리 → `KAKAO_AUTO_ADVANCE_MS=1000ms`(일반) + `KAKAO_AUTO_ADVANCE_HEROINE_MS=1500ms`(히로인 참여 카톡)로 이원화 (기존 `PER_MESSAGE_DELAY_DEFAULT_MS=800` 폐기). 히로인 여부는 `kakaoCmd.messages` sender 중 `nameToHeroineId(...) !== null` 검사. 자동재생 ON 분기는 그대로 `autoAdvanceDelay` 사용 유지. (3) `USER_ADVANCE_COOLDOWN_MS` 600→400ms.
+- **모듈**: `06-engine` (`src/ui/katalk/KakaoModal.tsx`, `src/stores/gameStore.ts`)
+- **사유**: PM 플레이 결과 카톡 클릭 씹힘·자동 진행 너무 느림(2000ms)·일반 대사 클릭 답답함. 카톡 자동 흐름은 좌하단 "자동재생" 슬라이더와 의미가 달라(카톡은 자동재생 OFF여도 톡톡 흐름 필요) 상수 분리. 히로인 카톡은 진지함·여운 유지를 위해 일반 친구 단톡보다 호흡을 길게.
+- **승인**: PM (커밋 해시 TBD)
+
 ### 2026-05-11 — 자산 경로 절대→상대 일괄 전환 (GitHub Pages 서브패스 호환)
 
 - **변경 사실**: PM 라이브 사이트 보고 — UI/text는 정상 보이지만 모든 자산(이미지/사운드/영상) 미로드. 진단: `vite.config.ts base: './'` 자체는 정상이지만 코드 안의 절대경로 `/img/`, `/snd/`, `/video/`가 GitHub Pages 서브패스(`/Cuyeonsi-beta/`)에서 `https://jonathanblackdoctor.github.io/img/...` 로 잘못 해석되어 404. 처방: 모든 자산 경로에서 leading `/` 제거 → 상대경로화. 브라우저가 document URL(`/Cuyeonsi-beta/`) 기준으로 해석 → `/Cuyeonsi-beta/img/...` ✓ 정상 로드.

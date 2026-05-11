@@ -13,6 +13,8 @@ status: review
 
 # 08-qa-deployment/DEPLOYMENT.md
 
+> **운영 절차**: 푸시 전 사전 점검 + 푸시 후 검증 + 알려진 회귀 함정은 [`RELEASE-RUNBOOK.md`](./RELEASE-RUNBOOK.md) 참조 (2026-05-11 베타 첫 푸시 회고 결과 정착). 본 문서는 인프라 스펙, RUNBOOK은 운영 체크리스트로 역할 분리.
+
 ## 1. 배포 환경
 
 - **호스팅**: GitHub Pages (무료, 정적 호스팅)
