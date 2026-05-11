@@ -16,7 +16,7 @@ import { OpeningVideo } from '@/ui/OpeningVideo';
 import { ModeSelect } from '@/ui/ModeSelect';
 import { IntroTyping } from '@/ui/IntroTyping';
 import { useGameStore } from '@/stores/gameStore';
-import { useSettingsStore } from '@/stores/settingsStore';
+import { useSettingsStore, FONT_SIZE_DEFAULT } from '@/stores/settingsStore';
 import { audioManager } from '@/engine/audioManager';
 import { resolveEntryScene } from '@/scenes/manifest';
 import { DevTools } from '@/ui/dev/DevTools';
@@ -96,15 +96,23 @@ export default function App() {
     applyTestFlagsFromUrl();
   }, []);
 
-  // 폰트 크기 CSS var 동기화 — 12~22px 슬라이더 변경 시 즉시 반영 (W5 메뉴 사이클 라운드 2026-05-09).
-  // tokens.css 기본 26px(데스크톱) / 22px(모바일)이지만 사용자 설정이 우선.
-  // 명/대사 비율 유지 위해 --font-size-name = fontSize + 2 (tokens.css 26/28 비율 미러).
+  // 폰트 크기 CSS var 동기화 — 슬라이더 변경 시 즉시 반영.
+  // 기본값(26)일 때는 inline 제거 → tokens.css 미디어 쿼리(데스크톱 26 / ≤768px 22 / ≤480px 19)가 자연스럽게 적용.
+  // 모바일 QA 2026-05-11 처방: 이전엔 inline이 항상 26을 박아 모바일 룰을 덮었음.
+  // 사용자가 슬라이더를 만지면 그 값이 모든 viewport에서 우선.
   const fontSize = useSettingsStore((s) => s.fontSize);
   useEffect(() => {
     if (typeof document === 'undefined') return;
-    document.documentElement.style.setProperty('--font-size-text', `${fontSize}px`);
-    document.documentElement.style.setProperty('--font-size-name', `${fontSize + 2}px`);
-    document.documentElement.style.setProperty('--font-size-monologue', `${fontSize - 1}px`);
+    const root = document.documentElement;
+    if (fontSize === FONT_SIZE_DEFAULT) {
+      root.style.removeProperty('--font-size-text');
+      root.style.removeProperty('--font-size-name');
+      root.style.removeProperty('--font-size-monologue');
+      return;
+    }
+    root.style.setProperty('--font-size-text', `${fontSize}px`);
+    root.style.setProperty('--font-size-name', `${fontSize + 2}px`);
+    root.style.setProperty('--font-size-monologue', `${fontSize - 1}px`);
   }, [fontSize]);
 
   // 음소거 동기화 — settingsStore.muted 변동 시 audioManager에 즉시 반영.

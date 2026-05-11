@@ -20,7 +20,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useGameStore } from '@/stores/gameStore';
 import { useSettingsStore } from '@/stores/settingsStore';
-import { HEROINES } from '@/data/characters';
+import { HEROINES, nameToHeroineId } from '@/data/characters';
 import type { HeroineId, SceneCommand } from '@/engine/types';
 import { isHeroineId } from '@/data/characters';
 import { KakaoMessage } from './KakaoMessage';
@@ -30,12 +30,14 @@ import { deriveKakaoMeta } from '@/engine/kakaoMeta';
 import { isSelfSender } from '@/data/kakaoProfiles';
 
 /**
- * 카톡 메시지 자동 흐름 기본 지연. settingsStore.autoAdvanceDelay가 우선이지만
- * 폴백 값으로 사용 (자연스러운 톡톡 호흡).
+ * 카톡 메시지 자동 흐름 간격. 일반 대사 자동재생 슬라이더(autoAdvanceDelay)와 분리됨 —
+ * 자동재생 OFF여도 카톡은 항상 이 간격으로 톡톡 진행 (카톡 UX의 핵심 호흡).
+ * 히로인 참여 카톡은 더 긴 호흡(HEROINE)으로 적용 — 진지함·여운 유지.
  */
-const PER_MESSAGE_DELAY_DEFAULT_MS = 800;
-/** 카톡 클릭 가속 cooldown — gameStore.USER_ADVANCE_COOLDOWN_MS와 동일 톤. */
-const KAKAO_ACCEL_COOLDOWN_MS = 600;
+const KAKAO_AUTO_ADVANCE_MS = 1000;
+const KAKAO_AUTO_ADVANCE_HEROINE_MS = 1500;
+/** 카톡 클릭 가속 cooldown — 카톡 전용 톤(일반 대사 USER_ADVANCE_COOLDOWN_MS와 별개). */
+const KAKAO_ACCEL_COOLDOWN_MS = 300;
 
 /** 머뭇거림 시퀀스 타이밍 (KAKAO.hesitate=true일 때) — 매 메시지 등장 직전 적용. */
 const HESITATE_TYPING_1_MS = 1000;
@@ -103,6 +105,12 @@ export function KakaoModal() {
     return { t1, tp, t2, hasSequence: t1 > 0 || tp > 0 || t2 > 0 };
   }, [kakaoCmd, revealed, total, hesitate]);
 
+  // 히로인 참여 카톡 여부 — 발신자 중 한 명이라도 히로인이면 true. 자동 흐름 간격 결정에 사용.
+  const isHeroineKakao = useMemo(() => {
+    if (!kakaoCmd) return false;
+    return kakaoCmd.messages.some((m) => nameToHeroineId(m.sender) !== null);
+  }, [kakaoCmd]);
+
   // KAKAO 명령 바뀌면 상태 리셋. 첫 메시지에 머뭇거림 단계가 있으면 0부터 시작.
   useEffect(() => {
     if (!kakaoCmd) return;
@@ -113,16 +121,17 @@ export function KakaoModal() {
   }, [cmd, hesitate, kakaoCmd]);
 
   // 자동 흐름:
-  //  - 시퀀스 없음: settingsStore.autoAdvanceDelay 또는 PER_MESSAGE_DELAY_DEFAULT_MS 후 메시지 +1.
+  //  - 시퀀스 없음: KAKAO_AUTO_ADVANCE_MS 후 메시지 +1.
   //  - 시퀀스 있음: 메시지별 (typing-1 → pause → typing-2) 단계, 0인 단계는 스킵.
-  // 2026-05-10 PM 정정: 카톡도 사용자 자동진행 지연 설정을 따르게 함 (이전엔 800ms 하드코드).
+  // 2026-05-11 PM 정정: settingsStore.autoAdvanceDelay 의존 제거 → 카톡 전용 상수로 분리
+  //   (자동재생 OFF여도 카톡은 톡톡 진행되는 게 카톡 UX의 핵심). 자동재생 ON 분기는 아래 유지.
   const autoAdvanceDelay = useSettingsStore((s) => s.autoAdvanceDelay);
   useEffect(() => {
     if (!isKakao || allShown || !nextMsgSeq) return;
     const { t1, tp, t2, hasSequence } = nextMsgSeq;
 
     if (!hasSequence) {
-      const delay = autoAdvanceDelay > 0 ? autoAdvanceDelay : PER_MESSAGE_DELAY_DEFAULT_MS;
+      const delay = isHeroineKakao ? KAKAO_AUTO_ADVANCE_HEROINE_MS : KAKAO_AUTO_ADVANCE_MS;
       const t = setTimeout(() => setRevealed((n) => Math.min(n + 1, total)), delay);
       return () => clearTimeout(t);
     }
@@ -162,7 +171,7 @@ export function KakaoModal() {
       setHesitatePhase('idle');
     }, t2);
     return () => clearTimeout(t);
-  }, [revealed, total, allShown, isKakao, hesitatePhase, nextMsgSeq, autoAdvanceDelay]);
+  }, [revealed, total, allShown, isKakao, hesitatePhase, nextMsgSeq, isHeroineKakao]);
 
   // 호감도 디케이: 메시지 자동 흐름 완료 + affectionDecay 박힌 경우 1초당 -perSecond.
   // applyCommand(FLAG_INC)는 currentCommand를 덮어 KakaoModal 자체가 cmd를 잃기 때문에

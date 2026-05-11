@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>구연시 랭킹 관리</title>
+<style>
+  body { font-family: system-ui, -apple-system, sans-serif; max-width: 960px; margin: 24px auto; padding: 0 16px; background: #1f1822; color: #f8f4f8; line-height: 1.5; }
+  h1 { font-size: 22px; margin-bottom: 4px; }
+  p.note { opacity: 0.7; font-size: 13px; margin-top: 0; }
+  .row { display: flex; gap: 8px; align-items: center; margin: 12px 0; flex-wrap: wrap; }
+  input[type=text] { flex: 1; min-width: 280px; padding: 10px; background: rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.28); color: inherit; border-radius: 6px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; }
+  button { padding: 10px 16px; background: #6b3f7a; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 14px; font-weight: 600; }
+  button:hover:not(:disabled) { background: #815098; }
+  button:disabled { opacity: 0.5; cursor: not-allowed; }
+  button.danger { background: #a04040; }
+  button.danger:hover:not(:disabled) { background: #c25252; }
+  button.small { padding: 4px 10px; font-size: 12px; font-weight: 500; }
+  table { width: 100%; border-collapse: collapse; margin-top: 12px; background: rgba(0,0,0,0.18); border-radius: 6px; overflow: hidden; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  th { background: rgba(255,255,255,0.06); font-size: 12px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; opacity: 0.85; }
+  td { font-size: 13px; }
+  td.num { text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; }
+  tr:hover td { background: rgba(255,255,255,0.04); }
+  .status { padding: 10px 12px; margin: 12px 0; border-radius: 6px; font-size: 13px; min-height: 18px; }
+  .status:empty { display: none; }
+  .status.ok { background: rgba(120,200,120,0.18); border: 1px solid rgba(120,200,120,0.4); }
+  .status.err { background: rgba(255,120,120,0.18); border: 1px solid rgba(255,120,120,0.4); }
+  details { margin-top: 32px; }
+  summary { cursor: pointer; opacity: 0.8; padding: 8px 0; }
+  textarea { width: 100%; height: 240px; font-family: ui-monospace, monospace; font-size: 11px; background: rgba(0,0,0,0.4); color: inherit; border: 1px solid rgba(255,255,255,0.18); border-radius: 6px; padding: 10px; box-sizing: border-box; margin-top: 8px; }
+</style>
+</head>
+<body>
+  <h1>구연시 랭킹 관리</h1>
+  <p class="note">Pantry ID 붙이고 "불러오기" → 표로 보임. 행마다 [삭제], 맨 아래 [전체 비우기]. 변경 즉시 Pantry 저장(되돌리기 X). ID는 이 브라우저에만 저장됨.</p>
+
+  <div class="row">
+    <input id="pid" type="text" placeholder="Pantry ID (UUID 36자)" autocomplete="off" />
+    <button id="load">불러오기</button>
+  </div>
+
+  <div id="status" class="status"></div>
+
+  <table id="tbl" hidden>
+    <thead>
+      <tr>
+        <th style="width:40px">#</th>
+        <th>닉네임</th>
+        <th>엔딩 ID</th>
+        <th class="num">점수</th>
+        <th>등급</th>
+        <th>등록 시각</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+  </table>
+
+  <div class="row" id="bottomRow" hidden>
+    <button id="wipe" class="danger">⚠️ 전체 비우기</button>
+  </div>
+
+  <details>
+    <summary>원본 JSON (백업·직접 편집)</summary>
+    <textarea id="raw" placeholder="(불러오기 후 자동 채워짐. 직접 수정 후 '원본 저장' 가능.)"></textarea>
+    <div class="row">
+      <button id="rawSave" class="danger">원본 저장 (위험: 형식 잘못되면 데이터 깨짐)</button>
+    </div>
+  </details>
+
+<script>
+const BASE = 'https://getpantry.cloud/apiv1/pantry';
+const BASKET = 'kmu-vn-ranking';
+const LS_KEY = 'kmu-vn-admin-pid';
+
+const $ = (id) => document.getElementById(id);
+const pid = $('pid');
+const status = $('status');
+const tbl = $('tbl');
+const tbody = $('tbody');
+const raw = $('raw');
+const bottomRow = $('bottomRow');
+
+pid.value = localStorage.getItem(LS_KEY) || '';
+
+function setStatus(msg, kind) {
+  status.className = 'status ' + (kind || '');
+  status.textContent = msg || '';
+}
+
+function escapeHtml(s) {
+  return String(s ?? '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+async function loadEntries() {
+  const id = pid.value.trim();
+  if (!id) { setStatus('Pantry ID 입력 필요', 'err'); return; }
+  localStorage.setItem(LS_KEY, id);
+  setStatus('불러오는 중...', '');
+  try {
+    const res = await fetch(`${BASE}/${id}/basket/${BASKET}`, { cache: 'no-store' });
+    if (res.status === 400) {
+      render([]);
+      raw.value = '{"entries":[]}';
+      setStatus('basket 비어있음 (entries 없음).', 'ok');
+      return;
+    }
+    if (!res.ok) {
+      const body = await res.text().catch(() => '');
+      setStatus(`불러오기 실패 ${res.status}: ${body.slice(0, 200)}`, 'err');
+      return;
+    }
+    const json = await res.json();
+    const entries = Array.isArray(json?.entries) ? json.entries : [];
+    render(entries);
+    raw.value = JSON.stringify(json, null, 2);
+    setStatus(`${entries.length}개 entries 불러옴.`, 'ok');
+  } catch (e) {
+    setStatus('네트워크 오류: ' + e.message, 'err');
+  }
+}
+
+async function saveEntries(entries) {
+  const id = pid.value.trim();
+  if (!id) throw new Error('Pantry ID 없음');
+  const res = await fetch(`${BASE}/${id}/basket/${BASKET}`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ entries }),
+  });
+  if (!res.ok) {
+    const body = await res.text().catch(() => '');
+    throw new Error(`save ${res.status}: ${body.slice(0, 200)}`);
+  }
+}
+
+function render(entries) {
+  entries.sort((a, b) => (b.finalScore || 0) - (a.finalScore || 0));
+  tbody.innerHTML = entries.map((e, i) => `
+    <tr>
+      <td>${i + 1}</td>
+      <td><strong>${escapeHtml(e.nickname)}</strong></td>
+      <td style="font-family: ui-monospace, monospace; font-size: 11px; opacity: 0.85;">${escapeHtml(e.endingId)}</td>
+      <td class="num">${e.finalScore}</td>
+      <td>${escapeHtml(e.grade)}</td>
+      <td style="font-size:11px;opacity:0.7">${escapeHtml((e.timestamp || '').replace('T', ' ').replace(/\..*$/, ''))}</td>
+      <td><button class="small danger" data-idx="${i}">삭제</button></td>
+    </tr>
+  `).join('');
+  tbl.hidden = entries.length === 0;
+  bottomRow.hidden = entries.length === 0;
+  window.__entries = entries;
+}
+
+$('load').addEventListener('click', loadEntries);
+
+tbody.addEventListener('click', async (ev) => {
+  const btn = ev.target.closest('button[data-idx]');
+  if (!btn) return;
+  const idx = Number(btn.dataset.idx);
+  const e = window.__entries[idx];
+  if (!confirm(`"${e.nickname}" (${e.finalScore}점, ${e.endingId}) 삭제할까?`)) return;
+  const next = window.__entries.filter((_, i) => i !== idx);
+  setStatus('삭제 저장 중...', '');
+  try {
+    await saveEntries(next);
+    render(next);
+    raw.value = JSON.stringify({ entries: next }, null, 2);
+    setStatus(`삭제 완료. (${next.length}개 남음)`, 'ok');
+  } catch (err) {
+    setStatus(err.message, 'err');
+  }
+});
+
+$('wipe').addEventListener('click', async () => {
+  if (!confirm('정말로 전체 entries 비울까? 되돌리기 불가.')) return;
+  setStatus('비우는 중...', '');
+  try {
+    await saveEntries([]);
+    render([]);
+    raw.value = '{"entries":[]}';
+    setStatus('전체 비움 완료.', 'ok');
+  } catch (err) {
+    setStatus(err.message, 'err');
+  }
+});
+
+$('rawSave').addEventListener('click', async () => {
+  let parsed;
+  try { parsed = JSON.parse(raw.value); }
+  catch (e) { setStatus('JSON 파싱 실패: ' + e.message, 'err'); return; }
+  const entries = Array.isArray(parsed?.entries) ? parsed.entries : null;
+  if (!entries) { setStatus('형식 오류: { "entries": [...] } 형태가 아님', 'err'); return; }
+  if (!confirm(`${entries.length}개 entries로 덮어쓸까? 되돌리기 불가.`)) return;
+  setStatus('저장 중...', '');
+  try {
+    await saveEntries(entries);
+    render(entries);
+    setStatus('원본 저장 완료.', 'ok');
+  } catch (err) {
+    setStatus(err.message, 'err');
+  }
+});
+
+pid.addEventListener('keydown', (e) => { if (e.key === 'Enter') loadEntries(); });
+
+if (pid.value) loadEntries();
+</script>
+</body>
+</html>

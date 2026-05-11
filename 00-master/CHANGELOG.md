@@ -16,6 +16,98 @@
 
 ## 이력
 
+### 2026-05-11 — 모바일 QA 처방 4건 (OG 썸네일 / portrait 토스트 / 전체화면 버튼 / 480px 비율)
+
+- **변경 배경**: PM이 안드로이드 S22 Ultra + 아이패드 + 데스크톱에서 모바일 QA. 4건 신고: (1) 공유 링크 카톡 썸네일이 절반만 보임 (2) 세로 모드에서 "가로로 회전" 풀스크린 락이 답답 — 진행은 되되 추천만 (3) 모바일 브라우저 UI가 게임 가림 — 전체화면 버튼 필요 (4) S22 Ultra(412×915) 같은 작은 폰에서 대사창/온도계 비율 깨짐 (아이패드는 OK). PM AskUserQuestion 4개 결정: (1) OG 1200×630 별도 자산 + 메타 (2) 세션 첫 진입 1회만 2초 토스트 (3) MiniControls에 별도 버튼 (4) 480px 전용 브레이크포인트 추가.
+
+- **(1) OG 썸네일 — 1.91:1 분리 자산**:
+  - **신규 자산**: `public/img/title-og.webp` (1200×630, 47KB, RGB). 기존 1500×1500 정사각 `title.webp`를 height-fit으로 630에 맞춰 가운데 배치 + 좌우 `#FED8E5` 핑크 letterbox. 카톡/페북이 1.91:1로 crop해도 잘림 없음. (PIL `Image.LANCZOS` 리샘플 + `quality=88, method=6`)
+  - **수정**: `index.html` line 23·29 `og:image` / `twitter:image` → `./img/title-og.webp`. line 24 직상에 `og:image:width=1200 / height=630 / type=image/webp` 명시.
+  - 게임 내 `title.webp`(시작 화면 등)는 그대로 유지 — OG 전용 자산 분리.
+
+- **(2) Portrait — 풀스크린 락 → 2초 토스트로 전환**:
+  - **수정**: `src/ui/OrientationLock.tsx` 전면 재작성. CSS 미디어 쿼리(`pointer:coarse + portrait`) 기반 풀스크린 불투명 오버레이 → JS state(`useState` + `matchMedia` 구독) + `sessionStorage` 플래그(`kmu-portrait-toast-shown`) 기반. 세션당 1회만 "가로 버전 플레이를 추천합니다" 2초 노출 후 자동 페이드아웃. 새로고침 시 sessionStorage 리셋되어 다시 한 번 노출.
+  - **CSS**: `src/styles/globals.css` `.orientation-lock-overlay` 풀스크린(`inset: 0`, 불투명 검정 96%) → 상단 토스트(`top: 16px; left: 50%; transform: translateX(-50%)`, 92% 어두운 배경 + 보더 라운드 12px + 그림자). `pointer-events: none` 추가 — **세로에서도 게임 입력 차단 X**. `@media (pointer:coarse) and (orientation:portrait) { display: flex }` 룰 제거 (이제 JS가 가시성 결정). 페이드 인 `@keyframes orientation-toast-in` 200ms.
+  - `.orientation-lock-sub` 서브 텍스트("게임이 일시정지됩니다") 제거 — 더 이상 일시정지 X.
+
+- **(3) 전체화면 버튼 — MiniControls 인라인**:
+  - **수정**: `src/ui/MiniControls.tsx` 파일 내 인라인 `FullscreenButton` 컴포넌트 추가. `document.documentElement.requestFullscreen({ navigationUI: 'hide' })` / `document.exitFullscreen()` 토글. `fullscreenchange` 이벤트 구독으로 아이콘 동기화(⛶ ↔ 🗗) + `aria-label` 동적("전체화면 진입"/"전체화면 종료") + `aria-pressed`.
+  - **iPhone Safari 분기**: `typeof document.documentElement.requestFullscreen === 'function'` 체크 → `supported=false` 시 `return null` (버튼 자체 미렌더).
+  - **배치**: PC 분기(우하단 가로 일렬) + 모바일 분기(우상단 햄버거 토글 메뉴) **양쪽에 SettingsButton/MuteToggle 앞에** 추가. 기존 `BTN_CLASS` 그대로 사용해 디자인 톤 통일.
+  - SFX: 토글 시 `audioManager.playSfx('sfx_pageturn', { volume: 0.7 })` — 다른 메뉴 버튼 패턴 미러. ESC는 브라우저 기본 동작이라 별도 핸들러 X.
+
+- **(4) 480px 전용 브레이크포인트 — 작은 폰 비율 회복**:
+  - **수정**: `src/styles/tokens.css` 기존 768px 룰 *유지*(중형 폰·소형 태블릿 검증값 회귀 방지), 그 아래 `@media (max-width: 480px)` 블록 신규 추가. cascade로 ≤480px만 추가 축소:
+    - `--textbox-bottom: 16px / --textbox-width: 94% / --textbox-height: 28%` (768 38% → 28%) — 화면 1/3 이상 차지 문제 해결, 캐릭터 가림 회복.
+    - `--textbox-padding: 14px 18px`
+    - `--font-size-text: 19px / --font-size-name: 21px / --font-size-monologue: 18px` (768 22/24/21 → 19/21/18)
+    - `--therm-scale: 0.55` (768 0.75 → 0.55) — 온도계 점유율 추가 축소.
+  - **부수 수정 — App.tsx 폰트 inline 가드**: `src/App.tsx` line 99 `fontSize` CSS var 동기화 effect가 사용자 설정 안 만진 기본값(26)에서도 inline `--font-size-text: 26px`를 박아넣어 tokens.css 미디어 쿼리(22/19)를 항상 덮던 문제 발견. `fontSize === FONT_SIZE_DEFAULT`일 때 `removeProperty` 분기 추가 → tokens.css 룰이 자연스럽게 적용. 슬라이더로 명시 변경 시에만 inline 우선. `import { FONT_SIZE_DEFAULT } from '@/stores/settingsStore'` 추가.
+
+- **검증** (preview port 5175 dev):
+  - 1280×800 데스크톱: `--textbox-height: 22%`, `--font-size-text: 26px`, `--therm-scale: 1` (PC 기본값 그대로). PC 분기 `[data-testid="fullscreen-button"]` 노출 `⛶`.
+  - 600×900 (480<x≤768): `38% / 22px / 0.75` (기존 768 룰 회귀 0).
+  - 412×915 S22 Ultra: `28% / 19px / 0.55` ✓. 햄버거 ☰ 클릭 → 메뉴 안 `⛶` 노출(`aria-label="전체화면 진입"`).
+  - 콘솔/서버 에러 0건.
+  - OrientationLock JS는 `(pointer:coarse) + portrait` 매칭 시점만 동작 — 데스크톱 Chrome은 `pointer:fine`이라 미발현(정상). 실기기 검증은 PM이 안드로이드/iOS에서 별도.
+
+- **모듈 (status: review)**:
+  - `index.html` (OG/Twitter 메타).
+  - `src/ui/OrientationLock.tsx` (전면 재작성).
+  - `src/styles/globals.css` (orientation-lock 스타일).
+  - `src/styles/tokens.css` (480px 룰 추가).
+  - `src/ui/MiniControls.tsx` (FullscreenButton).
+  - `src/App.tsx` (fontSize inline 가드).
+  - `public/img/title-og.webp` (신규 자산).
+
+- **PM 후속**:
+  1. 실기기 검증 — 안드로이드 S22 Ultra + 아이폰 Safari(버튼 숨김 확인) + 아이패드 Safari.
+  2. 배포 후 페북 [Sharing Debugger](https://developers.facebook.com/tools/debug/) + 카톡 본인톡 전송으로 OG 1.91:1 정상 노출 확인.
+
+- **승인**: PM 직접 (2026-05-11 채팅, AskUserQuestion 4건 + ExitPlanMode 승인 + 자산 색상 `#FFE4EC` → `#FED8E5` 정정).
+
+### 2026-05-11 — 랭킹 모달 1위 포디움 상단 잘림 후속 정정
+
+- **변경**: 직전 라운드(랭킹 UI 전면 리디자인) PM 시각 검수에서 1위 포디움 카드 윗부분이 살짝 잘림 신고. 원인 = `PodiumCard.style.transform: translateY(-12px)` 가 1위 카드를 위로 들어 올리는데 부모(스크롤 영역) 상단 경계가 그 lift 공간을 안 줘서 12px 분 잘림.
+- **수정 1줄**: `src/ui/RankingModal.tsx` `Podium` 래퍼 div 에 `style={{ paddingTop: 14 }}` 추가. translateY(-12px) lift + 2px 버퍼 확보.
+- **검증**: 라이브 DOM 측정 — `podium-1` getBoundingClientRect.top = 315, `ranking-list` 스크롤 영역 top = 313 → top 2px 안쪽 정상, clippedTop=false. ✓
+- **모듈** (status: review): `src/ui/RankingModal.tsx`.
+- **사유**: PM 시각 신고 — "1등 포디움 윗부분이 잘림".
+- **승인**: PM 직접 (2026-05-11 채팅).
+
+### 2026-05-11 — 랭킹 UI 전면 리디자인 (인라인 → 풀스크린 모달 + 포디움 + 등급 칩 + sticky 본인 위치)
+
+- **변경**: 어제~오늘 도입한 랭킹 시스템 UI 전면 재설계. 인라인 form 스타일(EndingScreen 하단 박혀 있음) → 풀스크린 모달 분리. PM이 AskUserQuestion으로 4개 결정 일괄 답변 (전면 리디자인 + 모달 분리 + 포디움 + 색 칩 + UX 4종 모두). 게임 메인 보라/금색 톤 살리고 정보 가독성도 끌어올림.
+- **신규 1건**: `src/ui/RankingModal.tsx` (~365줄)
+  - props: `{open, onClose, endingId, flags}` — EndingScreen에서 mount 제어.
+  - 구성: 헤더(🏆 ONLINE RANKING + ✕) / 닉네임 input + 등록 / 필터 토글(전체/{히로인}/이 엔딩) / 포디움(1·2·3위) / 4~10위 일반 행 / sticky 본인 위치(Top 10 밖일 때만).
+  - **포디움**: 시각 순서 2위(왼쪽)·1위(중앙·-12px translateY·금색 glow `box-shadow 0 0 24px rgba(245,215,110,0.35)`)·3위(오른쪽). 메달 이모지(🥇🥈🥉) + 닉네임 + 점수 + 등급 칩(lg) + 엔딩명. entries < 3 시 빈 슬롯은 점선 placeholder("—").
+  - **등급 색 칩**: `EndingHistoryModal.GRADE_COLOR` 미러 (S=#FFD86B 금 / A=#FF6FA8 분홍 / B=#7CC4C7 청록 / C=#B8B8C8 회 / D=#8A8A98 어두운 회). 기존 갤러리 색 일관성 유지(플레이어가 한 팔레트 학습). 헬퍼 `gradeChipStyle(grade, size)` 컴포넌트 내부.
+  - **본인 위치 sticky 행**: 등록 record가 entries Top 10에 없으면 모달 하단에 황금 테두리 행 "👤 본인 · {등수} · {닉네임} · {점수}점". Top 10 안이면 본인 행이 노란 background로 이미 보이므로 sticky 생략.
+  - **닉네임 localStorage 자동 저장**: 키 `kmu-vn-rank-nickname`, 등록 성공 시 저장. 모달 마운트 시 input 초기값으로 복원. `confirmAndResetGame` 영향 X.
+  - **본인 행 펄스**: `@keyframes rankingRowPulse` (modal 내부 `<style>`) 2.5s background+scale 펄스. `useSettingsStore.reduceMotion` true 시 펄스 트리거 자체 skip (JS state로 가드).
+  - **닫기 3종**: ✕ 버튼 / Esc 키 / 배경 dim 클릭. 각각 `audioManager.playSfx('sfx_pageturn')` (EndingHistoryModal 패턴 미러).
+- **수정 1건**: `src/ui/EndingScreen.tsx` (711줄 → 472줄, **239줄 감축**)
+  - **제거**: 인라인 RankingSection 컴포넌트(180줄) + RankingSectionProps 인터페이스 + 7개 ranking 관련 useState + ranking useEffect + handleSubmitRanking 함수 + RankingSection JSX 마운트.
+  - **신규**: `const [showRanking, setShowRanking] = useState(false)` 1줄 + 액션 버튼 행 마지막에 "🏆 랭킹" 버튼(금색 테두리 + glow) 1개 + outer div 안 `<RankingModal open={showRanking} ... />` mount 1개.
+  - **import 정리**: `HEROINES`, `fetchRanking`, `submitScore`, `FetchOptions`, `RankingEntry` 모두 RankingModal로 이동. EndingScreen은 `isRankingEnabled` (버튼 노출 게이트) + 신규 `RankingModal` import만 유지.
+  - **stale 주석 정정**: `// VITE_RANKING_API_URL 미설정 시…` → `// VITE_PANTRY_ID 미설정 시 버튼·모달 자체가 안 보임…` (어제 백엔드 교체 잔재).
+- **검증** (라이브 end-to-end):
+  - `tsc --noEmit` exit 0.
+  - dev 5175에서 `pendingEnding=END_H1_TRUE` 강제 + intro dismiss → EndingScreen mount 정상.
+  - 액션 버튼 행에 [타이틀로 / 결과 공유 / 이미지 저장 / 조연 (7) / 🏆 랭킹] 5종 노출 확인 ✓.
+  - "🏆 랭킹" 클릭 → `[data-testid="ranking-modal"]` mount + 헤더·입력·필터(3버튼: 전체/세린/이 엔딩)·포디움(현재 entry 1개 + placeholder 2개) 정상 렌더링.
+  - 닫기 3종 모두 동작: Esc 키 ✓ / ✕ 버튼 ✓ / 배경 dim 클릭 ✓.
+  - 필터 "이 엔딩" 클릭 → END_H1_TRUE 만 필터링(현재 0건) → 빈 상태 메시지 "아직 기록이 없어요. 첫 번째 등록자가 되어 보세요." 정상.
+  - 펄스·sticky 본인 행·localStorage 복원: 코드 리뷰 (테스트 row 추가하면 PM Pantry에 잔여 → 회피). 이미 검증된 submitScore 파이프라인 위에 얹은 시각 효과만이라 회귀 위험 낮음.
+- **재사용**: `EndingHistoryModal.GRADE_COLOR` (색 칩 팔레트) / `audioManager.playSfx('sfx_pageturn')` (모달 닫기 사운드) / `--z-modal: 300` (z-index 토큰) / `useSettingsStore.reduceMotion` (애니 가드) / `findEnding` / `HEROINES.shortName` / `computeEndingScore` / `submitScore`·`fetchRanking`·`isRankingEnabled` (백엔드 그대로).
+- **모듈** (status: review):
+  - `src/ui/RankingModal.tsx` (신규)
+  - `src/ui/EndingScreen.tsx` (대폭 수정, 인라인 RankingSection 제거)
+- **의도적으로 안 한 것**: 점수 카운트업 / 영문 제목 한글화 (사용자 미선택). 별 개수 등급 (색 칩 채택). 페이지네이션 (Top 10/20만 유지).
+- **사유**: PM 결정 (2026-05-11 AskUserQuestion 응답) — 인라인 form 스타일이 게임 톤과 안 맞고 정보 가독성도 평이. 모달 분리로 EndingScreen 단정해지고 랭킹 창은 자유로운 디자인 가능.
+- **승인**: PM 플랜 승인 (2026-05-11, plan: swift-purring-rocket 2차 라운드).
+
 ### 2026-05-11 — RELEASE-RUNBOOK 신설 + DEPLOYMENT 운영/스펙 역할 분리
 
 - **변경**: 베타 첫 푸시 라운드(2026-05-11)에서 회고한 4종 함정 + 사전 점검 + 푸시 후 검증을 [`08-qa-deployment/RELEASE-RUNBOOK.md`](../08-qa-deployment/RELEASE-RUNBOOK.md) 단일 문서로 정착. DEPLOYMENT.md는 인프라 스펙으로 남고, RUNBOOK은 PM이 푸시 직전·직후 차례로 통과해야 할 체크리스트로 역할 분리.

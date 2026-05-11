@@ -50,7 +50,7 @@ let _startSceneInFlight = false;
 
 // 사용자 입력(Space hold·연타 클릭)으로 인한 대사 과속 advance 차단.
 // 시스템 자동 advance(BG/CHARACTER/BGM/FLAG/VIDEO onEnded 등)는 영향받지 않음 — userAdvance만 게이트.
-const USER_ADVANCE_COOLDOWN_MS = 600;
+const USER_ADVANCE_COOLDOWN_MS = 400;
 let _lastUserAdvanceAt = 0;
 
 const initialFlags = (): GameFlags => ({

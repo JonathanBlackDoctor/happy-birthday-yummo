@@ -37,50 +37,43 @@ img {
   -webkit-user-drag: none;
 }
 
-/* UI-SPEC §10 + MASTER-PLAN §5.5 — 세로모드 회전 안내 (모바일/태블릿 한정) */
+/* UI-SPEC §10 + MASTER-PLAN §5.5 — 세로모드 안내 토스트 (모바일 QA 2026-05-11 처방).
+   이전 풀스크린 오버레이 → 상단 토스트로 변경. JS(OrientationLock.tsx)가 표시 제어 (세션당 1회 2초).
+   pointer-events: none 으로 게임 입력 차단 X — 세로에서도 플레이 가능. */
 .orientation-lock-overlay {
   position: fixed;
-  inset: 0;
-  display: none;
-  flex-direction: column;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 12px;
-  background: rgba(31, 24, 34, 0.96); /* var(--color-dark-bg) 거의 불투명 — 게임 완전 가림 */
+  gap: 8px;
+  background: rgba(31, 24, 34, 0.92);
   color: var(--color-textbox-text);
   z-index: var(--z-toast);
-  padding: 24px;
+  padding: 10px 18px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+  max-width: calc(100% - 32px);
   text-align: center;
+  animation: orientation-toast-in 200ms ease-out both;
 }
 
 .orientation-lock-icon {
-  font-size: 64px;
-  animation: orientation-rotate 2s ease-in-out infinite;
+  font-size: 20px;
+  flex-shrink: 0;
 }
 
 .orientation-lock-message {
-  font-size: 22px;
-  font-weight: 600;
-}
-
-.orientation-lock-sub {
   font-size: 14px;
-  color: var(--color-dark-accent);
+  font-weight: 600;
+  white-space: nowrap;
 }
 
-@keyframes orientation-rotate {
-  0%, 100% { transform: rotate(0deg); }
-  50% { transform: rotate(-90deg); }
-}
-
-@media (pointer: coarse) and (orientation: portrait) {
-  .orientation-lock-overlay {
-    display: flex;
-  }
-}
-
-body[data-kmu-reduce-motion='true'] .orientation-lock-icon {
-  animation: none;
+@keyframes orientation-toast-in {
+  from { opacity: 0; transform: translate(-50%, -8px); }
+  to   { opacity: 1; transform: translate(-50%, 0); }
 }
 
 /*

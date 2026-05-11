@@ -119,6 +119,22 @@
   }
 }
 
+/* 초소형 폰(S22 Ultra 412×915, iPhone SE 375×667 등) 전용 — 모바일 QA 2026-05-11 처방.
+   768px 룰의 대사창 38% / 폰트 22px이 작은 폰에선 캐릭터를 가리고 줄당 5~6글자만 표시되는 문제.
+   PC 디자인의 상대 비율(대사창 22%, 캐릭터 비중)을 더 가깝게 회복. */
+@media (max-width: 480px) {
+  :root {
+    --textbox-bottom: 16px;
+    --textbox-width: 94%;
+    --textbox-height: 28%;
+    --textbox-padding: 14px 18px;
+    --font-size-text: 19px;
+    --font-size-name: 21px;
+    --font-size-monologue: 18px;
+    --therm-scale: 0.55;
+  }
+}
+
 /* (윤모 첫 등장 임팩트 애니메이션 .yunmo-enter는 PM 결정 2026-05-10에 제거됨.
    윤모도 다른 캐릭터와 동일하게 char-anim-enter-{left|right} 워킹 애니메이션만 사용.) */
 @keyframes char-enter {

@@ -31,14 +31,8 @@ import { EndingStatsPanelAnimated } from '@/ui/affection/EndingStatsPanelAnimate
 import { EndingStatsPanelDefault } from '@/ui/affection/EndingStatsPanelDefault';
 import { AffectionThermometer } from '@/ui/affection/AffectionThermometer';
 import { computeEndingScore } from '@/engine/endingScore';
-import { HEROINES } from '@/data/characters';
-import {
-  fetchRanking,
-  isRankingEnabled,
-  submitScore,
-  type FetchOptions,
-  type RankingEntry,
-} from '@/engine/ranking';
+import { isRankingEnabled } from '@/engine/ranking';
+import { RankingModal } from '@/ui/RankingModal';
 import type { AffinityTargetId, GameFlags, HeroineId } from '@/engine/types';
 
 const NPC_IDS_FOR_ENDING: ReadonlyArray<Exclude<AffinityTargetId, HeroineId>> = [
@@ -84,15 +78,9 @@ export function EndingScreen() {
   const recordedEndingRef = useRef<string | null>(null);
   const recordEnding = useMetaStore((s) => s.recordEnding);
 
-  // 온라인 랭킹 — VITE_RANKING_API_URL 미설정 시 섹션 자체가 안 보임 (isRankingEnabled false).
+  // 온라인 랭킹 — VITE_PANTRY_ID 미설정 시 버튼·모달 자체가 안 보임. (백엔드 셋업: docs/RANKING-SETUP.md)
   const rankingEnabled = isRankingEnabled();
-  const [rankNickname, setRankNickname] = useState('');
-  const [rankSubmitState, setRankSubmitState] = useState<'idle' | 'submitting' | 'done' | 'error'>('idle');
-  const [rankSubmitError, setRankSubmitError] = useState<string | null>(null);
-  const [rankFilter, setRankFilter] = useState<'all' | 'heroine' | 'ending'>('all');
-  const [rankEntries, setRankEntries] = useState<RankingEntry[]>([]);
-  const [rankLoading, setRankLoading] = useState(false);
-  const [myRankRecord, setMyRankRecord] = useState<{ nickname: string; finalScore: number } | null>(null);
+  const [showRanking, setShowRanking] = useState(false);
 
   // TRUE 카테고리 엔딩 도달 시 hasAchievedTrueEnding 기록 (영구) — ModeSelect 다음 진입 시
   // 자동재생 잠금해제 모달 트리거. category 비-TRUE는 무시. settings는 confirmAndResetGame 후에도 유지.
@@ -124,60 +112,6 @@ export function EndingScreen() {
       console.warn('[EndingScreen] recordEnding 실패:', e);
     }
   }, [endingId, flags, recordEnding]);
-
-  // 온라인 랭킹 조회 — endingId / 필터 변경 시 자동 재조회. 미설정·실패는 빈 배열.
-  useEffect(() => {
-    if (!rankingEnabled || !endingId) return;
-    const heroine = findEnding(endingId)?.heroine ?? null;
-    let cancelled = false;
-    setRankLoading(true);
-    const opts: FetchOptions = { limit: 10 };
-    if (rankFilter === 'heroine' && heroine) opts.heroine = heroine;
-    else if (rankFilter === 'ending') opts.endingId = endingId;
-    void fetchRanking(opts).then((list) => {
-      if (cancelled) return;
-      setRankEntries(list);
-      setRankLoading(false);
-    });
-    return () => {
-      cancelled = true;
-    };
-  }, [rankingEnabled, endingId, rankFilter]);
-
-  const handleSubmitRanking = async () => {
-    if (!endingId) return;
-    const trimmed = rankNickname.trim();
-    if (trimmed.length === 0) return;
-    if (rankSubmitState === 'submitting' || rankSubmitState === 'done') return;
-    setRankSubmitState('submitting');
-    setRankSubmitError(null);
-    try {
-      const score = computeEndingScore(flags, endingId);
-      const finalScoreInt = Math.round(score.finalScore);
-      const result = await submitScore({
-        nickname: trimmed,
-        endingId,
-        finalScore: finalScoreInt,
-        grade: score.grade,
-      });
-      if (result.ok) {
-        setRankSubmitState('done');
-        setMyRankRecord({ nickname: trimmed, finalScore: finalScoreInt });
-        const heroine = findEnding(endingId)?.heroine ?? null;
-        const opts: FetchOptions = { limit: 10 };
-        if (rankFilter === 'heroine' && heroine) opts.heroine = heroine;
-        else if (rankFilter === 'ending') opts.endingId = endingId;
-        const list = await fetchRanking(opts);
-        setRankEntries(list);
-      } else {
-        setRankSubmitState('error');
-        setRankSubmitError(result.error ?? '등록 실패');
-      }
-    } catch (e) {
-      setRankSubmitState('error');
-      setRankSubmitError(e instanceof Error ? e.message : String(e));
-    }
-  };
 
   const handleShare = async () => {
     if (!endingId) return;
@@ -418,6 +352,22 @@ export function EndingScreen() {
           >
             조연 (7) {showNpc ? '▴' : '▾'}
           </button>
+          {rankingEnabled && (
+            <button
+              type="button"
+              onClick={() => setShowRanking(true)}
+              data-testid="ending-ranking-button"
+              className="px-5 py-3 rounded-lg"
+              style={{
+                background: 'rgba(245,215,110,0.18)',
+                color: 'rgba(255,248,232,0.98)',
+                border: '1px solid rgba(245,215,110,0.55)',
+                boxShadow: '0 0 12px rgba(245,215,110,0.18)',
+              }}
+            >
+              🏆 랭킹
+            </button>
+          )}
         </div>
         {shareToast && (
           <div
@@ -445,22 +395,15 @@ export function EndingScreen() {
             ))}
           </div>
         )}
-        {rankingEnabled && (
-          <RankingSection
-            heroineId={meta?.heroine ?? null}
-            nickname={rankNickname}
-            setNickname={setRankNickname}
-            submitState={rankSubmitState}
-            submitError={rankSubmitError}
-            filter={rankFilter}
-            setFilter={setRankFilter}
-            entries={rankEntries}
-            loading={rankLoading}
-            myRecord={myRankRecord}
-            onSubmit={() => void handleSubmitRanking()}
-          />
-        )}
       </div>
+      {rankingEnabled && (
+        <RankingModal
+          open={showRanking}
+          onClose={() => setShowRanking(false)}
+          endingId={endingId}
+          flags={flags}
+        />
+      )}
     </div>
   );
 }
@@ -527,184 +470,3 @@ function NpcThermItem({
   );
 }
 
-interface RankingSectionProps {
-  heroineId: HeroineId | null;
-  nickname: string;
-  setNickname: (v: string) => void;
-  submitState: 'idle' | 'submitting' | 'done' | 'error';
-  submitError: string | null;
-  filter: 'all' | 'heroine' | 'ending';
-  setFilter: (v: 'all' | 'heroine' | 'ending') => void;
-  entries: RankingEntry[];
-  loading: boolean;
-  myRecord: { nickname: string; finalScore: number } | null;
-  onSubmit: () => void;
-}
-
-function RankingSection({
-  heroineId,
-  nickname,
-  setNickname,
-  submitState,
-  submitError,
-  filter,
-  setFilter,
-  entries,
-  loading,
-  myRecord,
-  onSubmit,
-}: RankingSectionProps) {
-  const heroineLabel = heroineId ? HEROINES[heroineId].shortName ?? '히로인' : null;
-  const filterButtons: Array<['all' | 'heroine' | 'ending', string]> = [
-    ['all', '전체'],
-    ...(heroineLabel ? ([['heroine', heroineLabel]] as Array<['heroine', string]>) : []),
-    ['ending', '이 엔딩'],
-  ];
-  return (
-    <div
-      data-testid="ending-ranking-section"
-      className="mt-6 w-full px-4"
-      style={{ maxWidth: 720 }}
-    >
-      <div className="text-sm tracking-widest opacity-70 mb-2 text-center">ONLINE RANKING</div>
-
-      <div className="flex flex-row items-center gap-2 justify-center flex-wrap mb-2">
-        <input
-          type="text"
-          value={nickname}
-          onChange={(e) =>
-            setNickname(e.target.value.replace(/[^ㄱ-ㆎ가-힣a-zA-Z0-9 ]/g, '').slice(0, 8))
-          }
-          maxLength={8}
-          placeholder="닉네임 (최대 8자)"
-          disabled={submitState === 'submitting' || submitState === 'done'}
-          className="px-3 py-2 rounded-md text-sm"
-          style={{
-            background: 'rgba(0,0,0,0.4)',
-            border: '1px solid rgba(255,255,255,0.28)',
-            color: 'rgba(255,248,252,0.96)',
-            width: 200,
-          }}
-          data-testid="ending-ranking-nickname"
-        />
-        <button
-          type="button"
-          onClick={onSubmit}
-          disabled={
-            nickname.trim().length === 0 ||
-            submitState === 'submitting' ||
-            submitState === 'done'
-          }
-          data-testid="ending-ranking-submit"
-          className="px-4 py-2 rounded-md text-sm font-semibold"
-          style={{
-            background:
-              submitState === 'done'
-                ? 'rgba(120,200,120,0.32)'
-                : 'var(--color-dark-accent)',
-            color: 'var(--color-dark-bg)',
-            opacity:
-              nickname.trim().length === 0 || submitState === 'submitting' ? 0.5 : 1,
-            cursor:
-              nickname.trim().length === 0 || submitState === 'submitting'
-                ? 'not-allowed'
-                : 'pointer',
-          }}
-        >
-          {submitState === 'submitting'
-            ? '등록 중...'
-            : submitState === 'done'
-            ? '등록 완료 ✓'
-            : '랭킹 등록'}
-        </button>
-      </div>
-      {submitState === 'error' && submitError && (
-        <div
-          className="text-xs text-center mb-2"
-          style={{ color: '#ffb0b0' }}
-          data-testid="ending-ranking-error"
-        >
-          등록 실패: {submitError}
-        </div>
-      )}
-
-      <div className="flex flex-row items-center gap-1 justify-center mb-2 flex-wrap">
-        {filterButtons.map(([mode, label]) => (
-          <button
-            key={mode}
-            type="button"
-            onClick={() => setFilter(mode)}
-            className="px-3 py-1 rounded-md text-xs"
-            style={{
-              background:
-                filter === mode
-                  ? 'rgba(255,255,255,0.22)'
-                  : 'rgba(255,255,255,0.08)',
-              color: 'rgba(255,248,252,0.95)',
-              border: '1px solid rgba(255,255,255,0.18)',
-            }}
-          >
-            {label}
-          </button>
-        ))}
-      </div>
-
-      <div
-        className="rounded-md overflow-hidden"
-        style={{
-          background: 'rgba(0,0,0,0.36)',
-          border: '1px solid rgba(255,255,255,0.14)',
-        }}
-        data-testid="ending-ranking-list"
-      >
-        {loading ? (
-          <div className="text-xs opacity-70 text-center py-4">로딩 중...</div>
-        ) : entries.length === 0 ? (
-          <div className="text-xs opacity-70 text-center py-4">
-            아직 기록이 없어요. 첫 번째 등록자가 되어 보세요.
-          </div>
-        ) : (
-          entries.map((entry, i) => {
-            const isMine =
-              myRecord !== null &&
-              entry.nickname === myRecord.nickname &&
-              entry.finalScore === myRecord.finalScore;
-            const entryMeta = findEnding(entry.endingId);
-            return (
-              <div
-                key={`${entry.timestamp}-${i}`}
-                className="flex flex-row items-center gap-2 px-3 py-1.5 text-sm"
-                style={{
-                  background: isMine
-                    ? 'rgba(255,220,140,0.22)'
-                    : i % 2 === 0
-                    ? 'rgba(255,255,255,0.04)'
-                    : 'transparent',
-                  borderTop: i === 0 ? 'none' : '1px solid rgba(255,255,255,0.06)',
-                }}
-              >
-                <span
-                  className="w-7 text-right opacity-80"
-                  style={{ fontVariantNumeric: 'tabular-nums' }}
-                >
-                  {i + 1}.
-                </span>
-                <span className="w-20 truncate font-semibold">{entry.nickname}</span>
-                <span className="flex-1 text-xs opacity-80 truncate">
-                  {entryMeta?.title ?? entry.endingId}
-                </span>
-                <span
-                  className="w-12 text-right font-bold"
-                  style={{ fontVariantNumeric: 'tabular-nums' }}
-                >
-                  {entry.finalScore}
-                </span>
-                <span className="w-6 text-right text-xs opacity-90">{entry.grade}</span>
-              </div>
-            );
-          })
-        )}
-      </div>
-    </div>
-  );
-}
