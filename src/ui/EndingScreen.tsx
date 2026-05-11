@@ -165,6 +165,8 @@ export function EndingScreen() {
         finalScore: score.finalScore,
       });
       if (result.kind === 'downloaded') setShareToast('이미지를 저장했습니다.');
+      else if (result.kind === 'shared') setShareToast('이미지를 공유했습니다.');
+      else if (result.kind === 'opened') setShareToast('이미지를 길게 눌러 저장하세요.');
       else setShareToast(`이미지 저장 실패: ${result.message}`);
       window.setTimeout(() => setShareToast(null), 2400);
     } catch (e) {

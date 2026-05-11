@@ -206,14 +206,32 @@ function wrapText(ctx: CanvasRenderingContext2D, text: string, maxWidth: number)
 }
 
 /**
- * 엔딩 결과 이미지를 PNG로 다운로드. 항상 다운로드 (Web Share API share sheet 사용 X).
+ * 모바일 환경(iOS/Android) 감지. iOS Safari는 blob URL + a[download]를 무시하므로
+ * 별도 폴백(Web Share API → 새 탭) 필요.
+ */
+function isMobileUA(): boolean {
+  if (typeof navigator === 'undefined') return false;
+  const ua = navigator.userAgent || '';
+  // iPad on iOS 13+는 Mac UA로 위장 — maxTouchPoints로 추가 감지
+  const iPadOS = /Macintosh/.test(ua) && (navigator as Navigator & { maxTouchPoints?: number }).maxTouchPoints! > 1;
+  return /iPhone|iPad|iPod|Android/i.test(ua) || iPadOS;
+}
+
+/**
+ * 엔딩 결과 이미지를 PNG로 다운로드.
  *
- * 2026-05-10 PM 정정: 이전 버전은 navigator.canShare({files}) 가용 시 share sheet 우선이었으나,
- * PC Chrome에서도 Windows Share UI가 떠서 "다운로드 옵션이 없다"는 신고. 항상 a[download] 단순화.
- * 모바일도 다운로드 폴더에 저장됨(브라우저 표준). 별도 공유 후처리는 사용자가 갤러리/공유 앱에서 수행.
+ * PC: a[download]로 즉시 다운로드 폴더에 저장.
+ * 모바일: iOS Safari가 blob URL의 download 속성을 무시해 실제 저장이 안 되는 이슈 →
+ *   1순위 Web Share API (files) — 갤러리/사진 앱으로 직접 저장 가능
+ *   2순위 새 탭에 이미지 표시 — 사용자가 길게 눌러 저장
+ *
+ * 2026-05-10 PM 정정: PC Chrome에서 share sheet가 떠 다운로드 옵션 없다는 신고로 share 분기 제거됐었음.
+ * 2026-05-12 재정정: 모바일에서 저장 실패 → 모바일에서만 share/새 탭 폴백 복귀.
  */
 export async function downloadEndingImage(input: EndingImageInput): Promise<
   | { kind: 'downloaded' }
+  | { kind: 'shared' }
+  | { kind: 'opened' }
   | { kind: 'error'; message: string }
 > {
   try {
@@ -222,14 +240,45 @@ export async function downloadEndingImage(input: EndingImageInput): Promise<
     }
     const blob = await generateEndingImage(input);
     const filename = `kmu-vn-ending-${input.endingId}-${Date.now()}.png`;
+
+    const mobile = isMobileUA();
+
+    // 모바일: Web Share API (files) 우선 시도
+    if (mobile && typeof navigator !== 'undefined' && 'canShare' in navigator) {
+      try {
+        const file = new File([blob], filename, { type: 'image/png' });
+        const shareData = { files: [file], title: '엔딩 결과' } as ShareData;
+        if (navigator.canShare(shareData)) {
+          await navigator.share(shareData);
+          return { kind: 'shared' };
+        }
+      } catch (e) {
+        // AbortError(사용자 취소)는 그대로 던져 호출자가 토스트 처리
+        if (e instanceof Error && e.name === 'AbortError') {
+          return { kind: 'error', message: '저장이 취소되었습니다' };
+        }
+        // 그 외 실패는 새 탭 폴백으로
+      }
+    }
+
     const url = URL.createObjectURL(blob);
+
+    // 모바일 share 폴백: 새 탭에 이미지 표시 → 사용자가 길게 눌러 저장
+    if (mobile) {
+      const win = window.open(url, '_blank');
+      // 팝업 차단 시 location.href로 강제 이동
+      if (!win) window.location.href = url;
+      setTimeout(() => URL.revokeObjectURL(url), 60_000);
+      return { kind: 'opened' };
+    }
+
+    // PC: a[download]로 즉시 다운로드
     const a = document.createElement('a');
     a.href = url;
     a.download = filename;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
-    // 메모리 회수 — 클릭 후 잠시 대기
     setTimeout(() => URL.revokeObjectURL(url), 5000);
     return { kind: 'downloaded' };
   } catch (e) {
