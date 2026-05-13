@@ -12,6 +12,7 @@
 
 import { useState, useCallback } from 'react';
 import { useGameStore } from '@/stores/gameStore';
+import { useSettingsStore } from '@/stores/settingsStore';
 import { audioManager } from '@/engine/audioManager';
 import {
   saveSlot,
@@ -20,13 +21,19 @@ import {
   SaveSlotError,
   type SlotIndex,
 } from '@/engine/saveSlots';
-import type { SaveSlot } from '@/engine/types';
+import type { SaveSlot, StoryMode } from '@/engine/types';
 
 type Mode = 'save' | 'load';
 
 interface Props {
   mode: Mode;
 }
+
+const STORY_MODE_LABEL: Record<StoryMode, string> = {
+  full: '풀스토리',
+  compressed: '압축버전',
+  palJeongPot: '팔정팟 각색',
+};
 
 function formatSavedAt(iso: string): string {
   try {
@@ -47,10 +54,12 @@ export function SaveLoadScreen({ mode }: Props) {
   const close = useGameStore((s) => s.setSaveLoadOpen);
   const takeSnapshot = useGameStore((s) => s.takeSnapshot);
   const applySnapshot = useGameStore((s) => s.applySnapshot);
-  const [slots, setSlots] = useState(() => listSlots());
+  // storyMode가 null인 상태에서 저장/불러오기 화면이 열리는 경우는 없지만 타입 안전을 위해 'full' 폴백
+  const storyMode: StoryMode = useSettingsStore((s) => s.storyMode) ?? 'full';
+  const [slots, setSlots] = useState(() => listSlots(storyMode));
   const [toast, setToast] = useState<string | null>(null);
 
-  const refresh = useCallback(() => setSlots(listSlots()), []);
+  const refresh = useCallback(() => setSlots(listSlots(storyMode)), [storyMode]);
 
   const showToast = (msg: string) => {
     setToast(msg);
@@ -64,7 +73,7 @@ export function SaveLoadScreen({ mode }: Props) {
       if (!ok) return;
     }
     try {
-      saveSlot(idx, takeSnapshot());
+      saveSlot(storyMode, idx, takeSnapshot());
       refresh();
       showToast(`슬롯 ${idx}에 저장했습니다.`);
     } catch (e) {
@@ -95,7 +104,7 @@ export function SaveLoadScreen({ mode }: Props) {
     audioManager.playSfx('sfx_pageturn', { volume: 0.7 });
     const ok = window.confirm(`슬롯 ${idx}을 삭제할까요? 되돌릴 수 없습니다.`);
     if (!ok) return;
-    deleteSlot(idx);
+    deleteSlot(storyMode, idx);
     refresh();
     showToast(`슬롯 ${idx}을 삭제했습니다.`);
   };
@@ -112,7 +121,12 @@ export function SaveLoadScreen({ mode }: Props) {
       <div className="min-h-full flex items-center justify-center p-4">
        <div className="bg-bg text-text rounded-2xl p-6 md:p-8 w-full max-w-3xl flex flex-col gap-5">
         <div className="flex items-center justify-between">
-          <h2 className="text-2xl font-bold">{title}</h2>
+          <div className="flex items-center gap-3">
+            <h2 className="text-2xl font-bold">{title}</h2>
+            <span className="text-sm text-text-light border border-text-light/40 rounded-full px-2.5 py-0.5">
+              {STORY_MODE_LABEL[storyMode]}
+            </span>
+          </div>
           <button
             type="button"
             onClick={() => {

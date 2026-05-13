@@ -31,6 +31,26 @@ export function ModeSelect({ onComplete }: Props) {
     () => hasAchievedTrueEnding && !autoPlayUnlocked,
   );
 
+  const [showPasswordModal, setShowPasswordModal] = useState(false);
+  const [passwordInput, setPasswordInput] = useState('');
+  const [passwordError, setPasswordError] = useState(false);
+
+  const handlePalJeongPotClick = () => {
+    if (!palJeongPotUnlocked) return;
+    setPasswordInput('');
+    setPasswordError(false);
+    setShowPasswordModal(true);
+  };
+
+  const submitPassword = () => {
+    if (passwordInput === '0524' || passwordInput === '7464') {
+      setShowPasswordModal(false);
+      choose('palJeongPot');
+    } else {
+      setPasswordError(true);
+    }
+  };
+
   // 2026-05-09 정정: 메인 테마 BGM은 OpeningVideo 마운트 시점에 시작(OP 영상과 동시).
   // ModeSelect 마운트 시점엔 이미 재생 중 → audioManager가 같은 ID면 fade만 처리하므로 중복 호출 불필요.
 
@@ -90,7 +110,7 @@ export function ModeSelect({ onComplete }: Props) {
         </button>
         <button
           type="button"
-          onClick={() => palJeongPotUnlocked && choose('palJeongPot')}
+          onClick={handlePalJeongPotClick}
           disabled={!palJeongPotUnlocked}
           aria-disabled={!palJeongPotUnlocked}
           title={palJeongPotUnlocked ? undefined : '엔딩 1개 도달 후 해금'}
@@ -107,7 +127,7 @@ export function ModeSelect({ onComplete }: Props) {
             </span>
           )}
           <div className="text-xl font-bold mb-2">
-            팔정팟 각색 <span className="text-sm font-normal opacity-70">(~7분)</span>
+            팔정팟 각색 <span className="text-sm font-normal opacity-70">(~10분)</span>
           </div>
           <div className="text-sm opacity-80">
             {palJeongPotUnlocked
@@ -116,6 +136,49 @@ export function ModeSelect({ onComplete }: Props) {
           </div>
         </button>
       </div>
+
+      {showPasswordModal && (
+        <div
+          className="absolute inset-0 flex items-center justify-center"
+          style={{ background: 'rgba(0,0,0,0.55)', zIndex: 'var(--z-modal)' }}
+        >
+          <div className="bg-white rounded-2xl p-7 max-w-[420px] w-[88%] text-center shadow-2xl border-4 border-violet-400">
+            <div className="text-3xl mb-3">🔐</div>
+            <div className="text-xl font-bold mb-2 text-text">팔정팟 각색 — 비밀번호</div>
+            <div className="text-sm text-text-light mb-5 leading-relaxed">
+              비밀번호는 <strong>구윤모</strong>에게 문의하세요.
+            </div>
+            <input
+              type="password"
+              value={passwordInput}
+              onChange={(e) => { setPasswordInput(e.target.value); setPasswordError(false); }}
+              onKeyDown={(e) => e.key === 'Enter' && submitPassword()}
+              placeholder="비밀번호 입력"
+              className="w-full border-2 border-violet-300 rounded-lg px-4 py-2 text-center text-lg mb-2 outline-none focus:border-violet-500"
+              autoFocus
+            />
+            {passwordError && (
+              <div className="text-red-500 text-sm mb-3">비밀번호가 틀렸습니다.</div>
+            )}
+            <div className="flex gap-3 mt-3">
+              <button
+                type="button"
+                onClick={() => setShowPasswordModal(false)}
+                className="flex-1 px-4 py-2 rounded-lg border-2 border-gray-300 text-text hover:bg-gray-100 font-semibold min-h-[44px]"
+              >
+                취소
+              </button>
+              <button
+                type="button"
+                onClick={submitPassword}
+                className="flex-1 px-4 py-2 rounded-lg bg-violet-400 hover:bg-violet-500 text-white font-semibold min-h-[44px]"
+              >
+                확인
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {showUnlockModal && (
         <div

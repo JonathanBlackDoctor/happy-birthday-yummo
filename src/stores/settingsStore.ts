@@ -4,6 +4,7 @@
 
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
+import type { StoryMode } from '@/engine/types';
 
 export type TextSpeed = 'slow' | 'normal' | 'fast' | 'instant';
 /**
@@ -11,7 +12,7 @@ export type TextSpeed = 'slow' | 'normal' | 'fast' | 'instant';
  * 첫 부팅엔 잠금. metaStore.has_cleared_once === true 가 되면 ModeSelect에서 해금 카드로 노출.
  * scene 룩업은 manifest.ts Proxy가 palJeongPot/ → 없으면 full 로 자동 폴백 (출시 직후 빈 폴더 운영 안전).
  */
-export type StoryMode = 'full' | 'compressed' | 'palJeongPot';
+export type { StoryMode };
 
 /**
  * UI-SPEC §8 폰트 크기 슬라이더 (2026-05-09 W5 메뉴 사이클 라운드).

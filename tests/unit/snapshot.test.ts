@@ -43,8 +43,8 @@ describe('takeSnapshot → saveSlot → loadSlot 라운드트립', () => {
       currentCommandIndex: 12,
     }));
     const snap = useGameStore.getState().takeSnapshot();
-    saveSlot(1, snap);
-    const loaded = loadSlot(1);
+    saveSlot('full', 1, snap);
+    const loaded = loadSlot('full', 1);
     expect(loaded).not.toBeNull();
     expect(loaded?.flags.H1).toBe(75);
     expect(loaded?.flags.H2).toBe(40);

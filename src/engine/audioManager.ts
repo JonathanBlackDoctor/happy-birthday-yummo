@@ -110,10 +110,15 @@ class AudioManager {
         stashed.fade(stashed.volume(), targetVol, fadeIn);
       } else {
         // 이미 pause됐으면 처음부터 volume(0) → play() → fade in.
+        // html5 모드에서 play()는 비동기(HTMLAudioElement.play() Promise).
+        // once('play') 안에서 fade를 걸어야 실제 재생 시작 후 볼륨이 올라간다.
+        // 즉시 fade를 걸면 interval이 play 시작 전에 완료돼 볼륨이 0에 남는 회귀 방지.
         stashed.volume(0);
+        stashed.once('play', () => {
+          enforceNativeLoop(stashed);
+          stashed.fade(0, targetVol, fadeIn);
+        });
         stashed.play();
-        enforceNativeLoop(stashed);
-        stashed.fade(0, targetVol, fadeIn);
       }
       return;
     }
@@ -144,9 +149,12 @@ class AudioManager {
         console.warn(`[audioManager] BGM load failed (${en}):`, err);
       },
     });
+    // html5 모드에서 play()는 비동기(HTMLAudioElement.play() Promise).
+    // once('play') 안에서 fade를 걸어야 실제 재생 시작 후 볼륨이 올라간다.
+    // 즉시 fade를 걸면 interval이 play 시작 전에 완료돼 볼륨이 0에 남는 회귀 방지.
+    howl.once('play', () => { howl.fade(0, targetVol, fadeIn); });
     howl.play();
     enforceNativeLoop(howl);
-    howl.fade(0, targetVol, fadeIn);
     this.currentBgm = { id: en, howl };
   }
 

@@ -1,18 +1,17 @@
 /**
- * 수동 저장 슬롯 6개 + 마이그레이션 — STATE-SCHEMA.md §1, §5, §6 SSoT 미러.
+ * 수동 저장 슬롯 (버전별 6개씩) + 마이그레이션 — STATE-SCHEMA.md §1, §5, §6 SSoT 미러.
  *
  * - kmu-vn-autosave: Zustand persist 전용 (gameStore.ts에서 관리, 본 모듈은 미터치)
- * - kmu-vn-save-1 ~ kmu-vn-save-6: 본 모듈이 관리
+ * - kmu-vn-save-{mode}-{1~6}: 스토리 버전별 슬롯 (full/compressed/palJeongPot 각 6개)
  * - kmu-vn-meta: 갤러리 해금 등 영구 데이터 (별도, W4 후속 라운드)
  *
+ * 버전 간 슬롯은 독립 — 압축버전 슬롯은 풀스토리 모드에서 불러올 수 없음.
  * 본 모듈은 순수 함수 — gameStore에서 호출, DOM 의존 X (jsdom 테스트 가능).
  */
 
-import type { GameFlags, HeroineId, HistoryEntry, SaveSlot } from './types';
+import type { GameFlags, HeroineId, HistoryEntry, SaveSlot, StoryMode } from './types';
 
 export type SlotIndex = 1 | 2 | 3 | 4 | 5 | 6;
-
-const SLOT_KEY_PREFIX = 'kmu-vn-save-';
 
 /** 저장 시점 게임 상태 스냅샷에 필요한 부분만 입력으로 받음 (gameStore 의존성 분리) */
 export interface SaveInput {
@@ -36,17 +35,18 @@ export interface SaveInput {
   thumbnail?: string;
 }
 
-function slotKey(index: SlotIndex): string {
-  return `${SLOT_KEY_PREFIX}${index}`;
+function slotKey(mode: StoryMode, index: SlotIndex): string {
+  return `kmu-vn-save-${mode}-${index}`;
 }
 
 /**
- * 슬롯에 저장. 6슬롯 중 하나에 SaveSlot 직렬화 + localStorage 기록.
+ * 슬롯에 저장. 해당 버전의 6슬롯 중 하나에 SaveSlot 직렬화 + localStorage 기록.
  * STATE-SCHEMA §6 saveSlot 함수 시그니처 정합.
  */
-export function saveSlot(index: SlotIndex, input: SaveInput): SaveSlot {
+export function saveSlot(mode: StoryMode, index: SlotIndex, input: SaveInput): SaveSlot {
   const slot: SaveSlot = {
     version: 1,
+    storyMode: mode,
     savedAt: new Date().toISOString(),
     thumbnail: input.thumbnail,
     preview: input.preview,
@@ -57,7 +57,7 @@ export function saveSlot(index: SlotIndex, input: SaveInput): SaveSlot {
     audio: { ...input.audio },
   };
   try {
-    localStorage.setItem(slotKey(index), JSON.stringify(slot));
+    localStorage.setItem(slotKey(mode, index), JSON.stringify(slot));
   } catch (e) {
     // QuotaExceeded 등 — 호출자가 사용자에게 안내
     throw new SaveSlotError(
@@ -69,11 +69,11 @@ export function saveSlot(index: SlotIndex, input: SaveInput): SaveSlot {
 }
 
 /**
- * 슬롯 로드. 없으면 null.
+ * 슬롯 로드. 없으면 null. 버전이 다른 슬롯은 읽지 않음 (키 분리로 자동 보장).
  * STATE-SCHEMA §6 loadSlot + §5 마이그레이션 정합.
  */
-export function loadSlot(index: SlotIndex): SaveSlot | null {
-  const raw = localStorage.getItem(slotKey(index));
+export function loadSlot(mode: StoryMode, index: SlotIndex): SaveSlot | null {
+  const raw = localStorage.getItem(slotKey(mode, index));
   if (!raw) return null;
   let parsed: unknown;
   try {
@@ -84,34 +84,32 @@ export function loadSlot(index: SlotIndex): SaveSlot | null {
       'PARSE_ERROR',
     );
   }
-  return migrate(parsed);
+  return migrate(parsed, mode);
 }
 
 /** 슬롯 삭제 (사용자 명시 액션 시) */
-export function deleteSlot(index: SlotIndex): void {
-  localStorage.removeItem(slotKey(index));
+export function deleteSlot(mode: StoryMode, index: SlotIndex): void {
+  localStorage.removeItem(slotKey(mode, index));
 }
 
-/** 모든 슬롯 메타 일람 (UI 슬롯 그리드용) */
-export function listSlots(): Array<{ index: SlotIndex; slot: SaveSlot | null }> {
+/** 현재 버전의 모든 슬롯 메타 일람 (UI 슬롯 그리드용) */
+export function listSlots(mode: StoryMode): Array<{ index: SlotIndex; slot: SaveSlot | null }> {
   const indices: SlotIndex[] = [1, 2, 3, 4, 5, 6];
-  return indices.map((index) => ({ index, slot: loadSlot(index) }));
+  return indices.map((index) => ({ index, slot: loadSlot(mode, index) }));
 }
 
-/**
- * 슬롯 존재 여부.
- */
-export function hasSlot(index: SlotIndex): boolean {
-  return localStorage.getItem(slotKey(index)) !== null;
+/** 슬롯 존재 여부 */
+export function hasSlot(mode: StoryMode, index: SlotIndex): boolean {
+  return localStorage.getItem(slotKey(mode, index)) !== null;
 }
 
 /**
  * STATE-SCHEMA §5 마이그레이션 전략.
  * v0 (version 필드 없음) → v1.
- * v1 → 그대로.
+ * v1 → 그대로 (storyMode 없으면 인자로 받은 mode 채움).
  * 알 수 없는 버전 → 에러.
  */
-export function migrate(raw: unknown): SaveSlot {
+export function migrate(raw: unknown, mode: StoryMode = 'full'): SaveSlot {
   if (!raw || typeof raw !== 'object') {
     throw new SaveSlotError('잘못된 슬롯 데이터', 'INVALID_DATA');
   }
@@ -119,6 +117,10 @@ export function migrate(raw: unknown): SaveSlot {
   const version = obj.version as number | undefined;
 
   if (version === 1) {
+    // storyMode 없는 구버전 v1 슬롯 — 인자 mode로 채움
+    if (!obj.storyMode) {
+      return { ...(obj as unknown as SaveSlot), storyMode: mode };
+    }
     return obj as unknown as SaveSlot;
   }
 
@@ -126,6 +128,7 @@ export function migrate(raw: unknown): SaveSlot {
     // v0 → v1: 기본값 채우고 version 박음
     return {
       version: 1,
+      storyMode: mode,
       savedAt: (obj.savedAt as string) ?? new Date().toISOString(),
       thumbnail: obj.thumbnail as string | undefined,
       preview: (obj.preview as SaveSlot['preview']) ?? {

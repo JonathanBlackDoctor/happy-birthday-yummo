@@ -7,6 +7,9 @@
 
 export type HeroineId = 'H1' | 'H2' | 'H3' | 'H4' | 'H5';
 
+/** 스토리 버전 — settingsStore.StoryMode SSoT (2026-05-13 types.ts로 이동) */
+export type StoryMode = 'full' | 'compressed' | 'palJeongPot';
+
 export const HEROINE_IDS: readonly HeroineId[] = ['H1', 'H2', 'H3', 'H4', 'H5'] as const;
 
 /**
@@ -340,6 +343,8 @@ export interface HistoryEntry {
 /** SaveSlot — STATE-SCHEMA §2 미러 */
 export interface SaveSlot {
   version: 1;
+  /** 저장 시점의 스토리 버전 — 버전별 슬롯 분리 식별자 (2026-05-13 추가) */
+  storyMode: StoryMode;
   savedAt: string;
   thumbnail?: string;
   preview: {
