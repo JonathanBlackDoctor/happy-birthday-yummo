@@ -232,9 +232,9 @@ status: review
 [김규민] (작게) 야 윤모. 솔직히 누가 더 마음에 드냐.
 
 [CHOICE]
-- "그런 거 아냐. 같은 조원일 뿐" (진지) → next: ch01_05b_serious
-- "야 첫날부터 뭔 소리야" (받아침) → next: ch01_05b_playful
-- "...글쎄" (애매) → next: ch01_05b_vague
+- "그런 거 아냐. 같은 조원일 뿐" (진지) {tone:mature_serious, coFire:gyeongmin+junhyuk} → next: ch01_05b_serious
+- "야 첫날부터 뭔 소리야" (받아침) {tone:playful_casual, coFire:gyumin+junhyuk} → +30 gyumin → next: ch01_05b_playful
+- "...글쎄" (애매) {tone:warm_supportive, coFire:gyumin+junhyuk} → next: ch01_05b_vague
 [/CHOICE]
 
 ---
