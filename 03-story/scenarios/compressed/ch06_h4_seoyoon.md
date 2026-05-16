@@ -265,7 +265,7 @@ status: review
 
 [구윤모 모놀로그] 답장은 자연스럽게. 분위기에 맞춰드리면 된다.
 
-[KAKAO_TIMER: 15]
+[KAKAO_TIMER: 10]
 - {speaker:나서윤} 답장 짧게라도 부탁드려요
 [CHOICE_KAKAO]
 - "약대 가운 어른스러우시네요, 시험 잘 보세요" (정중·풀어서·빠르게) → next: ch06_h4_03b_replied  {tone:warm_supportive, key:true, mechanism:h4_reply_speed, descriptor:ch6_h4_uniform_reply}
@@ -490,7 +490,7 @@ status: review
 - {speaker:나서윤} 시험 끝난 다음 날에 분위기 맞춰주신 게 의외였어요
 [/KAKAO]
 
-[KAKAO_TIMER: 15]
+[KAKAO_TIMER: 10]
 - {speaker:나서윤} 잠깐 답장 가능하시면요
 [CHOICE_KAKAO]
 - "안 잤어요, 오늘 자리 의미 있었어요" (정중·풀어서·빠르게) → next: ch06_h4_05b_replied  {tone:warm_supportive, key:true, mechanism:h4_reply_speed, descriptor:ch6_h4_late_kakao}

@@ -29,27 +29,87 @@
         {
           "text": "차세린 선생님이 마당 끝에서 머그잔 들고 계심",
           "next": "ch05_06b_h1",
-          "tone": "mature_serious"
+          "tone": "mature_serious",
+          "effects": [
+            {
+              "type": "FLAG_INC",
+              "key": "H1",
+              "delta": 25
+            },
+            {
+              "type": "KEY_CHOICE",
+              "heroine": "H1",
+              "choiceId": "ch5_bonfire"
+            }
+          ]
         },
         {
           "text": "윤하정이 모닥불 옆에서 한 잔 더 채우는 중",
           "next": "ch05_06b_h2",
-          "tone": "direct_friendly"
+          "tone": "direct_friendly",
+          "effects": [
+            {
+              "type": "FLAG_INC",
+              "key": "H2",
+              "delta": 25
+            },
+            {
+              "type": "KEY_CHOICE",
+              "heroine": "H2",
+              "choiceId": "ch5_bonfire"
+            }
+          ]
         },
         {
           "text": "한설 선생님이 펜션 입구에서 바람 쐬는 중",
           "next": "ch05_06b_h3",
-          "tone": "warm_supportive"
+          "tone": "warm_supportive",
+          "effects": [
+            {
+              "type": "FLAG_INC",
+              "key": "H3",
+              "delta": 25
+            },
+            {
+              "type": "KEY_CHOICE",
+              "heroine": "H3",
+              "choiceId": "ch5_bonfire"
+            }
+          ]
         },
         {
           "text": "나서윤씨가 펜션 안 부엌에서 잔 정리 중",
           "next": "ch05_06b_h4",
-          "tone": "warm_supportive"
+          "tone": "warm_supportive",
+          "effects": [
+            {
+              "type": "FLAG_INC",
+              "key": "H4",
+              "delta": 25
+            },
+            {
+              "type": "KEY_CHOICE",
+              "heroine": "H4",
+              "choiceId": "ch5_bonfire"
+            }
+          ]
         },
         {
           "text": "장윤영이 모닥불 너머에서 윤모 쪽 봄",
           "next": "ch05_06b_h5",
-          "tone": "bright_forward"
+          "tone": "bright_forward",
+          "effects": [
+            {
+              "type": "FLAG_INC",
+              "key": "H5",
+              "delta": 25
+            },
+            {
+              "type": "KEY_CHOICE",
+              "heroine": "H5",
+              "choiceId": "ch5_bonfire"
+            }
+          ]
         }
       ]
     }

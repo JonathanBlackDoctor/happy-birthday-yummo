@@ -2,7 +2,7 @@
  * 답장 타이머 — H4 거절 엔딩 핵심 미니게임.
  * UI-SPEC §6.2 + ANIMATION-SPEC §8 + STORY-BIBLE §7.1.
  *
- * - 3초 카운트다운 (2026-05-09 사용자 결정: 15s→3s 단축. 패배 기준 명확화)
+ * - 10초 카운트다운 (2026-05-09 사용자 결정: 15s→3s 단축. 2026-05-16: 3s→10s 조정)
  * - 마지막 1초 빨간 펄스
  * - 만료: sfx_timer_out + late_reply_count++ (호출자가 처리)
  *   late_reply_count >= 1이면 evaluateRoute가 즉시 END_H4_REJECT 강제.
@@ -17,7 +17,7 @@ interface Props {
   onCancel?: () => void;
 }
 
-const DEFAULT_SECONDS = 3;
+const DEFAULT_SECONDS = 10;
 
 export function ReplyTimer({ seconds = DEFAULT_SECONDS, onTimeout, onCancel }: Props) {
   const [remaining, setRemaining] = useState(seconds);

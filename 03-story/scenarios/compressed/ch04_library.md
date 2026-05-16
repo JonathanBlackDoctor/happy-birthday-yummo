@@ -6,7 +6,7 @@ depends-on:
   - 03-story/scenarios/ch04_library.md
 outputs:
   - Ch.4 "도서관" 압축본 (7개 메인 씬 + 9개 분기 — 분기 그래프 풀과 동일)
-  - H4 답장 시간 제한 미니게임 KAKAO_TIMER 15초 100% 보존
+  - H4 답장 시간 제한 미니게임 KAKAO_TIMER 10초 100% 보존
   - CG 트리거 5개 + VIDEO 1개 보존
 status: review
 ---
@@ -440,7 +440,7 @@ status: review
 - {speaker:나서윤} 낮에 승보 오빠한테 친추 받으셨다고 들었어요
 [/KAKAO]
 
-[KAKAO_TIMER: 15]
+[KAKAO_TIMER: 10]
 - {speaker:나서윤} 본과 1학년 시험기간 힘들다고 들었어요
 - {speaker:나서윤} 시험 잘 보세요
 [CHOICE_KAKAO]

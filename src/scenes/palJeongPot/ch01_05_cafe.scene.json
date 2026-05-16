@@ -104,15 +104,37 @@
       "choices": [
         {
           "text": "그런 거 아냐. 같은 조원일 뿐",
-          "next": "ch01_05b_serious"
+          "next": "ch01_05b_serious",
+          "tone": "mature_serious",
+          "coFireNpcs": [
+            "gyeongmin",
+            "junhyuk"
+          ]
         },
         {
           "text": "야 첫날부터 뭔 소리야",
-          "next": "ch01_05b_playful"
+          "next": "ch01_05b_playful",
+          "tone": "playful_casual",
+          "coFireNpcs": [
+            "gyumin",
+            "junhyuk"
+          ],
+          "effects": [
+            {
+              "type": "FLAG_INC",
+              "key": "gyumin",
+              "delta": 30
+            }
+          ]
         },
         {
           "text": "...글쎄",
-          "next": "ch01_05b_vague"
+          "next": "ch01_05b_vague",
+          "tone": "warm_supportive",
+          "coFireNpcs": [
+            "gyumin",
+            "junhyuk"
+          ]
         }
       ]
     }

@@ -187,7 +187,7 @@ status: review
 
 [지문] 카톡 사진. 약대 가운 + 안경 + 미니 가방.
 
-[KAKAO_TIMER: 15]
+[KAKAO_TIMER: 10]
 - {speaker:나서윤} 답장 짧게라도 부탁드려요
 [CHOICE_KAKAO]
 “눈나!!!!!!!!!!!!!!!!!!!!!!!!”
@@ -344,7 +344,7 @@ status: review
 - {speaker:나서윤} 오늘 분위기 맞춰주신 게 의외였어요
 [/KAKAO]
 
-[KAKAO_TIMER: 15]
+[KAKAO_TIMER: 10]
 - {speaker:나서윤} 잠깐 답장 가능하시면요
 [CHOICE_KAKAO]
 - "안 잤어요, 오늘 자리 의미 있었어요" → next: ch06_h4_05b_replied  {tone:warm_supportive, key:true, mechanism:h4_reply_speed, descriptor:ch6_h4_late_kakao}

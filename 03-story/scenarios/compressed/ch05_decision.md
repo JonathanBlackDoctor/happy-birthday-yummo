@@ -701,7 +701,7 @@ status: review
 - {speaker:나서윤} 오늘 부엌에서 같이 정리해주신 거 고마웠어요
 [/KAKAO]
 
-[KAKAO_TIMER: 15]
+[KAKAO_TIMER: 10]
 - {speaker:나서윤} 잠깐 답장 가능하시면요
 [CHOICE_KAKAO]
 - "안 잤어요, 같이 정리한 게 자연스러웠어요" (정중·풀어서·빠르게) → next: ch05_07b_replied  {tone:warm_supportive, key:true, mechanism:h4_reply_speed, descriptor:ch5_dawn_reply}
