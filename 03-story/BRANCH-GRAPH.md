@@ -219,14 +219,14 @@ function determineEnding(branch: MainBranch, state: GameState): EndingId {
     if (state.flags.late_reply_count >= 1) {
       return "END_H4_REJECT";
     }
-    // 2) H4 BAD 자리는 거절이 흡수: aff <60도 거절로 라우팅
-    if (state.flags.H4 < 60) {
+    // 2) H4 BAD 자리는 거절이 흡수: aff <70도 거절로 라우팅
+    if (state.flags.H4 < 70) {
       return "END_H4_REJECT";
     }
-    // 3) 일반 분기 (H4는 HAPPY 없음, NORMAL/TRUE만, 임계 ≥70 — 2026-04-30 Step 4 완화)
-    if (state.flags.H4 < 70) return "END_H4_NORMAL";
+    // 3) 일반 분기 (H4는 HAPPY 없음, NORMAL/TRUE만, 임계 ≥95 — 모닥불 +25 흡수)
+    if (state.flags.H4 < 95) return "END_H4_NORMAL";
     if (countKeyChoices(state, "H4") >= 3) return "END_H4_TRUE";
-    return "END_H4_NORMAL"; // ≥70인데 키 부족 시 fallback
+    return "END_H4_NORMAL"; // ≥95인데 키 부족 시 fallback
   }
 
   // H5 전용: TRUE만 존재 (HAPPY/NORMAL/BAD 의도적 제외)
@@ -256,12 +256,12 @@ function determineEnding(branch: MainBranch, state: GameState): EndingId {
 ### 6.1 H4 분기 평가 순서 (사람용 요약)
 
 1. **`late_reply_count >= 1`** → `END_H4_REJECT` (호감도 무관 — 2026-04-28 핵심 변경, 2026-05-09 ≥2→≥1 강화)
-2. **`H4 < 60`** → `END_H4_REJECT` (H4 BAD 자리, REJECT가 흡수)
-3. **`60 ≤ H4 < 70`** → `END_H4_NORMAL` (Step 4 임계 80→70 완화)
-4. **`H4 ≥ 70` + 키 3개** → `END_H4_TRUE` (Step 4 임계 80→70 완화)
-5. **`H4 ≥ 70` + 키 부족** → `END_H4_NORMAL` (fallback)
+2. **`H4 < 70`** → `END_H4_REJECT` (H4 BAD 자리, REJECT가 흡수)
+3. **`70 ≤ H4 < 95`** → `END_H4_NORMAL` (모닥불 +25 흡수: 임계 45→70)
+4. **`H4 ≥ 95` + 키 3개** → `END_H4_TRUE` (모닥불 +25 흡수: 임계 70→95)
+5. **`H4 ≥ 95` + 키 부족** → `END_H4_NORMAL` (fallback)
 
-> ⚠️ H4 §6 시트의 의사코드는 "elif aff <60 → 배드 엔딩"으로 표기되어 있으나, BRANCH-GRAPH §2에 별도 `END_H4_BAD` 자리가 없으므로(거절이 흡수) 실제 라우팅은 REJECT다.
+> ⚠️ H4 §6 시트의 의사코드는 "elif aff <70 → 배드 엔딩"으로 표기되어 있으나, BRANCH-GRAPH §2에 별도 `END_H4_BAD` 자리가 없으므로(거절이 흡수) 실제 라우팅은 REJECT다.
 
 ### 6.2 H5 도달성 주의
 

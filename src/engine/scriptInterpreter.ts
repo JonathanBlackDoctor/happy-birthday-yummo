@@ -135,16 +135,16 @@ export class ScriptInterpreter {
      *   H1: TRUE ≥105 / HAPPY ≥90  / NORMAL ≥70 / BAD <70
      *   H2: TRUE ≥110 / HAPPY ≥95  / NORMAL ≥75 / BAD <75
      *   H3: TRUE ≥90  / HAPPY ≥75  / NORMAL <75 (BAD 자리 NORMAL 흡수)
-     *   H4: TRUE ≥70  + KEY≥3 + late=0 / NORMAL ≥45 / REJECT (late≥1 OR aff<45)
+     *   H4: TRUE ≥95  + KEY≥3 + late=0 / NORMAL ≥70 / REJECT (late≥1 OR aff<70)
      *   H5: TRUE ≥120 + KEY≥3 / 미달 시 SOLO_SUMMER 폴백
      */
 
     if (winner === 'H4') {
       if (flags.late_reply_count >= 1) return 'END_H4_REJECT';  // route-H4 우선
-      if (aff < 45) return 'END_H4_REJECT';
-      if (aff < 70) return 'END_H4_NORMAL';
+      if (aff < 70) return 'END_H4_REJECT';
+      if (aff < 95) return 'END_H4_NORMAL';
       if (keys >= 3) return 'END_H4_TRUE';
-      return 'END_H4_NORMAL';  // ≥70인데 KEY 부족
+      return 'END_H4_NORMAL';  // ≥95인데 KEY 부족
     }
 
     // H5 트루 단일 (BAD/NORMAL/HAPPY 없음). 미달 시 SOLO_SUMMER 폴백.

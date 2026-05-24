@@ -66,10 +66,9 @@ describe('ScriptInterpreter.evaluateBranch — BRANCH-GRAPH §6.1 정합', () =>
     expect(interp.evaluateBranch(f)).toBe('END_H4_REJECT');
   });
 
-  it('late_reply_count == 0 + H4 1위 + aff>=70 + key>=3 → END_H4_TRUE', () => {
-    // 2026-04-30 Step 4 PM 결정: H4 트루 aff 임계 80→70 완화 (톤 매트릭스 -12점 흡수)
-    // 2026-05-09 endings-revamp: H4 트루 ≥70 유지 (다른 H는 인물별 차별화로 상향)
-    const f = flags({ H4: 75, late_reply_count: 0, ...withKeys('H4', 3) });
+  it('late_reply_count == 0 + H4 1위 + aff>=95 + key>=3 → END_H4_TRUE', () => {
+    // 모닥불 +25 흡수: H4 트루 임계 70→95 (라우팅용 +50 인플레 상쇄, 티어 난이도 유지)
+    const f = flags({ H4: 100, late_reply_count: 0, ...withKeys('H4', 3) });
     expect(interp.evaluateBranch(f)).toBe('END_H4_TRUE');
   });
 
@@ -130,13 +129,13 @@ describe('ScriptInterpreter.evaluateBranch — BRANCH-GRAPH §6.1 정합', () =>
 
   // ─── H4 BAD 자리 흡수 ─────────────────────────────────────────
 
-  it('H4 1위 + aff<45 (BAD 자리) → END_H4_REJECT 흡수 (임계 60→45)', () => {
+  it('H4 1위 + aff<70 (BAD 자리) → END_H4_REJECT 흡수 (모닥불 +25 흡수 임계 45→70)', () => {
     const f = flags({ H4: 40 });
     expect(interp.evaluateBranch(f)).toBe('END_H4_REJECT');
   });
 
-  it('H4 1위 + 45<=aff<70 + late==0 → END_H4_NORMAL', () => {
-    const f = flags({ H4: 65, late_reply_count: 0, ...withKeys('H4', 3) });
+  it('H4 1위 + 70<=aff<95 + late==0 → END_H4_NORMAL', () => {
+    const f = flags({ H4: 80, late_reply_count: 0, ...withKeys('H4', 3) });
     expect(interp.evaluateBranch(f)).toBe('END_H4_NORMAL');
   });
 

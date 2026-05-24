@@ -82,18 +82,18 @@ test.describe('H3 한설 3종 엔딩 (BAD 없음 — NORMAL fallback)', () => {
 });
 
 test.describe('H4 나서윤 3종 엔딩 (BAD 자리는 REJECT가 흡수)', () => {
-  test('END_H4_TRUE: H4≥70, keys≥3, late_reply=0', async ({ page }) => {
+  test('END_H4_TRUE: H4≥95, keys≥3, late_reply=0', async ({ page }) => {
     await gotoEndingFromEvaluate(page, 'ch06_h4_07_evaluate', {
-      H4: 80,
+      H4: 100,
       late_reply_count: 0,
       key_choices: KEYS_3('H4'),
     });
     await expectEnding(page, 'END_H4_TRUE');
   });
 
-  test('END_H4_NORMAL: H4=45~69, late_reply<1', async ({ page }) => {
+  test('END_H4_NORMAL: H4=70~94, late_reply<1', async ({ page }) => {
     await gotoEndingFromEvaluate(page, 'ch06_h4_07_evaluate', {
-      H4: 60,
+      H4: 80,
       late_reply_count: 0,
     });
     await expectEnding(page, 'END_H4_NORMAL');
