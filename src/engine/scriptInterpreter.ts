@@ -73,7 +73,7 @@ export class ScriptInterpreter {
    *        — 2026-05-09 미니게임 3초 단축에 맞춰 ≥2 → ≥1 강화.
    *   F-1b (2026-05-08): max(NPC) > max(H) → END_SOLO_SUMMER
    *        — 친구·엄마·교수에 너무 마음 쏟아 히로인 호감도 우습게 넘어버림.
-   *   F-2: 모든 호감도 <30 → END_SOLO_SUMMER (16번째 엔딩)
+   *   F-2: 모든 호감도 <65 → END_SOLO_SUMMER (16번째 엔딩)
    *   F-3: 메인 히로인 결정 후 챕터 6 본편으로 라우팅 (티어 결정은 evaluateTier가 챕터 6 끝에서 수행).
    */
   evaluateRoute(flags: GameFlags): EvaluateRouteResult {
@@ -111,7 +111,7 @@ export class ScriptInterpreter {
       (id) => ({ id, score: flags[id] }),
     );
     const max = Math.max(...scores.map((s) => s.score));
-    if (max < 30) return 'NONE';
+    if (max < 65) return 'NONE';
     const tied = scores.filter((s) => s.score === max).map((s) => s.id);
     if (tied.length === 1) return tied[0];
     // 동률: last_increment_order에서 마지막에 등장한 (가장 최근에 +값 받은) 쪽
@@ -135,16 +135,16 @@ export class ScriptInterpreter {
      *   H1: TRUE ≥105 / HAPPY ≥90  / NORMAL ≥70 / BAD <70
      *   H2: TRUE ≥110 / HAPPY ≥95  / NORMAL ≥75 / BAD <75
      *   H3: TRUE ≥90  / HAPPY ≥75  / NORMAL <75 (BAD 자리 NORMAL 흡수)
-     *   H4: TRUE ≥70  + KEY≥3 + late=0 / NORMAL ≥45 / REJECT (late≥1 OR aff<45)
+     *   H4: TRUE ≥95  + KEY≥3 + late=0 / NORMAL ≥70 / REJECT (late≥1 OR aff<70)
      *   H5: TRUE ≥120 + KEY≥3 / 미달 시 SOLO_SUMMER 폴백
      */
 
     if (winner === 'H4') {
       if (flags.late_reply_count >= 1) return 'END_H4_REJECT';  // route-H4 우선
-      if (aff < 45) return 'END_H4_REJECT';
-      if (aff < 70) return 'END_H4_NORMAL';
+      if (aff < 70) return 'END_H4_REJECT';
+      if (aff < 95) return 'END_H4_NORMAL';
       if (keys >= 3) return 'END_H4_TRUE';
-      return 'END_H4_NORMAL';  // ≥70인데 KEY 부족
+      return 'END_H4_NORMAL';  // ≥95인데 KEY 부족
     }
 
     // H5 트루 단일 (BAD/NORMAL/HAPPY 없음). 미달 시 SOLO_SUMMER 폴백.

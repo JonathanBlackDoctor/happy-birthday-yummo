@@ -176,7 +176,7 @@ function evaluateRoute(
 
   const scores = HEROINE_IDS.map((id) => ({ id, score: flags[id] }));
   const max = Math.max(...scores.map((s) => s.score));
-  if (max < 30) return { kind: 'ending', endingId: 'END_SOLO_SUMMER' };
+  if (max < 65) return { kind: 'ending', endingId: 'END_SOLO_SUMMER' };
   const tied = scores.filter((s) => s.score === max).map((s) => s.id);
   return { kind: 'chapter6', winner: tied[0] };
 }

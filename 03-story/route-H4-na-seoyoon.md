@@ -38,8 +38,8 @@ late = state.flags.late_reply_count
 key_count = countKeyChoices(state, "H4")
 
 if late >= 2 → END_H4_REJECT (즉시, 호감도/순위 무관)
-elif aff < 60 → END_H4_REJECT (BAD 자리 흡수)
-elif aff < 70 → END_H4_NORMAL              // 2026-04-30 Step 4 임계 80→70 완화
+elif aff < 70 → END_H4_REJECT (BAD 자리 흡수)
+elif aff < 95 → END_H4_NORMAL              // 모닥불 +25 흡수 임계 70→95
 elif key_count >= 3 → END_H4_TRUE
 else → END_H4_NORMAL  // aff ≥70 + 키 부족 fallback
 ```
@@ -100,7 +100,7 @@ else → END_H4_NORMAL  // aff ≥70 + 키 부족 fallback
 ## END_H4_TRUE — "성서의 봄" (트루)
 
 ### 진입 조건
-- `H4 >= 70` AND `key_count >= 3` AND `late_reply_count < 2` (BRANCH-GRAPH §6.1, 2026-04-30 Step 4 임계 80→70 완화 + 명명 정합 — 옛 `affection_H4` → `H4` types.ts 정합)
+- `H4 >= 95` AND `key_count >= 3` AND `late_reply_count < 1` (BRANCH-GRAPH §6.1, 모닥불 +25 흡수 임계 70→95 + 명명 정합 — 옛 `affection_H4` → `H4` types.ts 정합)
 
 ### 시기
 2026년 6월 말, 계명대 약대 시험 종료 직후.

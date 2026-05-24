@@ -66,16 +66,15 @@ describe('ScriptInterpreter.evaluateBranch — BRANCH-GRAPH §6.1 정합', () =>
     expect(interp.evaluateBranch(f)).toBe('END_H4_REJECT');
   });
 
-  it('late_reply_count == 0 + H4 1위 + aff>=70 + key>=3 → END_H4_TRUE', () => {
-    // 2026-04-30 Step 4 PM 결정: H4 트루 aff 임계 80→70 완화 (톤 매트릭스 -12점 흡수)
-    // 2026-05-09 endings-revamp: H4 트루 ≥70 유지 (다른 H는 인물별 차별화로 상향)
-    const f = flags({ H4: 75, late_reply_count: 0, ...withKeys('H4', 3) });
+  it('late_reply_count == 0 + H4 1위 + aff>=95 + key>=3 → END_H4_TRUE', () => {
+    // 모닥불 +25 흡수: H4 트루 임계 70→95 (라우팅용 +50 인플레 상쇄, 티어 난이도 유지)
+    const f = flags({ H4: 100, late_reply_count: 0, ...withKeys('H4', 3) });
     expect(interp.evaluateBranch(f)).toBe('END_H4_TRUE');
   });
 
-  // ─── F-2: 모든 호감도 <30 → SOLO ──────────────────────────────
+  // ─── F-2: 모든 호감도 <65 → SOLO ──────────────────────────────
 
-  it('모든 호감도 <30 → END_SOLO_SUMMER (16번째 엔딩)', () => {
+  it('모든 호감도 <65 → END_SOLO_SUMMER (16번째 엔딩)', () => {
     const f = flags({ H1: 25, H2: 28, H3: 10, H4: 5, H5: 29 });
     expect(interp.evaluateBranch(f)).toBe('END_SOLO_SUMMER');
   });
@@ -118,8 +117,8 @@ describe('ScriptInterpreter.evaluateBranch — BRANCH-GRAPH §6.1 정합', () =>
   // ─── H3 BAD 없음 ──────────────────────────────────────────────
 
   it('H3 1위 + aff<75 (BAD 자리) → END_H3_NORMAL fallback', () => {
-    // H3는 BAD 없음 — NORMAL로 폴백 (BRANCH-GRAPH §2)
-    const f = flags({ H3: 50 });
+    // H3는 BAD 없음 — NORMAL로 폴백 (BRANCH-GRAPH §2). SOLO 진입선 65 이상이라 70으로 라우팅 확보.
+    const f = flags({ H3: 70 });
     expect(interp.evaluateBranch(f)).toBe('END_H3_NORMAL');
   });
 
@@ -130,13 +129,14 @@ describe('ScriptInterpreter.evaluateBranch — BRANCH-GRAPH §6.1 정합', () =>
 
   // ─── H4 BAD 자리 흡수 ─────────────────────────────────────────
 
-  it('H4 1위 + aff<45 (BAD 자리) → END_H4_REJECT 흡수 (임계 60→45)', () => {
-    const f = flags({ H4: 40 });
+  it('H4 1위 + 65<=aff<70 (BAD 자리) → END_H4_REJECT 흡수 (임계 45→70)', () => {
+    // SOLO 진입선 65 이상이라 라우팅엔 H4 65 이상 필요. [65,70)이 REJECT 밴드.
+    const f = flags({ H4: 68 });
     expect(interp.evaluateBranch(f)).toBe('END_H4_REJECT');
   });
 
-  it('H4 1위 + 45<=aff<70 + late==0 → END_H4_NORMAL', () => {
-    const f = flags({ H4: 65, late_reply_count: 0, ...withKeys('H4', 3) });
+  it('H4 1위 + 70<=aff<95 + late==0 → END_H4_NORMAL', () => {
+    const f = flags({ H4: 80, late_reply_count: 0, ...withKeys('H4', 3) });
     expect(interp.evaluateBranch(f)).toBe('END_H4_NORMAL');
   });
 
