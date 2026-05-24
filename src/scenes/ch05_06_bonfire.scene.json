@@ -95,7 +95,7 @@
             {
               "type": "FLAG_INC",
               "key": "H4",
-              "delta": 25
+              "delta": 50
             },
             {
               "type": "KEY_CHOICE",

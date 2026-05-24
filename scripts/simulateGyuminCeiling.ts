@@ -157,7 +157,7 @@ function blankFlags(): Record<AffinityTargetId, number> {
 
 /** sim용 Ch.1~5 누적 winner 호감도 (simulateEndingScores HEROINE_CH5_ACCUM 미러) */
 const HEROINE_CH5_ACCUM: Record<HeroineId, number> = {
-  H1: 113, H2: 117, H3: 98, H4: 68, H5: 125,
+  H1: 113, H2: 117, H3: 98, H4: 93, H5: 125,
 };
 
 /** scriptInterpreter.evaluateRoute의 룰을 인라인 (Vite glob 의존성 회피) */

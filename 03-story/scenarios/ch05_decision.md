@@ -592,7 +592,7 @@ status: review
 - "차세린 선생님이 마당 끝에서 머그잔 들고 계심" → next: ch05_06b_h1 → +25 H1 → KEY:H1:ch5_bonfire
 - "윤하정이 모닥불 옆에서 한 잔 더 채우는 중" → next: ch05_06b_h2 → +25 H2 → KEY:H2:ch5_bonfire
 - "한설 선생님이 펜션 입구에서 잠깐 바람 쐬는 중" → next: ch05_06b_h3 → +25 H3 → KEY:H3:ch5_bonfire
-- "나서윤씨가 펜션 안 부엌에서 잔 정리 중" → next: ch05_06b_h4 → +25 H4 → KEY:H4:ch5_bonfire
+- "나서윤씨가 펜션 안 부엌에서 잔 정리 중" → next: ch05_06b_h4 → +50 H4 → KEY:H4:ch5_bonfire
 - "장윤영이 모닥불 너머에서 후배들이랑 떠들다 윤모 쪽 봄" → next: ch05_06b_h5 → +25 H5 → KEY:H5:ch5_bonfire
 [/CHOICE]
 
