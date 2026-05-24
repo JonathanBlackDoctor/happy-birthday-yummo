@@ -130,7 +130,7 @@ export class ScriptInterpreter {
      * 인물별 임계값 차별화 (2026-05-09 endings-results-revamp 라운드, PM 결정).
      *
      * 캡 해제(0~∞) + 시뮬 max 기준 ~75-85% 컷. KEY 임계 ≥3 유지.
-     * BRANCH-GRAPH §4 시뮬 누적: H1+113 / H2+117 / H3+98 / H4+68 / H5+125 (Ch.1~5).
+     * BRANCH-GRAPH §4 시뮬 누적: H1+113 / H2+117 / H3+98 / H4+93 / H5+125 (Ch.1~5).
      *
      *   H1: TRUE ≥105 / HAPPY ≥90  / NORMAL ≥70 / BAD <70
      *   H2: TRUE ≥110 / HAPPY ≥95  / NORMAL ≥75 / BAD <75

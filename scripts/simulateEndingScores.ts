@@ -8,7 +8,7 @@
  *   - 추가 히든 변형: mom/junhyuk/taeho max 변형
  *
  * 입력 가정 (BRANCH-GRAPH §4 시뮬 + Ch.6 추가):
- *   Ch.1~5 누적: H1+113 / H2+117 / H3+98 / H4+68 / H5+125
+ *   Ch.1~5 누적: H1+113 / H2+117 / H3+98 / H4+93 / H5+125
  *   Ch.6 추가: TRUE +25 / HAPPY +20 / NORMAL +8 / BAD/REJECT 0
  *   비-winner H 호감도: optimal 35 / neutral 25 / pessimal 10
  *   KEY 카운트: TRUE 3 / HAPPY 2 / NORMAL 1 / BAD/REJECT 0
@@ -39,7 +39,7 @@ interface CaseSpec {
 }
 
 const HEROINE_CH5_ACCUM: Record<HeroineId, number> = {
-  H1: 113, H2: 117, H3: 98, H4: 68, H5: 125,
+  H1: 113, H2: 117, H3: 98, H4: 93, H5: 125,
 };
 
 function ch6Add(endingId: EndingId): number {
