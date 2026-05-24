@@ -73,7 +73,7 @@ export class ScriptInterpreter {
    *        — 2026-05-09 미니게임 3초 단축에 맞춰 ≥2 → ≥1 강화.
    *   F-1b (2026-05-08): max(NPC) > max(H) → END_SOLO_SUMMER
    *        — 친구·엄마·교수에 너무 마음 쏟아 히로인 호감도 우습게 넘어버림.
-   *   F-2: 모든 호감도 <65 → END_SOLO_SUMMER (16번째 엔딩)
+   *   F-2: 모든 호감도 <30 → END_SOLO_SUMMER (16번째 엔딩)
    *   F-3: 메인 히로인 결정 후 챕터 6 본편으로 라우팅 (티어 결정은 evaluateTier가 챕터 6 끝에서 수행).
    */
   evaluateRoute(flags: GameFlags): EvaluateRouteResult {
@@ -111,7 +111,7 @@ export class ScriptInterpreter {
       (id) => ({ id, score: flags[id] }),
     );
     const max = Math.max(...scores.map((s) => s.score));
-    if (max < 65) return 'NONE';
+    if (max < 30) return 'NONE';
     const tied = scores.filter((s) => s.score === max).map((s) => s.id);
     if (tied.length === 1) return tied[0];
     // 동률: last_increment_order에서 마지막에 등장한 (가장 최근에 +값 받은) 쪽
